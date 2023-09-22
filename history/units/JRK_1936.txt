@@ -1,0 +1,113 @@
+﻿division_template = {
+	name = "Pěší Divize"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tanková Brigáda"
+	division_names_group = JRK_TANK
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Pěší Divize"
+		location = 6332
+		division_template = "Pěší Divize"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2. Pěší Divize"
+		location = 6375
+		division_template = "Pěší Divize"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3. Pěší Divize"
+		location = 11386
+		division_template = "Pěší Divize"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4. Pěší Divize"
+		location = 3384
+		division_template = "Pěší Divize"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5. Pěší Divize"
+		location = 3380
+		division_template = "Pěší Divize"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "6. Pěší Divize"
+		location = 3351
+		division_template = "Pěší Divize"
+		start_experience_factor = 0.1
+	}
+
+	division = {
+		location = 395
+		division_template = "Tanková Brigáda"
+		start_experience_factor = 1
+	}
+	division = {
+		location = 395
+		division_template = "Tanková Brigáda"
+		start_experience_factor = 1
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 2000
+	}
+
+	if = {
+		limit = {
+			not = { has_dlc = "No Step Back" }
+		}
+		
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 100
+		}	
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis_0
+			amount = 100
+		}
+
+		create_equipment_variant = {
+			type = light_tank_chassis_0
+			name = "LT vz.35"
+			modules = {
+				main_armament_slot = tank_small_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+			}
+		}
+	}
+}

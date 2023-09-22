@@ -1,0 +1,17 @@
+characters={
+	JAP_sobek={
+		name="Generál Sobek"
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/sobek.dds"
+			}
+		}
+		country_leader={
+			desc="SKO_matej_desc"
+			ideology = fascism_ideology
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

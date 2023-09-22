@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		SMU_smurf_isolationism = {
+			name = SMU_smurf_isolationism
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.20
+				master_ideology_drift = 25
+				custom_modifier_tooltip = SMU_isolationalism
+				hidden_modifier = {
+					ai_focus_aggressive_factor = -100
+					trade_opinion_factor = -100
+					justify_war_goal_time = 100
+				}
+			}
+
+			rule = {
+				can_send_volunteers = no
+				can_not_declare_war = yes
+			}
+		}
+	}
+}

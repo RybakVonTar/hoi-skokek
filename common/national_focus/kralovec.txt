@@ -1,0 +1,513 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+### search_filters = {FOCUS_FILTER_PROPAGANDA}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_ITA_MISSIOLINI}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+# Reminder that focus filters prio has to be handled in the generic focus file :)
+
+
+
+focus_tree = {
+	id = kralovec_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = JRK
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 1000 y = 100 }
+
+	initial_show_position = {
+		x = 6
+		y = 0
+	}
+
+	focus = {
+		id = JRK_great_moravia
+		icon = GFX_focus_velka_morava
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 4
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = JRK_we_will_prepare
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = JRK_great_moravia
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_great_moravia
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = JRK_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_we_will_prepare
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = JRK_we_will_prepare
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			763 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			5 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_man
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { 
+			focus = JRK_we_will_prepare
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JRK_we_will_prepare
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = JRK_conscriptions
+		}
+	}
+
+	focus = {
+		id = JRK_and_economy
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { 
+			focus = JRK_we_will_prepare
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = JRK_we_will_prepare
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = partial_economic_mobilisation
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_peace_way
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { 
+			focus = JRK_industry
+		} 
+		prerequisite = { 
+			focus = JRK_man
+		} 
+		prerequisite = { 
+			focus = JRK_and_economy
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_man
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			LIT = {
+				country_event = { id = jrk.2 days = 1 }
+			}
+			POL = {
+				country_event = { id = jrk.3 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_lets_try_more
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { 
+			focus = JRK_peace_way
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_peace_way
+		available = {
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = peace_not_workin
+				JRK = {
+					has_country_flag = peace_do_not_work
+				}
+			}
+			
+		}
+
+		completion_reward = {
+			POL = {
+				country_event = { id = jrk.4 days = 1 }
+			}
+		}
+	}
+
+	#focus = {
+	#	id = JRK_ribbentrop_jirka_pact
+	#	icon = GFX_focus_generic_adriatic_sea_focus
+	#	prerequisite = { 
+	#		focus = JRK_lets_try_more
+	#	}
+	#	mutually_exclusive = {}
+#
+	#	x = 0
+	#	y = 1
+	#	cost = 10
+	#	relative_position_id = JRK_lets_try_more
+	#	available = {
+	#	}
+	#	bypass = {
+	#	}
+#
+	#	completion_reward = {
+	#		GER = {
+	#			country_event = { id = jrk.5 days = 1 }
+	#		}
+	#	}
+	#}
+
+	focus = {
+		id = JRK_war_with_poland
+		icon = GFX_goal_generic_major_war
+		prerequisite = { 
+			focus = JRK_lets_try_more
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_lets_try_more
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				type = annex_everything    
+				target = POL
+			}
+		}
+	}
+
+	#focus = {
+	#	id = JRK_question_of_poland
+	#	icon = GFX_focus_generic_adriatic_sea_focus
+	#	prerequisite = { 
+	#		focus = JRK_war_with_poland
+	#	}
+	#	mutually_exclusive = {}
+
+	#	x = 2
+	#	y = 1
+	#	cost = 5
+	#	relative_position_id = JRK_war_with_poland
+	#	available = {
+	#	}
+	#	bypass = {
+	#	}
+
+	#	completion_reward = {
+	#		country_event = { id = jrk.9 days = 1 }
+	#	}
+	#}
+
+	focus = {
+		id = JRK_poland_integration
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { 
+			focus = JRK_war_with_poland
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JRK_war_with_poland
+		available = {
+			NOT = {
+				has_war_with = POL
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = POL
+					is_owned_by = JRK
+				}
+				add_core_of = JRK
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_winged_hussars
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = JRK_poland_integration
+		}
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_poland_integration
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = JRK_winged_hussars
+			load_oob = JRK_hussars
+		}
+	}
+
+	focus = {
+		id = JRK_czechoslovakian_annex
+		icon = GFX_goal_demand_sudetenland
+		prerequisite = { 
+			focus = JRK_poland_integration
+		}
+		mutually_exclusive = {
+			focus = JRK_deal_with_devil
+		}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_poland_integration
+		available = {
+			CZE = {
+				exists = yes
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			CZE = {
+				country_event = { id = jrk.10 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_deal_with_devil
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { 
+			focus = JRK_poland_integration
+		}
+		mutually_exclusive = {
+			focus = JRK_czechoslovakian_annex
+		}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_poland_integration
+		available = {
+			72 = {
+				is_owned_by = GER
+			}
+			74 = {
+				is_owned_by = GER
+			}
+			75 = {
+				is_owned_by = GER
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = { id = jrk.12 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_deal_with_seba
+		icon = GFX_goal_generic_major_war
+		prerequisite = { 
+			focus = JRK_czechoslovakian_annex
+			focus = JRK_deal_with_devil
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_czechoslovakian_annex
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				type = annex_everything    
+				target = SEB
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_liberate_slovaks
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { 
+			focus = JRK_deal_with_seba
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_deal_with_seba
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				type = annex_everything    
+				target = HUN
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_velkomoravska_rise
+		icon = GFX_focus_velka_morava
+		prerequisite = { 
+			focus = JRK_liberate_slovaks
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JRK_liberate_slovaks
+		available = {
+			owns_state = 43
+			owns_state = 664
+			owns_state = 75
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = HUN
+						is_core_of = SEB
+						is_core_of = CZE
+						is_core_of = POL
+					}
+				}
+				add_core_of = JRK
+			}
+			set_cosmetic_tag = VMO
+
+			custom_effect_tooltip = focus_velke_moravy
+			hidden_effect = {
+				load_focus_tree = velkamorava_focus
+			}
+		}
+	}
+}

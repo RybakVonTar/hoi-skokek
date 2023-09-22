@@ -1,0 +1,24 @@
+﻿division_template = {
+	name = "Kolisté"
+	regiments = {
+		bicycle_battalion = { x = 0 y = 0 }
+		bicycle_battalion = { x = 0 y = 1 }
+		bicycle_battalion = { x = 1 y = 0 }
+		bicycle_battalion = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Kolisté"
+		location = 6573
+		division_template = "Kolisté"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2. Kolisté"
+		location = 3716
+		division_template = "Kolisté"
+		start_experience_factor = 0.1
+	}
+}

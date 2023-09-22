@@ -1,0 +1,597 @@
+﻿add_namespace = jrk
+
+# Said NO
+country_event = {
+	id = jrk.0
+	title = jrk.0.t
+	desc = jrk.0.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = jrk.0.a
+	}
+}
+
+# Said YES
+country_event = {
+	id = jrk.1
+	title = jrk.1.t
+	desc = jrk.1.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = jrk.1.a
+	}
+}
+
+# Uduva?
+country_event = {
+	id = jrk.2
+	title = jrk.2.t
+	desc = jrk.2.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.2.a
+		ai_chance = {
+			factor = 70
+		}
+
+		JRK = {
+			country_event = jrk.1
+			transfer_state = 814
+			transfer_state = 118
+		}
+	}
+
+	# no
+	option = {
+		name = jrk.2.b
+		ai_chance = {
+			factor = 30
+		}
+
+		JRK = {
+			country_event = jrk.0
+		}
+	}
+}
+
+# Danzig and Gdynia?
+country_event = {
+	id = jrk.3
+	title = jrk.3.t
+	desc = jrk.3.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.3.a
+		ai_chance = {
+			factor = 50
+		}
+		JRK = {
+			country_event = jrk.1
+			transfer_state = 85
+			transfer_state = 807
+		}
+	}
+
+	# no
+	option = {
+		name = jrk.3.b
+		ai_chance = {
+			factor = 50
+		}
+
+		JRK = {
+			country_event = jrk.0
+			hidden_effect = {
+				set_country_flag = peace_do_not_work
+			}
+		}
+	}
+}
+
+# Northern poland?
+country_event = {
+	id = jrk.4
+	title = jrk.4.t
+	desc = jrk.4.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.4.a
+		ai_chance = {
+			factor = 20
+		}
+
+		JRK = {
+			country_event = jrk.1
+			transfer_state = 97
+			transfer_state = 98
+		}
+	}
+
+	# no
+	option = {
+		name = jrk.4.b
+		ai_chance = {
+			factor = 80
+		}
+
+		JRK = {
+			country_event = jrk.0
+		}
+	}
+}
+
+# Ribentrop - Jirka pact
+country_event = {
+	id = jrk.5
+	title = jrk.5.t
+	desc = jrk.5.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.5.a
+		ai_chance = {
+			factor = 95
+		}
+
+		hidden_effect = {
+			set_global_flag = ribbentrop_jirka_pact
+		}
+
+		JRK = {
+			country_event = jrk.1
+		}
+	}
+
+	# no
+	option = {
+		name = jrk.5.b
+		ai_chance = {
+			factor = 5
+		}
+
+		JRK = {
+			country_event = jrk.0
+		}
+	}
+}
+
+# join war? (GER)
+country_event = {
+	id = jrk.6
+	title = jrk.6.t
+	desc = jrk.6.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.6.a
+		ai_chance = {
+			factor = 65
+		}
+
+		GER = {
+			declare_war_on = {
+				type = annex_everything    
+				target = POL
+			}
+		}
+
+		JRK = {
+			#! event
+		}
+	}
+
+	# no
+	option = {
+		name = jrk.6.a
+		ai_chance = {
+			factor = 35
+		}
+
+		hidden_effect = {
+			clr_global_flag = ribbentrop_jirka_pact
+		}
+	
+		JRK = {
+			country_event = jrk.0
+		}
+	}
+}
+
+# pact
+country_event = {
+	id = jrk.7
+	title = jrk.7.t
+	desc = jrk.7.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = jrk.7.a
+
+		GER = {
+			transfer_state = 86
+			transfer_state = 87
+			transfer_state = 762
+		}
+		JRK = {
+			transfer_state = 88
+			transfer_state = 85	
+			transfer_state = 98
+			transfer_state = 807
+			transfer_state = 97
+			transfer_state = 89
+			transfer_state = 92
+			transfer_state = 90
+			transfer_state = 10
+		}
+		POL = {
+			transfer_state = 784
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 93
+			transfer_state = 91
+		}
+	}
+}
+
+country_event = {
+	id = jrk.8
+	title = jrk.8.t
+	desc = jrk.8.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = jrk.8.a
+
+		JRK = {
+			transfer_state = 86
+			transfer_state = 87
+			transfer_state = 762
+			transfer_state = 88
+			transfer_state = 85	
+			transfer_state = 98
+			transfer_state = 807
+			transfer_state = 97
+			transfer_state = 92
+			transfer_state = 90
+			transfer_state = 10
+		}
+		POL = {
+			transfer_state = 784
+			transfer_state = 96
+			transfer_state = 95
+			transfer_state = 94
+			transfer_state = 93
+			transfer_state = 91
+			transfer_state = 89
+			retire_character = POL_boleslaw_wieniawa_glugoszowski
+			retire_character = POL_wladyslaw_anders
+		}
+	}
+}
+
+# question of poland
+country_event = {
+	id = jrk.9
+	title = jrk.9.t
+	desc = jrk.9.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# guarantee
+	option = {
+		name = jrk.9.a
+
+		JRK = {
+			give_guarantee = POL
+		}
+	}
+
+	# nic
+	option = {
+		name = jrk.9.b
+	}
+}
+
+# join us? (CZE)
+country_event = {
+	id = jrk.10
+	title = jrk.10.t
+	desc = jrk.10.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.10.a
+		ai_chance = {
+			factor = 75
+		}
+
+		JRK = {
+			annex_country = {
+				target = CZE
+			}
+			country_event = { id = jrk.11 days = 1 }
+			country_event = jrk.1
+		}
+
+		
+	}
+
+	# no
+	option = {
+		name = jrk.10.b
+		ai_chance = {
+			factor = 25
+		}
+
+		JRK = {
+			create_wargoal = {
+				target = CZE
+				type = annex_everything
+			}
+			country_event = jrk.0
+		}
+	}
+}
+
+# Slovakia joins seba
+country_event = {
+	id = jrk.11
+	title = jrk.11.t
+	desc = jrk.11.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = jrk.11.a
+
+		SEB = {
+			transfer_state = 70
+			transfer_state = 71
+			transfer_state = 73
+		}
+	}
+}
+
+# give it? (GER)
+country_event = {
+	id = jrk.12
+	title = jrk.12.t
+	desc = jrk.12.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.12.a
+		ai_chance = {
+			factor = 60
+		}
+
+		JRK = {
+			transfer_state = 75
+			transfer_state = 72
+			transfer_state = 74
+			transfer_state = 69
+			transfer_state = 9
+			
+			country_event = jrk.1
+		}
+
+		
+	}
+
+	# no
+	option = {
+		name = jrk.12.b
+		ai_chance = {
+			factor = 40
+		}
+
+		JRK = {
+			country_event = jrk.0
+		}
+	}
+}
+
+# give transilvania (ROM)
+country_event = {
+	id = jrk.13
+	title = jrk.13.t
+	desc = jrk.13.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.13.a
+		ai_chance = {
+			factor = 60
+		}
+
+		JRK = {
+			transfer_state = 83
+			transfer_state = 76
+			
+			country_event = jrk.1
+		}
+
+		
+	}
+
+	# no
+	option = {
+		name = jrk.13.b
+		ai_chance = {
+			factor = 40
+		}
+
+		JRK = {
+			country_event = jrk.0
+			create_wargoal = {
+				target = ROM
+				type = take_claimed_state
+			}
+		}
+	}
+}
+
+# give slovinsko (YUG)
+country_event = {
+	id = jrk.14
+	title = jrk.14.t
+	desc = jrk.14.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.14.a
+		ai_chance = {
+			factor = 65
+		}
+
+		JRK = {
+			transfer_state = 102
+			transfer_state = 853
+			
+			country_event = jrk.1
+		}
+
+		
+	}
+
+	# no
+	option = {
+		name = jrk.14.b
+		ai_chance = {
+			factor = 35
+		}
+
+		JRK = {
+			country_event = jrk.0
+			create_wargoal = {
+				target = YUG
+				type = take_claimed_state
+			}
+		}
+	}
+}
+
+# referendum in austria
+country_event = {
+	id = jrk.15
+	title = jrk.15.t
+	desc = jrk.15.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.15.a
+		ai_chance = {
+			factor = 85
+		}
+
+		JRK = {
+			transfer_state = 153
+			transfer_state = 848
+			transfer_state = 152
+			transfer_state = 4
+			transfer_state = 66
+			transfer_state = 67
+			
+			country_event = jrk.1
+		}
+
+		
+	}
+
+	# no
+	option = {
+		name = jrk.15.b
+		ai_chance = {
+			factor = 15
+		}
+
+		JRK = {
+			country_event = jrk.0
+		}
+	}
+}
+
+# upper tyrol? (ITA)
+country_event = {
+	id = jrk.16
+	title = jrk.16.t
+	desc = jrk.16.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.16.a
+		ai_chance = {
+			factor = 65
+		}
+
+		JRK = {
+			transfer_state = 39
+			transfer_state = 850
+			
+			country_event = jrk.1
+		}
+
+		
+	}
+
+	# no
+	option = {
+		name = jrk.16.b
+		ai_chance = {
+			factor = 35
+		}
+
+		JRK = {
+			country_event = jrk.0
+		}
+	}
+}

@@ -1,0 +1,115 @@
+ideas = {
+	country = {
+
+		# evangelion
+		SKO_evangelion = {
+			name = SKO_evangelion
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			research_bonus = {
+				electronics = 0.15
+				armor = 0.05
+				artillery = 0.08
+				nuclear = 0.2
+			}
+		}
+
+		SKO_eva01 = {
+			name = SKO_eva01
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+			}
+		}
+
+		SKO_eva02 = {
+			name = SKO_eva02
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+			}
+		}
+
+		SKO_eva03 = {
+			name = SKO_eva03
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+			}
+		}
+
+
+		# start
+		SKO_night_prime = {
+			name = SKO_night_prime
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				air_night_penalty = -0.5
+				land_night_attack = 1
+				naval_night_attack = 0.5
+
+				army_attack_factor = -0.2
+				naval_damage_factor = -0.2
+				air_attack_factor = -0.2
+			}
+		}
+
+		SKO_six_coffees_daily = {
+			name = SKO_six_coffees_daily
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				army_attack_factor = 0.05
+				army_morale_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+		
+
+		#
+	}
+}

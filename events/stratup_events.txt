@@ -1,0 +1,66 @@
+﻿add_namespace = start
+
+country_event = {
+	id = start.0
+	title = start.sobek.t
+	desc = start.sobek.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = start.sobek.a
+	}
+}
+
+country_event = {
+	id = start.1
+	title = start.skokek.t
+	desc = start.skokek.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = start.skokek.a
+	}
+}
+
+country_event = {
+	id = start.2
+	title = start.sejlon.t
+	desc = start.sejlon.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = start.sejlon.a
+	}
+}
+
+country_event = {
+	id = start.3
+	title = start.jrk.t
+	desc = start.jrk.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = start.jrk.a
+	}
+}
+
+country_event = {
+	id = start.4
+	title = start.seba.t
+	desc = start.seba.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = start.seba.a
+	}
+}

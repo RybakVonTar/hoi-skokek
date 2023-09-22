@@ -1,0 +1,58 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+### search_filters = {FOCUS_FILTER_PROPAGANDA}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_ITA_MISSIOLINI}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+# Reminder that focus filters prio has to be handled in the generic focus file :)
+
+
+
+focus_tree = {
+	id = sejlon_focus
+
+	country = {
+		factor = 0
+		
+		#modifier = {
+		#	add = 10
+		#	tag = SEJ
+		#}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1700 }
+
+	initial_show_position = {
+		x = 28
+		y = 0
+	}
+
+	focus = {
+		id = SEJ_
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 38
+		y = 0
+		cost = 1
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+}

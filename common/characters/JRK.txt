@@ -1,0 +1,17 @@
+characters={
+	JRK_jirka={
+		name="Jiří Novák"
+		portraits={
+			civilian={
+				large="gfx/leaders/JRK/jirka.dds"
+			}
+		}
+		country_leader={
+			desc="JRK_jirka_desc"
+			ideology = despotism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

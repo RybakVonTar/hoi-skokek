@@ -1,0 +1,120 @@
+﻿add_namespace = skoccek
+
+# 1. Anime Uprising
+country_event = {
+	id = skoccek.0
+	title = skoccek.0.t
+	desc = skoccek.0.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.0.a
+	}
+}
+
+# Korean Uprising
+country_event = {
+	id = skoccek.1
+	title = skoccek.1.t
+	desc = skoccek.1.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.1.a
+	}
+}
+
+# Tohoku Uprising
+country_event = {
+	id = skoccek.2
+	title = skoccek.2.t
+	desc = skoccek.2.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.2.a
+
+		country_event = { id = skoccek.3 days = 2 }
+	}
+}
+
+# War declaration (by japan)
+country_event = {
+	id = skoccek.3
+	title = skoccek.3.t
+	desc = skoccek.3.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.3.a
+
+		JAP = {
+			create_wargoal = {
+				target = SKO
+				type = take_core_state
+			}
+		}
+	}
+}
+
+# buy coffee?
+country_event = {
+	id = skoccek.4
+	title = skoccek.4.t
+	desc = skoccek.4.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# buy
+	option = {
+		name = skoccek.4.a
+
+		set_country_flag = new_coffee
+	}
+
+	# abstinence
+	option = {
+		name = skoccek.4.b
+
+		set_country_flag = abstinence
+	}
+}
+
+# buy coffee?
+country_event = {
+	id = skoccek.5
+	title = skoccek.5.t
+	desc = skoccek.5.d
+	picture = GFX_report_event_001
+	
+	fire_only_once = yes
+
+	trigger = {
+			tag = SKO
+
+			has_idea = SKO_six_coffees_daily
+
+			date > "1937.1.1"
+		}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {
+		name = skoccek.5.a
+
+		set_country_flag = no_coffee
+
+		remove_ideas = SKO_six_coffees_daily
+	}
+}

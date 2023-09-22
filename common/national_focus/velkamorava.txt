@@ -1,0 +1,671 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+### search_filters = {FOCUS_FILTER_PROPAGANDA}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_ITA_MISSIOLINI}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+# Reminder that focus filters prio has to be handled in the generic focus file :)
+
+
+
+focus_tree = {
+	id = velkamorava_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 1
+			tag = JRK
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1600 }
+
+	initial_show_position = {
+		x = 6
+		y = 0
+	}
+
+	focus = {
+		id = JRK_new_nation
+		icon = GFX_focus_velka_morava
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 4
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			set_capital = {
+				state = 75
+			}
+			add_victory_points = {
+				province = 3569
+				value = 10
+			}
+			add_victory_points = {
+				province = 6332
+				value = -10
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_army_training
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = JRK_new_nation
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_new_nation
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 10
+		}
+	}
+
+	focus = {
+		id = JRK_kolisti
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { 
+			focus = JRK_new_nation
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_new_nation
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			set_technology = {
+				bicycle_infantry = 1
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_foreign_staff
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = JRK_new_nation
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_new_nation
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			recruit_character = POL_boleslaw_wieniawa_glugoszowski
+			recruit_character = POL_wladyslaw_anders
+			recruit_character = CZE_karel_janousek
+			recruit_character = CZE_ludvik_krejci
+			recruit_character = CZE_sergej_vojcechovsky
+			#! repair
+		}
+	}
+
+	focus = {
+		id = JRK_bigger_ambitions
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = JRK_foreign_staff
+		} 
+		prerequisite = { 
+			focus = JRK_army_training
+		}
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = JRK_foreign_staff
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = JRK_austro_hungarian_king
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		prerequisite = { 
+			focus = JRK_bigger_ambitions
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JRK_bigger_ambitions
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = AUS
+				}
+				add_core_of = JRK
+			}
+			83 = {
+				add_core_of = JRK
+			}
+			76 = {
+				add_core_of = JRK
+			}
+			#! trait
+		}
+	}
+
+	focus = {
+		id = JRK_transilvania_question
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { 
+			focus = JRK_austro_hungarian_king
+		}
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_austro_hungarian_king
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			ROM = {
+				country_event = { id = jrk.13 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_annex_aus
+		icon = GFX_goal_anschluss
+		prerequisite = { 
+			focus = JRK_austro_hungarian_king
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JRK_austro_hungarian_king
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			GER = {
+				country_event = { id = jrk.15 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_slovenia
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { 
+			focus = JRK_annex_aus
+		}
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_annex_aus
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			102 = {
+				add_claim_by = JRK
+			}
+			853 = {
+				add_claim_by = JRK
+			}
+			if = {
+				limit = {
+					YUG = {
+						exists = yes
+					}
+				}
+				YUG = {
+					country_event = { id = jrk.14 days = 1 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_southern_tyrol
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { 
+			focus = JRK_annex_aus
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_annex_aus
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			ITA = {
+				country_event = { id = jrk.16 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_italy
+		icon = GFX_focus_attack_italy
+		prerequisite = { 
+			focus = JRK_southern_tyrol
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_southern_tyrol
+		available = {
+		}
+		bypass = {
+			has_war_with = ITA
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = ITA
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_final_boss
+		icon = GFX_focus_attack_germany
+		prerequisite = { 
+			focus = JRK_italy
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_italy
+		available = {
+		}
+		bypass = {
+			has_war_with = GER
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_panzers
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { 
+			focus = JRK_final_boss
+		}
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_final_boss
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JRK_winged_hussars
+				add_idea = JRK_winged_hussars_panzers
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_secure_benelux
+		icon = GFX_goal_generic_major_war
+		prerequisite = { 
+			focus = JRK_final_boss
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_final_boss
+		available = {
+		}
+		bypass = {
+			BEL = {
+				exists = no
+			}
+			HOL = {
+				exists = no
+			}
+			LUX = {
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_svata_rise
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = JRK_secure_benelux
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = JRK_secure_benelux
+		available = {
+			owns_state = 4
+			owns_state = 64
+			owns_state = 6
+			owns_state = 7
+			owns_state = 161
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = SLV
+						is_core_of = ITA
+						is_core_of = GER
+						is_core_of = BEL
+						is_core_of = HOL
+						is_core_of = LUX
+						is_core_of = CZE
+						is_core_of = ROM
+						NOT = {
+							is_core_of = JRK
+						}
+					}
+				}
+				add_core_of = JRK
+			}
+			set_cosmetic_tag = SVM
+		}
+	}
+
+	focus = {
+		id = JRK_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 10
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						infrastructure = 2
+						infrastructure = 1
+						infrastructure = 3
+					}
+					
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_industrialization
+		icon = GFX_goal_generic_construction
+		prerequisite = { 
+			focus = JRK_roads
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_roads
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_zbrojovka
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { 
+			focus = JRK_industrialization
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			75 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_venice
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { 
+			focus = JRK_industrialization
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_industrialization
+		available = {
+			JRK = {
+				owns_state = 160
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			160 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_hungary_idustry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_industrialization
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 2
+		cost = 5
+		relative_position_id = JRK_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			154 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			43 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_kolo_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_industrialization
+		} 
+		prerequisite = { 
+			focus = JRK_kolisti
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			664 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+}

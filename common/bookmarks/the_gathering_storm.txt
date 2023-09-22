@@ -1,0 +1,80 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "JRK"
+		default = yes
+		
+		"SKO"={
+			history = "Velký Skočček, protože proč ne. P.S. aktivní jen v noci P.P.S. pije hodne kafe"
+			ideology = neutrality
+			ideas = {
+				SKO_eva01
+				SKO_eva02
+				SKO_eva03
+			}	
+			focuses = {
+				SKO_end_of_skoccko-sobrrrk_war
+				SKO_tokyo_iii
+				SKO_buy_coffee
+			}		
+		}
+		"JAP"={
+			history = "Generál Sobek, ničí anime, vládne japonsku, nic víc"
+			ideology = fascism
+			ideas = {
+			}	
+			focuses = {
+			}			
+		}
+		"SEJ"={
+			history = " SEJLON co víc potřebujete vědět? "
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		"JRK"={
+			history = "Proč neutvořit svatou říši velkomoravskou? Ano to je Jirkusův plán. Ne jako Fr to je jeho plán."
+			ideology = communism
+			ideas = {
+				JRK_winged_hussars_panzers
+			}
+			focuses = {
+				JRK_velkomoravska_rise
+				JRK_svata_rise
+				JRK_kolisti
+			}
+		}
+		"SEB"={
+			history = "Ať žijí kolisté."
+			ideology = neutrality
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+		# minors
+		"HUN"={
+			minor = yes
+			history = "Rádcové se KOUŠOU!"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

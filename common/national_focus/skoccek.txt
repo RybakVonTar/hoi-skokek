@@ -1,0 +1,968 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+### search_filters = {FOCUS_FILTER_PROPAGANDA}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_ITA_MISSIOLINI}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+# Reminder that focus filters prio has to be handled in the generic focus file :)
+
+
+
+focus_tree = {
+	id = skoccek_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SKO
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1700 }
+
+	initial_show_position = {
+		x = 28
+		y = 0
+	}
+
+	# evangelion
+	focus = {
+		id = SKO_start_evangelion
+		icon = GFX_focus_research
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 0
+		cost = 15
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SKO_evangelion
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = SKO_recruit_pilot
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_start_evangelion
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_start_evangelion
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! general
+		}
+	}
+
+	focus = {
+		id = SKO_tokyo_iii
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_start_evangelion
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = SKO_start_evangelion
+		available = {
+			SKO = {
+				controls_state = 282
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			set_province_name = { id = 1182 name = "Tokyo III" }
+			set_capital = {
+				state = 282
+			}
+			#! bunkr
+		}
+	}
+
+	focus = {
+		id = SKO_tokyo_iii_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = SKO_tokyo_iii
+		} 
+		prerequisite = { 
+			focus = SKO_eva_facilities
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = SKO_tokyo_iii
+		available = {
+			SKO = {
+				owns_state = 282
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			282 = {
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_eva_01
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_recruit_pilot
+		} 
+		mutually_exclusive = {}
+
+		x =0
+		y = 1
+		cost = 2
+		relative_position_id = SKO_recruit_pilot
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SKO_eva01
+		}
+	}
+
+	focus = {
+		id = SKO_new_pilot
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_eva_01
+		} 
+		mutually_exclusive = {}
+
+		x =0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_eva_01
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! general
+		}
+	}
+
+	focus = {
+		id = SKO_eva_02
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_new_pilot
+		}
+		mutually_exclusive = {}
+
+		x =0
+		y = 1
+		cost = 2
+		relative_position_id = SKO_new_pilot
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SKO_eva02
+		}
+	}
+
+	focus = {
+		id = SKO_eva_03
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_eva_02
+		} 
+		prerequisite = { 
+			focus = SKO_tokyo_iii_facilities
+		} 
+		mutually_exclusive = {}
+
+		x =0
+		y = 1
+		cost = 2
+		relative_position_id = SKO_eva_02
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SKO_eva03
+		}
+	}
+
+	focus = {
+		id = SKO_eva_facilities
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { 
+			focus = SKO_start_evangelion
+		} 
+		mutually_exclusive = {}
+
+		x = 4
+		y = 1
+		cost = 5
+		relative_position_id = SKO_start_evangelion
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_hokaido_facility
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { 
+			focus = SKO_eva_facilities
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SKO_eva_facilities
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			536 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_tohuku_facility
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { 
+			focus = SKO_eva_facilities
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = SKO_eva_facilities
+		available = {
+			SKO = {
+				controls_state = 533
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			533 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_outer_tokyo_facility
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = SKO_eva_facilities
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = SKO_eva_facilities
+		available = {
+			SKO = {
+				controls_state = 535
+			}
+			SKO = {
+				controls_state = 534
+			}
+			SKO = {
+				controls_state = 532
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			535 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			534 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			532 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_hiroshima_facility
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = SKO_eva_facilities
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 2
+		cost = 10
+		relative_position_id = SKO_eva_facilities
+		available = {
+			SKO = {
+				controls_state = 529
+			}
+			SKO = {
+				controls_state = 531
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			529 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+			531 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_nagasaki_facility
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { 
+			focus = SKO_eva_facilities
+		} 
+		mutually_exclusive = {}
+
+		x = 3
+		y = 1
+		cost = 10
+		relative_position_id = SKO_eva_facilities
+		available = {
+			SKO = {
+				controls_state = 530
+			}
+			SKO = {
+				controls_state = 528
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			530 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			528 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+
+	# anime liberation
+	focus = {
+		id = SKO_army_maneuvers
+		icon = GFX_focus_generic_little_entente
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 22
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 50
+			air_experience = 10
+		}
+	}
+
+	focus = {
+		id = SKO_air_forces
+		icon = GFX_focus_CZE_military_aeronautical_institute
+		prerequisite = { 
+			focus = SKO_army_maneuvers
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = SKO_army_maneuvers
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = air_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_higher_conscription
+		icon = GFX_focus_SOV_mobilization_plan
+		prerequisite = { 
+			focus = SKO_army_maneuvers
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_army_maneuvers
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = limited_conscription
+		}
+	}
+
+	focus = {
+		id = SKO_promote_war
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { 
+			focus = SKO_army_maneuvers
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = SKO_army_maneuvers
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = SKO_support_anime_uprising
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { 
+			focus = SKO_higher_conscription
+		} 
+		prerequisite = { 
+			focus = SKO_promote_war
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_higher_conscription
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				add_state_core = 555
+				set_state_owner = 555
+				set_state_controller = 555
+	
+				add_state_core = 537
+				set_state_owner = 537
+				set_state_controller = 537
+			}
+			country_event = { id = skoccek.0 days = 1 }
+		}
+	}
+
+	focus = {
+		id = SKO_korean_anime_republic
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { 
+			focus = SKO_support_anime_uprising
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_support_anime_uprising
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				JAP = {
+					release = KOR
+				}
+			}
+			country_event = { id = skoccek.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = SKO_prepare_JAP_invasion
+		icon = GFX_focus_attack_japan
+		prerequisite = { 
+			focus = SKO_korean_anime_republic
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SKO_korean_anime_republic
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_war_support = 0.15
+			if = {
+				limit = { has_idea = low_economic_mobilisation }
+				add_ideas = partial_economic_mobilisation
+			}
+			if = {
+				limit = { has_idea = civilian_economy }
+				add_ideas = low_economic_mobilisation
+			}
+			if = {
+				limit = { has_idea = partial_economic_mobilisation }
+				add_war_support = 10
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_tohoku_uprising
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { 
+			focus = SKO_prepare_JAP_invasion
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_prepare_JAP_invasion
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				add_state_core = 533
+				set_state_controller = 533
+			}
+			country_event = { id = skoccek.2 days = 1 }
+		}
+	}
+
+	focus = {
+		id = SKO_end_of_skoccko-sobrrrk_war
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_tohoku_uprising
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_tohoku_uprising
+		available = {
+			JAP = {
+				exists = no
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_core_of = JAP
+				}
+				add_core_of = SKO
+			}
+		}
+	}
+	#!!
+	
+
+	# main tree
+	focus = {
+		id = SKO_night_time_prime_time
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 14
+		y = 0
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = SKO_buy_coffee
+		icon = GFX_focus_generic_coffee
+		prerequisite = { 
+			focus = SKO_night_time_prime_time
+		} 
+		mutually_exclusive = {}
+
+		x = -3
+		y = 1
+		cost = 5
+		relative_position_id = SKO_night_time_prime_time
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = no_coffee_tooltip
+				has_country_flag = no_coffee
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			country_event = { id = skoccek.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = SKO_abstinence
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_buy_coffee
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = SKO_buy_coffee
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = abstinuje
+				has_country_flag = abstinence
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = will_fire_automatically
+				has_country_flag = abstinence
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = will_fire_automatically
+		}
+	}
+
+	focus = {
+		id = SKO_
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_abstinence
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_abstinence
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event
+		}
+	}
+
+	focus = {
+		id = SKO_new_coffee
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_buy_coffee
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = SKO_buy_coffee
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = bought_coffee
+				has_country_flag = new_coffee
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = will_fire_automatically
+				has_country_flag = new_coffee
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = will_fire_automatically
+		}
+	}
+
+	focus = {
+		id = SKO_ninjas
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_night_time_prime_time
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = SKO_night_time_prime_time
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! naruto generals
+		}
+	}
+
+	focus = {
+		id = SKO_intelligence_agency
+		icon = GFX_focus_generic_secret_service_agency
+		prerequisite = { 
+			focus = SKO_night_time_prime_time
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = SKO_night_time_prime_time
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "Westalia Intelligence Services"
+				icon = GFX_intelligence_agency_logo_generic_1 #! need new logo
+			}
+			#! agent
+		}
+	}
+
+	focus = {
+		id = SKO_organisation # i have to ask skoccek
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_night_time_prime_time
+		} 
+		mutually_exclusive = {}
+
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = SKO_night_time_prime_time
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idea
+		}
+	}
+	#!!
+}

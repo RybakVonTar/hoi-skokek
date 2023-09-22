@@ -1,0 +1,45 @@
+
+state={
+	id=763
+	name="STATE_763"
+	manpower = 3650234
+	state_category = city
+
+	history={
+		owner = JRK
+		controller = JRK
+		
+		victory_points = {
+			6332 30 
+		}
+
+		add_extra_state_shared_building_slots = 2
+		
+		buildings = {
+			
+			infrastructure = 4 #was: 6
+			industrial_complex = 4
+			arms_factory = 2
+			dockyard = 2
+			6332 = {
+				bunker = 1
+
+			}
+			anti_air_building = 2
+			6332 = {
+				naval_base = 5
+
+			}
+			air_base = 6
+		}
+		add_core_of = GER
+		add_core_of = JRK
+		
+	}
+
+	provinces={
+		281 348 395 3384 6332 11265
+	}
+
+	local_supplies=0.0 
+}

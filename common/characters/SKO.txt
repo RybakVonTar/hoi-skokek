@@ -1,0 +1,17 @@
+characters={
+	SKO_matej={
+		name="Matěj Skočček Jiččínský"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKO/skokek.dds"
+			}
+		}
+		country_leader={
+			desc="SKO_matej_desc"
+			ideology = anarchism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

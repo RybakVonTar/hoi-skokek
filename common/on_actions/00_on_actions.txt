@@ -1,0 +1,101 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { tag = JAP }
+				country_event = { id = start.0 }
+			}
+			every_country = {
+				limit = { tag = SKO }
+				country_event = { id = start.1 }
+			}
+			every_country = {
+				limit = { tag = SEJ }
+				country_event = { id = start.2 }
+			}
+			every_country = {
+				limit = { tag = JRK }
+				country_event = { id = start.3 }
+			}
+			every_country = {
+				limit = { tag = SEB }
+				country_event = { id = start.4 }
+			}
+		}
+	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = JRK
+					FROM = { tag = POL }
+					has_global_flag = ribbentrop_jirka_pact
+				}
+				GER = {
+					country_event = jrk.6
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = POL
+					FROM = {
+						tag = GER
+						}
+					has_global_flag = ribbentrop_jirka_pact
+				}
+				GER = {
+					country_event = { id = jrk.7 days = 2 }
+				}
+				JRK = {
+					country_event = { id = jrk.7 days = 2 }
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = POL
+					FROM = {
+						tag = JRK
+					}
+				}
+				JRK = {
+					country_event = { id = jrk.8 days = 2 }
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = ITA
+					FROM = {
+						tag = JRK
+					}
+				}
+				JRK = {
+					transfer_state = 158
+					transfer_state = 159
+					transfer_state = 160
+					transfer_state = 161
+					transfer_state = 736
+					transfer_state = 852
+					transfer_state = 850
+					transfer_state = 39
+				}
+			}
+		}
+	}
+}

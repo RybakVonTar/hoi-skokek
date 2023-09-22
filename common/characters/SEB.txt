@@ -1,0 +1,17 @@
+characters={
+	SEB_seba={
+		name="Sebastián Ondruška"
+		portraits={
+			civilian={
+				large="gfx/leaders/SEB/seba.dds"
+			}
+		}
+		country_leader={
+			desc="SEB_seba_desc"
+			ideology = anarchism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}
