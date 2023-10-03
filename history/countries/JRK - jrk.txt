@@ -36,6 +36,9 @@ if = {
 	set_technology = {
 		fighter1 = 1
 		CAS1 = 1
+		early_fighter = 1
+		early_bomber = 1
+		tactical_bomber1 = 1
 	}
 }
 if = {
