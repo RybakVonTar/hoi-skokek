@@ -53,6 +53,7 @@ if = {
 		aircraft_construction = 1
 		aa_lmg = 1
 	}
+	load_oob = "JRK_1936_air_bba"
 }
 
 if = {
