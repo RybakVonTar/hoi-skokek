@@ -49,4 +49,4 @@ add_ideas = SKO_night_prime
 add_ideas = SKO_six_coffees_daily
 
 recruit_character = SKO_matej
-
+recruit_character = SKO_skocckoholka

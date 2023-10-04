@@ -77,7 +77,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! general
+			recruit_character = SKO_rei_ayanami
 		}
 	}
 
@@ -192,7 +192,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! general
+			recruit_character = SKO_kaworu_nagisa
+			recruit_character = SKO_shinji_ikari
 		}
 	}
 

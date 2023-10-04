@@ -14,4 +14,66 @@ characters={
 			id=-1
 		}
 	}
+
+	SKO_skocckoholka={
+		name="Skoččkoholka "
+		portraits={
+			civilian={
+				large="gfx/leaders/SKO/skokek.dds"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	SKO_shinji_ikari={
+		name="Shinji Ikari"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKO/skokek.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	SKO_kaworu_nagisa={
+		name="Kaworu Nagisa"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKO/skokek.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	SKO_rei_ayanami={
+		name="Rei Ayanami"
+		portraits={
+			civilian={
+				large="gfx/leaders/SKO/skokek.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 }
