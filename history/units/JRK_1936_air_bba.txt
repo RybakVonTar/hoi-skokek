@@ -1,8 +1,12 @@
 ﻿air_wings = {
-	763 = { 
+	### Dirección General de Aeronáutica -- Buenos Aires
+	763 = {
+		# Fighter Air Group [Grupo 1 de Caza, Grupo 2 de Caza]
 		fighter_equipment_0 =  {
-			owner = "GER"
-			amount = 40
+			owner = "ARG" 
+			amount = 50		
+			#[39/45 D.21] Argentina bought seven French-built D.21s, and built another 38 under license by FMA from 1929 to 1932 / En total la Aviación Militar del Ejército Argentino operó 39 Dewoitine D.21C-1 que fueron matriculados del 1 al 38 y sirvieron hasta entrado el año 1931 en la Escuela de Aviación y en los Grupos de caza 1 y 2 y por el de Observación 1 
+			#[5 D.25] El Dewoitine D.25 fue un avión de combate monomotor, biplaza y ala parasol construido en Francia en la década de 1920. El programa de caza biplaza francés de 1925 fue cancelado antes de que se realizaran pedidos, pero cuatro ejemplares fueron exportados a Argentina. Dados de baja en 1941.			
 		}
 	}
 }
