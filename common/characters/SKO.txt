@@ -46,7 +46,7 @@ characters={
 			logistics_skill = 2
 		}
 	}
-	SKO_kaworu_nagisa={
+	SKO_asuka_langley={
 		name="Asuka Langley"
 		portraits={
 			civilian={
