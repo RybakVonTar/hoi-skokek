@@ -26,7 +26,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = "GFX_eva_1"
 
 			allowed = {
 				always = yes
@@ -41,7 +41,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = "GFX_eva_2"
 
 			allowed = {
 				always = yes
@@ -56,7 +56,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = "GFX_eva_3"
 
 			allowed = {
 				always = yes

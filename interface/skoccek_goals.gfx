@@ -3,8 +3,8 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 	SpriteType = {
-	name = "GFX_focus_velka_morava"
-	texturefile = "gfx/interface/goals/goal_vel_mor.dds"			
+		name = "GFX_focus_velka_morava"
+		texturefile = "gfx/interface/goals/goal_vel_mor.dds"			
 	}
 
 }

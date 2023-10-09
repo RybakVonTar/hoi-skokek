@@ -1,0 +1,20 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+		name = "GFX_eva_1"
+		texturefile = "gfx/interface/ideas/geva00.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_eva_2"
+		texturefile = "gfx/interface/ideas/eva01.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_eva_3"
+		texturefile = "gfx/interface/ideas/eva02.dds"
+	}
+
+}
