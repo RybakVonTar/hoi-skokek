@@ -19,7 +19,7 @@ characters={
 		name="Skoččkoholka "
 		portraits={
 			civilian={
-				large="gfx/leaders/SKO/skokek.dds"
+				large="gfx/leaders/SKO/skokekgril.dds"
 			}
 		}
 		field_marshal = {
@@ -35,7 +35,7 @@ characters={
 		name="Shinji Ikari"
 		portraits={
 			civilian={
-				large="gfx/leaders/SKO/skokek.dds"
+				large="gfx/leaders/SKO/ikari.dds"
 			}
 		}
 		corps_commander = {
@@ -47,10 +47,10 @@ characters={
 		}
 	}
 	SKO_kaworu_nagisa={
-		name="Kaworu Nagisa"
+		name="Asuka Langley"
 		portraits={
 			civilian={
-				large="gfx/leaders/SKO/skokek.dds"
+				large="gfx/leaders/SKO/asuka.dds"
 			}
 		}
 		corps_commander = {
@@ -65,7 +65,7 @@ characters={
 		name="Rei Ayanami"
 		portraits={
 			civilian={
-				large="gfx/leaders/SKO/skokek.dds"
+				large="gfx/leaders/SKO/rej.dds"
 			}
 		}
 		corps_commander = {
