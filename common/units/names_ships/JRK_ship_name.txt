@@ -1,0 +1,70 @@
+﻿JRK_SS = {
+	name = "Names "
+
+	for_countries = { JRK }
+	
+	type = ship
+	
+	ship_types = { ship_hull_submarine submarine }
+	prefix = "VMS "
+	unique = {
+		"Sobek"
+	}
+}
+
+JRK_DD = {
+	name = "Names "
+
+	for_countries = { JRK }
+
+	type = ship
+	
+	ship_types = { ship_hull_light destroyer }
+	prefix = "VMS "
+	unique = {
+		"Sobek"
+	}
+}
+
+JRK_BB = {
+	name = "Names "
+
+	for_countries = { JRK }
+
+	type = ship
+	
+	ship_types = { ship_hull_heavy battleship }
+	prefix = "VMS "
+	unique = {
+		"Sobek"
+	}
+}
+
+JRK_CL = {
+	name = "Names "
+
+	for_countries = { JRK }
+
+	type = ship
+	
+	ship_types = { ship_hull_cruiser light_cruiser }
+	prefix = "VMS "
+	unique = {
+		"Sobek"
+	}
+}
+
+JRK_CA = {
+	name = "Names "
+
+	for_countries = { JRK }
+
+	type = ship
+	
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	prefix = "VMS "
+	unique = {
+		"Sobek"
+	}
+}
+
