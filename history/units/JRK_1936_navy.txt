@@ -1,0 +1,11 @@
+instant_effect = {
+	add_equipment_production = {
+		equipment = { 
+			type = battleship_1
+	    	creator = "JRK"
+		}
+		requested_factories = 2
+		progress = 0.85
+		efficiency = 100
+	}
+}

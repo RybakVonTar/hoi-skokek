@@ -29,37 +29,41 @@ units = {
 		name = "1. Pěší Divize"
 		location = 6332
 		division_template = "Pěší Divize"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "2. Pěší Divize"
 		location = 6375
 		division_template = "Pěší Divize"
-		start_experience_factor = 0.1
+		start_experience_factor = 0.2
 	}
 	division = {
 		name = "3. Pěší Divize"
 		location = 11386
 		division_template = "Pěší Divize"
 		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
 	}
 	division = {
 		name = "4. Pěší Divize"
 		location = 3384
 		division_template = "Pěší Divize"
 		start_experience_factor = 0.1
+		start_equipment_factor = 0.85
 	}
 	division = {
 		name = "5. Pěší Divize"
 		location = 3380
 		division_template = "Pěší Divize"
 		start_experience_factor = 0.1
+		start_equipment_factor = 0.79
 	}
 	division = {
 		name = "6. Pěší Divize"
 		location = 3351
 		division_template = "Pěší Divize"
 		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
 	}
 
 	division = {
@@ -75,9 +79,14 @@ units = {
 }
 
 instant_effect = {
-	add_equipment_to_stockpile = {
-		type = infantry_equipment
-		amount = 2000
+	add_equipment_production = {
+		equipment = { 
+			type = infantry_equipment_1
+			creator = "JRK"
+		}
+		requested_factories = 2
+		progress = 0.5
+		efficiency = 78
 	}
 
 	if = {
@@ -88,7 +97,17 @@ instant_effect = {
 		add_equipment_to_stockpile = {
 			type = light_tank_equipment_1
 			amount = 100
-		}	
+		}
+		
+		add_equipment_production = {
+			equipment = { 
+				type = light_tank_equipment_1
+				creator = "JRK"
+			}
+			requested_factories = 1
+			progress = 0.5
+			efficiency = 65
+		}
 	}
 	if = {
 		limit = {
@@ -108,6 +127,17 @@ instant_effect = {
 				turret_type_slot = tank_light_two_man_tank_turret
 				suspension_type_slot = tank_christie_suspension
 			}
+		}
+
+		add_equipment_production = {
+			equipment = { 
+				type = light_tank_chassis_0
+				creator = "JRK"
+				version_name = "LT vz.35"
+			}
+			requested_factories = 1
+			progress = 0.5
+			efficiency = 65
 		}
 	}
 }

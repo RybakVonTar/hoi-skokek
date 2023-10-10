@@ -17,7 +17,12 @@ if = {
 	}
 	set_technology = {
 		early_destroyer = 1
+		early_light_cruiser = 1
+		early_battleship = 1
+		early_submarine = 1
+		transport = 1
 	}
+	set_naval_oob = JRK_1936_navy
 }
 if = {
 	limit = {
@@ -25,8 +30,19 @@ if = {
 	}
 	set_technology = {
 		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_submarine = 1
 		basic_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_depth_charges = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_torpedo = 1
+		mtg_transport = 1
+		fire_control_methods_1 = 1
 	}
+	set_naval_oob = JRK_1936_navy_mtg
 }
 
 if = {
