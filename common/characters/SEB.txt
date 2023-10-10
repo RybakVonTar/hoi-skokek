@@ -13,5 +13,85 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+
+			traits = {
+				media_personality
+				politically_connected
+				trait_mountaineer
+			}
+		}
+	}
+
+	SEB_tadej_pogacar={
+		name="Tadej Pogačar"
+		portraits={
+			civilian={
+				large="gfx/leaders/SEB/pogacar.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+
+			traits = {
+				media_personality
+				politically_connected
+				trait_mountaineer
+				hill_fighter
+			}
+		}
+	}
+
+	SEB_mathie_poel={
+		name="Mathie van der Poel"
+		portraits={
+			civilian={
+				large="gfx/leaders/SEB/poel.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+
+			traits = {
+				media_personality
+				politically_connected
+				hill_fighter
+			}
+		}
+	}
+
+	SEB_remco_evenepoel={
+		name="Remco Evenepoel"
+		portraits={
+			civilian={
+				large="gfx/leaders/SEB/evenepoel.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+
+			traits = {
+				media_personality
+				politically_connected
+				fast_planner
+			}
+		}
 	}
 }

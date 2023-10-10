@@ -28,6 +28,17 @@ characters={
 			defense_skill = 3
 			planning_skill = 1
 			logistics_skill = 2
+
+			traits = {
+				politically_connected
+				recently_promoted
+				inflexible_strategist
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = joachim_von_ribbentrop
+			traits = { army_chief_offensive_3 }
 		}
 	}
 

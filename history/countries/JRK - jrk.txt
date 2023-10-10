@@ -40,6 +40,7 @@ if = {
 		early_bomber = 1
 		tactical_bomber1 = 1
 	}
+	set_air_oob = JRK_1936_air
 }
 if = {
 	limit = {
@@ -53,6 +54,7 @@ if = {
 		aircraft_construction = 1
 		aa_lmg = 1
 	}
+	set_air_oob = JRK_1936_air_bba
 }
 
 if = {

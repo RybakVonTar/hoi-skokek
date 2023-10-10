@@ -92,4 +92,7 @@ set_stability = 0.7
 set_war_support = 0.4
 
 recruit_character = SEB_seba
+recruit_character = SEB_mathie_poel
+recruit_character = SEB_remco_evenepoel
+recruit_character = SEB_tadej_pogacar
 
