@@ -13,5 +13,55 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+
+			traits = {
+				media_personality
+				politically_connected
+			}
+		}
+	}
+
+	JRK_jost={
+		name="Markrabě Jošt"
+		portraits={
+			civilian={
+				large="gfx/leaders/JRK/jirka.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			traits = {
+			}
+		}
+	}
+
+	JRK_sobek={
+		name="nemá jméno!"
+		portraits={
+			civilian={
+				large="gfx/leaders/JRK/jirka.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			traits = {
+			}
+		}
 	}
 }
