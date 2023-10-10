@@ -1,7 +1,7 @@
 instant_effect = {
 	create_equipment_variant = {
 		type = ship_hull_light_1
-		name = "destroyer class"
+		name = "Žižka Class"
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
@@ -11,7 +11,7 @@ instant_effect = {
 	}
 	create_equipment_variant = {
 		type = ship_hull_heavy_1
-		name = "battleship class"
+		name = "Masaryk Class"
 		modules = {
 			rear_1_custom_slot = ship_heavy_battery_1
 			front_1_custom_slot = ship_heavy_battery_1
@@ -26,7 +26,7 @@ instant_effect = {
 	}
 	create_equipment_variant = {
 		type = ship_hull_cruiser_1
-		name = "h cruiser class"
+		name = "Belcredi Class"
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
@@ -39,7 +39,7 @@ instant_effect = {
 	}
 	create_equipment_variant = {
 		type = ship_hull_cruiser_1
-		name = "l cruiser class"
+		name = "Otakar II. Class"
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
@@ -51,7 +51,7 @@ instant_effect = {
 	}
 	create_equipment_variant = {
 		type = ship_hull_submarine_1
-		name = "submarine class"
+		name = "Ohajo Class"
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			rear_1_custom_slot = ship_torpedo_sub_1
@@ -79,14 +79,13 @@ units = {
 			name = "1. Flotila"
             location = 6332
             ship = { 
-				name = "Skočček XD"
 				pride_of_the_fleet = yes
 				definition = heavy_cruiser
                 equipment = {
 					ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JRK
-                        version_name = "h cruiser class"
+                        version_name = "Masaryk Class"
                     }
                 }
 			}
@@ -97,7 +96,7 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = BRA
-						version_name = "Minas Geras Class"
+						version_name = "Žižka Class"
 					}
 				}
 			}
@@ -107,7 +106,7 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = BRA
-						version_name = "Minas Geras Class"
+						version_name = "Žižka Class"
 					}
 				}
 			}
@@ -117,7 +116,7 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = BRA
-						version_name = "Minas Geras Class"
+						version_name = "Žižka Class"
 					}
 				}
 			}
@@ -127,7 +126,7 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = BRA
-						version_name = "Minas Geras Class"
+						version_name = "Žižka Class"
 					}
 				}
 			}
@@ -137,7 +136,7 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = BRA
-						version_name = "Minas Geras Class"
+						version_name = "Žižka Class"
 					}
 				}
 			}
@@ -147,7 +146,7 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = BRA
-						version_name = "Minas Geras Class"
+						version_name = "Žižka Class"
 					}
 				}
 			}
@@ -157,7 +156,7 @@ units = {
 					ship_hull_light_1 = {
 						amount = 1
 						owner = BRA
-						version_name = "Minas Geras Class"
+						version_name = "Žižka Class"
 					}
 				}
 			}
@@ -168,7 +167,7 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = JRK
-						version_name = "l cruiser class"
+						version_name = "Belcredi Class"
 					}
 				}
 			}
@@ -178,7 +177,7 @@ units = {
 					ship_hull_cruiser_1 = {
 						amount = 1
 						owner = JRK
-						version_name = "l cruiser class"
+						version_name = "Belcredi Class"
 					}
 				}
 			}
@@ -193,7 +192,7 @@ units = {
 					ship_hull_submarine_1 = {
                         amount = 1
                         owner = JRK
-                        version_name = "submarine class"
+                        version_name = "Ohajo Class"
                     }
                 }
 			}
@@ -203,7 +202,7 @@ units = {
 					ship_hull_submarine_1 = {
                         amount = 1
                         owner = JRK
-                        version_name = "submarine class"
+                        version_name = "Ohajo Class"
                     }
                 }
 			}
@@ -213,7 +212,7 @@ units = {
 					ship_hull_submarine_1 = {
                         amount = 1
                         owner = JRK
-                        version_name = "submarine class"
+                        version_name = "Ohajo Class"
                     }
                 }
 			}
@@ -223,7 +222,7 @@ units = {
 					ship_hull_submarine_1 = {
                         amount = 1
                         owner = JRK
-                        version_name = "submarine class"
+                        version_name = "Ohajo Class"
                     }
                 }
 			}
@@ -233,7 +232,7 @@ units = {
 					ship_hull_submarine_1 = {
                         amount = 1
                         owner = JRK
-                        version_name = "submarine class"
+                        version_name = "Ohajo Class"
                     }
                 }
 			}
