@@ -3,17 +3,17 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 	SpriteType = {
-		name = "GFX_eva_1"
-		texturefile = "gfx/interface/ideas/geva00.dds"
+		name = "GFX_idea_SKO_eva01"
+		texturefile = "gfx/interface/ideas/eva00.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_eva_2"
+		name = "GFX_idea_SKO_eva02"
 		texturefile = "gfx/interface/ideas/eva01.dds"
 	}
 
 	SpriteType = {
-		name = "GFX_eva_3"
+		name = "GFX_idea_SKO_eva03"
 		texturefile = "gfx/interface/ideas/eva02.dds"
 	}
 

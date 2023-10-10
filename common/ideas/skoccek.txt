@@ -26,8 +26,6 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = "GFX_eva_1"
-
 			allowed = {
 				always = yes
 			}
@@ -41,8 +39,6 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = "GFX_eva_2"
-
 			allowed = {
 				always = yes
 			}
@@ -55,8 +51,6 @@ ideas = {
 			name = SKO_eva03
 
 			removal_cost = -1
-
-			picture = "GFX_eva_3"
 
 			allowed = {
 				always = yes
