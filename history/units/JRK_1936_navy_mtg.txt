@@ -100,7 +100,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = BRA
+						owner = JRK
 						version_name = "Žižka Class"
 					}
 				}
@@ -110,7 +110,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = BRA
+						owner = JRK
 						version_name = "Žižka Class"
 					}
 				}
@@ -120,7 +120,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = BRA
+						owner = JRK
 						version_name = "Žižka Class"
 					}
 				}
@@ -130,7 +130,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = BRA
+						owner = JRK
 						version_name = "Žižka Class"
 					}
 				}
@@ -140,7 +140,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = BRA
+						owner = JRK
 						version_name = "Žižka Class"
 					}
 				}
@@ -150,7 +150,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = BRA
+						owner = JRK
 						version_name = "Žižka Class"
 					}
 				}
@@ -160,7 +160,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = BRA
+						owner = JRK
 						version_name = "Žižka Class"
 					}
 				}
