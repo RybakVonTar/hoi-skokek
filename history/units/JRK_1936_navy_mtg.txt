@@ -67,7 +67,7 @@ instant_effect = {
 		equipment = { 
 			type = ship_hull_heavy_1
 	    	creator = "JRK"
-			version_name = "battleship class"
+			version_name = "Masaryk Class"
 		}
 		requested_factories = 2
 		progress = 0.85
@@ -90,7 +90,7 @@ units = {
 					ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JRK
-                        version_name = "Masaryk Class"
+                        version_name = "Belcredi Class"
                     }
                 }
 			}
