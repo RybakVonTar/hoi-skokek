@@ -27,7 +27,7 @@ characters={
 		}
 	}
 
-	JRK_jost={
+	JRK_bek={
 		name="Tamten "
 		portraits={
 			civilian={
