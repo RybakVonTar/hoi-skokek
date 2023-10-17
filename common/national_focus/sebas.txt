@@ -20,12 +20,12 @@ focus_tree = {
 	id = seba_focus
 
 	country = {
-		factor = 0
-		
-		#modifier = {
-		#	add = 10
-		#	tag = SEB
-		#}
+		base = 0
+
+		modifier = {
+			add = 10
+			tag = SEB
+		}
 	}
 	
 	default = no
@@ -38,42 +38,135 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SEB_
+		id = SEB_train_for_tour
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
 
-		x = 38
+		x = 0
 		y = 0
-		cost = 1
+		cost = 5
 		available = {
 		}
 		bypass = {
 		}
 
 		completion_reward = {
+			add_political_power = 100
+			army_experience = 10
 		}
 	}
 
 	focus = {
-		id = SEB_1
+		id = SEB_podkarpatska_rus
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
-			focus = SEB_
+			focus = SEB_train_for_tour
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = SEB_train_for_tour
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			CZE = {
+				country_event = { id = seb.2 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = SEB_zilina
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SEB_train_for_tour
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = SEB_
+		relative_position_id = SEB_train_for_tour
 		available = {
 		}
 		bypass = {
 		}
 
 		completion_reward = {
+			CZE = {
+				country_event = { id = seb.3 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = SEB_bratislava
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SEB_train_for_tour
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = SEB_train_for_tour
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			CZE = {
+				country_event = { id = seb.4 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = SEB_tour_de_slovakia
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SEB_bratislava
+		} 
+		prerequisite = { 
+			focus = SEB_zilina
+		} 
+		prerequisite = { 
+			focus = SEB_podkarpatska_rus
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEB_zilina
+		available = {
+			owns_state = 70
+			owns_state = 71
+			owns_state = 73
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			70 = {
+				add_core_of = SEB
+			}
+			71 = {
+				add_core_of = SEB
+			}
+			73 = {
+				add_core_of = SEB
+			}
+			add_stability = 0.1
 		}
 	}
 }

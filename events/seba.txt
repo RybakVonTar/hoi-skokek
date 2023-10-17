@@ -1,0 +1,147 @@
+﻿add_namespace = seb
+
+# Said NO
+country_event = {
+	id = seb.0
+	title = seb.0.t
+	desc = seb.0.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = seb.0.a
+	}
+}
+
+# Said YES
+country_event = {
+	id = seb.1
+	title = seb.1.t
+	desc = seb.1.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = seb.1.a
+	}
+}
+
+# podkarpatska rus?
+country_event = {
+	id = seb.2
+	title = seb.2.t
+	desc = seb.2.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = seb.2.a
+		ai_chance = {
+			factor = 90
+		}
+
+		SEB = {
+			country_event = seb.1
+			transfer_state = 73
+		}
+	}
+
+	# no
+	option = {
+		name = seb.2.b
+		ai_chance = {
+			factor = 10
+		}
+
+		SEB = {
+			country_event = seb.0
+			create_wargoal = {
+				target = CZE
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+# zilina?
+country_event = {
+	id = seb.3
+	title = seb.3.t
+	desc = seb.3.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = seb.3.a
+		ai_chance = {
+			factor = 85
+		}
+
+		SEB = {
+			country_event = seb.1
+			transfer_state = 71
+			
+		}
+	}
+
+	# no
+	option = {
+		name = seb.3.b
+		ai_chance = {
+			factor = 15
+		}
+
+		SEB = {
+			country_event = seb.0
+			create_wargoal = {
+				target = CZE
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}
+
+# bratislava?
+country_event = {
+	id = seb.4
+	title = seb.4.t
+	desc = seb.4.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = seb.4.a
+		ai_chance = {
+			factor = 80
+		}
+
+		SEB = {
+			country_event = seb.1
+			transfer_state = 70
+		}
+	}
+
+	# no
+	option = {
+		name = seb.4.b
+		ai_chance = {
+			factor = 20
+		}
+
+		SEB = {
+			country_event = seb.0
+			create_wargoal = {
+				target = CZE
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+}

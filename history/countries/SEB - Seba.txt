@@ -88,7 +88,7 @@ set_politics = {
 	elections_allowed = no
 }
 
-set_stability = 0.7
+set_stability = 0.52
 set_war_support = 0.4
 
 recruit_character = SEB_seba
