@@ -28,7 +28,7 @@ characters={
 	}
 
 	JRK_jost={
-		name="Markrabě Jošt"
+		name="Tamten "
 		portraits={
 			civilian={
 				large="gfx/leaders/JRK/jirka.dds"

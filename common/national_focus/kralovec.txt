@@ -156,6 +156,9 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+			NOT = {
+				has_idea = civilian_economy
+			}
 		}
 
 		completion_reward = {
