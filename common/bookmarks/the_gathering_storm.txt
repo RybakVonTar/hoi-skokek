@@ -1,19 +1,19 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
+		name = "Where it all Started"
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1936"
-		default_country = "JRK"
+		default_country = "SKO"
 		default = yes
 		
 		"SKO"={
 			history = "Velký Skočček, protože proč ne. P.S. aktivní jen v noci P.P.S. pije hodne kafe"
 			ideology = neutrality
 			ideas = {
-				SKO_eva01
-				SKO_eva02
-				SKO_eva03
+				SKO_evangelion
+				SKO_night_prime
+				SKO_six_coffees_daily
 			}	
 			focuses = {
 				SKO_end_of_skoccko-sobrrrk_war
