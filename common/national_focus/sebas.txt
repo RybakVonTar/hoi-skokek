@@ -76,6 +76,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			73 = {
+				add_claim_by = SEB
+			}
 			CZE = {
 				country_event = { id = seb.2 days = 1 }
 			}
@@ -83,7 +86,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SEB_zilina
+		id = SEB_presov
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
 			focus = SEB_train_for_tour
@@ -100,6 +103,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			71 = {
+				add_claim_by = SEB
+			}
 			CZE = {
 				country_event = { id = seb.3 days = 1 }
 			}
@@ -124,6 +130,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			70 = {
+				add_claim_by = SEB
+			}
 			CZE = {
 				country_event = { id = seb.4 days = 1 }
 			}
@@ -137,7 +146,7 @@ focus_tree = {
 			focus = SEB_bratislava
 		} 
 		prerequisite = { 
-			focus = SEB_zilina
+			focus = SEB_presov
 		} 
 		prerequisite = { 
 			focus = SEB_podkarpatska_rus
@@ -147,7 +156,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = SEB_zilina
+		relative_position_id = SEB_presov
 		available = {
 			owns_state = 70
 			owns_state = 71

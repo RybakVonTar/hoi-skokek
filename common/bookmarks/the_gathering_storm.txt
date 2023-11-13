@@ -55,6 +55,7 @@ bookmarks = {
 			ideas = {
 			}
 			focuses = {
+				SEB_tour_de_slovakia
 			}
 		}
 		# minors

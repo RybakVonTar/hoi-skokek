@@ -23,6 +23,18 @@ country_event = {
 
 	option = {
 		name = start.skokek.a
+
+		hidden_effect = {
+			set_variable = {
+				SKO.hs_stability = 0.02
+			}
+			set_variable = {
+				SKO.hs_research = 0.025
+			}
+			set_variable = {
+				SKO.hs_pp_cost = 0.1
+			}
+		}
 	}
 }
 

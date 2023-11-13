@@ -123,7 +123,7 @@ focus_tree = {
 
 		x = 0
 		y = 3
-		cost = 5
+		cost = 15
 		relative_position_id = SKO_tokyo_iii
 		available = {
 			SKO = {
@@ -254,7 +254,7 @@ focus_tree = {
 
 		x = 4
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_start_evangelion
 		available = {
 		}
@@ -291,7 +291,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 10
+		cost = 15
 		relative_position_id = SKO_eva_facilities
 		available = {
 		}
@@ -323,7 +323,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 10
+		cost = 15
 		relative_position_id = SKO_eva_facilities
 		available = {
 			SKO = {
@@ -362,7 +362,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 10
+		cost = 15
 		relative_position_id = SKO_eva_facilities
 		available = {
 			SKO = {
@@ -429,7 +429,7 @@ focus_tree = {
 
 		x = 2
 		y = 2
-		cost = 10
+		cost = 15
 		relative_position_id = SKO_eva_facilities
 		available = {
 			SKO = {
@@ -482,7 +482,7 @@ focus_tree = {
 
 		x = 3
 		y = 1
-		cost = 10
+		cost = 15
 		relative_position_id = SKO_eva_facilities
 		available = {
 			SKO = {
@@ -532,7 +532,7 @@ focus_tree = {
 
 		x = 22
 		y = 0
-		cost = 5
+		cost = 10
 		available = {
 		}
 		bypass = {
@@ -580,7 +580,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_army_maneuvers
 		available = {
 		}
@@ -627,7 +627,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_higher_conscription
 		available = {
 		}
@@ -636,13 +636,12 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_state_core = 555
-				set_state_owner = 555
-				set_state_controller = 555
-	
-				add_state_core = 537
-				set_state_owner = 537
-				set_state_controller = 537
+				537 = {
+					transfer_state_to = SKO
+				}
+				555 = {
+					transfer_state_to = SKO
+				}
 			}
 			country_event = { id = skoccek.0 days = 1 }
 		}
@@ -658,7 +657,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_support_anime_uprising
 		available = {
 		}
@@ -669,6 +668,10 @@ focus_tree = {
 			hidden_effect = {
 				JAP = {
 					release = KOR
+					create_wargoal = {
+						target = KOR
+						type = annex_everything
+					}
 				}
 			}
 			country_event = { id = skoccek.1 days = 1 }
@@ -745,7 +748,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_tohoku_uprising
 		available = {
 			JAP = {
@@ -845,28 +848,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SKO_
-		icon = GFX_focus_generic_adriatic_sea_focus
-		prerequisite = { 
-			focus = SKO_abstinence
-		} 
-		mutually_exclusive = {}
-
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SKO_abstinence
-		available = {
-		}
-		bypass = {
-		}
-
-		completion_reward = {
-			#! event
-		}
-	}
-
-	focus = {
 		id = SKO_new_coffee
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
@@ -928,7 +909,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_night_time_prime_time
 		available = {
 		}
@@ -938,14 +919,14 @@ focus_tree = {
 		completion_reward = {
 			create_intelligence_agency = {
 				name = "Westalia Intelligence Services"
-				icon = GFX_intelligence_agency_logo_generic_1 #! need new logo
+				icon = GFX_intelligence_agency_logo_sko
 			}
 			#! agent
 		}
 	}
 
 	focus = {
-		id = SKO_organisation # i have to ask skoccek
+		id = SKO_anime_cult
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
 			focus = SKO_night_time_prime_time
@@ -954,7 +935,7 @@ focus_tree = {
 
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_night_time_prime_time
 		available = {
 		}
@@ -962,7 +943,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea
+			add_dynamic_modifier = { modifier = SKO_happy_science }
 		}
 	}
 	#!!

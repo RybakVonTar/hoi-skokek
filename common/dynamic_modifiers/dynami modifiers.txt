@@ -1,0 +1,8 @@
+SKO_happy_science = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+
+	research_speed_factor = hs_research
+	stability_factor = hs_stability
+	political_power_cost = hs_pp_cost
+}

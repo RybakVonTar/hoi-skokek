@@ -61,13 +61,13 @@ country_event = {
 			country_event = seb.0
 			create_wargoal = {
 				target = CZE
-				type = puppet_wargoal_focus
+				type = take_claimed_state
 			}
 		}
 	}
 }
 
-# zilina?
+# presov?
 country_event = {
 	id = seb.3
 	title = seb.3.t
@@ -101,7 +101,7 @@ country_event = {
 			country_event = seb.0
 			create_wargoal = {
 				target = CZE
-				type = puppet_wargoal_focus
+				type = take_claimed_state
 			}
 		}
 	}
@@ -120,7 +120,7 @@ country_event = {
 	option = {
 		name = seb.4.a
 		ai_chance = {
-			factor = 80
+			factor = 70
 		}
 
 		SEB = {
@@ -133,14 +133,14 @@ country_event = {
 	option = {
 		name = seb.4.b
 		ai_chance = {
-			factor = 20
+			factor = 30
 		}
 
 		SEB = {
 			country_event = seb.0
 			create_wargoal = {
 				target = CZE
-				type = puppet_wargoal_focus
+				type = take_claimed_state
 			}
 		}
 	}
