@@ -27,8 +27,8 @@ characters={
 		}
 	}
 
-	JRK_bek={
-		name="Tamten "
+	JRK_steve_jobs={
+		name="Steve Jobs"
 		portraits={
 			civilian={
 				large="gfx/leaders/JRK/jirka.dds"
@@ -46,8 +46,8 @@ characters={
 		}
 	}
 
-	JRK_sobek={
-		name="nemá jméno!"
+	JRK_tim_cook={
+		name="Tim Cook"
 		portraits={
 			civilian={
 				large="gfx/leaders/JRK/jirka.dds"

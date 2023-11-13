@@ -102,5 +102,103 @@ ideas = {
 				army_speed_factor = 0.05
 			}
 		}
+
+		SKO_night_prime_low = {
+			name = SKO_night_prime_low
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				air_night_penalty = -0.25
+				land_night_attack = 0.5
+				naval_night_attack = 0.525
+
+				army_attack_factor = -0.05
+				naval_damage_factor = -0.05
+				air_attack_factor = -0.05
+			}
+		}
+
+		SKO_six_coffees_daily_edit = {
+			name = SKO_six_coffees_daily
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.15
+				army_attack_factor = 0.05
+				army_morale_factor = 0.2
+				army_speed_factor = 0.1
+			}
+		}
+
+		SKO_filling_storages = {
+			name = SKO_filling_storages
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+
+			on_remove = {
+				add_ideas = SKO_full_storages
+			}
+		}
+
+		SKO_full_storages = {
+			name = SKO_full_storages
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+
+		SKO_better_allocation = {
+			name = SKO_better_allocation_i
+
+			removal_cost = -1
+
+			picture = isolation
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
 	}
 }

@@ -848,6 +848,75 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SKO_better_sleep
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_abstinence
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = SKO_abstinence
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKO_night_prime
+				add_idea = SKO_night_prime_low
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_pay_bills
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_abstinence
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_abstinence
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idk
+		}
+	}
+
+	focus = {
+		id = SKO_better_allocation
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_pay_bills
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_pay_bills
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SKO_better_allocation
+		}
+	}
+
+	focus = {
 		id = SKO_new_coffee
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
@@ -874,6 +943,56 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = will_fire_automatically
+		}
+	}
+
+	focus = {
+		id = SKO_higher_quality
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_new_coffee
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_new_coffee
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SKO_six_coffees_daily
+				add_idea = SKO_six_coffees_daily_edit
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_fill_storages
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_new_coffee
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = SKO_new_coffee
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = SKO_filling_storages
+				days = 90
+			}
 		}
 	}
 

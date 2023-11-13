@@ -79,6 +79,8 @@ country_event = {
 		name = skoccek.4.a
 
 		set_country_flag = new_coffee
+
+		add_ideas = SKO_six_coffees_daily
 	}
 
 	# abstinence
