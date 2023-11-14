@@ -1,0 +1,47 @@
+﻿division_template = {
+	name = "Anime Resistance"
+	is_locked = yes
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		location = 3962
+		division_template = "Anime League"
+		start_experience_factor = 1
+	}
+	division = {
+		name = "1. Anime Resistance division"
+		location = 7169
+		division_template = "Anime Resistance"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "2. Anime Resistance division"
+		location = 4122
+		division_template = "Anime Resistance"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "3. Anime Resistance division"
+		location = 6994
+		division_template = "Anime Resistance"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "4. Anime Resistance division"
+		location = 9859
+		division_template = "Anime Resistance"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "5. Anime Resistance division"
+		location = 4067
+		division_template = "Anime Resistance"
+		start_experience_factor = 0.5
+	}
+}

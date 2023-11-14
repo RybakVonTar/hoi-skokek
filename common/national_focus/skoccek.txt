@@ -673,6 +673,7 @@ focus_tree = {
 						type = annex_everything
 					}
 				}
+				#! event for MAN, MEN, KOR a divize pro koreu
 			}
 			country_event = { id = skoccek.1 days = 1 }
 		}
@@ -707,7 +708,7 @@ focus_tree = {
 			}
 			if = {
 				limit = { has_idea = partial_economic_mobilisation }
-				add_war_support = 10
+				add_war_support = 0.10
 			}
 		}
 	}
@@ -732,7 +733,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				add_state_core = 533
-				set_state_controller = 533
+				transfer_state = 533
 			}
 			country_event = { id = skoccek.2 days = 1 }
 		}
@@ -751,8 +752,8 @@ focus_tree = {
 		cost = 10
 		relative_position_id = SKO_tohoku_uprising
 		available = {
-			JAP = {
-				exists = no
+			NOT = {
+				has_war_with = JAP
 			}
 		}
 		bypass = {
@@ -788,6 +789,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
+			SOV = {
+				release = FER
+			}
+			JAP = {
+				end_puppet = MAN
+			}
 		}
 	}
 
@@ -823,7 +830,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SKO_buy_coffee
 		} 
-		mutually_exclusive = {}
+		mutually_exclusive = {
+			focus = SKO_new_coffee
+		}
 
 		x = -1
 		y = 1
@@ -922,7 +931,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SKO_buy_coffee
 		} 
-		mutually_exclusive = {}
+		mutually_exclusive = {
+			focus = SKO_abstinence
+		}
 
 		x = 1
 		y = 1

@@ -40,7 +40,8 @@ country_event = {
 	option = {
 		name = skoccek.2.a
 
-		country_event = { id = skoccek.3 days = 2 }
+		country_event = { id = skoccek.3 days = 3 }
+		load_oob = SKO_tohoku
 	}
 }
 
@@ -57,9 +58,9 @@ country_event = {
 		name = skoccek.3.a
 
 		JAP = {
-			create_wargoal = {
+			declare_war_on = {
 				target = SKO
-				type = take_core_state
+				type = annex_everything
 			}
 		}
 	}

@@ -41,6 +41,9 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_faction = "Anime Aliance"
+add_to_faction = SKO
+
 set_stability = 0.5
 set_war_support = 0
 
