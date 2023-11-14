@@ -673,8 +673,13 @@ focus_tree = {
 						type = annex_everything
 					}
 				}
-				#! event for MAN, MEN, KOR a divize pro koreu
+				#! event for KOR a divize pro koreu
 			}
+
+			MAN = {
+				country_event = { id = skoccek.9 days = 1 }
+			}
+
 			country_event = { id = skoccek.1 days = 1 }
 		}
 	}
@@ -734,6 +739,7 @@ focus_tree = {
 			hidden_effect = {
 				add_state_core = 533
 				transfer_state = 533
+				load_oob = SKO_tohoku
 			}
 			country_event = { id = skoccek.2 days = 1 }
 		}
@@ -766,6 +772,75 @@ focus_tree = {
 				}
 				add_core_of = SKO
 			}
+		}
+	}
+
+	focus = {
+		id = SKO_russian_far_east
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_end_of_skoccko-sobrrrk_war
+		}
+		mutually_exclusive = {}
+
+		x = 1
+		y = 2
+		cost = 10
+		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			SOV = {
+				country_event = { id = skoccek.8 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = SKO_aim_china
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_end_of_skoccko-sobrrrk_war
+		}
+		mutually_exclusive = {}
+
+		x = -3
+		y = 1
+		cost = 5
+		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! 
+		}
+	}
+	#!!
+
+	focus = {
+		id = SKO_reopen_tank_school
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_end_of_skoccko-sobrrrk_war
+		}
+		mutually_exclusive = {}
+
+		x = -8
+		y = 1
+		cost = 10
+		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
 		}
 	}
 	#!!

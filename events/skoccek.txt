@@ -41,7 +41,6 @@ country_event = {
 		name = skoccek.2.a
 
 		country_event = { id = skoccek.3 days = 3 }
-		load_oob = SKO_tohoku
 	}
 }
 
@@ -119,5 +118,173 @@ country_event = {
 		set_country_flag = no_coffee
 
 		remove_ideas = SKO_six_coffees_daily
+	}
+}
+
+# yes
+country_event = {
+	id = skoccek.6
+	title = skoccek.6.t
+	desc = skoccek.6.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.6.a
+	}
+}
+
+# no
+country_event = {
+	id = skoccek.7
+	title = skoccek.7.t
+	desc = skoccek.7.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.7.a
+	}
+}
+
+# far east??
+country_event = {
+	id = skoccek.8
+	title = skoccek.8.t
+	desc = skoccek.8.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = skoccek.8.a
+
+		ai_chance = {
+			base = 80
+		}
+
+		SOV = {
+			release = FER
+		}
+
+		SKO = {
+			country_event = { id = skoccek.6 }
+			puppet = FER
+		}
+	}
+
+	# ano
+	option = {
+		name = skoccek.8.b
+
+		ai_chance = {
+			base = 20
+		}
+
+		SKO = {
+			country_event = { id = skoccek.7 }
+		}
+	}
+}
+
+# MAN??
+country_event = {
+	id = skoccek.9
+	title = skoccek.9.t
+	desc = skoccek.9.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = skoccek.9.a
+
+		ai_chance = {
+			base = 70
+		}
+
+		add_political_power = -450
+
+		JAP = {
+			end_puppet = MAN
+			end_puppet = MEN
+
+			country_event = { id = skoccek.10 days = 5 }
+		}
+
+		SKO = {
+			country_event = { id = skoccek.11 }
+		}
+
+		hidden_effect = {
+			MAN = {
+				puppet = MEN
+				transfer_state = 609
+				transfer_state = 745
+			}
+		}
+	}
+
+	# no
+	option = {
+		name = skoccek.9.b
+
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+
+# MAN broke free
+country_event = {
+	id = skoccek.10
+	title = skoccek.10.t
+	desc = skoccek.10.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.10.a
+
+		declare_war_on = {
+			target = MAN
+			type = puppet_wargoal_focus
+		}
+		declare_war_on = {
+			target = MEN
+			type = puppet_wargoal_focus
+		}
+
+		white_peace = CHI
+		white_peace = SHX
+		white_peace = PRC
+		white_peace = GXC
+		white_peace = YUN
+		white_peace = XSM
+		white_peace = SIK
+	}
+}
+
+# MAN joined us
+country_event = {
+	id = skoccek.11
+	title = skoccek.11.t
+	desc = skoccek.11.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = skoccek.11.a
+
+		add_to_faction = MAN
+
+		add_war_support = 0.05
+		add_stability = 0.1
 	}
 }
