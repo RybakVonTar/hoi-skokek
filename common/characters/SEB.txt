@@ -24,6 +24,7 @@ characters={
 				media_personality
 				politically_connected
 				trait_mountaineer
+				cyclist
 			}
 		}
 	}
@@ -47,6 +48,7 @@ characters={
 				politically_connected
 				trait_mountaineer
 				hill_fighter
+				cyclist
 			}
 		}
 	}
@@ -69,6 +71,7 @@ characters={
 				media_personality
 				politically_connected
 				hill_fighter
+				cyclist
 			}
 		}
 	}
@@ -91,6 +94,7 @@ characters={
 				media_personality
 				politically_connected
 				fast_planner
+				cyclist
 			}
 		}
 	}

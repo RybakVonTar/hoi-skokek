@@ -31,7 +31,7 @@ characters={
 		name="Steve Jobs"
 		portraits={
 			civilian={
-				large="gfx/leaders/JRK/jirka.dds"
+				large="gfx/leaders/JRK/jobs.dds"
 			}
 		}
 		corps_commander = {
@@ -42,6 +42,7 @@ characters={
 			logistics_skill = 1
 
 			traits = {
+				politically_connected
 			}
 		}
 	}
@@ -50,7 +51,7 @@ characters={
 		name="Tim Cook"
 		portraits={
 			civilian={
-				large="gfx/leaders/JRK/jirka.dds"
+				large="gfx/leaders/JRK/cook.dds"
 			}
 		}
 		corps_commander = {
@@ -61,6 +62,7 @@ characters={
 			logistics_skill = 1
 
 			traits = {
+				politically_connected
 			}
 		}
 	}

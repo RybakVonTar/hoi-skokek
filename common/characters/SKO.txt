@@ -33,6 +33,7 @@ characters={
 				politically_connected
 				recently_promoted
 				inflexible_strategist
+				war_hero
 			}
 		}
 		advisor = {
@@ -55,6 +56,10 @@ characters={
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
+
+			traits = {
+				urban_assault_specialist
+			}
 		}
 	}
 	SKO_asuka_langley={
@@ -70,6 +75,10 @@ characters={
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
+
+			traits = {
+				urban_assault_specialist
+			}
 		}
 	}
 	SKO_rei_ayanami={
@@ -85,6 +94,10 @@ characters={
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
+
+			traits = {
+				urban_assault_specialist
+			}
 		}
 	}
 }

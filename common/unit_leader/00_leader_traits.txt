@@ -1,0 +1,9 @@
+leader_traits = {
+	cyclist = {
+		type = corps_commander
+
+		modifier = {
+			
+		}
+	}
+}
