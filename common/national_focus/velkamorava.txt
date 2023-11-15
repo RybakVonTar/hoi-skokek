@@ -125,7 +125,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_new_nation
 		available = {
 		}
@@ -210,7 +210,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_austro_hungarian_king
 		available = {
 		}
@@ -258,7 +258,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_annex_aus
 		available = {
 		}
@@ -295,7 +295,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_annex_aus
 		available = {
 		}
@@ -319,7 +319,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_southern_tyrol
 		available = {
 		}
@@ -344,7 +344,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_italy
 		available = {
 		}
@@ -370,7 +370,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_final_boss
 		available = {
 		}
@@ -395,7 +395,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_final_boss
 		available = {
 		}
@@ -542,7 +542,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_industrialization
 		available = {
 		}
@@ -570,7 +570,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_industrialization
 		available = {
 			JRK = {
@@ -601,7 +601,7 @@ focus_tree = {
 
 		x = 1
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_industrialization
 		available = {
 		}
