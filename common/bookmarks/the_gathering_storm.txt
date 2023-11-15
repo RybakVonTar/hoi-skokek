@@ -17,7 +17,7 @@ bookmarks = {
 			}	
 			focuses = {
 				SKO_end_of_skoccko-sobrrrk_war
-				SKO_tokyo_iii
+				SKO_reopen_tank_school
 				SKO_buy_coffee
 			}		
 		}

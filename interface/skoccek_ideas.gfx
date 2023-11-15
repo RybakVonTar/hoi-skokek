@@ -17,4 +17,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/eva02.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_SKO_nerv"
+		texturefile = "gfx/interface/ideas/nerv.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_night_prime"
+		texturefile = "gfx/interface/ideas/night_prime.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_happy_science"
+		texturefile = "gfx/interface/ideas/happy_science.dds"
+	}
+
 }

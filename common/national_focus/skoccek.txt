@@ -30,7 +30,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 100 y = 1700 }
+	continuous_focus_position = { x = 100 y = 1400 }
 
 	initial_show_position = {
 		x = 28
@@ -40,12 +40,12 @@ focus_tree = {
 	# evangelion
 	focus = {
 		id = SKO_start_evangelion
-		icon = GFX_focus_research
+		icon = GFX_start_evangelion
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
 
-		x = 0
+		x = -1
 		y = 0
 		cost = 15
 		available = {
@@ -61,7 +61,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_recruit_pilot
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_pilot_1
 		prerequisite = { 
 			focus = SKO_start_evangelion
 		} 
@@ -83,7 +83,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_tokyo_iii
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_tokio_III
 		prerequisite = { 
 			focus = SKO_start_evangelion
 		} 
@@ -154,7 +154,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_eva_01
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_eva00
 		prerequisite = { 
 			focus = SKO_recruit_pilot
 		} 
@@ -176,7 +176,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_new_pilot
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_pilot_2
 		prerequisite = { 
 			focus = SKO_eva_01
 		} 
@@ -199,7 +199,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_eva_02
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_eva01
 		prerequisite = { 
 			focus = SKO_new_pilot
 		}
@@ -221,7 +221,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_eva_03
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_eva02
 		prerequisite = { 
 			focus = SKO_eva_02
 		} 
@@ -783,8 +783,8 @@ focus_tree = {
 		}
 		mutually_exclusive = {}
 
-		x = 1
-		y = 2
+		x = 2
+		y = 1
 		cost = 10
 		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
 		available = {
@@ -800,6 +800,50 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SKO_uprising_FER
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_russian_far_east
+		}
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SKO_russian_far_east
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idk
+		}
+	}
+
+	focus = {
+		id = SKO_influence_FER
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_russian_far_east
+		}
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = SKO_russian_far_east
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idea for FER
+		}
+	}
+
+	focus = {
 		id = SKO_aim_china
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
@@ -807,7 +851,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {}
 
-		x = -3
+		x = -4
 		y = 1
 		cost = 5
 		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
@@ -820,17 +864,223 @@ focus_tree = {
 			#! 
 		}
 	}
-	#!!
+
+	focus = {
+		id = SKO_real_threat
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_aim_china
+		}
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = SKO_aim_china
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! war with CHI
+		}
+	}
+
+	focus = {
+		id = SKO_maos_sphere
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_aim_china
+		}
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SKO_aim_china
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! war with communist china, event for SHX, XSM
+		}
+	}
+
+	focus = {
+		id = SKO_clear_warlords
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_real_threat
+		}
+		prerequisite = { 
+			focus = SKO_maos_sphere
+		}
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SKO_real_threat
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event for alůl remaining warlords
+		}
+	}
+
+	focus = {
+		id = SKO_more_like_maol
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_maos_sphere
+		}
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = SKO_maos_sphere
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! puppet v oblasti komunisticke ciny pod vedenim maol
+		}
+	}
+
+	focus = {
+		id = SKO_quing_territory
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_clear_warlords
+		}
+		mutually_exclusive = {
+			focus = SKO_annex_doctrine
+		}
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SKO_clear_warlords
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! return teritory to quing china
+		}
+	}
+
+	focus = {
+		id = SKO_annex_doctrine
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_clear_warlords
+		}
+		mutually_exclusive = {
+			focus = SKO_quing_territory
+		}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SKO_clear_warlords
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! annex china
+		}
+	}
+
+	focus = {
+		id = SKO_finnish_integration
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_annex_doctrine
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SKO_annex_doctrine
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! integrate puppets
+		}
+	}
+
+	focus = {
+		id = SKO_great_anime_union
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_finnish_integration
+		}
+
+		x = 0
+		y = 1
+		cost = 15
+		relative_position_id = SKO_finnish_integration
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! chage cosmetics and core all
+		}
+	}
+
+	focus = {
+		id = SKO_puppet_doctrine
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_quing_territory
+		}
+		prerequisite = { 
+			focus = SKO_more_like_maol
+		}
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SKO_quing_territory
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idk
+		}
+	}
+
+
 
 	focus = {
 		id = SKO_reopen_tank_school
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_reopen_school
 		prerequisite = { 
 			focus = SKO_end_of_skoccko-sobrrrk_war
 		}
 		mutually_exclusive = {}
 
-		x = -8
+		x = -14
 		y = 1
 		cost = 10
 		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
@@ -843,13 +1093,210 @@ focus_tree = {
 			#! event with idea
 		}
 	}
-	#!!
+
+	focus = {
+		id = SKO_pravda
+		icon = GFX_focus_pravda
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = 4
+		y = 1
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_kuromorine
+		icon = GFX_focus_kuromorine
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = 3
+		y = 2
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_sanders
+		icon = GFX_focus_sanders
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_st_gloriana
+		icon = GFX_focus_st_gloriana
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = 1
+		y = 2
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_anzio
+		icon = GFX_focus_anzio
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_bc_freedom
+		icon = GFX_focus_bc_freedom
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = -1
+		y = 2
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_keizoku
+		icon = GFX_focus_keizoku
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_chihatan
+		icon = GFX_focus_chihatan
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = -3
+		y = 2
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
+
+	focus = {
+		id = SKO_gregor
+		icon = GFX_focus_gregor
+		prerequisite = { 
+			focus = SKO_reopen_tank_school
+		}
+		mutually_exclusive = {}
+
+		x = -4
+		y = 1
+		cost = 1
+		relative_position_id = SKO_reopen_tank_school
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event with idea
+		}
+	}
 	
 
 	# main tree
 	focus = {
 		id = SKO_night_time_prime_time
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_night_prime
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
@@ -864,12 +1311,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 150
-			SOV = {
-				release = FER
-			}
-			JAP = {
-				end_puppet = MAN
-			}
 		}
 	}
 
@@ -1132,7 +1573,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_anime_cult
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_happy_science
 		prerequisite = { 
 			focus = SKO_night_time_prime_time
 		} 

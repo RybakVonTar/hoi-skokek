@@ -7,7 +7,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = SKO_nerv
 
 			allowed = {
 				always = yes
@@ -67,7 +67,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = SKO_night_prime
 
 			allowed = {
 				always = yes

@@ -7,4 +7,99 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_vel_mor.dds"			
 	}
 
+	SpriteType = {
+		name = "GFX_focus_reopen_school"
+		texturefile = "gfx/interface/goals/goal_oorai.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_pravda"
+		texturefile = "gfx/interface/goals/goal_pravda.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kuromorine"
+		texturefile = "gfx/interface/goals/goal_kuromorine.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_chihatan"
+		texturefile = "gfx/interface/goals/goal_chihatan.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_sanders"
+		texturefile = "gfx/interface/goals/goal_sanders.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_keizoku"
+		texturefile = "gfx/interface/goals/goal_keizoku.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_anzio"
+		texturefile = "gfx/interface/goals/goal_anzio.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_st_gloriana"
+		texturefile = "gfx/interface/goals/goal_st_gloriana.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_gregor"
+		texturefile = "gfx/interface/goals/goal_gregor.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_bc_freedom"
+		texturefile = "gfx/interface/goals/goal_bc_freedom.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_eva00"
+		texturefile = "gfx/interface/goals/focus_eva00.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_eva01"
+		texturefile = "gfx/interface/goals/focus_eva01.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_eva02"
+		texturefile = "gfx/interface/goals/focus_eva02.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_pilot_2"
+		texturefile = "gfx/interface/goals/focus_asuka_ikari.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_pilot_1"
+		texturefile = "gfx/interface/goals/focus_rej.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_tokio_III"
+		texturefile = "gfx/interface/goals/goal_tokio_iii.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_start_evangelion"
+		texturefile = "gfx/interface/goals/goal_nerv_logos.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_night_prime"
+		texturefile = "gfx/interface/goals/goal_night_prime.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_happy_science"
+		texturefile = "gfx/interface/goals/focus_happy_science.dds"			
+	}
+
 }
