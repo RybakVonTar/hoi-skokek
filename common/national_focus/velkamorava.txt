@@ -117,7 +117,7 @@ focus_tree = {
 
 	focus = {
 		id = JRK_foreign_staff
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_generic_manpower
 		prerequisite = { 
 			focus = JRK_new_nation
 		} 
@@ -133,18 +133,17 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			recruit_character = POL_boleslaw_wieniawa_glugoszowski
-			recruit_character = POL_wladyslaw_anders
-			recruit_character = CZE_karel_janousek
-			recruit_character = CZE_ludvik_krejci
-			recruit_character = CZE_sergej_vojcechovsky
-			#! repair
+			recruit_character = JRK_boleslaw_wieniawa_glugoszowski
+			recruit_character = JRK_wladyslaw_anders
+			recruit_character = JRK_karel_janousek
+			recruit_character = JRK_ludvik_krejci
+			recruit_character = JRK_sergej_vojcechovsky
 		}
 	}
 
 	focus = {
 		id = JRK_bigger_ambitions
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { 
 			focus = JRK_foreign_staff
 		} 
@@ -197,7 +196,7 @@ focus_tree = {
 			76 = {
 				add_core_of = JRK
 			}
-			#! trait
+			add_country_leader_trait = austrohungarian_king
 		}
 	}
 
@@ -430,7 +429,7 @@ focus_tree = {
 
 	focus = {
 		id = JRK_svata_rise
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_svata_morava
 		prerequisite = { 
 			focus = JRK_secure_benelux
 		}

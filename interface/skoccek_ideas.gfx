@@ -32,4 +32,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/happy_science.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_JRK_hussars"
+		texturefile = "gfx/interface/ideas/hussars.dds"
+	}
+
 }

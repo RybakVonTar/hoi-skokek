@@ -27,43 +27,131 @@ characters={
 		}
 	}
 
-	JRK_steve_jobs={
-		name="Steve Jobs"
+	JRK_josef_snejdarek={
+		name=CZE_josef_shnejdarek
 		portraits={
-			civilian={
-				large="gfx/leaders/JRK/jobs.dds"
+			army={
+				large="GFX_Portrait_czechoslovakia_josef_snejdarek"
+				small=GFX_portrait_CZE_josef_shnejdarek_small
 			}
 		}
 		corps_commander = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
 
+			traits = { defensive_doctrine thorough_planner }
+
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	JRK_boleslaw_wieniawa_glugoszowski = {
+		name=POL_boleslaw_wieniawa_glugoszowski
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
+			}
+			army = {
+				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
+				small = "GFX_idea_POL_boleslaw_wieniawa_dlugoszowski"
+			}
+		}
+
+		corps_commander = {
+			traits = { cavalry_officer war_hero politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	JRK_wladyslaw_anders = {
+		name=POL_wladyslaw_anders
+		portraits = {
+			army = {
+				large="GFX_POL_wladislaw_anders"
+				small = GFX_portrait_POL_wladyslaw_anders_small
+			}
+		}
+		
+		corps_commander = {
+			traits = { armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	JRK_karel_janousek={
+		name=CZE_karel_janousek
+		portraits={
+			army={
+				small="GFX_idea_CZE_karel_janousek"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CZE_karel_janousek
+			allowed = {
+				original_tag = CZE
+			}
 			traits = {
-				politically_connected
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 	}
 
-	JRK_tim_cook={
-		name="Tim Cook"
+	JRK_ludvik_krejci={
+		name=CZE_ludvik_krejci
 		portraits={
-			civilian={
-				large="gfx/leaders/JRK/cook.dds"
+			army={
+				small="GFX_idea_CZE_ludvik_krejci"
 			}
 		}
-		corps_commander = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-
-			traits = {
-				politically_connected
+		advisor={
+			slot = army_chief
+			idea_token = CZE_ludvik_krejci
+			allowed = {
+				original_tag = CZE
 			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+
+	JRK_sergej_vojcechovsky={
+		name=CZE_sergej_vojcechovsky
+		portraits={
+			army={
+				large="GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+				small=GFX_portrait_CZE_sergej_vojcechovsky_small
+			}
+		}
+		corps_commander={
+			traits={ winter_specialist }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
 		}
 	}
 }

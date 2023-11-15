@@ -22,6 +22,8 @@ ideas = {
 
 			removal_cost = -1
 
+			picture = hussars
+
 			allowed = {
 				always = yes
 			}
@@ -38,7 +40,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = hussars
 
 			allowed = {
 				always = yes

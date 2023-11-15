@@ -657,7 +657,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = SKO_support_anime_uprising
 		available = {
 		}
@@ -674,10 +674,6 @@ focus_tree = {
 					}
 				}
 				#! event for KOR a divize pro koreu
-			}
-
-			MAN = {
-				country_event = { id = skoccek.9 days = 1 }
 			}
 
 			country_event = { id = skoccek.1 days = 1 }
@@ -728,7 +724,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_prepare_JAP_invasion
 		available = {
 		}
@@ -741,13 +737,18 @@ focus_tree = {
 				transfer_state = 533
 				load_oob = SKO_tohoku
 			}
-			country_event = { id = skoccek.2 days = 1 }
+			JAP = {
+				country_event = { id = skoccek.2 days = 1 }
+			}
+			MAN = {
+				country_event = { id = skoccek.9 days = 1 }
+			}
 		}
 	}
 
 	focus = {
 		id = SKO_end_of_skoccko-sobrrrk_war
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_AST_war_japan
 		prerequisite = { 
 			focus = SKO_tohoku_uprising
 		}
@@ -761,6 +762,7 @@ focus_tree = {
 			NOT = {
 				has_war_with = JAP
 			}
+			owns_state = 282
 		}
 		bypass = {
 		}
@@ -801,7 +803,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_uprising_FER
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_ETH_freedom_at_gunpoint
 		prerequisite = { 
 			focus = SKO_russian_far_east
 		}
@@ -823,7 +825,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_influence_FER
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { 
 			focus = SKO_russian_far_east
 		}
@@ -845,7 +847,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_aim_china
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_generic_china1
 		prerequisite = { 
 			focus = SKO_end_of_skoccko-sobrrrk_war
 		}
@@ -867,7 +869,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_real_threat
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_attack_china
 		prerequisite = { 
 			focus = SKO_aim_china
 		}
@@ -889,7 +891,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_maos_sphere
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_prc_maoism
 		prerequisite = { 
 			focus = SKO_aim_china
 		}
@@ -911,7 +913,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_clear_warlords
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_major_war
 		prerequisite = { 
 			focus = SKO_real_threat
 		}
@@ -958,7 +960,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_quing_territory
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_chi_one_china_policy
 		prerequisite = { 
 			focus = SKO_clear_warlords
 		}
@@ -981,7 +983,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_annex_doctrine
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { 
 			focus = SKO_clear_warlords
 		}
@@ -1005,7 +1007,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_finnish_integration
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_generic_annex_country
 		prerequisite = { 
 			focus = SKO_annex_doctrine
 		}
@@ -1047,7 +1049,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_puppet_doctrine
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { 
 			focus = SKO_quing_territory
 		}
@@ -1342,7 +1344,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_abstinence
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_no_coffee
 		prerequisite = { 
 			focus = SKO_buy_coffee
 		} 
@@ -1399,7 +1401,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_pay_bills
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { 
 			focus = SKO_abstinence
 		} 
@@ -1421,7 +1423,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_better_allocation
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_generic_reorient_production
 		prerequisite = { 
 			focus = SKO_pay_bills
 		} 
@@ -1443,7 +1445,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_new_coffee
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_generic_coffee
 		prerequisite = { 
 			focus = SKO_buy_coffee
 		} 
@@ -1475,7 +1477,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_higher_quality
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_better_coffee
 		prerequisite = { 
 			focus = SKO_new_coffee
 		} 
@@ -1500,7 +1502,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_fill_storages
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_stockpile_coffee
 		prerequisite = { 
 			focus = SKO_new_coffee
 		} 

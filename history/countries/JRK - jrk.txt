@@ -118,6 +118,5 @@ set_stability = 0.6
 set_war_support = 0.7
 
 recruit_character = JRK_jirka
-recruit_character = JRK_steve_jobs
-recruit_character = JRK_tim_cook
+recruit_character = JRK_josef_snejdarek
 

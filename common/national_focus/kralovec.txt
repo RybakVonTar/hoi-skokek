@@ -59,7 +59,7 @@ focus_tree = {
 
 	focus = {
 		id = JRK_we_will_prepare
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { 
 			focus = JRK_great_moravia
 		} 
@@ -337,7 +337,7 @@ focus_tree = {
 
 	focus = {
 		id = JRK_winged_hussars
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_hussars
 		prerequisite = { 
 			focus = JRK_poland_integration
 		}

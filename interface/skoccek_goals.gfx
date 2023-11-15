@@ -102,4 +102,29 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_happy_science.dds"			
 	}
 
+	SpriteType = {
+		name = "GFX_focus_no_coffee"
+		texturefile = "gfx/interface/goals/focus_no_coffee.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_stockpile_coffee"
+		texturefile = "gfx/interface/goals/focus_stockpile_coffee.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_better_coffee"
+		texturefile = "gfx/interface/goals/focus_better_coffee.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_svata_morava"
+		texturefile = "gfx/interface/goals/goal_svata_morava.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_hussars"
+		texturefile = "gfx/interface/goals/goal_hussars.dds"			
+	}
+
 }
