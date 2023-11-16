@@ -47,4 +47,54 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/full_storage.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_SKO_oorai"
+		texturefile = "gfx/interface/ideas/oorai.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_pravda"
+		texturefile = "gfx/interface/ideas/pravda.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_gregor"
+		texturefile = "gfx/interface/ideas/gregor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_sanders"
+		texturefile = "gfx/interface/ideas/sanders.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_chihatan"
+		texturefile = "gfx/interface/ideas/chihatan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_bc_freedom"
+		texturefile = "gfx/interface/ideas/bc_freedom.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_anzio"
+		texturefile = "gfx/interface/ideas/anzio.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_st_gloriana"
+		texturefile = "gfx/interface/ideas/st_gloriana.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_kuromorine"
+		texturefile = "gfx/interface/ideas/kuromorine.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_keizoku"
+		texturefile = "gfx/interface/ideas/keizoku.dds"
+	}
+
 }

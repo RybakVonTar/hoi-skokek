@@ -475,5 +475,18 @@ ideas = {
 				}
 			}
 		}
+
+		SKO_oorai = {
+			name = SKO_oorai
+
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+			}
+		}
 	}
 }
