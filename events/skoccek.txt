@@ -456,6 +456,10 @@ country_event = {
 				has_civil_war = no
 			}
 		}
+
+		SOV = {
+			add_ideas = SKO_pravda
+		}
 	}
 
 	#! Spratek
@@ -482,6 +486,10 @@ country_event = {
 				exists = yes
 				has_civil_war = no
 			}
+		}
+
+		GER = {
+			add_ideas = SKO_kuromorine
 		}
 	}
 
@@ -510,6 +518,10 @@ country_event = {
 				has_civil_war = no
 			}
 		}
+
+		USA = {
+			add_ideas = SKO_sanders
+		}
 	}
 }
 
@@ -532,6 +544,10 @@ country_event = {
 				has_civil_war = no
 			}
 		}
+
+		ENG = {
+			add_ideas = SKO_st_gloriana
+		}
 	}
 
 	# SEJ
@@ -543,6 +559,10 @@ country_event = {
 				exists = yes
 				has_civil_war = no
 			}
+		}
+
+		SEJ = {
+			add_ideas = SKO_st_gloriana
 		}
 	}
 }
@@ -566,6 +586,10 @@ country_event = {
 				has_civil_war = no
 			}
 		}
+
+		ITA = {
+			add_ideas = SKO_anzio
+		}
 	}
 }
 
@@ -587,6 +611,10 @@ country_event = {
 				exists = yes
 				has_civil_war = no
 			}
+		}
+
+		FRA = {
+			add_ideas = SKO_bc_freedom
 		}
 	}
 
@@ -615,6 +643,10 @@ country_event = {
 				has_civil_war = no
 			}
 		}
+
+		FIN = {
+			add_ideas = SKO_keizoku
+		}
 	}
 }
 
@@ -638,11 +670,17 @@ country_event = {
 				is_puppet_of = SKO
 			}
 		}
+
+		MAN = {
+			add_ideas = SKO_chihatan
+		}
 	}
 
 	# sko
 	option = {
 		name = skoccek.23.b
+
+		add_ideas = SKO_chihatan
 	}
 }
 
@@ -660,10 +698,14 @@ country_event = {
 		name = skoccek.24.a
 
 		trigger = {
-			CHI = {
+			CZE = {
 				exists = yes
 				has_civil_war = no
 			}
+		}
+
+		CZE = {
+			add_ideas = SKO_gregor
 		}
 	}
 
@@ -676,6 +718,10 @@ country_event = {
 				exists = yes
 				has_civil_war = no
 			}
+		}
+
+		SEB = {
+			add_ideas = SKO_gregor
 		}
 	}
 }
