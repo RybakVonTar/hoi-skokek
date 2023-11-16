@@ -40,6 +40,21 @@ on_actions = {
 		}
 	}
 
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = JAP
+					FROM = { tag = SKO }
+					has_global_flag = SKO_korea_join
+				}
+				SKO = {
+					add_to_faction = KOR
+				}
+			}
+		}
+	}
+
 	on_capitulation = {
 		effect = {
 			if = {

@@ -5,7 +5,7 @@
 
  skoccek.1.t:0 "Korean Uprising"
  skoccek.1.d:0 ""
- skoccek.1.a:0 "Co to meleš dopíči?!"
+ skoccek.1.a:0 "Co?!"
 
  skoccek.2.t:0 "Tohoku Uprising"
  skoccek.2.d:0 ""
@@ -49,3 +49,63 @@
  skoccek.11.t:0 "Manchuria broke free and joined us!"
  skoccek.11.d:0 ""
  skoccek.11.a:0 "Well"
+
+ skoccek.12.t:0 "Warlord did accept!"
+ skoccek.12.d:0 ""
+ skoccek.12.a:0 "Co to meleš dopíči?!"
+
+ skoccek.13.t:0 "Skočček demands our submission!"
+ skoccek.13.d:0 ""
+ skoccek.13.a:0 "There is no other way."
+ skoccek.13.b:0 "War!"
+
+ skoccek.14.t:0 "Warlord did not accept!"
+ skoccek.14.d:0 ""
+ skoccek.14.a:0 "Co to meleš dopíči?!"
+
+ skoccek.15.t:0 "Japan threatens us!"
+ skoccek.15.d:0 ""
+ skoccek.15.a:0 "Asko for Skočček support"
+ skoccek.15.b:0 "Submit to Japan"
+
+ skoccek.16.t:0 "Pravda Girls High School Question"
+ skoccek.16.d:0 ""
+ skoccek.16.a:0 "Soviet Union"
+ skoccek.16.b:0 "Spratkograd"
+
+ skoccek.17.t:0 "Kuromorimine Girls Academy Question"
+ skoccek.17.d:0 ""
+ skoccek.17.a:0 "Germany"
+ skoccek.17.b:0 "Argentina"
+
+ skoccek.18.t:0 "Saunders University High School Question"
+ skoccek.18.d:0 ""
+ skoccek.18.a:0 "USA"
+
+ skoccek.19.t:0 "St. Gloriana Girls' College Question"
+ skoccek.19.d:0 ""
+ skoccek.19.a:0 "Great Britain"
+ skoccek.19.b:0 "SEJLON"
+
+ skoccek.20.t:0 "Anzio High School Question"
+ skoccek.20.d:0 ""
+ skoccek.20.a:0 "Italy"
+
+ skoccek.21.t:0 "BC Freedom Academy Question"
+ skoccek.21.d:0 ""
+ skoccek.21.a:0 "France"
+ skoccek.21.b:0 "Smurf Village"
+
+ skoccek.22.t:0 "Jatkosota High School Question"
+ skoccek.22.d:0 ""
+ skoccek.22.a:0 "Finland"
+
+ skoccek.23.t:0 "Chi-Ha-Tan Academy Question"
+ skoccek.23.d:0 ""
+ skoccek.23.a:0 "Quing China"
+ skoccek.23.b:0 "Homeland"
+
+ skoccek.24.t:0 "Gregor High School Question"
+ skoccek.24.d:0 ""
+ skoccek.24.a:0 "Czechoslovakia"
+ skoccek.24.b:0 "Kolistický Štát"

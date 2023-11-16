@@ -149,7 +149,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = idea_generic_agrarian_reform
 
 			allowed = {
 				always = yes
@@ -169,7 +169,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = SKO_filling_storages_obrazek
 
 			allowed = {
 				always = yes
@@ -187,7 +187,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = generic_economic_increase
 
 			allowed = {
 				always = yes
@@ -198,6 +198,48 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		SKO_puppet = {
+			name = SKO_puppet
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				puppet_cost_factor = -0.5
+				annex_cost_factor = 3
+				autonomy_gain_global_factor = 0.5
+			}
+		}
+
+		SKO_annex = {
+			name = SKO_annex
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = -0.1
+				annex_cost_factor = -0.5
+				compliance_growth = 0.3
+				resistance_decay = 0.3
+			}
+
+			rule = {
+				can_puppet = no
 			}
 		}
 	}

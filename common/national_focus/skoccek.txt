@@ -106,7 +106,13 @@ focus_tree = {
 			set_capital = {
 				state = 282
 			}
-			#! bunkr
+			282 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 1182
+				}
+			}
 		}
 	}
 
@@ -665,18 +671,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			hidden_effect = {
-				JAP = {
-					release = KOR
-					create_wargoal = {
-						target = KOR
-						type = annex_everything
-					}
-				}
-				#! event for KOR a divize pro koreu
+			JAP = {
+				release = KOR
+				country_event = { id = skoccek.1 days = 35 }
 			}
 
-			country_event = { id = skoccek.1 days = 1 }
+			hidden_effect = {
+				KOR = {
+					load_oob = SKO_korea_uprising
+				}
+			}
 		}
 	}
 
@@ -738,7 +742,7 @@ focus_tree = {
 				load_oob = SKO_tohoku
 			}
 			JAP = {
-				country_event = { id = skoccek.2 days = 1 }
+				country_event = { id = skoccek.2 days = 2 }
 			}
 			MAN = {
 				country_event = { id = skoccek.9 days = 1 }
@@ -785,8 +789,8 @@ focus_tree = {
 		}
 		mutually_exclusive = {}
 
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		cost = 10
 		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
 		available = {
@@ -802,28 +806,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SKO_uprising_FER
-		icon = GFX_focus_ETH_freedom_at_gunpoint
-		prerequisite = { 
-			focus = SKO_russian_far_east
-		}
-		mutually_exclusive = {}
-
-		x = -1
-		y = 1
-		cost = 10
-		relative_position_id = SKO_russian_far_east
-		available = {
-		}
-		bypass = {
-		}
-
-		completion_reward = {
-			#! idk
-		}
-	}
-
-	focus = {
 		id = SKO_influence_FER
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { 
@@ -831,11 +813,14 @@ focus_tree = {
 		}
 		mutually_exclusive = {}
 
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		relative_position_id = SKO_russian_far_east
 		available = {
+			FER = {
+				is_puppet_of = SKO
+			}
 		}
 		bypass = {
 		}
@@ -863,7 +848,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! 
+			navy_experience = 25
+			set_technology = {
+				transport = 1
+				mtg_transport = 1
+			}
 		}
 	}
 
@@ -885,7 +874,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! war with CHI
+			declare_war_on = {
+				target = CHI
+				type = annex_everything
+			}
 		}
 	}
 
@@ -907,7 +899,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! war with communist china, event for SHX, XSM
+			create_wargoal = {
+				target = SHX
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = XSM
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = PRC
+				type = annex_everything
+			}
 		}
 	}
 
@@ -932,7 +935,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! event for alůl remaining warlords
+			every_country = {
+				limit = {
+					is_independent_china_or_warlord = yes
+					NOT = {
+						tag = CHI
+						tag = PRC
+					}
+				}
+				country_event = { id = skoccek.13 }
+			}
 		}
 	}
 
@@ -977,7 +989,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! return teritory to quing china
+			hidden_effect = {
+				release_puppet = CHI
+				MAN = {
+					annex_country = {
+						target = MEN
+					}
+				}
+			}
+			MAN = {
+				annex_country = {
+					target = CHI
+				}
+			}
 		}
 	}
 
@@ -1001,7 +1025,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! annex china
+			add_ideas = SKO_annex
 		}
 	}
 
@@ -1022,7 +1046,26 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! integrate puppets
+			if = {
+				limit = { 
+					MAN = {
+						is_puppet_of = SKO
+					}
+				}
+				annex_country = {
+					target = MAN
+				}
+			}
+			if = {
+				limit = { 
+					MEN = {
+						is_puppet_of = SKO
+					}
+				}
+				annex_country = {
+					target = MEN
+				}
+			}
 		}
 	}
 
@@ -1043,7 +1086,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! chage cosmetics and core all
+			every_state = {
+				limit = {
+					is_core_of = CHI
+				}
+				add_core_of = SKO
+			}
+			set_cosmetic_tag = GAU
 		}
 	}
 
@@ -1068,7 +1117,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idk
+			add_ideas = SKO_puppet
 		}
 	}
 
@@ -1109,12 +1158,16 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			SOV = {
+				exists = yes
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.16 days = 1 }
 		}
 	}
 
@@ -1131,12 +1184,16 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			GER = {
+				exists = yes
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.17 days = 1 }
 		}
 	}
 
@@ -1153,12 +1210,16 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			USA = {
+				exists = yes
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.18 days = 1 }
 		}
 	}
 
@@ -1175,12 +1236,22 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			OR = {
+				ENG = {
+					exists = yes
+					has_civil_war = no
+				}
+				SEJ = {
+					exists = yes
+					has_civil_war = no
+				}
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.19 days = 1 }
 		}
 	}
 
@@ -1197,12 +1268,16 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			ITA = {
+				exists = yes
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.20 days = 1 }
 		}
 	}
 
@@ -1219,12 +1294,16 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			FRA = {
+				exists = yes
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.21 days = 1 }
 		}
 	}
 
@@ -1241,12 +1320,16 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			FIN = {
+				exists = yes
+				has_civil_war = no
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.22 days = 1 }
 		}
 	}
 
@@ -1268,7 +1351,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.23 days = 1 }
 		}
 	}
 
@@ -1285,12 +1368,22 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
+			OR = {
+				CZE = {
+					exists = yes
+					has_civil_war = no
+				}
+				SEB = {
+					exists = yes
+					has_civil_war = no
+				}
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#! event with idea
+			country_event = { id = skoccek.24 days = 1 }
 		}
 	}
 	
@@ -1376,7 +1469,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_better_sleep
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { 
 			focus = SKO_abstinence
 		} 
@@ -1400,8 +1493,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SKO_pay_bills
-		icon = GFX_goal_generic_consumer_goods
+		id = SKO_better_allocation
+		icon = GFX_focus_generic_reorient_production
 		prerequisite = { 
 			focus = SKO_abstinence
 		} 
@@ -1411,28 +1504,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		relative_position_id = SKO_abstinence
-		available = {
-		}
-		bypass = {
-		}
-
-		completion_reward = {
-			#! idk
-		}
-	}
-
-	focus = {
-		id = SKO_better_allocation
-		icon = GFX_focus_generic_reorient_production
-		prerequisite = { 
-			focus = SKO_pay_bills
-		} 
-		mutually_exclusive = {}
-
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = SKO_pay_bills
 		available = {
 		}
 		bypass = {
@@ -1525,27 +1596,27 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SKO_ninjas
-		icon = GFX_focus_generic_adriatic_sea_focus
-		prerequisite = { 
-			focus = SKO_night_time_prime_time
-		} 
-		mutually_exclusive = {}
-
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = SKO_night_time_prime_time
-		available = {
-		}
-		bypass = {
-		}
-
-		completion_reward = {
-			#! naruto generals
-		}
-	}
+	#focus = {
+	#	id = SKO_ninjas
+	#	icon = GFX_naruto
+	#	prerequisite = { 
+	#		focus = SKO_night_time_prime_time
+	#	} 
+	#	mutually_exclusive = {}
+#
+	#	x = -1
+	#	y = 1
+	#	cost = 5
+	#	relative_position_id = SKO_night_time_prime_time
+	#	available = {
+	#	}
+	#	bypass = {
+	#	}
+#
+	#	completion_reward = {
+	#		#! naruto generals
+	#	}
+	#}
 
 	focus = {
 		id = SKO_intelligence_agency
@@ -1555,7 +1626,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		relative_position_id = SKO_night_time_prime_time

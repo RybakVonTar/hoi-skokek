@@ -37,4 +37,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/hussars.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_SKO_filling_storages_obrazek"
+		texturefile = "gfx/interface/ideas/storages_filling.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SKO_full_storages_obrazek"
+		texturefile = "gfx/interface/ideas/full_storage.dds"
+	}
+
 }

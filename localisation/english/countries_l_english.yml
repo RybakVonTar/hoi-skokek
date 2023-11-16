@@ -4141,6 +4141,8 @@
 
  SKO_neutrality:0 "Skočček Republic"
  SKO_neutrality_DEF:0 "the Skočček Republic"
+ GAU_neutrality:0 "Great Anime Union"
+ GAU_neutrality_DEF:0 "the Great Anime Union"
 
  JRK_neutrality:0 "Královec"
  JRK_neutrality_DEF:0 "the Královec"

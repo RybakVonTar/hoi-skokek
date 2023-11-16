@@ -127,4 +127,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_hussars.dds"			
 	}
 
+	SpriteType = {
+		name = "GFX_naruto"
+		texturefile = "gfx/interface/goals/focus_naruto_ninjas.dds"			
+	}
+
 }
