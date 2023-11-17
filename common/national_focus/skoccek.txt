@@ -950,27 +950,113 @@ focus_tree = {
 		}
 	}
 
-	#8focus = {
-	#8	id = SKO_more_like_maol
-	#8	icon = GFX_focus_generic_adriatic_sea_focus
-	#8	prerequisite = { 
-	#8		focus = SKO_maos_sphere
-	#8	}
-	#8	mutually_exclusive = {}
-#8
-	#8	x = -1
-	#8	y = 1
-	#8	cost = 5
-	#8	relative_position_id = SKO_maos_sphere
-	#8	available = {
-	#8	}
-	#8	bypass = {
-	#8	}
-#8
-	#8	completion_reward = {
-	#8		#! puppet v oblasti komunisticke ciny pod vedenim maol
-	#8	}
-	#8}
+	focus = {
+		id = SKO_more_like_maol
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			focus = SKO_maos_sphere
+		}
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = SKO_maos_sphere
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			MAO = {
+				if = {
+					limit = { 
+						OR = {
+							SKO = {
+								owns_state = 622
+							}
+							MAN = {
+								owns_state = 622
+								is_puppet_of = SKO
+							}
+						}
+					}
+					transfer_state = 622
+				}
+				if = {
+					limit = { 
+						OR = {
+							SKO = {
+								owns_state = 615
+							}
+							MAN = {
+								owns_state = 615
+								is_puppet_of = SKO
+							}
+						}
+					}
+					transfer_state = 615
+				}
+				if = {
+					limit = { 
+						OR = {
+							SKO = {
+								owns_state = 621
+							}
+							MAN = {
+								owns_state = 621
+								is_puppet_of = SKO
+							}
+						}
+					}
+					transfer_state = 621
+				}
+				if = {
+					limit = { 
+						OR = {
+							SKO = {
+								owns_state = 746
+							}
+							MAN = {
+								owns_state = 746
+								is_puppet_of = SKO
+							}
+						}
+					}
+					transfer_state = 746
+				}
+				if = {
+					limit = { 
+						OR = {
+							SKO = {
+								owns_state = 616
+							}
+							MAN = {
+								owns_state = 616
+								is_puppet_of = SKO
+							}
+						}
+					}
+					transfer_state = 616
+				}
+				if = {
+					limit = { 
+						OR = {
+							SKO = {
+								owns_state = 756
+							}
+							MAN = {
+								owns_state = 756
+								is_puppet_of = SKO
+							}
+						}
+					}
+					transfer_state = 756
+				}
+			}
+			puppet = MAO
+		}
+	}
 
 	focus = {
 		id = SKO_quing_territory
@@ -1104,9 +1190,9 @@ focus_tree = {
 		prerequisite = { 
 			focus = SKO_quing_territory
 		}
-		#8prerequisite = { 
-		#8	focus = SKO_more_like_maol
-		#8}
+		prerequisite = { 
+			focus = SKO_more_like_maol
+		}
 		mutually_exclusive = {}
 
 		x = -2
@@ -1160,9 +1246,15 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			SOV = {
-				exists = yes
-				has_civil_war = no
+			OR = {
+				VOV = {
+					exists = yes
+					has_civil_war = no
+				}
+				SOV = {
+					exists = yes
+					has_civil_war = no
+				}
 			}
 		}
 		bypass = {

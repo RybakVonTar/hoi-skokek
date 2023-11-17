@@ -22,6 +22,10 @@ on_actions = {
 				limit = { tag = SEB }
 				country_event = { id = start.4 }
 			}
+			every_country = {
+				limit = { tag = VOV }
+				country_event = { id = start.5 }
+			}
 		}
 	}
 

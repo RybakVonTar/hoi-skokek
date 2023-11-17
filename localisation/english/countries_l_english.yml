@@ -4159,3 +4159,9 @@
 
  SEB_neutrality:0 "Kolistický Štát"
  SEB_neutrality_DEF:0 "the Kolistický Štát"
+
+ VOV_communism:0 "Spratkograd"
+ VOV_communism_DEF:0 "the Spratkograd"
+
+ MAO_neutrality_subject:0 "Anime Protectorate of China"
+ MAO_neutrality_subject_DEF:0 "the Anime Protectorate of China"

@@ -76,3 +76,16 @@ country_event = {
 		name = start.seba.a
 	}
 }
+
+country_event = {
+	id = start.5
+	title = start.spratek.t
+	desc = start.spratek.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = start.spratek.a
+	}
+}

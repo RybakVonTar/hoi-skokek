@@ -205,7 +205,7 @@ country_event = {
 		name = skoccek.8.b
 
 		ai_chance = {
-			base = 0 #!20
+			base = 20
 		}
 
 		SKO = {
@@ -462,9 +462,20 @@ country_event = {
 		}
 	}
 
-	#! Spratek
+	# VOV
 	option = {
 		name = skoccek.16.b
+
+		trigger = {
+			VOV = {
+				exists = yes
+				has_civil_war = no
+			}
+		}
+
+		VOV = {
+			add_ideas = SKO_pravda
+		}
 	}
 }
 
@@ -687,7 +698,15 @@ country_event = {
 	option = {
 		name = skoccek.23.c
 
-		add_ideas = SKO_chihatan
+		trigger = {
+			MAO = {
+				exists = yes
+			}
+		}
+
+		MAO = {
+			add_ideas = SKO_chihatan
+		}
 	}
 }
 

@@ -58,6 +58,14 @@ bookmarks = {
 				SEB_tour_de_slovakia
 			}
 		}
+		"VOV"={
+			history = "(Ne)jsem komouš!"
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
 		# minors
 		"HUN"={
 			minor = yes

@@ -876,6 +876,8 @@ TTS = {
 	color_ui = rgb { 179 179 0 }
 }
 
+######################################
+
 JRK = {
 	color = rgb { 237 145 33 }
 	color_ui = rgb { 237 145 33 }
@@ -891,4 +893,12 @@ SEJ = {
 SEB = {
 	color = rgb { 0 0 205 }
 	color_ui = rgb { 0 0 205 }
+}
+VOV = {
+	color = rgb { 180 0 0 }
+	color_ui = rgb { 180 0 0 }
+}
+MAO = {
+	color = rgb { 245 12 55 }
+	color_ui = rgb { 245 12 55 }
 }
