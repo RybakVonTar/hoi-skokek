@@ -133,7 +133,7 @@ country_event = {
 		}
 
 	mean_time_to_happen = {
-		years = 2
+		years = 1
 	}
 
 	option = {
@@ -263,11 +263,15 @@ country_event = {
 			}
 			every_country = {
 				limit = {
-					is_independent_china_or_warlord = yes
+					OR = {
+						is_independent_china_or_warlord = yes
+						tag = KOR
+					}
 				}
 				white_peace = MAN
 				white_peace = MEN
 			}
+			load_oob = SKO_quing_uprising
 		}
 	}
 
@@ -412,6 +416,9 @@ country_event = {
 			base = 85
 		}
 
+		add_ideas = limited_conscription
+		add_ideas = low_economic_mobilisation
+
 		hidden_effect = {
 			set_global_flag = SKO_korea_join
 		}
@@ -507,6 +514,17 @@ country_event = {
 	#! Mirecek
 	option = {
 		name = skoccek.17.b
+
+		trigger = {
+			MIR = {
+				exists = yes
+				has_civil_war = no
+			}
+		}
+
+		MIR = {
+			add_ideas = SKO_kuromorine
+		}
 	}
 }
 

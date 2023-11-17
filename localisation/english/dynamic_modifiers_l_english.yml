@@ -1,0 +1,9 @@
+﻿l_english:
+ SKO_modify_happy_science:0 "Modify §YHappy Science§! by:"
+ SKO_hermes_tooltip:0 "$SKO_modify_happy_science$ \n    Leader Experience Gain: §G+15%§! \n    War Support: §G+10%§!\n\n"
+ SKO_budha_tooltip:0 "$SKO_modify_happy_science$ \n    Decryption: §G+20%§!\n\n"
+ SKO_laws_eternity_tooltip:0 "$SKO_modify_happy_science$ \n    Factory Output: §G+5%§! \n    Consumer Goods Factories: §Y-10%§!\n\n"
+ SKO_laws_mystical_tooltip:0 "$SKO_modify_happy_science$ \n    Division Organisation: §G+10%§!\n    Factory Output: §G+5%§!\n\n"
+ SKO_laws_of_universe_0_tooltip:0 "$SKO_modify_happy_science$ \n    Research Speed: §G+10%§!\n    Stability: §G+5%§!\n\n"
+ SKO_laws_of_universe_1_tooltip:0 "$SKO_modify_happy_science$ \n    Political Power Gain: §G+15%§!\n    Stability: §G+5%§!\n\n"
+ SKO_laws_of_universe_2_tooltip:0 "$SKO_modify_happy_science$ \n    Factory Output: §G+5%§!\n    Division Organisation: §G+5%§!\n\n"

@@ -23,91 +23,61 @@ division_template = {
 units = {
 	division = {
 		name = "1. Anime Resistance division"
-		location = 11835
+		location = 6981
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "2. Anime Resistance division"
-		location = 6963
+		location = 9849
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "3. Anime Resistance division"
-		location = 11878
+		location = 6860
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "4. Anime Resistance division"
-		location = 4052
+		location = 3949
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "5. Anime Resistance division"
-		location = 11977
+		location = 9809
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "6. Anime Resistance division"
-		location = 9795
+		location = 11781
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "7. Anime Resistance division"
-		location = 7125
+		location = 800
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "8. Anime Resistance division"
-		location = 4056
+		location = 861
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "9. Anime Resistance division"
-		location = 9899
+		location = 3929
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}
 	division = {
 		name = "10. Anime Resistance division"
-		location = 3860
-		division_template = "Anime Resistance"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "11. Anime Resistance division"
-		location = 6822
-		division_template = "Anime Resistance"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "12. Anime Resistance division"
-		location = 906
-		division_template = "Anime Resistance"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "13. Anime Resistance division"
-		location = 11775
-		division_template = "Anime Resistance"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "14. Anime Resistance division"
-		location = 9918
-		division_template = "Anime Resistance"
-		start_experience_factor = 0.5
-	}
-	division = {
-		name = "15. Anime Resistance division"
-		location = 11828
+		location = 9897
 		division_template = "Anime Resistance"
 		start_experience_factor = 0.5
 	}

@@ -66,6 +66,14 @@ bookmarks = {
 			focuses = {
 			}
 		}
+		"MIR"={
+			history = "Německo v argentině, no."
+			ideology = communism
+			ideas = {
+			}
+			focuses = {
+			}
+		}
 		# minors
 		"HUN"={
 			minor = yes

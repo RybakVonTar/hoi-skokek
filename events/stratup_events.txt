@@ -34,6 +34,27 @@ country_event = {
 			set_variable = {
 				SKO.hs_pp_cost = 0.1
 			}
+			set_variable = {
+				SKO.hs_xp_gain = 0
+			}
+			set_variable = {
+				SKO.hs_war_support = 0
+			}
+			set_variable = {
+				SKO.hs_decryption = 0
+			}
+			set_variable = {
+				SKO.hs_factory_output = 0
+			}
+			set_variable = {
+				SKO.hs_consumer_goods = 0
+			}
+			set_variable = {
+				SKO.hs_organisation = 0
+			}
+			set_variable = {
+				SKO.hs_pp_bonus = 0
+			}
 		}
 	}
 }

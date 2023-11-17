@@ -4144,24 +4144,36 @@
 
  SKO_neutrality:0 "Skočček Republic"
  SKO_neutrality_DEF:0 "the Skočček Republic"
+ SKO_neutrality_ADJ:0 "Skočček"
  GAU_neutrality:0 "Great Anime Union"
  GAU_neutrality_DEF:0 "the Great Anime Union"
+ GAU_neutrality_ADJ:0 "Anime"
 
  JRK_neutrality:0 "Královec"
  JRK_neutrality_DEF:0 "the Královec"
+ JRK_neutrality_ADJ:0 "Královecký"
  VMO_neutrality:0 "Velkomoravská Říše"
  VMO_neutrality_DEF:0 "the Velkomoravská Říše"
+ VMO_neutrality_ADJ:0 "Moravský"
  SVM_neutrality:0 "Svatá Říše Velkomoravská"
  SVM_neutrality_DEF:0 "the Svatá Říše Velkomoravská"
+ SVM_neutrality_ADJ:0 "Moravský"
 
  SEJ_democratic:0 "SEJLON"
  SEJ_democratic_DEF:0 "the SEJLON"
+ SEJ_democratic_DEF:0 "SEJLON"
 
  SEB_neutrality:0 "Kolistický Štát"
  SEB_neutrality_DEF:0 "the Kolistický Štát"
+ SEB_neutrality_ADJ:0 "Kolistický"
 
  VOV_communism:0 "Spratkograd"
  VOV_communism_DEF:0 "the Spratkograd"
 
  MAO_neutrality_subject:0 "Anime Protectorate of China"
  MAO_neutrality_subject_DEF:0 "the Anime Protectorate of China"
+ MAO_neutrality_subject_ADJ:0 "Anime Chinese"
+
+ MIR_fascism:0 "New Germany"
+ MIR_fascism_DEF:0 "the New Germany"
+ MIR_fascism_ADJ:0 "German"

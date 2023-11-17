@@ -30,7 +30,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 100 y = 1400 }
+	continuous_focus_position = { x = 100 y = 1700 }
 
 	initial_show_position = {
 		x = 28
@@ -790,7 +790,7 @@ focus_tree = {
 		mutually_exclusive = {}
 
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
 		available = {
@@ -840,7 +840,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {}
 
-		x = -4
+		x = -6
 		y = 1
 		cost = 5
 		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
@@ -952,7 +952,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_more_like_maol
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_more_like_maol
 		prerequisite = { 
 			focus = SKO_maos_sphere
 		}
@@ -1055,6 +1055,18 @@ focus_tree = {
 				}
 			}
 			puppet = MAO
+			536 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			MAO = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -1219,7 +1231,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {}
 
-		x = -14
+		x = -17
 		y = 1
 		cost = 10
 		relative_position_id = SKO_end_of_skoccko-sobrrrk_war
@@ -1278,9 +1290,15 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			GER = {
-				exists = yes
-				has_civil_war = no
+			OR = {
+				GER = {
+					exists = yes
+					has_civil_war = no
+				}
+				MIR = {
+					exists = yes
+					has_civil_war = no
+				}
 			}
 		}
 		bypass = {
@@ -1738,6 +1756,10 @@ focus_tree = {
 		}
 	}
 
+	####################################
+	####################################
+	####################################
+
 	focus = {
 		id = SKO_anime_cult
 		icon = GFX_focus_happy_science
@@ -1762,7 +1784,7 @@ focus_tree = {
 	
 	focus = {
 		id = SKO_hermes
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_hermes
 		prerequisite = { 
 			focus = SKO_anime_cult
 		} 
@@ -1778,13 +1800,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_to_variable = {
+				SKO.hs_war_support = 0.1
+			}
+			add_to_variable = {
+				SKO.hs_xp_gain = 0.15
+			}
+			custom_effect_tooltip = SKO_hermes_tooltip
 		}
 	}
 
 	focus = {
 		id = SKO_buddha
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_buddha
 		prerequisite = { 
 			focus = SKO_hermes
 		} 
@@ -1800,13 +1828,16 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_to_variable = {
+				SKO.hs_decryption = 0.2
+			}
+			custom_effect_tooltip = SKO_budha_tooltip
 		}
 	}
 
 	focus = {
 		id = SKO_laws_eternity
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_laws_eternity
 		prerequisite = { 
 			focus = SKO_buddha
 		} 
@@ -1822,13 +1853,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_to_variable = {
+				SKO.hs_factory_output = 0.05
+			}
+			add_to_variable = {
+				SKO.hs_consumer_goods = -0.1
+			}
+			custom_effect_tooltip = SKO_laws_eternity_tooltip
 		}
 	}
 
 	focus = {
 		id = SKO_laws_mystical
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_laws_mystical
 		prerequisite = { 
 			focus = SKO_buddha
 		} 
@@ -1844,13 +1881,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_to_variable = {
+				SKO.hs_factory_output = 0.05
+			}
+			add_to_variable = {
+				SKO.hs_organisation = 0.1
+			}
+			custom_effect_tooltip = SKO_laws_mystical_tooltip
 		}
 	}
 
 	focus = {
 		id = SKO_laws_of_universe_0
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_laws_universe_0
 		prerequisite = { 
 			focus = SKO_hermes
 		} 
@@ -1866,13 +1909,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_to_variable = {
+				SKO.hs_research = 0.05
+			}
+			add_to_variable = {
+				SKO.hs_stability = 0.05
+			}
+			custom_effect_tooltip = SKO_laws_of_universe_0_tooltip
 		}
 	}
 
 	focus = {
 		id = SKO_laws_of_universe_1
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_laws_universe_1
 		prerequisite = { 
 			focus = SKO_laws_of_universe_0
 		} 
@@ -1888,13 +1937,19 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_to_variable = {
+				SKO.hs_pp_bonus = 0.15
+			}
+			add_to_variable = {
+				SKO.hs_stability = 0.05
+			}
+			custom_effect_tooltip = SKO_laws_of_universe_1_tooltip
 		}
 	}
 
 	focus = {
 		id = SKO_laws_of_universe_2
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_laws_universe_2
 		prerequisite = { 
 			focus = SKO_laws_of_universe_1
 		} 
@@ -1910,7 +1965,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_to_variable = {
+				SKO.hs_factory_output = 0.05
+			}
+			add_to_variable = {
+				SKO.hs_organisation = 0.05
+			}
+			custom_effect_tooltip = SKO_laws_of_universe_2_tooltip
 		}
 	}
 }

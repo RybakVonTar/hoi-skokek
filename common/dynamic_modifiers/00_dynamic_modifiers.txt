@@ -5,4 +5,11 @@ SKO_happy_science = {
 	research_speed_factor = hs_research
 	stability_factor = hs_stability
 	political_power_cost = hs_pp_cost
+	experience_gain_factor = hs_xp_gain
+	war_support_factor = hs_war_support
+	decryption_factor = hs_decryption
+	industrial_capacity_factory = hs_factory_output
+	consumer_goods_factor = hs_consumer_goods
+	army_org_factor = hs_organisation
+	political_power_factor = hs_pp_bonus
 }

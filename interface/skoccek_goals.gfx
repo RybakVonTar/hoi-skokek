@@ -132,4 +132,50 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_naruto_ninjas.dds"			
 	}
 
+	SpriteType = {
+		name = "GFX_focus_more_like_maol"
+		texturefile = "gfx/interface/goals/more_like_maol.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_hermes"
+		texturefile = "gfx/interface/goals/focus_hermes.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_buddha"
+		texturefile = "gfx/interface/goals/focus_buddha.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_laws_eternity"
+		texturefile = "gfx/interface/goals/focus_eternity_laws.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_laws_mystical"
+		texturefile = "gfx/interface/goals/focus_mystical_laws.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_laws_universe_0"
+		texturefile = "gfx/interface/goals/focus_universe_laws_0.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_laws_universe_1"
+		texturefile = "gfx/interface/goals/focus_universe_laws_1.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_laws_universe_2"
+		texturefile = "gfx/interface/goals/focus_universe_laws_2.dds"			
+	}
+
+	# bek protoze to neworkuje
+	SpriteType = {
+		name = "bek"
+		texturefile = "bek"			
+	}
+
 }

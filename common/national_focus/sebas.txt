@@ -23,7 +23,7 @@ focus_tree = {
 		base = 0
 
 		modifier = {
-			add = 10
+			add = 0
 			tag = SEB
 		}
 	}
