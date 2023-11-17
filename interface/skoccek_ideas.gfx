@@ -97,4 +97,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/keizoku.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_SKO_six_coffee"
+		texturefile = "gfx/interface/ideas/coffee_daily.dds"
+	}
+
 }

@@ -89,7 +89,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = SKO_six_coffee
 
 			allowed = {
 				always = yes
@@ -130,7 +130,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = isolation
+			picture = SKO_six_coffee
 
 			allowed = {
 				always = yes
@@ -486,6 +486,10 @@ ideas = {
 			}
 
 			modifier = {
+				tank_manufacturer_cost_factor = -0.2
+				army_armor_speed_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_attack_factor = 0.05
 			}
 		}
 
