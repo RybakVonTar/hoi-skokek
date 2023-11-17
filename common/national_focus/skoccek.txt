@@ -783,7 +783,7 @@ focus_tree = {
 
 	focus = {
 		id = SKO_russian_far_east
-		icon = GFX_focus_generic_adriatic_sea_focus
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { 
 			focus = SKO_end_of_skoccko-sobrrrk_war
 		}
@@ -826,7 +826,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea for FER
+			FER = {
+				add_ideas = FER_sko_influence
+			}
 		}
 	}
 

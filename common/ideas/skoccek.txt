@@ -488,5 +488,23 @@ ideas = {
 			modifier = {
 			}
 		}
+
+		FER_sko_influence = {
+			name = FER_sko_influence
+
+			picture = generic_intel_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				autonomy_gain = -50
+				war_support_factor = 0.1
+				political_power_factor = 0.15
+			}
+		}
 	}
 }

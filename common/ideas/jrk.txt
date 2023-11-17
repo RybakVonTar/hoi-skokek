@@ -22,7 +22,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = hussars
+			picture = JRK_winged_hussars
 
 			allowed = {
 				always = yes
@@ -40,7 +40,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = hussars
+			picture = JRK_winged_hussars
 
 			allowed = {
 				always = yes

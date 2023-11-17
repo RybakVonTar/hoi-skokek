@@ -682,6 +682,13 @@ country_event = {
 
 		add_ideas = SKO_chihatan
 	}
+
+	#! maol
+	option = {
+		name = skoccek.23.c
+
+		add_ideas = SKO_chihatan
+	}
 }
 
 # gregor
