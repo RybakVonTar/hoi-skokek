@@ -16,6 +16,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -38,6 +39,7 @@ characters={
 				panzer_leader
 				armor_officer
 				trait_cautious
+				anime_trait
 			}
 		}
 	}
@@ -57,6 +59,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -77,6 +80,7 @@ characters={
 				panzer_leader
 				armor_officer
 				trait_reckless
+				anime_trait
 			}
 		}
 	}
@@ -100,6 +104,7 @@ characters={
 				armor_officer
 				winter_specialist
 				trickster
+				anime_trait
 			}
 		}
 	}
@@ -120,6 +125,7 @@ characters={
 				panzer_leader
 				armor_officer
 				winter_specialist
+				anime_trait
 			}
 		}
 	}
@@ -141,6 +147,7 @@ characters={
 				armor_officer
 				winter_specialist
 				trickster
+				anime_trait
 			}
 		}
 	}
@@ -162,6 +169,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -181,6 +189,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -200,6 +209,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -223,6 +233,7 @@ characters={
 				armor_officer
 				career_officer
 				brilliant_strategist
+				anime_trait
 			}
 		}
 	}
@@ -243,6 +254,7 @@ characters={
 				panzer_leader
 				armor_officer
 				brilliant_strategist
+				anime_trait
 			}
 		}
 	}
@@ -266,6 +278,7 @@ characters={
 				armor_officer
 				inflexible_strategist
 				trait_reckless
+				anime_trait
 			}
 		}
 	}
@@ -285,6 +298,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -304,6 +318,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -326,6 +341,7 @@ characters={
 				panzer_leader
 				armor_officer
 				trait_reckless
+				anime_trait
 			}
 		}
 	}
@@ -346,6 +362,7 @@ characters={
 				panzer_leader
 				armor_officer
 				trait_reckless
+				anime_trait
 			}
 		}
 	}
@@ -366,6 +383,7 @@ characters={
 				panzer_leader
 				armor_officer
 				trait_reckless
+				anime_trait
 			}
 		}
 	}
@@ -388,6 +406,7 @@ characters={
 				winter_specialist
 				armor_officer
 				panzer_leader
+				anime_trait
 			}
 		}
 	}
@@ -409,6 +428,7 @@ characters={
 				winter_specialist
 				armor_officer
 				panzer_leader
+				anime_trait
 			}
 		}
 	}
@@ -429,6 +449,7 @@ characters={
 				winter_specialist
 				armor_officer
 				panzer_leader
+				anime_trait
 			}
 		}
 	}
@@ -450,6 +471,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -469,6 +491,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}
@@ -488,6 +511,7 @@ characters={
 			traits = {
 				panzer_leader
 				armor_officer
+				anime_trait
 			}
 		}
 	}

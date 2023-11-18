@@ -34,6 +34,7 @@ characters={
 				recently_promoted
 				inflexible_strategist
 				war_hero
+				anime_trait
 			}
 		}
 		advisor = {

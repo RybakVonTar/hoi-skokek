@@ -1,9 +1,16 @@
 leader_traits = {
 	cyclist = {
-		type = corps_commander
+		type = all
 
 		modifier = {
 			
+		}
+	}
+
+	anime_trait = {
+		type = all
+		
+		modifier = {
 		}
 	}
 }

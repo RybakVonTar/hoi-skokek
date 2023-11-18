@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	#### Generic continuous goal icons
+
+	SpriteType = {
+		name = "GFX_trait_anime_trait"
+		texturefile = "gfx/interface/traits/anime_trait.dds"
+	}
+
+}
