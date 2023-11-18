@@ -466,6 +466,9 @@ country_event = {
 
 		SOV = {
 			add_ideas = SKO_pravda
+			recruit_character = GUP_katyusha
+			recruit_character = GUP_nonna
+			recruit_character = GUP_clara
 		}
 	}
 
@@ -482,6 +485,9 @@ country_event = {
 
 		VOV = {
 			add_ideas = SKO_pravda
+			recruit_character = GUP_katyusha
+			recruit_character = GUP_nonna
+			recruit_character = GUP_clara
 		}
 	}
 }
@@ -508,6 +514,8 @@ country_event = {
 
 		GER = {
 			add_ideas = SKO_kuromorine
+			recruit_character = GUP_erika
+			recruit_character = GUP_maho
 		}
 	}
 
@@ -524,6 +532,8 @@ country_event = {
 
 		MIR = {
 			add_ideas = SKO_kuromorine
+			recruit_character = GUP_erika
+			recruit_character = GUP_maho
 		}
 	}
 }
@@ -750,6 +760,7 @@ country_event = {
 
 		CZE = {
 			add_ideas = SKO_gregor
+			recruit_character = GUP_kafka
 		}
 	}
 
@@ -766,6 +777,7 @@ country_event = {
 
 		SEB = {
 			add_ideas = SKO_gregor
+			recruit_character = GUP_kafka
 		}
 	}
 }

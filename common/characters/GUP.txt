@@ -1,0 +1,494 @@
+characters={
+	#cze
+	GUP_kafka={
+		name="Kafka "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_CZE_Kafka.tga"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+
+	#eng
+	GUP_darjeeling={
+		name="Darjeeling "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_ENG_Darjeeling.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+				trait_cautious
+			}
+		}
+	}
+	GUP_orange_pekoe={
+		name="Orange Pekoe"
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_ENG_Orange_Pekoe.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+	GUP_rosehip={
+		name="Rosehip "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_ENG_Rosehip.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+				trait_reckless
+			}
+		}
+	}
+
+	#FIN
+	GUP_aki={
+		name="Aki "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_FIN_Aki.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+				winter_specialist
+				trickster
+			}
+		}
+	}
+	GUP_mika={
+		name="Mika "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_FIN_Mika.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				panzer_leader
+				armor_officer
+				winter_specialist
+			}
+		}
+	}
+	GUP_mikko={
+		name="Mikko "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_FIN_Mikko.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+				winter_specialist
+				trickster
+			}
+		}
+	}
+
+	#FRA
+	GUP_andou={
+		name="Andou "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_FRA_Andou.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+	GUP_oshida={
+		name="Oshida "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_FRA_Oshida.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+	GUP_marie={
+		name="Marie "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_FRA_Marie.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+
+	#GER
+	GUP_maho={
+		name="Maho Nishizumi"
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_GER_Maho.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+				career_officer
+				brilliant_strategist
+			}
+		}
+	}
+	GUP_erika={
+		name="Erika "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_GER_Erika.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+				brilliant_strategist
+			}
+		}
+	}
+
+	#ITA
+	GUP_anchovy={
+		name="Anchovy "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_ITA_Anchovy.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			traits = {
+				panzer_leader
+				armor_officer
+				inflexible_strategist
+				trait_reckless
+			}
+		}
+	}
+	GUP_carpaccio={
+		name="Carpaccio "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_ITA_Carpaccio.tga"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+	GUP_pepperoni={
+		name="Pepperoni "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_ITA_Pepperoni.tga"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+
+	#JAP
+	GUP_nishi={
+		name="Kinuyo Nishi"
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_JAP_Nishi.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+				trait_reckless
+			}
+		}
+	}
+	GUP_fukuda={
+		name="Haru Fukuda"
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_JAP_Fukuda.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				panzer_leader
+				armor_officer
+				trait_reckless
+			}
+		}
+	}
+	GUP_hosomi={
+		name="Schizuko Hosomi"
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_JAP_Hosomi.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+				trait_reckless
+			}
+		}
+	}
+
+	#RUS
+	GUP_katyusha={
+		name="Katyusha "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_RUS_Katyusha.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				winter_specialist
+				armor_officer
+				panzer_leader
+			}
+		}
+	}
+	GUP_clara={
+		name="Clara "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_RUS_Clara.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				old_guard
+				winter_specialist
+				armor_officer
+				panzer_leader
+			}
+		}
+	}
+	GUP_nonna={
+		name="Nonna "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_RUS_Nonna.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				winter_specialist
+				armor_officer
+				panzer_leader
+			}
+		}
+	}
+
+	#USA
+	GUP_kay={
+		name="Kay "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_USA_Kay.tga"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+	GUP_alisa={
+		name="Alisa "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_USA_Alisa.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+	GUP_naomi={
+		name="Naomi "
+		portraits={
+			civilian={
+				large="gfx/leaders/GUP/Portrait_USA_Naomi.tga"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+}

@@ -11,7 +11,7 @@
  skoccek.2.d:0 ""
  skoccek.2.a:0 "What? How?"
 
- skoccek.3.t:0 "Sobrrrk is Angered by Tohoku Uprising"
+ skoccek.3.t:0 "[JAP.GetNameDef] is Angered by Tohoku Uprising"
  skoccek.3.d:0 ""
  skoccek.3.a:0 "Co to meleš dopíči?!"
 
@@ -42,31 +42,31 @@
  skoccek.9.a:0 "Break free!"
  skoccek.9.b:0 "Stay loyale"
 
- skoccek.10.t:0 "Manchuria broke free!"
+ skoccek.10.t:0 "[MAN.GetName] broke free!"
  skoccek.10.d:0 ""
- skoccek.10.a:0 "Move our war effort to Manchuria!"
+ skoccek.10.a:0 "Move our war effort to [MAN.GetName]!"
 
- skoccek.11.t:0 "Manchuria broke free and joined us!"
+ skoccek.11.t:0 "[MAN.GetName] broke free and joined us!"
  skoccek.11.d:0 ""
  skoccek.11.a:0 "Well"
 
- skoccek.12.t:0 "Warlord did accept!"
+ skoccek.12.t:0 "[FROM.GetName] did accept!"
  skoccek.12.d:0 ""
  skoccek.12.a:0 "Co to meleš dopíči?!"
 
- skoccek.13.t:0 "Skočček demands our submission!"
+ skoccek.13.t:0 "[SKO.GetName] demands our submission!"
  skoccek.13.d:0 ""
  skoccek.13.a:0 "There is no other way."
  skoccek.13.b:0 "War!"
 
- skoccek.14.t:0 "Warlord did not accept!"
+ skoccek.14.t:0 "[FROM.GetName] did not accept!"
  skoccek.14.d:0 ""
  skoccek.14.a:0 "Co to meleš dopíči?!"
 
  skoccek.15.t:0 "Japan threatens us!"
  skoccek.15.d:0 ""
- skoccek.15.a:0 "Asko for Skočček support"
- skoccek.15.b:0 "Submit to Japan"
+ skoccek.15.a:0 "Ask for [SKO.GetName] support"
+ skoccek.15.b:0 "Submit to [JAP.GetName]"
 
  skoccek.16.t:0 "Pravda Girls High School Question"
  skoccek.16.d:0 ""

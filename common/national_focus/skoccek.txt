@@ -1221,7 +1221,9 @@ focus_tree = {
 		}
 	}
 
-
+	#############################################################################
+	#############################################################################
+	#############################################################################
 
 	focus = {
 		id = SKO_reopen_tank_school
@@ -1273,7 +1275,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.16 days = 1 }
+			#country_event = { id = skoccek.16 days = 1 }
 		}
 	}
 
@@ -1305,7 +1307,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.17 days = 1 }
+			#country_event = { id = skoccek.17 days = 1 }
 		}
 	}
 
@@ -1331,7 +1333,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.18 days = 1 }
+			#country_event = { id = skoccek.18 days = 1 }
 		}
 	}
 
@@ -1363,7 +1365,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.19 days = 1 }
+			#country_event = { id = skoccek.19 days = 1 }
 		}
 	}
 
@@ -1389,7 +1391,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.20 days = 1 }
+			#country_event = { id = skoccek.20 days = 1 }
 		}
 	}
 
@@ -1415,7 +1417,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.21 days = 1 }
+			#country_event = { id = skoccek.21 days = 1 }
 		}
 	}
 
@@ -1441,7 +1443,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.22 days = 1 }
+			#country_event = { id = skoccek.22 days = 1 }
 		}
 	}
 
@@ -1463,7 +1465,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.23 days = 1 }
+			#country_event = { id = skoccek.23 days = 1 }
 		}
 	}
 
@@ -1495,10 +1497,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			country_event = { id = skoccek.24 days = 1 }
+			#country_event = { id = skoccek.24 days = 1 }
 		}
 	}
-	
+
+	#############################################################################
+	#############################################################################
+	#############################################################################	
 
 	# main tree
 	focus = {
