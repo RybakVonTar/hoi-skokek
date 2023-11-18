@@ -460,15 +460,12 @@ country_event = {
 		trigger = {
 			SOV = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		SOV = {
-			add_ideas = SKO_pravda
-			recruit_character = GUP_katyusha
-			recruit_character = GUP_nonna
-			recruit_character = GUP_clara
+			country_event = skoccek.25
 		}
 	}
 
@@ -479,15 +476,12 @@ country_event = {
 		trigger = {
 			VOV = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		VOV = {
-			add_ideas = SKO_pravda
-			recruit_character = GUP_katyusha
-			recruit_character = GUP_nonna
-			recruit_character = GUP_clara
+			country_event = skoccek.25
 		}
 	}
 }
@@ -508,14 +502,12 @@ country_event = {
 		trigger = {
 			GER = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		GER = {
-			add_ideas = SKO_kuromorine
-			recruit_character = GUP_erika
-			recruit_character = GUP_maho
+			country_event = skoccek.25
 		}
 	}
 
@@ -526,14 +518,12 @@ country_event = {
 		trigger = {
 			MIR = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		MIR = {
-			add_ideas = SKO_kuromorine
-			recruit_character = GUP_erika
-			recruit_character = GUP_maho
+			country_event = skoccek.25
 		}
 	}
 }
@@ -554,15 +544,12 @@ country_event = {
 		trigger = {
 			USA = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		USA = {
-			add_ideas = SKO_sanders
-			recruit_character = GUP_kay
-			recruit_character = GUP_naomi
-			recruit_character = GUP_alisa
+			country_event = skoccek.25
 		}
 	}
 }
@@ -583,15 +570,12 @@ country_event = {
 		trigger = {
 			ENG = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		ENG = {
-			add_ideas = SKO_st_gloriana
-			recruit_character = GUP_darjeeling
-			recruit_character = GUP_orange_pekoe
-			recruit_character = GUP_rosehip
+			country_event = skoccek.25
 		}
 	}
 
@@ -602,15 +586,12 @@ country_event = {
 		trigger = {
 			SEJ = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		SEJ = {
-			add_ideas = SKO_st_gloriana
-			recruit_character = GUP_darjeeling
-			recruit_character = GUP_orange_pekoe
-			recruit_character = GUP_rosehip
+			country_event = skoccek.25
 		}
 	}
 }
@@ -631,15 +612,12 @@ country_event = {
 		trigger = {
 			ITA = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		ITA = {
-			add_ideas = SKO_anzio
-			recruit_character = GUP_anchovy
-			recruit_character = GUP_pepperoni
-			recruit_character = GUP_carpaccio
+			country_event = skoccek.25
 		}
 	}
 }
@@ -660,27 +638,12 @@ country_event = {
 		trigger = {
 			FRA = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		FRA = {
-			add_ideas = SKO_bc_freedom
-			recruit_character = GUP_marie
-			recruit_character = GUP_oshida
-			recruit_character = GUP_andou
-		}
-	}
-
-	#! smurf
-	option = {
-		name = skoccek.21.b
-
-		trigger = {
-			SMU = {
-				exists = yes
-				has_civil_war = no
-			}
+			country_event = skoccek.25
 		}
 	}
 }
@@ -701,15 +664,12 @@ country_event = {
 		trigger = {
 			FIN = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		FIN = {
-			add_ideas = SKO_keizoku
-			recruit_character = GUP_mika
-			recruit_character = GUP_aki
-			recruit_character = GUP_mikko
+			country_event = skoccek.25
 		}
 	}
 }
@@ -730,16 +690,13 @@ country_event = {
 		trigger = {
 			MAN = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 				is_puppet_of = SKO
 			}
 		}
 
 		MAN = {
-			add_ideas = SKO_chihatan
-			recruit_character = GUP_nishi
-			recruit_character = GUP_fukuda
-			recruit_character = GUP_hosomi
+			country_event = skoccek.25
 		}
 	}
 
@@ -764,10 +721,7 @@ country_event = {
 		}
 
 		MAO = {
-			add_ideas = SKO_chihatan
-			recruit_character = GUP_nishi
-			recruit_character = GUP_fukuda
-			recruit_character = GUP_hosomi
+			country_event = skoccek.25
 		}
 	}
 }
@@ -788,13 +742,12 @@ country_event = {
 		trigger = {
 			CZE = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		CZE = {
-			add_ideas = SKO_gregor
-			recruit_character = GUP_kafka
+			country_event = skoccek.25
 		}
 	}
 
@@ -805,13 +758,198 @@ country_event = {
 		trigger = {
 			SEB = {
 				exists = yes
-				has_civil_war = no
+				has_capitulated = no
 			}
 		}
 
 		SEB = {
+			country_event = skoccek.25
+		}
+	}
+}
+
+# accept school?
+country_event = {
+	id = skoccek.25
+	title = skoccek.25.t
+	desc = skoccek.25.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = skoccek.25.a
+
+		SKO = {
+			country_event = skoccek.25.1
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = SOV
+						tag = VOV
+					}
+				}
+			}
+			add_ideas = SKO_pravda
+			recruit_character = GUP_katyusha
+			recruit_character = GUP_nonna
+			recruit_character = GUP_clara
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = GER
+						tag = MIR
+					}
+				}
+			}
+			add_ideas = SKO_kuromorine
+			recruit_character = GUP_erika
+			recruit_character = GUP_maho
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = USA
+					}
+				}
+			}
+			add_ideas = SKO_sanders
+			recruit_character = GUP_kay
+			recruit_character = GUP_naomi
+			recruit_character = GUP_alisa
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = SEJ
+						tag = ENG
+					}
+				}
+			}
+			add_ideas = SKO_st_gloriana
+			recruit_character = GUP_darjeeling
+			recruit_character = GUP_orange_pekoe
+			recruit_character = GUP_rosehip
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = ITA
+					}
+				}
+			}
+			add_ideas = SKO_anzio
+			recruit_character = GUP_anchovy
+			recruit_character = GUP_pepperoni
+			recruit_character = GUP_carpaccio
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = FRA
+					}
+				}
+			}
+			add_ideas = SKO_bc_freedom
+			recruit_character = GUP_marie
+			recruit_character = GUP_oshida
+			recruit_character = GUP_andou
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = FIN
+					}
+				}
+			}
+			add_ideas = SKO_keizoku
+			recruit_character = GUP_mika
+			recruit_character = GUP_aki
+			recruit_character = GUP_mikko
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = MAN
+						tag = MAO
+					}
+				}
+			}
+			add_ideas = SKO_chihatan
+			recruit_character = GUP_nishi
+			recruit_character = GUP_fukuda
+			recruit_character = GUP_hosomi
+		}
+
+		if = {
+			limit = { 
+				root = {
+					OR = {
+						tag = CZE
+						tag = SEB
+					}
+				}
+			}
 			add_ideas = SKO_gregor
 			recruit_character = GUP_kafka
 		}
+	}
+
+	# no
+	option = {
+		name = skoccek.25.b
+
+		SKO = {
+			country_event = skoccek.25.2
+		}
+	}
+}
+
+# accept school? YES
+country_event = {
+	id = skoccek.25.1
+	title = skoccek.25.1.t
+	desc = skoccek.25.1.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = skoccek.25.1.a
+	}
+}
+
+# accept school? NO
+country_event = {
+	id = skoccek.25.2
+	title = skoccek.25.2.t
+	desc = skoccek.25.2.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = skoccek.25.2.a
 	}
 }

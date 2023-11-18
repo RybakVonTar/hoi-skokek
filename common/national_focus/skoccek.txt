@@ -1244,6 +1244,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SKO_oorai
+			unlock_decision_category_tooltip = sensha_do_schools
 		}
 	}
 
@@ -1260,22 +1261,12 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			OR = {
-				VOV = {
-					exists = yes
-					has_civil_war = no
-				}
-				SOV = {
-					exists = yes
-					has_civil_war = no
-				}
-			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.16 days = 1 }
+			unlock_decision_tooltip = pravda_school
 		}
 	}
 
@@ -1292,22 +1283,12 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			OR = {
-				GER = {
-					exists = yes
-					has_civil_war = no
-				}
-				MIR = {
-					exists = yes
-					has_civil_war = no
-				}
-			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.17 days = 1 }
+			unlock_decision_tooltip = kuromorine_school
 		}
 	}
 
@@ -1324,16 +1305,12 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			USA = {
-				exists = yes
-				has_civil_war = no
-			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.18 days = 1 }
+			unlock_decision_tooltip = sanders_school
 		}
 	}
 
@@ -1350,22 +1327,12 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			OR = {
-				ENG = {
-					exists = yes
-					has_civil_war = no
-				}
-				SEJ = {
-					exists = yes
-					has_civil_war = no
-				}
-			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.19 days = 1 }
+			unlock_decision_tooltip = st_gloriana_school
 		}
 	}
 
@@ -1382,16 +1349,12 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			ITA = {
-				exists = yes
-				has_civil_war = no
-			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.20 days = 1 }
+			unlock_decision_tooltip = anzio_school
 		}
 	}
 
@@ -1417,7 +1380,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.21 days = 1 }
+			unlock_decision_tooltip = bc_freedom_school
 		}
 	}
 
@@ -1434,16 +1397,12 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			FIN = {
-				exists = yes
-				has_civil_war = no
-			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.22 days = 1 }
+			unlock_decision_tooltip = keizoku_school
 		}
 	}
 
@@ -1465,7 +1424,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.23 days = 1 }
+			unlock_decision_tooltip = chihatan_school
 		}
 	}
 
@@ -1482,22 +1441,12 @@ focus_tree = {
 		cost = 1
 		relative_position_id = SKO_reopen_tank_school
 		available = {
-			OR = {
-				CZE = {
-					exists = yes
-					has_civil_war = no
-				}
-				SEB = {
-					exists = yes
-					has_civil_war = no
-				}
-			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#country_event = { id = skoccek.24 days = 1 }
+			unlock_decision_tooltip = gregor_school
 		}
 	}
 

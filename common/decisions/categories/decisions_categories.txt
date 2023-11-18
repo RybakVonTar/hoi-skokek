@@ -1,0 +1,17 @@
+
+sensha_do_schools = {
+	icon = GFX_category_icon
+	picture = GFX_category_image_template
+	priority = 20
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = SKO
+		has_completed_focus = SKO_reopen_tank_school
+		SKO = {
+			is_ai = no
+		}
+	}
+}

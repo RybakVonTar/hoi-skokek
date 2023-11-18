@@ -1,0 +1,340 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+# Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
+#####################################################################################################################
+sensha_do_schools = {
+	pravda_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			OR = {
+				VOV = {
+					exists = yes
+					has_capitulated = no
+				}
+				SOV = {
+					exists = yes
+					has_capitulated = no
+				}
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_pravda
+			NOT = {
+				any_country = {
+					has_idea = SKO_pravda
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.16 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	kuromorine_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			OR = {
+				GER = {
+					exists = yes
+					has_capitulated = no
+				}
+				MIR = {
+					exists = yes
+					has_capitulated = no
+				}
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_kuromorine
+			NOT = {
+				any_country = {
+					has_idea = SKO_kuromorine
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.17 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	sanders_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			USA = {
+				exists = yes
+				has_capitulated = no
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_sanders
+			NOT = {
+				any_country = {
+					has_idea = SKO_sanders
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.18 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	st_gloriana_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			OR = {
+				SEJ = {
+					exists = yes
+					has_capitulated = no
+				}
+				ENG = {
+					exists = yes
+					has_capitulated = no
+				}
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_st_gloriana
+			NOT = {
+				any_country = {
+					has_idea = SKO_st_gloriana
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.19 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	anzio_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			ITA = {
+				exists = yes
+				has_capitulated = no
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_anzio
+			NOT = {
+				any_country = {
+					has_idea = SKO_anzio
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.20 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	bc_freedom_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			FRA = {
+				exists = yes
+				has_capitulated = no
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_bc_freedom
+			NOT = {
+				any_country = {
+					has_idea = SKO_bc_freedom
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.21 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	keizoku_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			FIN = {
+				exists = yes
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_keizoku
+			NOT = {
+				any_country = {
+					has_idea = SKO_keizoku
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.22 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	chihatan_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_chihatan
+			NOT = {
+				any_country = {
+					has_idea = SKO_chihatan
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.23 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	gregor_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			OR = {
+				CZE = {
+					exists = yes
+					has_capitulated = no
+				}
+				SEB = {
+					exists = yes
+					has_capitulated = no
+				}
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10
+
+		visible = {	
+			tag = SKO
+			has_completed_focus = SKO_gregor
+			NOT = {
+				any_country = {
+					has_idea = SKO_gregor
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			country_event = { id = skoccek.24 days = 1 }
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+}
