@@ -560,6 +560,9 @@ country_event = {
 
 		USA = {
 			add_ideas = SKO_sanders
+			recruit_character = GUP_kay
+			recruit_character = GUP_naomi
+			recruit_character = GUP_alisa
 		}
 	}
 }
@@ -586,6 +589,9 @@ country_event = {
 
 		ENG = {
 			add_ideas = SKO_st_gloriana
+			recruit_character = GUP_darjeeling
+			recruit_character = GUP_orange_pekoe
+			recruit_character = GUP_rosehip
 		}
 	}
 
@@ -602,6 +608,9 @@ country_event = {
 
 		SEJ = {
 			add_ideas = SKO_st_gloriana
+			recruit_character = GUP_darjeeling
+			recruit_character = GUP_orange_pekoe
+			recruit_character = GUP_rosehip
 		}
 	}
 }
@@ -628,6 +637,9 @@ country_event = {
 
 		ITA = {
 			add_ideas = SKO_anzio
+			recruit_character = GUP_anchovy
+			recruit_character = GUP_pepperoni
+			recruit_character = GUP_carpaccio
 		}
 	}
 }
@@ -654,12 +666,22 @@ country_event = {
 
 		FRA = {
 			add_ideas = SKO_bc_freedom
+			recruit_character = GUP_marie
+			recruit_character = GUP_oshida
+			recruit_character = GUP_andou
 		}
 	}
 
 	#! smurf
 	option = {
 		name = skoccek.21.b
+
+		trigger = {
+			SMU = {
+				exists = yes
+				has_civil_war = no
+			}
+		}
 	}
 }
 
@@ -685,6 +707,9 @@ country_event = {
 
 		FIN = {
 			add_ideas = SKO_keizoku
+			recruit_character = GUP_mika
+			recruit_character = GUP_aki
+			recruit_character = GUP_mikko
 		}
 	}
 }
@@ -712,6 +737,9 @@ country_event = {
 
 		MAN = {
 			add_ideas = SKO_chihatan
+			recruit_character = GUP_nishi
+			recruit_character = GUP_fukuda
+			recruit_character = GUP_hosomi
 		}
 	}
 
@@ -720,6 +748,9 @@ country_event = {
 		name = skoccek.23.b
 
 		add_ideas = SKO_chihatan
+		recruit_character = GUP_nishi
+		recruit_character = GUP_fukuda
+		recruit_character = GUP_hosomi
 	}
 
 	#! maol
@@ -734,6 +765,9 @@ country_event = {
 
 		MAO = {
 			add_ideas = SKO_chihatan
+			recruit_character = GUP_nishi
+			recruit_character = GUP_fukuda
+			recruit_character = GUP_hosomi
 		}
 	}
 }
