@@ -1244,7 +1244,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SKO_oorai
-			unlock_decision_category_tooltip = sensha_do_schools
+			unlock_decision_category_tooltip = anime_revolution
 		}
 	}
 

@@ -34,7 +34,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.16 days = 1 }
@@ -75,7 +75,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.17 days = 1 }
@@ -110,7 +110,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.18 days = 1 }
@@ -151,7 +151,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.19 days = 1 }
@@ -186,7 +186,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.20 days = 1 }
@@ -221,7 +221,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.21 days = 1 }
@@ -255,7 +255,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.22 days = 1 }
@@ -286,7 +286,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.23 days = 1 }
@@ -327,7 +327,7 @@ sensha_do_schools = {
 			}
 		}		
 
-		cost = 100
+		cost = 50
 
 		complete_effect = {	
 			country_event = { id = skoccek.24 days = 1 }
@@ -337,4 +337,8 @@ sensha_do_schools = {
 			factor = 0
 		}
 	}
+}
+
+anime_revolution = {
+	#! idk co
 }

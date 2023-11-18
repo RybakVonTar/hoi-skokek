@@ -1,6 +1,6 @@
 ﻿l_english:
- sensha_do_schools:0 "Sensha-dō Schools"
- sensha_do_schools_desc:0 "Just some text to show the picutre of the category."
+ sensha_do_schools:0 "Sensha-dō Federation"
+ sensha_do_schools_desc:0 "As we reopened Sensha-dō schools, some of them expressed, they want to reside in country with theyr theme. This is oportunity for us to spread the influence of anime."
  pravda_school:0 "Pravda Girls High School"
  kuromorine_school:0 "Kuromorimine Girls Academy"
  sanders_school:0 "Saunders University High School"
@@ -10,3 +10,5 @@
  keizoku_school:0 "Jatkosota High School"
  chihatan_school:0 "Chi-Ha-Tan Academy"
  gregor_school:0 "Gregor High School"
+ 
+ anime_revolution:0 "Anime Revolution Support"

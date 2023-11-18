@@ -1,8 +1,7 @@
-
 sensha_do_schools = {
 	icon = GFX_category_icon
-	picture = GFX_category_image_template
-	priority = 20
+	picture = GFX_decision_gup_image
+	priority = 5
 	
 	allowed = {
 		always = yes
@@ -10,6 +9,21 @@ sensha_do_schools = {
 	visible = {
 		tag = SKO
 		has_completed_focus = SKO_reopen_tank_school
+		SKO = {
+			is_ai = no
+		}
+	}
+}
+
+anime_revolution = {
+	icon = GFX_category_icon
+	priority = 4
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = SKO
 		SKO = {
 			is_ai = no
 		}
