@@ -117,21 +117,4 @@ on_actions = {
 			}
 		}
 	}
-	
-	on_war = {
-		effect = {
-			if = {
-				limit = {
-					tag = D04
-					FROM = {
-						tag = POL
-					}
-				}
-				JRK	= {
-					white_peace = D04
-					declare_war_on = POL
-				}
-			}
-		}
-	}
 }
