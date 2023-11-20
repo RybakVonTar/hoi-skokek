@@ -47,13 +47,13 @@ country_event = {
 		JRK = {
 			country_event = jrk.1
 			transfer_state = 814
-			transfer_state = 118
+			transfer_state = 188
 		}
 
 		814 = {
 			add_core_of = JRK
 		}
-		118 = {
+		188 = {
 			add_core_of = JRK
 		}
 	}
@@ -71,7 +71,7 @@ country_event = {
 		814 = {
 			add_claim_by = JRK
 		}
-		118 = {
+		188 = {
 			add_claim_by = JRK
 		}
 	}
