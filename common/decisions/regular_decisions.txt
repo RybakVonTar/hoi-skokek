@@ -427,4 +427,38 @@ monarchist_uprising = {
 			factor = 0
 		}
 	}
+
+	pol_civil_war = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+		}
+		
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {	
+		}		
+
+		cost = 150
+
+		complete_effect = {	
+			POL = {
+				start_civil_war = {
+					ideology = neutrality
+					size = 0.2
+					capital = 88
+					states = {
+						88 91 89
+					}
+				}
+			}
+			hidden_effect = {
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
 }

@@ -323,7 +323,7 @@ country_event = {
 			transfer_state = 90
 			transfer_state = 10
 		}
-		POL = {
+		D04 = {
 			transfer_state = 784
 			transfer_state = 96
 			transfer_state = 95
@@ -331,8 +331,6 @@ country_event = {
 			transfer_state = 93
 			transfer_state = 91
 			transfer_state = 89
-			retire_character = POL_boleslaw_wieniawa_glugoszowski
-			retire_character = POL_wladyslaw_anders
 		}
 	}
 }

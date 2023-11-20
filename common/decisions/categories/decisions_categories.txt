@@ -39,7 +39,7 @@ monarchist_uprising = {
 	}
 	visible = {
 		tag = JRK
-		has_completed_focus = JRK_war_with_poland
+		#has_completed_focus = JRK_war_with_poland
 		has_war_with = POL
 	}
 }

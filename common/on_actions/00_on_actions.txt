@@ -85,12 +85,11 @@ on_actions = {
 				limit = {
 					tag = POL
 					FROM = {
-						tag = JRK
+						tag = D04
 					}
 				}
 				JRK = {
-					country_event = { id = jrk.8 days = 2 }
-					delete_unit_template_and_units = { division_template = "Uprising Force" }
+					country_event = { id = jrk.8 }
 				}
 			}
 		}
@@ -114,6 +113,23 @@ on_actions = {
 					transfer_state = 852
 					transfer_state = 850
 					transfer_state = 39
+				}
+			}
+		}
+	}
+	
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = D04
+					FROM = {
+						tag = POL
+					}
+				}
+				JRK	= {
+					white_peace = D04
+					declare_war_on = POL
 				}
 			}
 		}
