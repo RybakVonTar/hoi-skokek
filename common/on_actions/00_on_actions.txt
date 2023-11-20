@@ -83,13 +83,16 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					tag = POL
+					tag = D04
 					FROM = {
-						tag = D04
+						OR = {
+							tag = POL
+							tag = JRK
+						}
 					}
 				}
 				JRK = {
-					country_event = { id = jrk.8 }
+					country_event = { id = jrk.8 days = 1 }
 				}
 			}
 		}

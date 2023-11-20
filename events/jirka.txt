@@ -323,7 +323,7 @@ country_event = {
 			transfer_state = 90
 			transfer_state = 10
 		}
-		D04 = {
+		POL = {
 			transfer_state = 784
 			transfer_state = 96
 			transfer_state = 95
