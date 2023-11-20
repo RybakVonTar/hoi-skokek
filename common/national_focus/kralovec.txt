@@ -279,6 +279,7 @@ focus_tree = {
 				type = annex_everything    
 				target = POL
 			}
+			unlock_decision_category_tooltip = monarchist_uprising
 		}
 	}
 

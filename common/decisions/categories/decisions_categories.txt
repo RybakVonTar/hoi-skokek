@@ -29,3 +29,17 @@ anime_revolution = {
 		}
 	}
 }
+
+monarchist_uprising = {
+	icon = GFX_category_icon
+	priority = 4
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = JRK
+		has_completed_focus = JRK_war_with_poland
+		has_war_with = POL
+	}
+}

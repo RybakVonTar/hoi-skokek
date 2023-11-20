@@ -12,3 +12,11 @@
  gregor_school:0 "Gregor High School"
  
  anime_revolution:0 "Anime Revolution Support"
+
+ monarchist_uprising:0 "War with Poland"
+ pol0:0 "Form forces in poland"
+ pol1:0 "Warsaw Uprising"
+ pol2:0 "Brest-Litovsk Uprising"
+ pol3:0 "Lwow Uprising"
+ sabotage_mil:0 "Sabotage Military Factories"
+ sabotage_civ:0 "Sabotage Civilian Factories"

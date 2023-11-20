@@ -342,3 +342,210 @@ sensha_do_schools = {
 anime_revolution = {
 	#! idk co 
 }
+
+monarchist_uprising = {
+	sabotage_mil = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 199
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 15
+
+		visible = {	
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+			random_state = {
+				limit = {
+					is_controlled_by = POL
+					non_damaged_building_level = {
+						building = arms_factory
+						level > 0
+					}
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 1
+				}
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	sabotage_civ = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 199
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 15
+
+		visible = {	
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+			random_state = {
+				limit = {
+					is_controlled_by = POL
+					non_damaged_building_level = {
+						building = industrial_complex
+						level > 0
+					}
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	pol0 = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			has_army_experience > 20
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			army_experience = -20
+			hidden_effect = {
+				JRK = {
+					load_oob = JRK_POL_template
+				}
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	pol1 = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			POL = {
+				controls_state = 10
+			}
+			has_template = "Uprising Force"
+		}
+		
+		fire_only_once = no
+		days_re_enable = 120
+
+		visible = {	
+		}		
+
+		cost = 50
+
+		complete_effect = {	
+			hidden_effect = {
+				JRK = {
+					load_oob = JRK_POL_warsaw
+				}
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	pol2 = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			POL = {
+				controls_state = 94
+			}
+			has_template = "Uprising Force"
+		}
+		
+		fire_only_once = no
+		days_re_enable = 120
+
+		visible = {	
+		}		
+
+		cost = 50
+
+		complete_effect = {	
+			hidden_effect = {
+				JRK = {
+					load_oob = JRK_POL_2
+				}
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	pol3 = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			POL = {
+				controls_state = 91
+			}
+			has_template = "Uprising Force"
+		}
+		
+		fire_only_once = no
+		days_re_enable = 120
+
+		visible = {	
+		}		
+
+		cost = 50
+
+		complete_effect = {	
+			hidden_effect = {
+				JRK = {
+					load_oob = JRK_POL_3
+				}
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+}

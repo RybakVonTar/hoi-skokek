@@ -90,6 +90,7 @@ on_actions = {
 				}
 				JRK = {
 					country_event = { id = jrk.8 days = 2 }
+					delete_unit_template_and_units = { division_template = "Uprising Force" }
 				}
 			}
 		}
