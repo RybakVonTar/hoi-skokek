@@ -49,6 +49,13 @@ country_event = {
 			transfer_state = 814
 			transfer_state = 118
 		}
+
+		814 = {
+			add_core_of = JRK
+		}
+		118 = {
+			add_core_of = JRK
+		}
 	}
 
 	# no
@@ -62,10 +69,10 @@ country_event = {
 			country_event = jrk.0
 		}
 		814 = {
-			add_claim_by = SKO
+			add_claim_by = JRK
 		}
 		118 = {
-			add_claim_by = SKO
+			add_claim_by = JRK
 		}
 	}
 }
@@ -90,6 +97,13 @@ country_event = {
 			transfer_state = 85
 			transfer_state = 807
 		}
+
+		85 = {
+			add_core_of = JRK
+		}
+		807 = {
+			add_core_of = JRK
+		}
 	}
 
 	# no
@@ -106,10 +120,10 @@ country_event = {
 			}
 		}
 		85 = {
-			add_claim_by = SKO
+			add_claim_by = JRK
 		}
 		807 = {
-			add_claim_by = SKO
+			add_claim_by = JRK
 		}
 	}
 }
@@ -135,6 +149,13 @@ country_event = {
 			transfer_state = 97
 			transfer_state = 98
 		}
+		
+		97 = {
+			add_core_of = JRK
+		}
+		98 = {
+			add_core_of = JRK
+		}
 	}
 
 	# no
@@ -148,10 +169,10 @@ country_event = {
 			country_event = jrk.0
 		}
 		97 = {
-			add_claim_by = SKO
+			add_claim_by = JRK
 		}
 		98 = {
-			add_claim_by = SKO
+			add_claim_by = JRK
 		}
 	}
 }
@@ -489,7 +510,7 @@ country_event = {
 	}
 }
 
-# give slovinsko (YUG)
+# give slovinJRK (YUG)
 country_event = {
 	id = jrk.14
 	title = jrk.14.t
