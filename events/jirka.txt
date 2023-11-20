@@ -61,6 +61,12 @@ country_event = {
 		JRK = {
 			country_event = jrk.0
 		}
+		814 = {
+			add_claim_by = SKO
+		}
+		118 = {
+			add_claim_by = SKO
+		}
 	}
 }
 
@@ -99,6 +105,12 @@ country_event = {
 				set_country_flag = peace_do_not_work
 			}
 		}
+		85 = {
+			add_claim_by = SKO
+		}
+		807 = {
+			add_claim_by = SKO
+		}
 	}
 }
 
@@ -134,6 +146,12 @@ country_event = {
 
 		JRK = {
 			country_event = jrk.0
+		}
+		97 = {
+			add_claim_by = SKO
+		}
+		98 = {
+			add_claim_by = SKO
 		}
 	}
 }

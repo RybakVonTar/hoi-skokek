@@ -340,5 +340,5 @@ sensha_do_schools = {
 }
 
 anime_revolution = {
-	#! idk co
+	#! idk co 
 }

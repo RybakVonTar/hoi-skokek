@@ -185,7 +185,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_man
 		available = {
 		}
@@ -212,7 +212,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_peace_way
 		available = {
 		}
@@ -267,7 +267,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_lets_try_more
 		available = {
 		}
@@ -320,6 +320,7 @@ focus_tree = {
 			NOT = {
 				has_war_with = POL
 			}
+			owns_state = 10
 		}
 		bypass = {
 		}
@@ -345,7 +346,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_poland_integration
 		available = {
 		}
@@ -370,7 +371,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_poland_integration
 		available = {
 			CZE = {
@@ -378,6 +379,11 @@ focus_tree = {
 			}
 		}
 		bypass = {
+			SEB = {
+				owns_state = 75
+				owns_state = 74
+				owns_state = 72
+			}
 		}
 
 		completion_reward = {
@@ -399,7 +405,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_poland_integration
 		available = {
 			72 = {
@@ -433,7 +439,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_czechoslovakian_annex
 		available = {
 		}
@@ -458,7 +464,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_deal_with_seba
 		available = {
 		}
