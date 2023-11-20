@@ -354,7 +354,7 @@ monarchist_uprising = {
 		}
 		
 		fire_only_once = no
-		days_re_enable = 15
+		days_re_enable = 7
 
 		visible = {	
 		}		
@@ -371,60 +371,12 @@ monarchist_uprising = {
 					is_controlled_by = POL
 					non_damaged_building_level = {
 						building = arms_factory
-						level > 0
+						level > 1
 					}
 				}
 				damage_building = {
 					type = arms_factory
-					damage = 1
-				}
-			}
-			if = {
-				limit = {
-					has_equipment = {
-						infantry_equipment > 399
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -200
-				}
-				random_state = {
-					limit = {
-						is_controlled_by = POL
-						non_damaged_building_level = {
-							building = arms_factory
-							level > 0
-						}
-					}
-					damage_building = {
-						type = arms_factory
-						damage = 1
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_equipment = {
-						infantry_equipment > 599
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -200
-				}
-				random_state = {
-					limit = {
-						is_controlled_by = POL
-						non_damaged_building_level = {
-							building = arms_factory
-							level > 0
-						}
-					}
-					damage_building = {
-						type = arms_factory
-						damage = 1
-					}
+					damage = 2
 				}
 			}
 		}
@@ -444,7 +396,7 @@ monarchist_uprising = {
 		}
 		
 		fire_only_once = no
-		days_re_enable = 15
+		days_re_enable = 7
 
 		visible = {	
 		}		
@@ -461,61 +413,12 @@ monarchist_uprising = {
 					is_controlled_by = POL
 					non_damaged_building_level = {
 						building = industrial_complex
-						level > 0
+						level > 1
 					}
 				}
 				damage_building = {
 					type = industrial_complex
-					damage = 1
-				}
-			}
-			
-			if = {
-				limit = {
-					has_equipment = {
-						infantry_equipment > 399
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -200
-				}
-				random_state = {
-					limit = {
-						is_controlled_by = POL
-						non_damaged_building_level = {
-							building = industrial_complex
-							level > 0
-						}
-					}
-					damage_building = {
-						type = industrial_complex
-						damage = 1
-					}
-				}
-			}
-			if = {
-				limit = {
-					has_equipment = {
-						infantry_equipment > 599
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment
-					amount = -200
-				}
-				random_state = {
-					limit = {
-						is_controlled_by = POL
-						non_damaged_building_level = {
-							building = industrial_complex
-							level > 0
-						}
-					}
-					damage_building = {
-						type = industrial_complex
-						damage = 1
-					}
+					damage = 2
 				}
 			}
 		}
@@ -529,7 +432,7 @@ monarchist_uprising = {
 		icon = GFX_decision_icon_default
 		
 		available = {
-			has_army_experience > 20
+			has_army_experience > 15
 		}
 		
 		fire_only_once = yes
@@ -540,7 +443,7 @@ monarchist_uprising = {
 		cost = 0
 
 		complete_effect = {	
-			army_experience = -20
+			army_experience = -15
 			hidden_effect = {
 				JRK = {
 					load_oob = JRK_POL_template
