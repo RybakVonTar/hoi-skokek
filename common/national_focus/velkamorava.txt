@@ -679,4 +679,25 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = JRK_royal_navy
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 9
+		y = 5
+		cost = 5
+		#relative_position_id = JRK_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
 }

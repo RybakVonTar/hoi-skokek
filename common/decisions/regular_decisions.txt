@@ -379,6 +379,9 @@ monarchist_uprising = {
 					damage = 2
 				}
 			}
+			POL = {
+				add_stability = -0.01
+			}
 		}
 
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
@@ -421,6 +424,9 @@ monarchist_uprising = {
 					damage = 2
 				}
 			}
+			POL = {
+				add_stability = -0.01
+			}
 		}
 
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
@@ -432,6 +438,9 @@ monarchist_uprising = {
 		icon = GFX_decision_icon_default
 		
 		available = {
+			POL = {
+				has_stability < 0.26
+			}
 		}
 		
 		fire_only_once = no
@@ -454,6 +463,38 @@ monarchist_uprising = {
 				}
 			}
 			hidden_effect = {
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
+
+	pol_stability = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 99
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 7
+
+		visible = {	
+		}		
+
+		cost = 25
+
+		complete_effect = {	
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100
+			}
+			POL = {
+				add_stability = -0.05
 			}
 		}
 
