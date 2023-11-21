@@ -700,4 +700,210 @@ focus_tree = {
 			#!
 		}
 	}
+
+	focus = {
+		id = JRK_carrier
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_submarines
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_capital_ships
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_opose_major
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_carrier
+		} 
+		prerequisite = { 
+			focus = JRK_submarines
+		} 
+		prerequisite = { 
+			focus = JRK_capital_ships
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_carrier
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_royal_airforce
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 14
+		y = 5
+		cost = 5
+		#relative_position_id = JRK_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_heavy_aircraft
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_light_aircraft
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_naval_air
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_light_aircraft
+		} 
+		prerequisite = { 
+			focus = JRK_carrier
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = JRK_light_aircraft
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
+		id = JRK_motors
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = JRK_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = JRK_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
 }
