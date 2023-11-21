@@ -1485,7 +1485,7 @@ focus_tree = {
 
 		x = -3
 		y = 1
-		cost = 5
+		cost = 1
 		relative_position_id = SKO_night_time_prime_time
 		available = {
 			custom_trigger_tooltip = {
@@ -1543,7 +1543,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_abstinence
 		available = {
 		}
@@ -1568,7 +1568,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_abstinence
 		available = {
 		}
@@ -1622,7 +1622,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_new_coffee
 		available = {
 		}
@@ -1647,7 +1647,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = SKO_new_coffee
 		available = {
 		}

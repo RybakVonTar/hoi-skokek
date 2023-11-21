@@ -276,7 +276,7 @@ focus_tree = {
 
 		completion_reward = {
 			declare_war_on = {
-				type = annex_everything    
+				type = annex_everything
 				target = POL
 			}
 			unlock_decision_category_tooltip = monarchist_uprising
@@ -377,6 +377,9 @@ focus_tree = {
 		available = {
 			CZE = {
 				exists = yes
+			}
+			has_army_manpower = {
+				size > 49999
 			}
 		}
 		bypass = {

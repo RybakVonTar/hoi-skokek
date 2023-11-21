@@ -322,9 +322,17 @@ focus_tree = {
 		cost = 10
 		relative_position_id = JRK_southern_tyrol
 		available = {
+			has_army_manpower = {
+				size > 199999
+			}
 		}
 		bypass = {
-			has_war_with = ITA
+			OR = {
+				has_war_with = ITA
+				ITA = {
+					exists = no
+				}
+			}
 		}
 
 		completion_reward = {
@@ -347,6 +355,9 @@ focus_tree = {
 		cost = 10
 		relative_position_id = JRK_italy
 		available = {
+			has_army_manpower = {
+				size > 199999
+			}
 		}
 		bypass = {
 			has_war_with = GER
@@ -491,9 +502,10 @@ focus_tree = {
 			every_owned_state = {
 				limit = {
 					OR = {
-						infrastructure = 2
-						infrastructure = 1
-						infrastructure = 3
+						non_damaged_building_level = {
+						building = infrastructure
+						level < 4
+						}
 					}
 					
 				}
