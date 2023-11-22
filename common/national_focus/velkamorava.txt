@@ -691,7 +691,7 @@ focus_tree = {
 		mutually_exclusive = {}
 
 		x = 9
-		y = 7
+		y = 5
 		cost = 5
 		#relative_position_id = JRK_industrialization
 		available = {
@@ -890,8 +890,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				cost_reduction = 1
-				uses = 1
+				cost_reduction = 0.25
+				uses = 3
 				category = naval_doctrine
 			}
 		}
@@ -916,8 +916,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				cost_reduction = 1
-				uses = 1
+				cost_reduction = 0.25
+				uses = 3
 				category = naval_doctrine
 			}
 		}
@@ -931,7 +931,7 @@ focus_tree = {
 		mutually_exclusive = {}
 
 		x = 14
-		y = 7
+		y = 5
 		cost = 5
 		#relative_position_id = JRK_industrialization
 		available = {
@@ -1057,50 +1057,7 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = JRK_naval_air
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { 
-			focus = JRK_light_aircraft
-		} 
-		prerequisite = { 
-			focus = JRK_carrier
-		} 
-		mutually_exclusive = {}
-
-		x = -1
-		y = 1
-		cost = 5
-		relative_position_id = JRK_light_aircraft
-		available = {
-		}
-		bypass = {
-		}
-
-		completion_reward = {
-			if = {
-				limit = { 
-					has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = industrial_complex
-					bonus = 1
-					uses = 1
-					category = cat_torpedoes
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = industrial_complex
-					bonus = 1
-					uses = 1
-					category = naval_bomber
-				}
-			}
-		}
-	}
-
+	
 	focus = {
 		id = JRK_cas
 		icon = GFX_focus_generic_tank_air_support
@@ -1169,8 +1126,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				cost_reduction = 1
-				uses = 1
+				cost_reduction = 0.25
+				uses = 3
 				category = air_doctrine
 			}
 		}
@@ -1195,8 +1152,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_doctrine_cost_reduction = {
-				cost_reduction = 1
-				uses = 1
+				cost_reduction = 0.25
+				uses = 3
 				category = air_doctrine
 			}
 		}
@@ -1238,6 +1195,217 @@ focus_tree = {
 					uses = 1
 					category = air_equipment
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_royal_army
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 19
+		y = 5
+		cost = 5
+		#relative_position_id = JRK_industrialization
+		available = {
+			has_completed_focus = JRK_army_training
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = JRK_artillery_effort
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { 
+			focus = JRK_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_support_effort
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { 
+			focus = JRK_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { 
+			focus = JRK_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = JRK_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { 
+			focus = JRK_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = JRK_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_tank_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { 
+			focus = JRK_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 2
+		cost = 5
+		relative_position_id = JRK_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_army_trainingI
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = JRK_artillery_effort
+			focus = JRK_equipment_effort
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = JRK_artillery_effort
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_army_trainingII
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = JRK_tank_effort
+			focus = JRK_motorization_effort
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = JRK_motorization_effort
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
 			}
 		}
 	}
