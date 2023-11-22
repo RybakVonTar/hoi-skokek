@@ -23,7 +23,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 1
+			add = 100
 			tag = JRK
 		}
 	}
@@ -237,6 +237,9 @@ focus_tree = {
 		cost = 10
 		relative_position_id = JRK_austro_hungarian_king
 		available = {
+			has_army_manpower = {
+				size > 99999
+			}
 		}
 		bypass = {
 		}
@@ -682,28 +685,29 @@ focus_tree = {
 
 	focus = {
 		id = JRK_royal_navy
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_build_navy
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
 
 		x = 9
-		y = 5
+		y = 7
 		cost = 5
 		#relative_position_id = JRK_industrialization
 		available = {
+			has_completed_focus = JRK_army_training
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#!
+			navy_experience = 25
 		}
 	}
 
 	focus = {
 		id = JRK_carrier
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { 
 			focus = JRK_royal_navy
 		} 
@@ -719,13 +723,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = cv_tech
+			}
 		}
 	}
 
 	focus = {
 		id = JRK_submarines
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { 
 			focus = JRK_royal_navy
 		} 
@@ -741,13 +750,58 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_torpedoes
+		icon = GFX_focus_generic_torpedo_production
+		prerequisite = { 
+			focus = JRK_submarines
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_submarines
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cat_torpedoes
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = naval_equipment
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = JRK_capital_ships
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { 
 			focus = JRK_royal_navy
 		} 
@@ -763,26 +817,70 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = ca_tech
+				category = bb_tech
+			}
 		}
 	}
 
 	focus = {
-		id = JRK_opose_major
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { 
-			focus = JRK_carrier
-		} 
-		prerequisite = { 
-			focus = JRK_submarines
-		} 
+		id = JRK_naval_guns
+		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { 
 			focus = JRK_capital_ships
 		} 
 		mutually_exclusive = {}
 
-		x = -2
+		x = 0
 		y = 1
+		cost = 5
+		relative_position_id = JRK_capital_ships
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 3
+					category = cat_ship_heavy_battery
+					category = cat_ship_medium_battery
+					category = cat_ship_light_battery
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = naval_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_navy_training
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { 
+			focus = JRK_torpedoes
+			focus = JRK_naval_guns
+			focus = JRK_carrier
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 2
 		cost = 5
 		relative_position_id = JRK_carrier
 		available = {
@@ -791,34 +889,65 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = naval_doctrine
+			}
 		}
 	}
 
 	focus = {
-		id = JRK_royal_airforce
-		icon = GFX_goal_generic_construct_civ_factory
+		id = JRK_navy_training_II
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { 
+			focus = JRK_navy_training
 		} 
 		mutually_exclusive = {}
 
-		x = 14
-		y = 5
+		x = 0
+		y = 1
 		cost = 5
-		#relative_position_id = JRK_industrialization
+		relative_position_id = JRK_navy_training
 		available = {
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#!
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_royal_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 14
+		y = 7
+		cost = 5
+		#relative_position_id = JRK_industrialization
+		available = {
+			has_completed_focus = JRK_army_training
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			air_experience = 25
 		}
 	}
 
 	focus = {
 		id = JRK_heavy_aircraft
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_air_bomber
 		prerequisite = { 
 			focus = JRK_royal_airforce
 		} 
@@ -834,13 +963,58 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = medium_air
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_bombers
+		icon = GFX_focus_generic_multi_role_aircraft
+		prerequisite = { 
+			focus = JRK_heavy_aircraft
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = JRK_heavy_aircraft
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1.5
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = heavy_air
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = JRK_light_aircraft
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_air_fighter
 		prerequisite = { 
 			focus = JRK_royal_airforce
 		} 
@@ -856,13 +1030,37 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = cat_air_guns
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = air_equipment
+				}
+			}
 		}
 	}
 
 	focus = {
 		id = JRK_naval_air
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_air_naval_bomber
 		prerequisite = { 
 			focus = JRK_light_aircraft
 		} 
@@ -881,13 +1079,132 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cat_torpedoes
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = naval_bomber
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_cas
+		icon = GFX_focus_generic_tank_air_support
+		prerequisite = { 
+			focus = JRK_light_aircraft
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = JRK_light_aircraft
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.5
+					uses = 1
+					category = cat_air_bombs
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cas_bomber
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_air_training
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { 
+			focus = JRK_cas
+		} 
+		prerequisite = { 
+			focus = JRK_bombers
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = JRK_bombers
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = JRK_air_training_II
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { 
+			focus = JRK_air_training
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JRK_air_training
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 1
+				uses = 1
+				category = air_doctrine
+			}
 		}
 	}
 
 	focus = {
 		id = JRK_motors
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_goal_generic_air_production
 		prerequisite = { 
 			focus = JRK_royal_airforce
 		} 
@@ -903,7 +1220,25 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cat_air_engine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = air_equipment
+				}
+			}
 		}
 	}
 }
