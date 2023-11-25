@@ -257,7 +257,7 @@ country_event = {
 
 		hidden_effect = {
 			MAN = {
-				puppet = MEN
+				annex = MEN
 				transfer_state = 609
 				transfer_state = 745
 			}
@@ -269,7 +269,6 @@ country_event = {
 					}
 				}
 				white_peace = MAN
-				white_peace = MEN
 			}
 			load_oob = SKO_quing_uprising
 		}

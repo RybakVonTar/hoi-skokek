@@ -313,6 +313,10 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = dockyard
 					level = 1
 				}
 			}
@@ -853,7 +857,20 @@ focus_tree = {
 			navy_experience = 25
 			set_technology = {
 				transport = 1
-				mtg_transport = 1
+				
+			}
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				set_technology = {
+					mtg_transport = 1
+				}
+			}
+			else = {
+				set_technology = {
+					transport = 1
+				}
 			}
 		}
 	}
@@ -1084,6 +1101,9 @@ focus_tree = {
 		cost = 5
 		relative_position_id = SKO_clear_warlords
 		available = {
+			MAN = {
+				is_puppet_of = SKO
+			}
 		}
 		bypass = {
 		}
@@ -1091,11 +1111,6 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				release_puppet = CHI
-				MAN = {
-					annex_country = {
-						target = MEN
-					}
-				}
 			}
 			MAN = {
 				annex_country = {
@@ -1141,31 +1156,15 @@ focus_tree = {
 		cost = 10
 		relative_position_id = SKO_annex_doctrine
 		available = {
+			MAN = {
+				is_puppet_of = SKO
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			if = {
-				limit = { 
-					MAN = {
-						is_puppet_of = SKO
-					}
-				}
-				annex_country = {
-					target = MAN
-				}
-			}
-			if = {
-				limit = { 
-					MEN = {
-						is_puppet_of = SKO
-					}
-				}
-				annex_country = {
-					target = MEN
-				}
-			}
+			annex = MAN
 		}
 	}
 
@@ -1702,11 +1701,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_intelligence_agency = {
-				name = "Westalia Intelligence Services"
-				icon = GFX_intelligence_agency_logo_sko
+			if = {
+				limit = { 
+					has_dlc = "La Resistance"
+				}
+				create_intelligence_agency = {
+					name = "Westalia Intelligence Services"
+					icon = GFX_intelligence_agency_logo_sko
+				}
 			}
-			#! agent
+			else = {
+				decryption = 25
+			}
 		}
 	}
 
