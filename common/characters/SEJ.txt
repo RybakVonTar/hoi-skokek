@@ -14,4 +14,85 @@ characters={
 			id=-1
 		}
 	}
+
+	SEJ_emilia={
+		name="Emilia "
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/emilia.dds"
+			}
+		}
+		field_marshal = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+
+			traits = {
+				anime_trait
+				trait_reckless
+			}
+		}
+	}
+
+	SEJ_rem={
+		name="Rem "
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/rem.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			traits = {
+				anime_trait
+			}
+		}
+	}
+
+	SEJ_ram={
+		name="Ram "
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/ram.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			traits = {
+				anime_trait
+			}
+		}
+	}
+
+	SEJ_beatrice={
+		name="Beatrice "
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/beatrice.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+
+			traits = {
+				anime_trait
+			}
+		}
+	}
 }
