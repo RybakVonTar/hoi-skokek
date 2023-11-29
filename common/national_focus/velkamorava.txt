@@ -242,6 +242,16 @@ focus_tree = {
 			}
 		}
 		bypass = {
+			OR = {
+				NOT = {
+					GER = {
+						owns_state = 4
+					}
+				}
+				AUS = {
+					exists = no
+				}
+			}
 		}
 
 		completion_reward = {
@@ -374,7 +384,12 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			has_war_with = GER
+			OR = {
+				has_war_with = GER
+				GER = {
+					exists = no
+				}
+			}
 		}
 
 		completion_reward = {

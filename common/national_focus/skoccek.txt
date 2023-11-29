@@ -915,6 +915,15 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+			SHX = {
+				exists = no
+			}
+			PRC = {
+				exists = no
+			}
+			XSM = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -1161,6 +1170,9 @@ focus_tree = {
 			}
 		}
 		bypass = {
+			MAN = {
+				exists = no
+			}
 		}
 
 		completion_reward = {

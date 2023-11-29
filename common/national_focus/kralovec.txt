@@ -404,10 +404,12 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			SEB = {
-				owns_state = 75
-				owns_state = 74
-				owns_state = 72
+			NOT = {
+				CZE = {
+					owns_state = 75
+					owns_state = 74
+					owns_state = 72
+				}
 			}
 		}
 
@@ -469,6 +471,9 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+			SEB = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -495,6 +500,9 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+			HUN = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
