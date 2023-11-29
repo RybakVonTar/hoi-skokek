@@ -4,8 +4,8 @@
 
 add_namespace = news_skokek
 
-# Marco Polo Bridge I
-news_skokek_event = {
+# war POL-JRK
+news_event = {
 	id = news_skokek.1
 	title = news_skokek.1.t
 	desc = news_skokek.1.d
@@ -14,24 +14,23 @@ news_skokek_event = {
 	major = yes
 	
 	is_triggered_only = yes
-
-	
 	
 	option = {
 		name = news_skokek.1.a
 		trigger = {
 			NOT = {
-				TAG = JAP
-				TAG = CHI
+				TAG = JRK
+				TAG = POL
 			}
 		}
 	}
 	option = {
 		name = news_skokek.1.b
-		trigger = { TAG = JAP }
-	}
-	option = {
-		name = news_skokek.1.c
-		trigger = { TAG = CHI }
+		trigger = {
+			is_neighbor_of = POL
+			NOT = {
+				tag = JRK
+			}
+		}
 	}
 }

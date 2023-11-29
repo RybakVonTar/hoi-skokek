@@ -342,6 +342,17 @@ focus_tree = {
 			declare_war_on = {
 				target = ITA
 			}
+			if = {
+				limit = {
+					ITA = {
+						has_added_tension_amount > 30
+					}
+				}
+				add_threat = -10
+			}
+			else = {
+				add_threat = 5
+			}
 		}
 	}
 
@@ -370,6 +381,17 @@ focus_tree = {
 			declare_war_on = {
 				target = GER
 				type = annex_everything
+			}
+			if = {
+				limit = {
+					GER = {
+						has_added_tension_amount > 30
+					}
+				}
+				add_threat = -10
+			}
+			else = {
+				add_threat = 5
 			}
 		}
 	}
@@ -438,6 +460,7 @@ focus_tree = {
 				target = LUX
 				type = annex_everything
 			}
+			add_threat = 10
 		}
 	}
 

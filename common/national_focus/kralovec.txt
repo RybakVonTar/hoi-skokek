@@ -157,14 +157,31 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				has_idea = civilian_economy
+				OR = {
+					has_idea = civilian_economy
+					has_idea = low_economic_mobilisation
+				}
 			}
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = civilian_economy
-				add_idea = partial_economic_mobilisation
+			if = {
+				limit = {
+					has_idea = civilian_economy
+				}
+				swap_ideas = {
+					remove_idea = civilian_economy
+					add_idea = partial_economic_mobilisation
+				}
+			}
+			if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				swap_ideas = {
+					remove_idea = low_economic_mobilisation
+					add_idea = partial_economic_mobilisation
+				}
 			}
 		}
 	}
@@ -279,7 +296,11 @@ focus_tree = {
 				type = annex_everything
 				target = POL
 			}
+			add_threat = 10
 			unlock_decision_category_tooltip = monarchist_uprising
+			hidden_effect = {
+				news_event = news_skokek.1
+			}
 		}
 	}
 
@@ -455,6 +476,7 @@ focus_tree = {
 				type = annex_everything    
 				target = SEB
 			}
+			add_threat = 5
 		}
 	}
 
@@ -480,6 +502,7 @@ focus_tree = {
 				type = annex_everything    
 				target = HUN
 			}
+			add_threat = 5
 		}
 	}
 
