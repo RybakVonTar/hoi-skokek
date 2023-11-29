@@ -1,0 +1,24 @@
+﻿air_wings = {
+	422 = {
+		fighter_equipment_1 =  {
+			owner = "SEJ" 
+			amount = 32
+		}
+		tac_bomber_equipment_0 = {
+			owner = "SEJ"
+			amount = 22
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = { 
+			type = fighter_equipment_1
+			creator = "SEJ"
+		}
+		requested_factories = 1
+		progress = 0.9
+		efficiency = 36
+	}
+}

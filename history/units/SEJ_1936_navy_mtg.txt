@@ -1,0 +1,227 @@
+instant_effect = {
+	create_equipment_variant = {
+		type = ship_hull_light_1
+		name = "DD Class"
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_depth_charge_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+		}
+	}
+	create_equipment_variant = {
+		type = ship_hull_cruiser_1
+		name = "CA Class"
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			mid_2_custom_slot = ship_airplane_launcher_1
+			mid_1_custom_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			armor_type_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_2
+		}
+	}
+	create_equipment_variant = {
+		type = ship_hull_cruiser_1
+		name = "CL Class"
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = ship_depth_charge_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+		}
+	}
+	create_equipment_variant = {
+		type = ship_hull_submarine_1
+		name = "SS Class"
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			rear_1_custom_slot = ship_torpedo_sub_1
+		}
+	}
+
+	add_equipment_production = {
+		equipment = { 
+			type = ship_hull_submarine_1
+	    	creator = "SEJ"
+			version_name = ""
+		}
+		requested_factories = 1
+		progress = 0.23
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = { 
+			type = ship_hull_light_1
+	    	creator = "SEJ"
+			version_name = ""
+		}
+		requested_factories = 1
+		progress = 0.6
+		efficiency = 100
+	}
+}
+
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 10201
+		# main fleet
+		task_force = {
+			name = "1st Suface Task Force"
+            location = 10201
+            ship = { 
+				pride_of_the_fleet = yes
+				definition = heavy_cruiser
+                equipment = {
+					ship_hull_cruiser_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "CA Class"
+                    }
+                }
+			}
+			# destroy
+			ship = {
+				definition = destroyer
+				equipment = { 
+					ship_hull_light_1 = {
+						amount = 1
+						owner = SEJ
+						version_name = "DD Class"
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					ship_hull_light_1 = {
+						amount = 1
+						owner = SEJ
+						version_name = "DD Class"
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					ship_hull_light_1 = {
+						amount = 1
+						owner = SEJ
+						version_name = "DD Class"
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					ship_hull_light_1 = {
+						amount = 1
+						owner = SEJ
+						version_name = "DD Class"
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					ship_hull_light_1 = {
+						amount = 1
+						owner = SEJ
+						version_name = "DD Class"
+					}
+				}
+			}
+			# l cruiser
+			ship = {
+				definition = light_cruiser
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = SEJ
+						version_name = "CL Class"
+					}
+				}
+			}
+		}
+		# submarine fleet
+		task_force = {
+			name = "1st Submarine Task Force"
+			location = 7260
+			ship = { 
+				definition = submarine
+                equipment = {
+					ship_hull_submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "SS Class"
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					ship_hull_submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "SS Class"
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					ship_hull_submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "SS Class"
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					ship_hull_submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "SS Class"
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					ship_hull_submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "SS Class"
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					ship_hull_submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "SS Class"
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					ship_hull_submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                        version_name = "SS Class"
+                    }
+                }
+			}
+		}
+	}
+}

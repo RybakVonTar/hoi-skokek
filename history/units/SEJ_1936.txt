@@ -1,0 +1,154 @@
+﻿division_template = {
+	name = "Coastal Defence"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Anime Marine"
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Light Tank Regiment"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		maintenance_company = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Coastal Defence"
+		location = 12258
+		division_template = "Coastal Defence"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "2nd Coastal Defence"
+		location = 7344
+		division_template = "Coastal Defence"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "3rd Coastal Defence"
+		location = 10229
+		division_template = "Coastal Defence"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "4th Coastal Defence"
+		location = 4219
+		division_template = "Coastal Defence"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "1st Anime Marine"
+		location = 10201
+		division_template = "Anime Marine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2nd Anime Marine"
+		location = 7260
+		division_template = "Anime Marine"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "1st Tank Regiment"
+		location = 10201
+		division_template = "Light Tank Regiment"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.2
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = { 
+			type = infantry_equipment_1
+			creator = "SEJ"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 49
+	}
+
+	add_equipment_production = {
+		equipment = { 
+			type = support_equipment_1
+			creator = "SEJ"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 22
+	}
+
+	if = {
+		limit = {
+			not = { has_dlc = "No Step Back" }
+		}
+		
+		add_equipment_production = {
+			equipment = { 
+				type = light_tank_equipment_1
+				creator = "SEJ"
+			}
+			requested_factories = 2
+			progress = 0.5
+			efficiency = 25
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+
+		create_equipment_variant = {
+			type = light_tank_chassis_0
+			name = "M1935"
+			modules = {
+				main_armament_slot = tank_heavy_machine_gun
+				turret_type_slot = tank_light_one_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				special_type_slot_1 = additional_machine_guns
+			}
+		}
+
+		add_equipment_production = {
+			equipment = { 
+				type = light_tank_chassis_0
+				creator = "SEJ"
+				version_name = "M1935"
+			}
+			requested_factories = 1
+			progress = 0.5
+			efficiency = 25
+		}
+	}
+}

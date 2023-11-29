@@ -1,0 +1,166 @@
+instant_effect = {
+	add_equipment_production = {
+		equipment = { 
+			type = submarine_1
+	    	creator = "SEJ"
+		}
+		requested_factories = 1
+		progress = 0.23
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = { 
+			type = destroyer_1
+	    	creator = "SEJ"
+		}
+		requested_factories = 1
+		progress = 0.6
+		efficiency = 100
+	}
+}
+
+units = {
+	fleet = {
+		name = "1st Fleet"
+		naval_base = 10201
+		# main fleet
+		task_force = {
+			name = "1st Suface Task Force"
+            location = 10201
+            ship = { 
+				pride_of_the_fleet = yes
+				definition = heavy_cruiser
+                equipment = {
+					battle_cruiser_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+			# destroy
+			ship = {
+				definition = destroyer
+				equipment = { 
+					destroyer_1 = {
+						amount = 1
+						owner = SEJ
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					destroyer_1 = {
+						amount = 1
+						owner =SEJ
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					destroyer_1 = {
+						amount = 1
+						owner = SEJ
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					destroyer_1 = {
+						amount = 1
+						owner = SEJ
+					}
+				}
+			}
+			ship = {
+				definition = destroyer
+				equipment = { 
+					destroyer_1 = {
+						amount = 1
+						owner = SEJ
+					}
+				}
+			}
+			# l cruiser
+			ship = {
+				definition = light_cruiser
+				equipment = {
+					light_cruiser_1 = {
+						amount = 1
+						owner = SEJ
+					}
+				}
+			}
+		}
+		# submarine fleet
+		task_force = {
+			name = "1st Submarine Task Force"
+			location = 7260
+			ship = { 
+				definition = submarine
+                equipment = {
+					submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+			ship = { 
+				definition = submarine
+                equipment = {
+					submarine_1 = {
+                        amount = 1
+                        owner = SEJ
+                    }
+                }
+			}
+		}
+	}
+}
