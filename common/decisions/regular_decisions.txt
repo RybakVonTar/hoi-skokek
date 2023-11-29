@@ -362,25 +362,55 @@ monarchist_uprising = {
 		cost = 0
 
 		complete_effect = {	
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -200
-			}
-			random_state = {
+			if = {
 				limit = {
-					is_controlled_by = POL
-					non_damaged_building_level = {
-						building = arms_factory
-						level > 1
+					has_war_with = POL
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -200
+				}
+				random_state = {
+					limit = {
+						is_controlled_by = POL
+						non_damaged_building_level = {
+							building = arms_factory
+							level > 1
+						}
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
 					}
 				}
-				damage_building = {
-					type = arms_factory
-					damage = 2
+				POL = {
+					add_stability = -0.01
 				}
 			}
-			POL = {
-				add_stability = -0.01
+			if = {
+				limit = {
+					has_war_with = D04
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -200
+				}
+				random_state = {
+					limit = {
+						is_controlled_by = D04
+						non_damaged_building_level = {
+							building = arms_factory
+							level > 1
+						}
+					}
+					damage_building = {
+						type = arms_factory
+						damage = 2
+					}
+				}
+				D04 = {
+					add_stability = -0.01
+				}
 			}
 		}
 
@@ -407,25 +437,55 @@ monarchist_uprising = {
 		cost = 0
 
 		complete_effect = {	
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -200
-			}
-			random_state = {
+			if = {
 				limit = {
-					is_controlled_by = POL
-					non_damaged_building_level = {
-						building = industrial_complex
-						level > 1
+					has_war_with = POL
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -200
+				}
+				random_state = {
+					limit = {
+						is_controlled_by = POL
+						non_damaged_building_level = {
+							building = industrial_complex
+							level > 1
+						}
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
 					}
 				}
-				damage_building = {
-					type = industrial_complex
-					damage = 2
+				POL = {
+					add_stability = -0.01
 				}
 			}
-			POL = {
-				add_stability = -0.01
+			if = {
+				limit = {
+					has_war_with = D04
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -200
+				}
+				random_state = {
+					limit = {
+						is_controlled_by = D04
+						non_damaged_building_level = {
+							building = industrial_complex
+							level > 1
+						}
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 2
+					}
+				}
+				D04 = {
+					add_stability = -0.01
+				}
 			}
 		}
 
@@ -443,10 +503,11 @@ monarchist_uprising = {
 			}
 		}
 		
-		fire_only_once = no
+		fire_only_once = yes
 		days_re_enable = 0
 
 		visible = {	
+			has_war_with = POL
 		}		
 
 		cost = 150
@@ -484,6 +545,7 @@ monarchist_uprising = {
 		days_re_enable = 7
 
 		visible = {	
+			has_war_with = POL
 		}		
 
 		cost = 25
