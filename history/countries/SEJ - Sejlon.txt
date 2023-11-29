@@ -99,7 +99,7 @@ if = {
 	}
 }
 
-set_convoys = 100
+set_convoys = 1500
 
 set_research_slots = 3
 
@@ -110,6 +110,7 @@ set_popularities = {
 set_politics = {
 	ruling_party = democratic
 	elections_allowed = yes
+	election_frequency = 1
 }
 
 set_stability = 0.6

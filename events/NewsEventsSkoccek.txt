@@ -1,0 +1,37 @@
+﻿###########################
+# news_skokek Events
+###########################
+
+add_namespace = news_skokek
+
+# Marco Polo Bridge I
+news_skokek_event = {
+	id = news_skokek.1
+	title = news_skokek.1.t
+	desc = news_skokek.1.d
+	picture = GFX_news_skokek_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	
+	
+	option = {
+		name = news_skokek.1.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+				TAG = CHI
+			}
+		}
+	}
+	option = {
+		name = news_skokek.1.b
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = news_skokek.1.c
+		trigger = { TAG = CHI }
+	}
+}
