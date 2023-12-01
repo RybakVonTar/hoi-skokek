@@ -32,6 +32,8 @@ characters={
 			traits = {
 				anime_trait
 				trait_reckless
+				inflexible_strategist
+				unyielding_defender
 			}
 		}
 	}
@@ -52,6 +54,8 @@ characters={
 
 			traits = {
 				anime_trait
+				naval_invader
+				infantry_officer
 			}
 		}
 	}
@@ -72,6 +76,8 @@ characters={
 
 			traits = {
 				anime_trait
+				panzer_leader
+				armor_officer
 			}
 		}
 	}
@@ -92,6 +98,53 @@ characters={
 
 			traits = {
 				anime_trait
+				infantry_officer
+				organizer
+			}
+		}
+	}
+
+	SEJ_akagi={
+		name="Akagi "
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/akagi.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 3
+			traits = {
+				anime_trait
+				old_guard_navy
+				war_hero
+				air_controller
+				fleet_protector
+			}
+		}
+	}
+	SEJ_kaga={
+		name="Kaga "
+		portraits={
+			civilian={
+				large="gfx/leaders/SEJ/kaga.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			maneuvering_skill = 3
+			coordination_skill = 2
+			traits = {
+				anime_trait
+				old_guard_navy
+				war_hero
+				air_controller
+				fly_swatter
 			}
 		}
 	}

@@ -59,6 +59,8 @@ characters={
 			logistics_skill = 2
 
 			traits = {
+				commando
+				anime_trait
 				urban_assault_specialist
 			}
 		}
@@ -78,6 +80,7 @@ characters={
 			logistics_skill = 2
 
 			traits = {
+				anime_trait
 				urban_assault_specialist
 			}
 		}
@@ -97,6 +100,8 @@ characters={
 			logistics_skill = 2
 
 			traits = {
+				engineer_officer
+				anime_trait
 				urban_assault_specialist
 			}
 		}

@@ -121,3 +121,5 @@ recruit_character = SEJ_rem
 recruit_character = SEJ_ram
 recruit_character = SEJ_beatrice
 recruit_character = SEJ_emilia
+recruit_character = SEJ_kaga
+recruit_character = SEJ_akagi

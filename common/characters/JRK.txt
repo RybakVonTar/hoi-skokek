@@ -23,6 +23,8 @@ characters={
 			traits = {
 				media_personality
 				politically_connected
+				unyielding_defender
+				inflexible_strategist
 			}
 		}
 	}
@@ -37,7 +39,12 @@ characters={
 		}
 		corps_commander = {
 
-			traits = { defensive_doctrine thorough_planner }
+			traits = { 
+				trickster
+				infantry_officer
+				infantry_leader
+				ambusher
+			}
 
 			skill=3
 			attack_skill=3
@@ -152,6 +159,25 @@ characters={
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=-1
+		}
+	}
+
+	JRK_={
+		name=""
+		portraits={
+			civilian={
+				large="gfx/leaders/JRK/.dds"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			traits = {
+				
+			}
 		}
 	}
 }
