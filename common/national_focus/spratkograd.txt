@@ -1,0 +1,365 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
+### search_filters = {FOCUS_FILTER_PROPAGANDA}
+### search_filters = {FOCUS_FILTER_ARMY_XP}
+### search_filters = {FOCUS_FILTER_NAVY_XP}
+### search_filters = {FOCUS_FILTER_AIR_XP}
+### search_filters = {FOCUS_FILTER_ITA_MISSIOLINI}
+### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
+# Reminder that focus filters prio has to be handled in the generic focus file :)
+
+
+
+focus_tree = {
+	id = spratkograd_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = VOV
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 100 y = 1700 }
+
+	initial_show_position = {
+		x = 0
+		y = 0
+	}
+
+	focus = {
+		id = VOV_spratkograd_expansion
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 4
+		y = 0
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			217 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_roads
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 0
+		#relative_position_id = VOV_spratkograd_expansion
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					non_damaged_building_level = {
+						building = infrastructure
+						level < 4
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_mass_industrialization
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_roads
+		} 
+		prerequisite = { 
+			focus = VOV_spratkograd_expansion
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		relative_position_id = VOV_spratkograd_expansion
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idea
+		}
+	}
+
+	focus = {
+		id = VOV_expanding_complexes
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_mass_industrialization
+		}
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_mass_industrialization
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_priority_civilian
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_expanding_complexes
+		} 
+		mutually_exclusive = {
+			focus = VOV_priority_military
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = VOV_expanding_complexes
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_construction
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_priority_civilian
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = VOV_priority_civilian
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idea
+		}
+	}
+
+	focus = {
+		id = VOV_construction_II
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_construction
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_construction
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_priority_military
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_expanding_complexes
+		} 
+		mutually_exclusive = {
+			focus = VOV_priority_civilian
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = VOV_expanding_complexes
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_arms_production
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_priority_military
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = VOV_priority_military
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idea
+		}
+	}
+
+	focus = {
+		id = VOV_arms_production_II
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_arms_production
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_arms_production
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_dockyards
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_priority_civilian
+			focus = VOV_priority_military
+		}
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		relative_position_id = VOV_priority_civilian
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_research
+		icon = GFX_goal_generic_CAS
+		prerequisite = { 
+			focus = VOV_construction_II
+			focus = VOV_arms_production_II
+		}
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		relative_position_id = VOV_construction_II
+		cost = 10
+		available = {
+			num_of_controlled_factories > 50
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+}

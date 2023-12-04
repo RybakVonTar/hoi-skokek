@@ -6,6 +6,11 @@ state={
 	
 	state_category = city
 
+	resources = {
+		steel = 11
+		tungsten = 2
+	}
+
 	history={
 		owner = VOV
 		victory_points = {
