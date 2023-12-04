@@ -11,19 +11,6 @@ instant_effect = {
 	}
 	create_equipment_variant = {
 		type = ship_hull_cruiser_1
-		name = "CA Class"
-		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			mid_2_custom_slot = ship_airplane_launcher_1
-			mid_1_custom_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			armor_type_slot = ship_armor_cruiser_2
-			fixed_ship_secondaries_slot = ship_secondaries_2
-		}
-	}
-	create_equipment_variant = {
-		type = ship_hull_cruiser_1
 		name = "CL Class"
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -45,43 +32,32 @@ instant_effect = {
 
 	add_equipment_production = {
 		equipment = { 
-			type = ship_hull_submarine_1
-	    	creator = "SEJ"
-			version_name = ""
-		}
-		requested_factories = 1
-		progress = 0.23
-		efficiency = 100
-	}
-
-	add_equipment_production = {
-		equipment = { 
 			type = ship_hull_light_1
-	    	creator = "SEJ"
-			version_name = ""
+	    	creator = "VOV"
+			version_name = "DD Class"
 		}
-		requested_factories = 1
-		progress = 0.6
-		efficiency = 100
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 38
 	}
 }
 
 units = {
 	fleet = {
-		name = "1st Fleet"
-		naval_base = 10201
+		name = "Chernomorskiy Flot"
+		naval_base = 9417
 		# main fleet
 		task_force = {
-			name = "1st Suface Task Force"
-            location = 10201
+			name = "Chernomorskiy Flot"
+            location = 9417
             ship = { 
 				pride_of_the_fleet = yes
 				definition = heavy_cruiser
                 equipment = {
 					ship_hull_cruiser_1 = {
                         amount = 1
-                        owner = SEJ
-                        version_name = "CA Class"
+                        owner = VOV
+                        version_name = "CL Class"
                     }
                 }
 			}
@@ -91,7 +67,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = SEJ
+						owner = VOV
 						version_name = "DD Class"
 					}
 				}
@@ -101,7 +77,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = SEJ
+						owner = VOV
 						version_name = "DD Class"
 					}
 				}
@@ -111,7 +87,7 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = SEJ
+						owner = VOV
 						version_name = "DD Class"
 					}
 				}
@@ -121,106 +97,10 @@ units = {
 				equipment = { 
 					ship_hull_light_1 = {
 						amount = 1
-						owner = SEJ
+						owner = VOV
 						version_name = "DD Class"
 					}
 				}
-			}
-			ship = {
-				definition = destroyer
-				equipment = { 
-					ship_hull_light_1 = {
-						amount = 1
-						owner = SEJ
-						version_name = "DD Class"
-					}
-				}
-			}
-			# l cruiser
-			ship = {
-				definition = light_cruiser
-				equipment = {
-					ship_hull_cruiser_1 = {
-						amount = 1
-						owner = SEJ
-						version_name = "CL Class"
-					}
-				}
-			}
-		}
-		# submarine fleet
-		task_force = {
-			name = "1st Submarine Task Force"
-			location = 7260
-			ship = { 
-				definition = submarine
-                equipment = {
-					ship_hull_submarine_1 = {
-                        amount = 1
-                        owner = SEJ
-                        version_name = "SS Class"
-                    }
-                }
-			}
-			ship = { 
-				definition = submarine
-                equipment = {
-					ship_hull_submarine_1 = {
-                        amount = 1
-                        owner = SEJ
-                        version_name = "SS Class"
-                    }
-                }
-			}
-			ship = { 
-				definition = submarine
-                equipment = {
-					ship_hull_submarine_1 = {
-                        amount = 1
-                        owner = SEJ
-                        version_name = "SS Class"
-                    }
-                }
-			}
-			ship = { 
-				definition = submarine
-                equipment = {
-					ship_hull_submarine_1 = {
-                        amount = 1
-                        owner = SEJ
-                        version_name = "SS Class"
-                    }
-                }
-			}
-			ship = { 
-				definition = submarine
-                equipment = {
-					ship_hull_submarine_1 = {
-                        amount = 1
-                        owner = SEJ
-                        version_name = "SS Class"
-                    }
-                }
-			}
-			ship = { 
-				definition = submarine
-                equipment = {
-					ship_hull_submarine_1 = {
-                        amount = 1
-                        owner = SEJ
-                        version_name = "SS Class"
-                    }
-                }
-			}
-			ship = { 
-				definition = submarine
-                equipment = {
-					ship_hull_submarine_1 = {
-                        amount = 1
-                        owner = SEJ
-                        version_name = "SS Class"
-                    }
-                }
 			}
 		}
 	}
