@@ -1,6 +1,6 @@
 ﻿capital = 217
 
-#! oob = "SKO_1936"
+oob = VOV_1936
 
 # Starting tech
 set_technology = {
@@ -11,6 +11,7 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 	tech_trucks = 1
+	motorised_infantry = 1
 	fuel_silos = 1
 	fuel_refining = 1
 }
@@ -26,7 +27,7 @@ if = {
 		early_submarine = 1
 		transport = 1
 	}
-	#! set_naval_oob = JRK_1936_navy
+	set_naval_oob = VOV_1936_navy
 }
 if = {
 	limit = {
@@ -46,7 +47,7 @@ if = {
 		mtg_transport = 1
 		fire_control_methods_1 = 1
 	}
-	#! set_naval_oob = JRK_1936_navy_mtg
+	set_naval_oob = VOV_1936_navy_mtg
 }
 
 if = {
@@ -60,7 +61,7 @@ if = {
 		early_bomber = 1
 		tactical_bomber1 = 1
 	}
-	#! set_air_oob = JRK_1936_air
+	set_air_oob = VOV_1936_air
 }
 if = {
 	limit = {
@@ -74,7 +75,7 @@ if = {
 		aircraft_construction = 1
 		aa_lmg = 1
 	}
-	#! set_air_oob = JRK_1936_air_bba
+	set_air_oob = VOV_1936_air_bba
 }
 
 if = {

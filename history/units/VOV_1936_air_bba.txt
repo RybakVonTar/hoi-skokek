@@ -1,0 +1,37 @@
+﻿instant_effect = {
+	create_equipment_variant = {
+		type = small_plane_airframe_0
+		name = "I-14"
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+		}
+	}
+
+	add_equipment_production = {
+		equipment = { 
+			type = small_plane_airframe_0
+			creator = "VOV"
+			version_name = "I-14"
+		}
+		requested_factories = 1
+		progress = 0.5
+		efficiency = 50
+	}
+}
+
+air_wings = {
+	217 = {
+		small_plane_airframe_0 =  {
+			owner = "VOV" 
+			amount = 56
+			version_name = "I-14"
+		}
+	}
+	236 = {
+		small_plane_airframe_0 =  {
+			owner = "VOV" 
+			amount = 15
+			version_name = "I-14"
+		}
+	}
+}

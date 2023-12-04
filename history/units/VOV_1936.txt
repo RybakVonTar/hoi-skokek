@@ -1,0 +1,179 @@
+﻿division_template = {
+	name = "Strelkovaya Divizia"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Tankovaya Divizia"
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "1. Strelkovaya Divizia"
+		location = 3529
+		division_template = "Strelkovaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "2. Strelkovaya Divizia"
+		location = 9753
+		division_template = "Strelkovaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Strelkovaya Divizia"
+		location = 9417
+		division_template = "Strelkovaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "4. Strelkovaya Divizia"
+		location = 11724
+		division_template = "Strelkovaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "5. Strelkovaya Divizia"
+		location = 11459
+		division_template = "Strelkovaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "6. Strelkovaya Divizia"
+		location = 6486
+		division_template = "Strelkovaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "7. Strelkovaya Divizia"
+		location = 775
+		division_template = "Strelkovaya Divizia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "1. Tankovaya Divizia"
+		location = 9442
+		division_template = "Tankovaya Divizia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "2. Tankovaya Divizia"
+		location = 6468
+		division_template = "Tankovaya Divizia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+	}
+	division = {
+		name = "3. Tankovaya Divizia"
+		location = 3487
+		division_template = "Tankovaya Divizia"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = infantry_equipment_1
+		amount = 2000
+	}
+	add_equipment_to_stockpile = {
+		type = artillery_equipment_1
+		amount = 560
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment_1
+		amount = -600
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment_1
+		amount = 325
+	}
+
+	add_equipment_production = {
+		equipment = { 
+			type = infantry_equipment_1
+			creator = "VOV"
+		}
+		requested_factories = 1
+		progress = 1
+		efficiency = 39
+	}
+
+	if = {
+		limit = {
+			not = { has_dlc = "No Step Back" }
+		}
+		
+		add_equipment_production = {
+			equipment = { 
+				type = light_tank_equipment_1
+				creator = "VOV"
+			}
+			requested_factories = 1
+			progress = 0.7
+			efficiency = 38
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+
+		create_equipment_variant = {
+			type = light_tank_chassis_0
+			name = "BT-6"
+			modules = {
+				main_armament_slot = tank_small_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				special_type_slot_1 = sloped_armor
+				special_type_slot_2 = extra_ammo_storage
+			}
+		}
+
+		add_equipment_production = {
+			equipment = { 
+				type = light_tank_chassis_0
+				creator = "VOV"
+				version_name = "BT-6"
+			}
+			requested_factories = 1
+			progress = 0.7
+			efficiency = 38
+		}
+	}
+}
