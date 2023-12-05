@@ -1178,7 +1178,7 @@ focus_tree = {
 
 		completion_reward = {
 			division_template = {
-				name = "Pionyr Militia"
+				name = "Pioner Militsiya"
 				is_locked = yes
 				regiments = { 
 					militia = { x = 0 y = 0 }
@@ -1416,6 +1416,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
 			create_faction = "Soyuz Sovetskikh Sotsialisticheskikh Respublik"
 		}
 	}

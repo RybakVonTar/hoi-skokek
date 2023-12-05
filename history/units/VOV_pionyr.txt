@@ -1,8 +1,8 @@
 ﻿units = {
 	division = {
 		location = 3529
-		division_template = "Pionyr Militia"
-		start_experience_factor = 0.5
+		division_template = "Pioner Militsiya"
+		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
 }

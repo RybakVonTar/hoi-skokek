@@ -1149,6 +1149,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_rule = {
+				can_puppet = no
+			}
 			add_ideas = SKO_annex
 		}
 	}
@@ -1176,7 +1179,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			annex = MAN
+			annex_country = {
+				target = MAN
+			}
 		}
 	}
 
@@ -1723,7 +1728,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				decryption = 25
+				add_ideas = SKO_non_resistance_agency
 			}
 		}
 	}
