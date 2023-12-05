@@ -1,0 +1,28 @@
+﻿l_english:
+ vov.0.t:0 "[FROM.GetName] did not accept!"
+ vov.0.d:0 ""
+ vov.0.a:0 "Demence"
+
+ vov.1.t:0 "[FROM.GetName] accepted!"
+ vov.1.d:0 ""
+ vov.1.a:0 "Demence"
+
+ vov.2.t:0 "[VOV.GetName] wants to join comintern"
+ vov.2.d:0 ""
+ vov.2.a:0 "They are welcomed!"
+ vov.2.b:0 "They are our enemy!"
+
+ vov.3.t:0 "Question of Wealthy Class"
+ vov.3.d:0 ""
+ vov.3.a:0 "Death"
+ vov.3.b:0 "Leave them alone"
+
+ vov.4.t:0 "Question of Lazy Class"
+ vov.4.d:0 ""
+ vov.4.a:0 "Death"
+ vov.4.b:0 "Leave them alone"
+
+ vov.5.t:0 "[VOV.GetName] demand Caucasus!"
+ vov.5.d:0 ""
+ vov.5.a:0 "Leave it to them!"
+ vov.5.b:0 "They are too pathetic!"

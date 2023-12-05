@@ -91,14 +91,14 @@ units = {
 	}
 	division = {
 		name = "2. Tankovaya Divizia"
-		location = 6468
+		location = 9442
 		division_template = "Tankovaya Divizia"
 		start_experience_factor = 0.4
 		start_equipment_factor = 1
 	}
 	division = {
 		name = "3. Tankovaya Divizia"
-		location = 3487
+		location = 9442
 		division_template = "Tankovaya Divizia"
 		start_experience_factor = 0.4
 		start_equipment_factor = 0.8

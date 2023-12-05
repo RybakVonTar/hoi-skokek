@@ -46,3 +46,16 @@ monarchist_uprising = {
 		}
 	}
 }
+
+pionyr = {
+	icon = GFX_category_icon
+	priority = 4
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = VOV
+		has_completed_focus = VOV_pionyr_militia
+	}
+}

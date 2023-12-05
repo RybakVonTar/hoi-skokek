@@ -1,0 +1,262 @@
+﻿add_namespace = vov
+
+# Said NO
+country_event = {
+	id = vov.0
+	title = vov.0.t
+	desc = vov.0.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.0.a
+	}
+}
+
+# Said YES
+country_event = {
+	id = vov.1
+	title = vov.1.t
+	desc = vov.1.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.1.a
+	}
+}
+
+# join commintern?
+country_event = {
+	id = vov.2
+	title = vov.2.t
+	desc = vov.2.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.2.a
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 99
+				}
+				add = 25
+			}
+			modifier = {
+				has_non_aggression_pact_with = VOV
+				add = 30
+			}
+		}
+
+		add_to_faction = VOV
+
+		VOV = {
+			country_event = vov.1
+		}
+	}
+
+	option = {
+		name = vov.2.b
+
+		ai_chance = {
+			base = 50
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value < 1
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value < -49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value < -99
+				}
+				add = 25
+			}
+		}
+
+		VOV = {
+			country_event = vov.0
+		}
+	}
+}
+
+# wealthy
+country_event = {
+	id = vov.3
+	title = vov.3.t
+	desc = vov.3.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.3.a
+
+		ai_chance = {
+			base = 100
+		}
+
+		add_manpower = -2736
+		add_stability = 0.05
+	}
+
+	option = {
+		name = vov.4.b
+
+		ai_chance = {
+			base = 0
+		}
+
+		add_stability = -0.2
+	}
+}
+
+# lazy
+country_event = {
+	id = vov.4
+	title = vov.4.t
+	desc = vov.4.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.4.a
+
+		ai_chance = {
+			base = 100
+		}
+
+		add_manpower = -6000
+		add_stability = 0.05
+	}
+
+	option = {
+		name = vov.4.b
+
+		ai_chance = {
+			base = 0
+		}
+
+		add_stability = -0.2
+	}
+}
+
+# demand caucasus
+country_event = {
+	id = vov.5
+	title = vov.5.t
+	desc = vov.5.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.5.a
+
+		ai_chance = {
+			base = 25
+			modifier = {
+				VOV = {
+					has_army_manpower = {
+						size > 99999
+					}
+				}
+
+				add = 10
+			}
+			modifier = {
+				VOV = {
+					has_army_manpower = {
+						size > 149999
+					}
+				}
+
+				add = 10
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 49
+				}
+				add = 20
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 99
+				}
+				add = 40
+			}
+			modifier = {
+				surrender_progress > 0.25
+				add = 15
+			}
+			modifier = {
+				surrender_progress > 0.5
+				add = 15
+			}
+		}
+
+		VOV = {
+			country_event = vov.1
+
+			transfer_state = 235
+			transfer_state = 232
+			transfer_state = 827
+			transfer_state = 828
+			transfer_state = 821
+			transfer_state = 233
+		}
+	}
+
+	option = {
+		name = vov.5.b
+
+		ai_chance = {
+			base = 75
+
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value < -49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value < -99
+				}
+				add = 25
+			}
+		}
+
+		VOV = {
+			country_event = vov.0
+		}
+	}
+}

@@ -39,7 +39,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_spratkograd_expansion
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_generic_industry_1
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
@@ -65,7 +65,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_roads
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
@@ -97,7 +97,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_mass_industrialization
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_generic_industry_2
 		prerequisite = { 
 			focus = VOV_roads
 		} 
@@ -116,13 +116,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea
+			add_ideas = VOV_industrialization
 		}
 	}
 
 	focus = {
 		id = VOV_expanding_complexes
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { 
 			focus = VOV_mass_industrialization
 		}
@@ -153,7 +153,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_priority_civilian
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { 
 			focus = VOV_expanding_complexes
 		} 
@@ -183,7 +183,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_construction
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_generic_construction
 		prerequisite = { 
 			focus = VOV_priority_civilian
 		}
@@ -198,13 +198,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea
+			add_ideas = VOV_construction
 		}
 	}
 
 	focus = {
 		id = VOV_construction_II
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { 
 			focus = VOV_construction
 		}
@@ -231,7 +231,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_priority_military
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { 
 			focus = VOV_expanding_complexes
 		} 
@@ -261,7 +261,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_arms_production
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_generic_combined_arms
 		prerequisite = { 
 			focus = VOV_priority_military
 		}
@@ -276,13 +276,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea
+			add_ideas = VOV_arms_production
 		}
 	}
 
 	focus = {
 		id = VOV_arms_production_II
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { 
 			focus = VOV_arms_production
 		}
@@ -309,7 +309,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_dockyards
-		icon = GFX_goal_generic_CAS
+		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { 
 			focus = VOV_priority_civilian
 			focus = VOV_priority_military
@@ -341,7 +341,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_research
-		icon = GFX_goal_generic_CAS
+		icon = GFX_focus_research
 		prerequisite = { 
 			focus = VOV_construction_II
 			focus = VOV_arms_production_II
@@ -360,6 +360,1150 @@ focus_tree = {
 
 		completion_reward = {
 			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = VOV_royal_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 9
+		y = 0
+		cost = 5
+		#relative_position_id = VOV_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = VOV_carrier
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { 
+			focus = VOV_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_submarines
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { 
+			focus = VOV_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_torpedoes
+		icon = GFX_focus_generic_torpedo_production
+		prerequisite = { 
+			focus = VOV_submarines
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = VOV_submarines
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cat_torpedoes
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = naval_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { 
+			focus = VOV_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = ca_tech
+				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_naval_guns
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { 
+			focus = VOV_capital_ships
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = VOV_capital_ships
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 3
+					category = cat_ship_heavy_battery
+					category = cat_ship_medium_battery
+					category = cat_ship_light_battery
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = naval_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_navy_training
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { 
+			focus = VOV_torpedoes
+			focus = VOV_naval_guns
+			focus = VOV_carrier
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 2
+		cost = 5
+		relative_position_id = VOV_carrier
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_navy_training_II
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { 
+			focus = VOV_navy_training
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = VOV_navy_training
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_royal_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 14
+		y = 0
+		cost = 5
+		#relative_position_id = VOV_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+
+	focus = {
+		id = VOV_heavy_aircraft
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { 
+			focus = VOV_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = medium_air
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_bombers
+		icon = GFX_focus_generic_multi_role_aircraft
+		prerequisite = { 
+			focus = VOV_heavy_aircraft
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = VOV_heavy_aircraft
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1.5
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = heavy_air
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_light_aircraft
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { 
+			focus = VOV_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = cat_air_guns
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = air_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_cas
+		icon = GFX_focus_generic_tank_air_support
+		prerequisite = { 
+			focus = VOV_light_aircraft
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = VOV_light_aircraft
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.5
+					uses = 1
+					category = cat_air_bombs
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cas_bomber
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_air_training
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { 
+			focus = VOV_cas
+		} 
+		prerequisite = { 
+			focus = VOV_bombers
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = VOV_bombers
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_air_training_II
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { 
+			focus = VOV_air_training
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = VOV_air_training
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_motors
+		icon = GFX_goal_generic_air_production
+		prerequisite = { 
+			focus = VOV_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = VOV_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cat_air_engine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = air_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_royal_army
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 19
+		y = 0
+		cost = 5
+		#relative_position_id = VOV_industrialization
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = VOV_artillery_effort
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { 
+			focus = VOV_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_support_effort
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { 
+			focus = VOV_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { 
+			focus = VOV_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = VOV_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { 
+			focus = VOV_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = VOV_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_tank_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { 
+			focus = VOV_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 2
+		cost = 5
+		relative_position_id = VOV_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_army_trainingI
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = VOV_artillery_effort
+			focus = VOV_equipment_effort
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = VOV_artillery_effort
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_army_trainingII
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = VOV_tank_effort
+			focus = VOV_motorization_effort
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = VOV_motorization_effort
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+
+	###################################
+	# politics
+	###################################
+
+	focus = {
+		id = VOV_real_marxism
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 28
+		y = 0
+		#relative_position_id = VOV_spratkograd_expansion
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = VOV_pionyr
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_real_marxism
+		} 
+		mutually_exclusive = {}
+
+		x = -3
+		y = 1
+		relative_position_id = VOV_real_marxism
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = VOV_pionyr
+		}
+	}
+
+	focus = {
+		id = VOV_militarise_pionyr
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { 
+			focus = VOV_pionyr
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		relative_position_id = VOV_pionyr
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = VOV_pionyr
+				add_idea = VOV_pionyr_mil
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_pionyr_militia
+		icon = GFX_focus_SOV_mobilization_plan
+		prerequisite = { 
+			focus = VOV_militarise_pionyr
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_militarise_pionyr
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			division_template = {
+				name = "Pionyr Militia"
+				is_locked = yes
+				regiments = { 
+					militia = { x = 0 y = 0 }
+					militia = { x = 0 y = 1 }
+					militia = { x = 0 y = 2 }
+				}
+				support = {
+					military_police = {
+						x = 0
+						y = 0
+					}
+				}
+			}
+			unlock_decision_tooltip = spawn_pionyr
+		}
+	}
+
+	focus = {
+		id = VOV_civilian_influence
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { 
+			focus = VOV_pionyr
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		relative_position_id = VOV_pionyr
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_stability = 0.07
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = VOV_pionyr_last_stand
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { 
+			focus = VOV_civilian_influence
+		} 
+		prerequisite = { 
+			focus = VOV_militarise_pionyr
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_civilian_influence
+		cost = 10
+		available = {
+			has_war = yes
+			surrender_progress > 0.5
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = VOV_pionyr_last_stand
+		}
+	}
+
+
+
+	focus = {
+		id = VOV_criticize_stalin
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		prerequisite = { 
+			focus = VOV_real_marxism
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_real_marxism
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			SOV = {
+				add_popularity = {
+					ideology = communism
+					popularity = -0.05
+				}
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = VOV_eradicate_wealthy
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		prerequisite = { 
+			focus = VOV_criticize_stalin
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_criticize_stalin
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			country_event = { id = vov.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = VOV_eradicate_lazy
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		prerequisite = { 
+			focus = VOV_eradicate_wealthy
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_eradicate_wealthy
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			country_event = { id = vov.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = VOV_final_equality
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		prerequisite = { 
+			focus = VOV_eradicate_lazy
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_eradicate_lazy
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = VOV_final_equality
+		}
+	}
+
+
+
+	focus = {
+		id = VOV_spread_communism
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_real_marxism
+		} 
+		mutually_exclusive = {}
+
+		x = 3
+		y = 1
+		relative_position_id = VOV_real_marxism
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+
+	focus = {
+		id = VOV_join_comintern
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_spread_communism
+		} 
+		mutually_exclusive = {
+			focus = VOV_our_faction
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_spread_communism
+		cost = 10
+		available = {
+		}
+		bypass = {
+			SOV = {
+				is_faction_leader = no
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			SOV = {
+				country_event = { id = vov.2 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_our_faction
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_spread_communism
+		} 
+		mutually_exclusive = {
+			focus = VOV_join_comintern
+		}
+
+		x = 3
+		y = 1
+		relative_position_id = VOV_spread_communism
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			create_faction = "Soyuz Sovetskikh Sotsialisticheskikh Respublik"
+		}
+	}
+
+	focus = {
+		id = VOV_demand_caucasus
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_spread_communism
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 7
+		y = 1
+		relative_position_id = VOV_spread_communism
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			SOV = {
+				country_event = { id = vov.5 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_crimea_crisis
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_demand_caucasus
+		} 
+		mutually_exclusive = {
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = VOV_demand_caucasus
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			SOV = {
+				#! event
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_balkanize_baku_region
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_demand_caucasus
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = VOV_demand_caucasus
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			SOV = {
+				release_on_controlled = GEO
+				release_on_controlled = AZR
+				release_on_controlled = ARM
+			}
+
+			puppet = GEO
+			puppet = AZR
+			puppet = ARM
+
+			hidden_effect = {
+				SOV = {
+					#! event
+				}
+			}
 		}
 	}
 }

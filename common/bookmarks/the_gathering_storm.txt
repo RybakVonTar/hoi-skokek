@@ -62,8 +62,12 @@ bookmarks = {
 			history = "(Ne)jsem komouš!"
 			ideology = communism
 			ideas = {
+				VOV_pionyr_mil
+				VOV_final_equality
 			}
 			focuses = {
+				VOV_final_equality
+				VOV_pionyr_militia
 			}
 		}
 		"MIR"={

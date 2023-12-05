@@ -1,0 +1,137 @@
+ideas = {
+	country = {
+		VOV_industrialization = {
+			name = VOV_industrialization_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		VOV_construction = {
+			name = VOV_construction_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		VOV_arms_production = {
+			name = VOV_arms_production_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		VOV_pionyr = {
+			name = VOV_pionyr_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.15
+				political_power_factor = 0.1
+			}
+		}
+
+		VOV_pionyr_mil = {
+			name = VOV_pionyr_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+				drift_defence_factor = 0.15
+				army_speed_factor = 0.05
+				recon_factor = 0.25
+				training_time_army_factor = -0.1
+			}
+		}
+
+		VOV_pionyr_last_stand = {
+			name = VOV_pionyr_last_stand_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				war_support_factor = 0.1
+				surrender_limit = 0.15
+				modifier_army_sub_unit_militia_defence_factor = 0.2
+				modifier_army_sub_unit_militia_speed_factor = 0.1
+				modifier_army_sub_unit_militia_max_org_factor = 0.15
+			}
+		}
+
+		VOV_final_equality = {
+			name = VOV_final_equality_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.3
+				recruitable_population_factor = 0.3
+				hidden_modifier = {
+					female_random_admiral_chance = 0.5
+					female_random_army_leader_chance = 0.5
+					female_random_country_leader_chance = 0.5
+					female_random_operative_chance = 0.5
+				}
+			}
+		}
+	}
+}

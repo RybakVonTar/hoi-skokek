@@ -18,3 +18,6 @@
  sabotage_civ:0 "Sabotage Civilian Factories"
  pol_stability:0 "Destabilize [POL.GetName]"
  pol_civil_war:0 "Ignite Civil War"
+
+ pionyr:0 "Pionýr"
+ spawn_pionyr:0 "Create Pionýr Militia"

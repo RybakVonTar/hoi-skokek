@@ -565,3 +565,42 @@ monarchist_uprising = {
 		}
 	}
 }
+
+pionyr = {
+	spawn_pionyr = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 339
+			}
+			has_equipment = {
+				support_equipment > 9
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 14
+
+		visible = {	
+		}		
+
+		cost = 25
+
+		complete_effect = {	
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -340
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -10
+			}
+			load_oob = VOV_pionyr
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	} 
+}
