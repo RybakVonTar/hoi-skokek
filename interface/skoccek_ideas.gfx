@@ -102,4 +102,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/coffee_daily.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_idea_anti_anime"
+		texturefile = "gfx/interface/ideas/anti_anime.dds"
+	}
+
 }

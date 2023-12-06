@@ -1,5 +1,20 @@
 ideas = {
 	country = {
+		anti_anime = {
+			name = anti_anime
+
+			removal_cost = -1
+
+			picture = anti_anime
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+			}
+		}
+
 		VOV_industrialization = {
 			name = VOV_industrialization_idea
 

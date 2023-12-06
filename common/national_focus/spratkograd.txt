@@ -1098,7 +1098,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = 28
+		x = 26
 		y = 0
 		#relative_position_id = VOV_spratkograd_expansion
 		cost = 5
@@ -1120,7 +1120,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = VOV_real_marxism
 		cost = 10
@@ -1256,7 +1256,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = VOV_real_marxism
 		cost = 5
@@ -1278,7 +1278,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_eradicate_wealthy
-		icon = GFX_focus_ger_bulwark_against_bolshevism
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { 
 			focus = VOV_criticize_stalin
 		} 
@@ -1300,7 +1300,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_eradicate_lazy
-		icon = GFX_focus_ger_bulwark_against_bolshevism
+		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { 
 			focus = VOV_eradicate_wealthy
 		} 
@@ -1322,7 +1322,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_final_equality
-		icon = GFX_focus_ger_bulwark_against_bolshevism
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
 			focus = VOV_eradicate_lazy
 		} 
@@ -1346,15 +1346,14 @@ focus_tree = {
 
 	focus = {
 		id = VOV_spread_communism
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_focus_generic_soviet_politics
 		prerequisite = { 
-			focus = VOV_real_marxism
 		} 
 		mutually_exclusive = {}
 
-		x = 3
-		y = 1
-		relative_position_id = VOV_real_marxism
+		x = 33
+		y = 0
+		#relative_position_id = VOV_real_marxism
 		cost = 5
 		available = {
 		}
@@ -1368,7 +1367,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_join_comintern
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_support_communism
 		prerequisite = { 
 			focus = VOV_spread_communism
 		} 
@@ -1376,7 +1375,7 @@ focus_tree = {
 			focus = VOV_our_faction
 		}
 
-		x = 0
+		x = -4
 		y = 1
 		relative_position_id = VOV_spread_communism
 		cost = 10
@@ -1398,7 +1397,7 @@ focus_tree = {
 
 	focus = {
 		id = VOV_our_faction
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_support_communism
 		prerequisite = { 
 			focus = VOV_spread_communism
 		} 
@@ -1406,7 +1405,7 @@ focus_tree = {
 			focus = VOV_join_comintern
 		}
 
-		x = 3
+		x = -1
 		y = 1
 		relative_position_id = VOV_spread_communism
 		cost = 10
@@ -1432,7 +1431,7 @@ focus_tree = {
 		mutually_exclusive = {
 		}
 
-		x = 7
+		x = 2
 		y = 1
 		relative_position_id = VOV_spread_communism
 		cost = 10
@@ -1506,6 +1505,35 @@ focus_tree = {
 				SOV = {
 					#! event
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_found_anti-anime
+		icon = GFX_focus_generic_join_comintern
+		prerequisite = { 
+			focus = VOV_spread_communism
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 6
+		y = 1
+		relative_position_id = VOV_spread_communism
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = anti_anime
+			every_country = {
+				limit = {
+					is_in_faction_with = VOV
+				}
+				#! event
 			}
 		}
 	}
