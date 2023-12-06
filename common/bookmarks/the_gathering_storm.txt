@@ -68,6 +68,7 @@ bookmarks = {
 			focuses = {
 				VOV_final_equality
 				VOV_pionyr_militia
+				VOV_black_sea_domination
 			}
 		}
 		"MIR"={

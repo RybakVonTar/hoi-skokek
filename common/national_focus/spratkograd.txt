@@ -1396,6 +1396,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VOV_great_patriotic_war
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { 
+			focus = VOV_join_comintern
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_join_comintern
+		cost = 10
+		available = {
+			SOV = {
+				OR = {
+					has_war_with = GER
+					has_war_with = MIR
+				}
+			}
+			OR = {
+				has_war_with = GER
+				has_war_with = MIR
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = GER
+				has_war_with = MIR
+			}
+		}
+
+		completion_reward = {
+			add_ideas = SOV_great_patriotic_war
+		}
+	}
+
+	focus = {
 		id = VOV_our_faction
 		icon = GFX_goal_support_communism
 		prerequisite = { 
@@ -1405,7 +1441,7 @@ focus_tree = {
 			focus = VOV_join_comintern
 		}
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = VOV_spread_communism
 		cost = 10
@@ -1424,14 +1460,14 @@ focus_tree = {
 
 	focus = {
 		id = VOV_demand_caucasus
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_focus_generic_annex_country
 		prerequisite = { 
 			focus = VOV_spread_communism
 		} 
 		mutually_exclusive = {
 		}
 
-		x = 2
+		x = 7
 		y = 1
 		relative_position_id = VOV_spread_communism
 		cost = 10
@@ -1448,15 +1484,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VOV_support_spain_commies
+		icon = GFX_focus_generic_befriend_communist_spain_focus
+		prerequisite = { 
+			focus = VOV_spread_communism
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 16
+		y = 1
+		relative_position_id = VOV_spread_communism
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#!
+		}
+	}
+
+	focus = {
 		id = VOV_crimea_crisis
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { 
 			focus = VOV_demand_caucasus
 		} 
 		mutually_exclusive = {
 		}
 
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = VOV_demand_caucasus
 		cost = 10
@@ -1473,15 +1532,55 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VOV_black_sea_domination
+		icon = GFX_focus_generic_black_sea_focus
+		prerequisite = { 
+			focus = VOV_deal_with_turkey
+			focus = VOV_attack_turkey
+		} 
+		prerequisite = {
+			focus = VOV_crimea_crisis
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = VOV_crimea_crisis
+		cost = 10
+		available = {
+			owns_state = 797
+			owns_state = 137
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					any_owned_state = {
+						OR = {
+							region = 26
+							region = 130
+						}
+					}
+				}
+				#! idea
+			}
+			#! idea
+		}
+	}
+
+	focus = {
 		id = VOV_balkanize_baku_region
-		icon = GFX_focus_generic_join_comintern
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { 
 			focus = VOV_demand_caucasus
 		} 
 		mutually_exclusive = {
 		}
 
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = VOV_demand_caucasus
 		cost = 10
@@ -1510,7 +1609,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VOV_found_anti-anime
+		id = VOV_anti-anime
 		icon = GFX_focus_generic_join_comintern
 		prerequisite = { 
 			focus = VOV_spread_communism
@@ -1518,10 +1617,10 @@ focus_tree = {
 		mutually_exclusive = {
 		}
 
-		x = 6
+		x = 3
 		y = 1
 		relative_position_id = VOV_spread_communism
-		cost = 10
+		cost = 5
 		available = {
 		}
 		bypass = {
@@ -1534,6 +1633,255 @@ focus_tree = {
 					is_in_faction_with = VOV
 				}
 				#! event
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_support_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { 
+			focus = VOV_anti-anime
+		} 
+		mutually_exclusive = {
+			focus = VOV_support_china
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = VOV_anti-anime
+		cost = 10
+		available = {
+			SKO = {
+				has_war_with = JAP
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			send_equipment = {
+				type = infantry_equipment
+				amount = 10000
+				target = JAP
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = VOV
+					modifier = VOV_supporting_antianime_war
+				}
+			}
+			add_opinion_modifier = {
+				target = JAP
+				modifier = VOV_supporting_antianime_war
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_support_china
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		prerequisite = { 
+			focus = VOV_anti-anime
+		} 
+		mutually_exclusive = {
+			focus = VOV_support_japan
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = VOV_anti-anime
+		cost = 10
+		available = {
+			SKO = {
+				has_war_with = CHI
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			send_equipment = {
+				type = infantry_equipment
+				amount = 10000
+				target = CHI
+			}
+			CHI = {
+				add_opinion_modifier = {
+					target = VOV
+					modifier = VOV_supporting_antianime_war
+				}
+			}
+			add_opinion_modifier = {
+				target = CHI
+				modifier = VOV_supporting_antianime_war
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_middle_east
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		prerequisite = { 
+			focus = VOV_spread_communism
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 12
+		y = 1
+		relative_position_id = VOV_spread_communism
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = VOV_attack_turkey
+		icon = GFX_focus_generic_attack_turkey
+		prerequisite = { 
+			focus = VOV_middle_east
+		} 
+		mutually_exclusive = {
+			focus = VOV_deal_with_turkey
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_middle_east
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				target = TUR
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_deal_with_turkey
+		icon = GFX_focus_generic_befriend_turkey
+		prerequisite = { 
+			focus = VOV_middle_east
+		} 
+		mutually_exclusive = {
+			focus = VOV_attack_turkey
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = VOV_middle_east
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event
+		}
+	}
+
+	focus = {
+		id = VOV_attack_iran
+		icon = GFX_focus_generic_attack_iran
+		prerequisite = { 
+			focus = VOV_middle_east
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = VOV_middle_east
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				target = PER
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_attack_iraq
+		icon = GFX_goal_generic_major_war
+		prerequisite = { 
+			focus = VOV_deal_with_turkey
+			focus = VOV_attack_turkey
+		} 
+		prerequisite = {
+			focus = VOV_attack_iran
+		}
+		mutually_exclusive = {
+		}
+
+		x = -2
+		y = 1
+		relative_position_id = VOV_attack_iran
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				target = IRQ
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_kurdistan_republic
+		icon = GFX_focus_CZE_german_puppet
+		prerequisite = { 
+			focus = VOV_attack_iraq
+		}
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_attack_iraq
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			release_puppet = KUR
+			TUR = {
+				release = KUR
+			}
+			PER = {
+				release = KUR
+			}
+			IRQ = {
+				release = KUR
 			}
 		}
 	}
