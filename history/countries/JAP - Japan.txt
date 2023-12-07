@@ -225,6 +225,7 @@ create_import = {
 		soemu_toyoda
 		fushimi_hiroyasu
 		kawasaki
+		anti_anime
 
 		#laws
 		tot_economic_mobilisation

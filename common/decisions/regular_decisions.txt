@@ -604,3 +604,35 @@ pionyr = {
 		}
 	} 
 }
+
+anti_anime = {
+	#! invitations
+
+	#every_country = {
+			#	limit = {
+			#		is_in_faction_with = VOV
+			#		NOT = {
+			#			is_puppet_of = VOV
+			#		}
+			#	}
+				#! event
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_puppet_of = VOV
+			#	}
+			#	add_ideas = anti_anime
+			#	every_army_leader = {
+			#		limit = {
+			#			has_trait = anime_trait
+			#		}
+			#		retire = yes
+			#	}
+			#	every_navy_leader = {
+			#		limit = {
+			#			has_trait = anime_trait
+			#		}
+			#		retire = yes
+			#	}
+			#}
+}

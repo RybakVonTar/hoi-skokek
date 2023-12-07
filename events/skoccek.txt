@@ -460,6 +460,9 @@ country_event = {
 			SOV = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -476,6 +479,9 @@ country_event = {
 			VOV = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -502,6 +508,9 @@ country_event = {
 			GER = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -518,6 +527,9 @@ country_event = {
 			MIR = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -544,6 +556,9 @@ country_event = {
 			USA = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -570,6 +585,9 @@ country_event = {
 			ENG = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -586,6 +604,9 @@ country_event = {
 			SEJ = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -612,6 +633,9 @@ country_event = {
 			ITA = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -638,6 +662,9 @@ country_event = {
 			FRA = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -664,6 +691,9 @@ country_event = {
 			FIN = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -742,6 +772,9 @@ country_event = {
 			CZE = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 
@@ -758,6 +791,9 @@ country_event = {
 			SEB = {
 				exists = yes
 				has_capitulated = no
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
 		}
 

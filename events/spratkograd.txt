@@ -413,3 +413,65 @@ country_event = {
 		}
 	}
 }
+
+# crimea crisis
+country_event = {
+	id = vov.8
+	title = vov.8.t
+	desc = vov.8.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.8.a
+
+		ai_chance = {
+			base = 65
+
+			modifier = {
+				has_war_with_major = yes
+				add = 10
+			}
+			modifier = {
+				has_war = yes
+				add = 5
+			}
+			modifier = {
+				surrender_progress > 0.15
+				add = 15
+			}
+			modifier = {
+				surrender_progress > 0.5
+				add = 20
+			}
+		}
+
+		release = CRI
+
+		VOV = {
+			puppet = CRI
+			transfer_state = 234
+		}
+	}
+
+	option = {
+		name = vov.8.b
+
+		ai_chance = {
+			base = 35
+		}
+		137 = {
+			remove_core_of = SOV
+			start_resistance = yes
+			set_compliance = 20
+			set_resistance = 10
+		}
+		196 = {
+			remove_core_of = SOV
+			start_resistance = yes
+			set_compliance = 20
+			set_resistance = 10
+		}
+	}
+}

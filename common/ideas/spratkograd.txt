@@ -167,5 +167,119 @@ ideas = {
 				air_doctrine_cost_factor = -0.1
 			}
 		}
+
+		VOV_spain_cw_spa = {
+			name = VOV_spain_cw_spa
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				has_civil_war = no
+			}
+
+			modifier = {
+				army_org_factor = 0.1
+				army_speed_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		VOV_spain_cw_vov = {
+			name = VOV_spain_cw_vov
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				any_country = {
+					NOT = {
+						has_idea = VOV_spain_cw_spa
+					}
+				}
+			}
+
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_air = 0.02
+			}
+		}
+
+		VOV_fra_communism = {
+			name = VOV_fra_communism
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				has_completed_focus = FRA_ban_communism
+			}
+
+			modifier = {
+				communism_drift = 0.05
+				stability_weekly = -0.001
+			}
+		}
+
+		VOV_black_sea_domination_vov = {
+			name = VOV_black_sea_domination_vov
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+			}
+		}
+
+		VOV_black_sea_domination_else = {
+			name = VOV_black_sea_domination_vov
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				any_owned_state = {
+					OR = {
+						region = 132
+						region = 150
+						region = 265
+						region = 12
+						region = 24
+						region = 25
+						region = 232
+						region = 240
+						region = 34
+					}
+				}
+			}
+
+			modifier = {
+			}
+		}
 	}
 }

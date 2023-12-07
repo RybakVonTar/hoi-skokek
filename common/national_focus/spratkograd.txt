@@ -1365,7 +1365,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_war_support = 0.1
+			add_political_power = 100
 		}
 	}
 
@@ -1536,6 +1536,11 @@ focus_tree = {
 		relative_position_id = VOV_our_faction
 		cost = 10
 		available = {
+			FRA = {
+				NOT = {
+					has_completed_focus = FRA_ban_communism
+				}
+			}
 		}
 		bypass = {
 			FRA = {
@@ -1544,7 +1549,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea
+			FRA = {
+				add_timed_idea = {
+					idea = VOV_fra_communism
+					days = 365
+				}
+			}
 		}
 	}
 
@@ -1565,6 +1575,7 @@ focus_tree = {
 			FRA = {
 				has_government = communism
 				is_in_faction = yes
+				has_civil_war = no
 			}
 		}
 		bypass = {
@@ -1661,7 +1672,7 @@ focus_tree = {
 					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 				}
 				SPC = {
-					#! spain
+					add_ideas = VOV_spain_cw_spa
 				}
 			}
 			else_if = {
@@ -1670,7 +1681,7 @@ focus_tree = {
 					country_exists = SPD
 				}
 				SPD = {
-					#! spain
+					add_ideas = VOV_spain_cw_spa
 				}
 			}
 			else = {
@@ -1683,9 +1694,10 @@ focus_tree = {
 							has_government = democratic
 						}
 					}
-					#! spain
+					add_ideas = VOV_spain_cw_spa
 				}
 			}
+			add_ideas = VOV_spain_cw_vov
 		}
 	}
 
@@ -1772,7 +1784,7 @@ focus_tree = {
 
 		completion_reward = {
 			SOV = {
-				#! event
+				country_event = { id = vov.8 days = 1 }
 			}
 		}
 	}
@@ -1795,8 +1807,20 @@ focus_tree = {
 		relative_position_id = VOV_crimea_crisis
 		cost = 10
 		available = {
-			owns_state = 797
-			owns_state = 137
+			any_country = {
+				OR = {
+					is_puppet_of = VOV
+					tag = VOV
+				}
+				owns_state = 797
+			}
+			any_country = {
+				OR = {
+					is_puppet_of = VOV
+					tag = VOV
+				}
+				owns_state = 137
+			}
 		}
 		bypass = {
 		}
@@ -1832,9 +1856,9 @@ focus_tree = {
 						}
 					}
 				}
-				#! idea
+				add_ideas = VOV_black_sea_domination_else
 			}
-			#! idea
+			add_ideas = VOV_black_sea_domination_vov
 		}
 	}
 
@@ -1866,12 +1890,6 @@ focus_tree = {
 			puppet = GEO
 			puppet = AZR
 			puppet = ARM
-
-			hidden_effect = {
-				SOV = {
-					#! event
-				}
-			}
 		}
 	}
 
@@ -1895,46 +1913,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = anti_anime
-			#! decision
-			#every_army_leader = {
-			#	limit = {
-			#		has_trait = anime_trait
-			#	}
-			#	retire = yes
-			#}
-			#every_navy_leader = {
-			#	limit = {
-			#		has_trait = anime_trait
-			#	}
-			#	retire = yes
-			#}
-			#every_country = {
-			#	limit = {
-			#		is_in_faction_with = VOV
-			#		NOT = {
-			#			is_puppet_of = VOV
-			#		}
-			#	}
-				#! event
-			#}
-			#every_country = {
-			#	limit = {
-			#		is_puppet_of = VOV
-			#	}
-			#	add_ideas = anti_anime
-			#	every_army_leader = {
-			#		limit = {
-			#			has_trait = anime_trait
-			#		}
-			#		retire = yes
-			#	}
-			#	every_navy_leader = {
-			#		limit = {
-			#			has_trait = anime_trait
-			#		}
-			#		retire = yes
-			#	}
-			#}
+			unlock_decision_category_tooltip = anti_anime
+			every_army_leader = {
+				limit = {
+					has_trait = anime_trait
+				}
+				retire = yes
+			}
+			every_navy_leader = {
+				limit = {
+					has_trait = anime_trait
+				}
+				retire = yes
+			}
 		}
 	}
 
@@ -2043,6 +2034,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 

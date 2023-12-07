@@ -59,3 +59,16 @@ pionyr = {
 		has_completed_focus = VOV_pionyr_militia
 	}
 }
+
+anti_anime = {
+	icon = GFX_category_icon
+	priority = 4
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = VOV
+		has_completed_focus = VOV_anti-anime
+	}
+}
