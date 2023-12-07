@@ -207,7 +207,7 @@ country_event = {
 			modifier = {
 				has_opinion = {
 					target = VOV
-					value > 99
+					value > 94
 				}
 				add = 40
 			}
@@ -257,6 +257,159 @@ country_event = {
 
 		VOV = {
 			country_event = vov.0
+		}
+
+		235 = {
+			add_claim_by = VOV
+		}
+		232 = {
+			add_claim_by = VOV
+		}
+		827 = {
+			add_claim_by = VOV
+		}
+		828 = {
+			add_claim_by = VOV
+		}
+		821 = {
+			add_claim_by = VOV
+		}
+		233 = {
+			add_claim_by = VOV
+		}
+	}
+}
+
+# invite
+country_event = {
+	id = vov.6
+	title = vov.6.t
+	desc = vov.6.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.6.a
+
+		ai_chance = {
+			base = 50
+
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 49
+				}
+				add = 50
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 94
+				}
+				add = 100
+			}
+			modifier = {
+				has_war_with_major = yes
+				add = 50
+			}
+			modifier = {
+				has_war = yes
+				add = 20
+			}
+		}
+
+		VOV = {
+			add_to_faction = ROOT
+			country_event = vov.1
+		}
+	}
+
+	option = {
+		name = vov.6.b
+
+		ai_chance = {
+			base = 50
+
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value < -49
+				}
+				add = 100
+			}
+			modifier = {
+				any_country = {
+					is_in_faction_with = VOV
+					OR = {
+						has_war_with = TUR
+						has_wargoal_against = TUR
+					}
+				}
+				add = 1000
+			}
+		}
+
+		VOV = {
+			country_event = vov.0
+		}
+	}
+}
+
+# demand curdistan
+country_event = {
+	id = vov.7
+	title = vov.7.t
+	desc = vov.7.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.7.a
+
+		ai_chance = {
+			base = 55
+
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = VOV
+					value > 94
+				}
+				add = 15
+			}
+		}
+
+		VOV = {
+			transfer_state = 354
+			transfer_state = 800
+			transfer_state = 350
+			transfer_state = 352
+			transfer_state = 353
+			country_event = vov.1
+		}
+	}
+
+	option = {
+		name = vov.7.b
+
+		ai_chance = {
+			base = 45
+		}
+
+		VOV = {
+			country_event = vov.0
+			create_wargoal = {
+				target = TUR
+				type = annex_everything
+			}
 		}
 	}
 }

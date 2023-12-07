@@ -363,6 +363,10 @@ focus_tree = {
 		}
 	}
 
+	###################################
+	# army
+	###################################
+
 	focus = {
 		id = VOV_royal_navy
 		icon = GFX_goal_generic_build_navy
@@ -1454,7 +1458,122 @@ focus_tree = {
 			set_rule = {
 				can_create_factions = yes
 			}
-			create_faction = "Soyuz Sovetskikh Sotsialisticheskikh Respublik"
+			create_faction = "4th International"
+		}
+	}
+
+	focus = {
+		id = VOV_invite_china
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		prerequisite = { 
+			focus = VOV_our_faction
+		} 
+		prerequisite = {
+			focus = VOV_support_china
+		}
+		mutually_exclusive = {
+		}
+
+		x = 1
+		y = 2
+		relative_position_id = VOV_our_faction
+		cost = 10
+		available = {
+			PRC = {
+				is_faction_leader = no
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			PRC = {
+				country_event = { id = vov.6 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_invite_tito
+		icon = GFX_focus_invite_yugoslavia
+		prerequisite = { 
+			focus = VOV_our_faction
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 3
+		relative_position_id = VOV_our_faction
+		cost = 10
+		available = {
+			YUG = {
+				has_government = communism
+				is_in_faction = yes
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			YUG = {
+				country_event = { id = vov.6 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_support_fra_communism
+		icon = GFX_focus_YUG_pan_slavic_congress
+		prerequisite = { 
+			focus = VOV_our_faction
+		} 
+		mutually_exclusive = {
+		}
+
+		x = -1
+		y = 1
+		relative_position_id = VOV_our_faction
+		cost = 10
+		available = {
+		}
+		bypass = {
+			FRA = {
+				has_government = communism
+			}
+		}
+
+		completion_reward = {
+			#! idea
+		}
+	}
+
+	focus = {
+		id = VOV_invite_france
+		icon = GFX_focus_chi_reach_out_to_france
+		prerequisite = { 
+			focus = VOV_support_fra_communism
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_support_fra_communism
+		cost = 10
+		available = {
+			FRA = {
+				has_government = communism
+				is_in_faction = yes
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			FRA = {
+				country_event = { id = vov.6 days = 1 }
+			}
 		}
 	}
 
@@ -1497,12 +1616,139 @@ focus_tree = {
 		relative_position_id = VOV_spread_communism
 		cost = 10
 		available = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				SPR_scw_in_progress = yes
+				if = {
+					limit = {
+						NOT = { has_global_flag = spanish_civil_war }
+					}
+					custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_country_exist_tt
+					    country_exists = SPR
+				    }
+				    custom_trigger_tooltip = {
+					    tooltip = POR_spr_tooltip_at_peace_tt
+						NOT = { has_war_with = SPR }
+				    }
+				}
+			}
+			else = {
+				any_other_country = {
+					original_tag = SPR
+					has_civil_war = yes
+					NOT = { has_war_with = ROOT }
+					OR = {
+						has_government = democratic
+						has_government = communism
+					}
+				}
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			#!
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					has_completed_focus = SOV_covert_support_for_spanish_poum
+					has_completed_focus = SOV_coup_detat
+					has_global_flag = SPR_anarchist_uprising_flag
+					country_exists = SPC
+					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+				}
+				SPC = {
+					#! spain
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "La Resistance"
+					country_exists = SPD
+				}
+				SPD = {
+					#! spain
+				}
+			}
+			else = {
+				random_country = {
+					limit = {
+						original_tag = SPR
+						has_civil_war = yes
+						OR = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+					#! spain
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_invite_spain
+		icon = GFX_focus_generic_befriend_communist_spain_focus
+		prerequisite = { 
+			focus = VOV_support_spain_commies
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 1
+		relative_position_id = VOV_support_spain_commies
+		cost = 10
+		available = {
+			any_other_country = {
+				original_tag = SPR
+				has_civil_war = no
+				NOT = { has_war_with = ROOT }
+				has_government = communism
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					has_completed_focus = SOV_covert_support_for_spanish_poum
+					has_completed_focus = SOV_coup_detat
+					has_global_flag = SPR_anarchist_uprising_flag
+					country_exists = SPC
+					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+				}
+				SPC = {
+					country_event = { id = vov.6 days = 1 }
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "La Resistance"
+					country_exists = SPD
+				}
+				SPD = {
+					country_event = { id = vov.6 days = 1 }
+				}
+			}
+			else = {
+				random_country = {
+					limit = {
+						original_tag = SPR
+						has_civil_war = yes
+						OR = {
+							has_government = communism
+							has_government = democratic
+						}
+					}
+					country_event = { id = vov.6 days = 1 }
+				}
+			}
 		}
 	}
 
@@ -1558,10 +1804,31 @@ focus_tree = {
 		completion_reward = {
 			every_country = {
 				limit = {
-					any_owned_state = {
-						OR = {
-							region = 26
-							region = 130
+					AND = {
+						NOT = {
+							is_in_faction_with = VOV
+							is_puppet_of = VOV
+						}
+						any_owned_state = {
+							OR = {
+								region = 26
+								region = 130
+							}
+						}
+						NOT = {
+							any_owned_state = {
+								OR = {
+									region = 132
+									region = 150
+									region = 265
+									region = 12
+									region = 24
+									region = 25
+									region = 232
+									region = 240
+									region = 34
+								}
+							}
 						}
 					}
 				}
@@ -1628,12 +1895,46 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = anti_anime
-			every_country = {
-				limit = {
-					is_in_faction_with = VOV
-				}
+			#! decision
+			#every_army_leader = {
+			#	limit = {
+			#		has_trait = anime_trait
+			#	}
+			#	retire = yes
+			#}
+			#every_navy_leader = {
+			#	limit = {
+			#		has_trait = anime_trait
+			#	}
+			#	retire = yes
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_in_faction_with = VOV
+			#		NOT = {
+			#			is_puppet_of = VOV
+			#		}
+			#	}
 				#! event
-			}
+			#}
+			#every_country = {
+			#	limit = {
+			#		is_puppet_of = VOV
+			#	}
+			#	add_ideas = anti_anime
+			#	every_army_leader = {
+			#		limit = {
+			#			has_trait = anime_trait
+			#		}
+			#		retire = yes
+			#	}
+			#	every_navy_leader = {
+			#		limit = {
+			#			has_trait = anime_trait
+			#		}
+			#		retire = yes
+			#	}
+			#}
 		}
 	}
 
@@ -1644,10 +1945,9 @@ focus_tree = {
 			focus = VOV_anti-anime
 		} 
 		mutually_exclusive = {
-			focus = VOV_support_china
 		}
 
-		x = -1
+		x = 1
 		y = 1
 		relative_position_id = VOV_anti-anime
 		cost = 10
@@ -1688,10 +1988,9 @@ focus_tree = {
 			focus = VOV_anti-anime
 		} 
 		mutually_exclusive = {
-			focus = VOV_support_japan
 		}
 
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = VOV_anti-anime
 		cost = 10
@@ -1794,7 +2093,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! event
+			TUR = {
+				country_event = { id = vov.7 days = 1 }
+			}
 		}
 	}
 

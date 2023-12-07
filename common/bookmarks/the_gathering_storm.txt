@@ -64,6 +64,7 @@ bookmarks = {
 			ideas = {
 				VOV_pionyr_mil
 				VOV_final_equality
+				SOV_great_patriotic_war
 			}
 			focuses = {
 				VOV_final_equality
