@@ -116,6 +116,10 @@ ideas = {
 				always = yes
 			}
 
+			cancel = {
+				surrender_progress = 0
+			}
+
 			modifier = {
 				war_support_factor = 0.1
 				surrender_limit = 0.15
