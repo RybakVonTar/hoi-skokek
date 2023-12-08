@@ -257,7 +257,9 @@ country_event = {
 
 		hidden_effect = {
 			MAN = {
-				annex = MEN
+				annex_country = {
+					target = MEN
+				}
 				transfer_state = 609
 				transfer_state = 745
 			}

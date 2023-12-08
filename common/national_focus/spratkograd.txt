@@ -1580,7 +1580,7 @@ focus_tree = {
 			FRA = {
 				add_timed_idea = {
 					idea = VOV_fra_communism
-					days = 365
+					days = 730
 				}
 			}
 		}
@@ -2065,6 +2065,12 @@ focus_tree = {
 			}
 		}
 		bypass = {
+			SKO = {
+				OR = {
+					exists = no
+					is_puppet = yes
+				}
+			}
 		}
 
 		completion_reward = {
