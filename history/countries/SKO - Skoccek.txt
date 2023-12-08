@@ -28,7 +28,7 @@ if = {
 
 set_convoys = 0
 
-set_research_slots = 2
+set_research_slots = 1
 
 set_popularities = { 
 

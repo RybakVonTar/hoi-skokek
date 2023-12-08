@@ -103,7 +103,7 @@ if = {
 
 set_convoys = 200
 
-set_research_slots = 2
+set_research_slots = 3
 
 set_popularities = { 
 	communism = 100
