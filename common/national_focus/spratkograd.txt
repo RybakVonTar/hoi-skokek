@@ -1291,7 +1291,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = VOV_criticize_stalin
-		cost = 10
+		cost = 5
 		available = {
 		}
 		bypass = {
@@ -1313,7 +1313,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = VOV_eradicate_wealthy
-		cost = 10
+		cost = 5
 		available = {
 		}
 		bypass = {
@@ -1609,6 +1609,52 @@ focus_tree = {
 		completion_reward = {
 			SOV = {
 				country_event = { id = vov.5 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_integrate_caucasus
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { 
+			focus = VOV_demand_caucasus
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 2
+		relative_position_id = VOV_demand_caucasus
+		cost = 10
+		available = {
+			owns_state = 235
+			owns_state = 232
+			owns_state = 827
+			owns_state = 828
+			owns_state = 821
+			owns_state = 233
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			235 = {
+				add_core_of = VOV
+			}
+			232 = {
+				add_core_of = VOV
+			}
+			827 = {
+				add_core_of = VOV
+			}
+			828 = {
+				add_core_of = VOV
+			}
+			821 = {
+				add_core_of = VOV
+			}
+			233 = {
+				add_core_of = VOV
 			}
 		}
 	}

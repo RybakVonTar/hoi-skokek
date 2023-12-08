@@ -606,6 +606,43 @@ pionyr = {
 }
 
 anti_anime = {
+	anti_anime_invite = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+		}
+		
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {
+			any_country = {
+				OR = {
+					is_in_faction_with = VOV
+					is_puppet_of = VOV
+				}
+			}
+			is_debug = yes
+		}
+
+		cost = 0
+
+		complete_effect = {	
+			random_country = {
+				limit = {
+					is_in_faction_with = VOV
+					NOT = {
+						is_puppet_of = VOV
+					}
+				}
+				#! event
+			}
+		}
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 0
+		}
+	}
 	#! invitations
 
 	#every_country = {
