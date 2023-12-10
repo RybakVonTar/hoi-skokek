@@ -649,8 +649,12 @@ anti_anime = {
 					is_in_faction_with = VOV
 					is_puppet_of = VOV
 				}
+				NOT = {
+					has_idea = anti_anime
+				}
 			}
-			is_debug = yes
+			tag = VOV
+			has_completed_focus = VOV_anti-anime
 		}
 
 		cost = 0
@@ -661,9 +665,32 @@ anti_anime = {
 					is_in_faction_with = VOV
 					NOT = {
 						is_puppet_of = VOV
+						has_idea = anti_anime
 					}
 				}
-				#! event
+				country_event = { id = vov.9 days = 1 }
+			}
+
+			every_country = {
+				limit = {
+					is_puppet_of = VOV
+					NOT = {
+						has_idea = anti_anime
+					}
+				}
+				add_ideas = anti_anime
+				every_army_leader = {
+					limit = {
+						has_trait = anime_trait
+					}
+					retire = yes
+				}
+				every_navy_leader = {
+					limit = {
+						has_trait = anime_trait
+					}
+					retire = yes
+				}
 			}
 		}
 
@@ -671,33 +698,48 @@ anti_anime = {
 			factor = 0
 		}
 	}
-	#! invitations
 
-	#every_country = {
-			#	limit = {
-			#		is_in_faction_with = VOV
-			#		NOT = {
-			#			is_puppet_of = VOV
-			#		}
-			#	}
-				#! event
-			#}
-			#every_country = {
-			#	limit = {
-			#		is_puppet_of = VOV
-			#	}
-			#	add_ideas = anti_anime
-			#	every_army_leader = {
-			#		limit = {
-			#			has_trait = anime_trait
-			#		}
-			#		retire = yes
-			#	}
-			#	every_navy_leader = {
-			#		limit = {
-			#			has_trait = anime_trait
-			#		}
-			#		retire = yes
-			#	}
-			#}
+	leave_anti_anime = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+		}
+		
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {	
+			OR = {
+				is_debug = yes
+				AND = {
+					has_idea = anti_anime
+					NOT = {
+						OR = {
+							tag = VOV
+							is_puppet_of = VOV
+						}
+					}
+				}
+			}
+		}		
+
+		cost = 100
+
+		complete_effect = {	
+			remove_ideas = anti_anime
+			every_country = {
+				limit = {
+					has_idea = anti_anime
+				}
+				add_opinion_modifier = {
+					target = THIS
+					modifier = left_antianime
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	} 
 }

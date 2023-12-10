@@ -298,6 +298,7 @@ focus_tree = {
 			}
 			add_threat = 10
 			unlock_decision_category_tooltip = monarchist_uprising
+			add_ideas = JRK_war_with_poland
 			hidden_effect = {
 				news_event = news_skokek.1
 			}

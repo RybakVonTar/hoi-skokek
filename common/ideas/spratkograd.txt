@@ -252,7 +252,10 @@ ideas = {
 			}
 
 			modifier = {
-				#!
+				naval_doctrine_cost_factor = -0.1
+				experience_gain_navy_factor = 0.15
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.05
 			}
 		}
 
@@ -284,7 +287,9 @@ ideas = {
 			}
 
 			modifier = {
-				#!
+				naval_doctrine_cost_factor = 0.1
+				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 	}

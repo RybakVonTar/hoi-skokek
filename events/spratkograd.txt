@@ -475,3 +475,153 @@ country_event = {
 		}
 	}
 }
+
+# anti anime join
+country_event = {
+	id = vov.9
+	title = vov.9.t
+	desc = vov.9.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.9.a
+
+		ai_chance = {
+			base = 50
+
+			modifier = {
+				has_war_with = SEJ
+				add = 100
+			}
+			modifier = {
+				has_war_with = SKO
+				SKO = {
+					NOT = {
+						is_puppet_of = JAP
+					}
+				}
+				add = 100
+			}
+			modifier = {
+				has_opinion = {
+					target = SKO
+					value < 20
+				}
+				add = 15
+			}
+			modifier = {
+				has_opinion = {
+					target = SKO
+					value < 0
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = SKO
+					value < -24
+				}
+				add = 50
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value < 20
+				}
+				add = 15
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value < 0
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = SEJ
+					value < -24
+				}
+				add = 50
+			}
+
+			modifier = {
+				SKO = {
+					has_wargoal_against = ROOT
+				}
+				add = 50
+			}
+			modifier = {
+				SEJ = {
+					has_wargoal_against = ROOT
+				}
+				add = 50
+			}
+
+			modifier = {
+				OR = {
+					tag = JRK
+					tag = MIR
+					tag = SEB
+				}
+				add = 20
+			}
+		}
+
+		add_ideas = anti_anime
+		every_army_leader = {
+			limit = {
+				has_trait = anime_trait
+			}
+			retire = yes
+		}
+		every_navy_leader = {
+			limit = {
+				has_trait = anime_trait
+			}
+			retire = yes
+		}
+
+		every_country = {
+			limit = {
+				has_idea = anti_anime
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = join_antianime
+			}
+		}
+
+		VOV = {
+			country_event = vov.1
+		}
+	}
+
+	option = {
+		name = vov.9.b
+
+		ai_chance = {
+			base = 50
+
+			modifier = {
+				has_non_aggression_pact_with = SKO
+				SKO = {
+					NOT = {
+						is_puppet_of = JAP
+					}
+				}
+				add = 25
+			}
+			modifier = {
+				has_non_aggression_pact_with = SEJ
+				add = 25
+			}
+		}
+
+		VOV = {
+			country_event = vov.0
+		}
+	}
+}

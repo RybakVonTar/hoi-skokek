@@ -68,7 +68,5 @@ anti_anime = {
 		always = yes
 	}
 	visible = {
-		tag = VOV
-		has_completed_focus = VOV_anti-anime
 	}
 }

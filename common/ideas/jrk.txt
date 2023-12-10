@@ -55,5 +55,37 @@ ideas = {
 				army_armor_attack_factor = 0.05
 			}
 		}
+
+		JRK_war_with_poland = {
+			name = JRK_war_with_poland_idea
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			cancel = {
+				NOT = {
+					OR = {
+						has_war_with = POL
+						has_war_with = D04
+					}
+				}
+			}
+
+			targeted_modifier = {
+				tag = POL
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.2
+			}
+			targeted_modifier = {
+				tag = D04
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.2
+			}
+		}
 	}
 }

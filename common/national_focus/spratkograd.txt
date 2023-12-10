@@ -30,7 +30,7 @@ focus_tree = {
 	
 	default = no
 
-	continuous_focus_position = { x = 100 y = 1700 }
+	continuous_focus_position = { x = 100 y = 1200 }
 
 	initial_show_position = {
 		x = 0
@@ -348,7 +348,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {}
 
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = VOV_priority_civilian
 		cost = 10
@@ -365,6 +365,35 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = VOV_civilian_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = VOV_priority_civilian
+			focus = VOV_priority_military
+		}
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		relative_position_id = VOV_priority_civilian
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
 					level = 2
 				}
 			}
@@ -1915,16 +1944,10 @@ focus_tree = {
 						}
 						NOT = {
 							any_owned_state = {
-								OR = {
-									region = 132
-									region = 150
-									region = 265
-									region = 12
-									region = 24
-									region = 25
-									region = 232
-									region = 240
-									region = 34
+								is_coastal = yes
+								NOT = {
+									region = 26
+									region = 130
 								}
 							}
 						}
