@@ -1937,6 +1937,7 @@ focus_tree = {
 							is_puppet_of = VOV
 						}
 						any_owned_state = {
+							is_coastal = yes
 							OR = {
 								region = 26
 								region = 130
@@ -2240,6 +2241,9 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+			IRQ = {
+				exists = no
+			}
 		}
 
 		completion_reward = {
@@ -2271,13 +2275,28 @@ focus_tree = {
 		completion_reward = {
 			release_puppet = KUR
 			TUR = {
-				release = KUR
+				if = {
+					limit = { is_puppet_of = VOV }
+					release = KUR
+				}
 			}
 			PER = {
-				release = KUR
+				if = {
+					limit = { is_puppet_of = VOV }
+					release = KUR
+				}
 			}
 			IRQ = {
-				release = KUR
+				if = {
+					limit = { is_puppet_of = VOV }
+					release = KUR
+				}
+			}
+			AZR = {
+				if = {
+					limit = { is_puppet_of = VOV }
+					release = KUR
+				}
 			}
 		}
 	}
