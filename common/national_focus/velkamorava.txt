@@ -730,7 +730,7 @@ focus_tree = {
 
 		x = 9
 		y = 5
-		cost = 5
+		cost = 10
 		#relative_position_id = JRK_industrialization
 		available = {
 			has_completed_focus = JRK_army_training
@@ -753,7 +753,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_navy
 		available = {
 		}
@@ -780,7 +780,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_navy
 		available = {
 		}
@@ -807,7 +807,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_submarines
 		available = {
 		}
@@ -847,7 +847,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_navy
 		available = {
 		}
@@ -875,7 +875,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_capital_ships
 		available = {
 		}
@@ -919,7 +919,7 @@ focus_tree = {
 
 		x = -2
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_carrier
 		available = {
 		}
@@ -945,7 +945,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_navy_training
 		available = {
 		}
@@ -970,7 +970,7 @@ focus_tree = {
 
 		x = 14
 		y = 5
-		cost = 5
+		cost = 10
 		#relative_position_id = JRK_industrialization
 		available = {
 			has_completed_focus = JRK_army_training
@@ -993,7 +993,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_airforce
 		available = {
 		}
@@ -1020,7 +1020,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_heavy_aircraft
 		available = {
 		}
@@ -1060,7 +1060,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_airforce
 		available = {
 		}
@@ -1106,7 +1106,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_light_aircraft
 		available = {
 		}
@@ -1155,7 +1155,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_bombers
 		available = {
 		}
@@ -1181,7 +1181,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_air_training
 		available = {
 		}
@@ -1207,7 +1207,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_airforce
 		available = {
 		}
@@ -1246,7 +1246,7 @@ focus_tree = {
 
 		x = 19
 		y = 5
-		cost = 5
+		cost = 10
 		#relative_position_id = JRK_industrialization
 		available = {
 			has_completed_focus = JRK_army_training
@@ -1269,7 +1269,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_army
 		available = {
 		}
@@ -1296,7 +1296,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_army
 		available = {
 		}
@@ -1323,7 +1323,7 @@ focus_tree = {
 
 		x = -1
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_army
 		available = {
 		}
@@ -1350,7 +1350,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_army
 		available = {
 		}
@@ -1377,7 +1377,7 @@ focus_tree = {
 
 		x = 1
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_royal_army
 		available = {
 		}
@@ -1405,7 +1405,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_artillery_effort
 		available = {
 		}
@@ -1432,7 +1432,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = JRK_motorization_effort
 		available = {
 		}

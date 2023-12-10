@@ -437,7 +437,7 @@ focus_tree = {
 
 		x = 9
 		y = 0
-		cost = 5
+		cost = 10
 		#relative_position_id = VOV_industrialization
 		available = {
 		}
@@ -459,7 +459,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_navy
 		available = {
 		}
@@ -486,7 +486,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_navy
 		available = {
 		}
@@ -513,7 +513,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_submarines
 		available = {
 		}
@@ -553,7 +553,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_navy
 		available = {
 		}
@@ -581,7 +581,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_capital_ships
 		available = {
 		}
@@ -625,7 +625,7 @@ focus_tree = {
 
 		x = -2
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_carrier
 		available = {
 		}
@@ -651,7 +651,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_navy_training
 		available = {
 		}
@@ -676,7 +676,7 @@ focus_tree = {
 
 		x = 14
 		y = 0
-		cost = 5
+		cost = 10
 		#relative_position_id = VOV_industrialization
 		available = {
 		}
@@ -698,7 +698,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_airforce
 		available = {
 		}
@@ -725,7 +725,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_heavy_aircraft
 		available = {
 		}
@@ -765,7 +765,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_airforce
 		available = {
 		}
@@ -811,7 +811,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_light_aircraft
 		available = {
 		}
@@ -860,7 +860,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_bombers
 		available = {
 		}
@@ -886,7 +886,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_air_training
 		available = {
 		}
@@ -912,7 +912,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_airforce
 		available = {
 		}
@@ -951,7 +951,7 @@ focus_tree = {
 
 		x = 19
 		y = 0
-		cost = 5
+		cost = 10
 		#relative_position_id = VOV_industrialization
 		available = {
 		}
@@ -973,7 +973,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_army
 		available = {
 		}
@@ -1000,7 +1000,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_army
 		available = {
 		}
@@ -1027,7 +1027,7 @@ focus_tree = {
 
 		x = -1
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_army
 		available = {
 		}
@@ -1054,7 +1054,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_army
 		available = {
 		}
@@ -1081,7 +1081,7 @@ focus_tree = {
 
 		x = 1
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_royal_army
 		available = {
 		}
@@ -1109,7 +1109,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_artillery_effort
 		available = {
 		}
@@ -1136,7 +1136,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = VOV_motorization_effort
 		available = {
 		}
@@ -1166,7 +1166,7 @@ focus_tree = {
 		x = 26
 		y = 0
 		#relative_position_id = VOV_spratkograd_expansion
-		cost = 5
+		cost = 10
 		available = {
 		}
 		bypass = {
@@ -1298,7 +1298,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = VOV_civilian_influence
-		cost = 5
+		cost = 10
 		available = {
 		}
 		bypass = {

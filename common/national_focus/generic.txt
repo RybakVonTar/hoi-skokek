@@ -38,7 +38,7 @@ focus_tree = {
 
 		x = -2
 		y = 0
-		cost = 5
+		cost = 10
 		#relative_position_id = industrialization
 		available = {
 			
@@ -61,7 +61,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_navy
 		available = {
 		}
@@ -88,7 +88,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_navy
 		available = {
 		}
@@ -115,7 +115,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = submarines
 		available = {
 		}
@@ -155,7 +155,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_navy
 		available = {
 		}
@@ -183,7 +183,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = capital_ships
 		available = {
 		}
@@ -227,7 +227,7 @@ focus_tree = {
 
 		x = -2
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = carrier
 		available = {
 		}
@@ -253,7 +253,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = navy_training
 		available = {
 		}
@@ -278,7 +278,7 @@ focus_tree = {
 
 		x = 3
 		y = 0
-		cost = 5
+		cost = 10
 		#relative_position_id = industrialization
 		available = {
 			
@@ -301,7 +301,7 @@ focus_tree = {
 
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_airforce
 		available = {
 		}
@@ -328,7 +328,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = heavy_aircraft
 		available = {
 		}
@@ -368,7 +368,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_airforce
 		available = {
 		}
@@ -414,7 +414,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = light_aircraft
 		available = {
 		}
@@ -463,7 +463,7 @@ focus_tree = {
 
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = bombers
 		available = {
 		}
@@ -489,7 +489,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = air_training
 		available = {
 		}
@@ -515,7 +515,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = royal_airforce
 		available = {
 		}
@@ -554,7 +554,7 @@ focus_tree = {
 
 		x = 8
 		y = 0
-		cost = 5
+		cost = 10
 		#relative_position_id = industrialization
 		available = {
 			
@@ -577,7 +577,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_army
 		available = {
 		}
@@ -604,7 +604,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_army
 		available = {
 		}
@@ -631,7 +631,7 @@ focus_tree = {
 
 		x = -1
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = royal_army
 		available = {
 		}
@@ -658,7 +658,7 @@ focus_tree = {
 
 		x = 2
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = royal_army
 		available = {
 		}
@@ -685,7 +685,7 @@ focus_tree = {
 
 		x = 1
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = royal_army
 		available = {
 		}
@@ -713,7 +713,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = artillery_effort
 		available = {
 		}
@@ -740,7 +740,7 @@ focus_tree = {
 
 		x = 0
 		y = 2
-		cost = 5
+		cost = 10
 		relative_position_id = motorization_effort
 		available = {
 		}
