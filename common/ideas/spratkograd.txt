@@ -235,8 +235,8 @@ ideas = {
 			}
 
 			modifier = {
-				communism_drift = 0.05
-				stability_weekly = -0.001
+				communism_drift = 0.1
+				stability_weekly = -0.005
 			}
 		}
 

@@ -625,3 +625,35 @@ country_event = {
 		}
 	}
 }
+
+# generalove
+country_event = {
+	id = vov.10
+	title = vov.10.t
+	desc = vov.10.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = vov.10.a
+
+		SOV = {
+			retire_character = SOV_vasily_blyukher
+			retire_character = SOV_leonid_govorov
+			retire_character = SOV_nikandr_chibisov
+			retire_character = SOV_sergey_khudyakov
+			retire_character = SOV_pavel_rychagov
+			retire_character = SOV_gordey_levchenko
+			retire_character = SOV_pyotr_smirnov
+		}
+
+		recruit_character = VOV_vasily_blyukher
+		recruit_character = VOV_leonid_govorov
+		recruit_character = VOV_nikandr_chibisov
+		recruit_character = VOV_sergey_khudyakov
+		recruit_character = VOV_pavel_rychagov
+		recruit_character = VOV_gordey_levchenko
+		recruit_character = VOV_pyotr_smirnov
+	}
+}

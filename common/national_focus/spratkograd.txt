@@ -1338,6 +1338,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VOV_invite_soviet_command
+		icon = GFX_focus_generic_manpower
+		prerequisite = { 
+			focus = VOV_criticize_stalin
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		relative_position_id = VOV_criticize_stalin
+		cost = 5
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			country_event = { id = vov.10 days = 1 }
+		}
+	}
+
+	focus = {
 		id = VOV_eradicate_wealthy
 		icon = GFX_focus_CZE_german_puppet
 		prerequisite = { 
@@ -1412,7 +1434,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = 33
+		x = 35
 		y = 0
 		#relative_position_id = VOV_real_marxism
 		cost = 5

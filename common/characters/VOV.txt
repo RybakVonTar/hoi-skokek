@@ -26,6 +26,187 @@ characters={
 		}
 	}
 
+	VOV_vasily_blyukher = {
+		name = SOV_vasily_blyukher
+		portraits = {
+			army = {
+				small = "GFX_portrait_SOV_blyukher_small" #"gfx/interface/ideas/idea_SOV_blyukher.dds"
+				large = "GFX_portrait_SOV_blyukher"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SOV_vasily_blyukher
+			allowed = {
+				original_tag = SOV
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		field_marshal = {
+			traits = { old_guard career_officer infantry_officer organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = 0
+		}
+	}
+
+	VOV_leonid_govorov = {
+		name = SOV_leonid_govorov
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_leonid_govorov"
+				small= "GFX_idea_SOV_leonid_govorov"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = VOV_leonid_govorov
+			traits = {
+				army_infantry_2
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 0
+		}
+	}
+
+	VOV_nikandr_chibisov = {
+		name = SOV_nikandr_chibisov
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_nikandr_chibisov
+				small=GFX_portrait_SOV_nikandr_chibisov_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = VOV_nikandr_chibisov
+			traits = {
+				army_regrouping_2
+			}
+		}
+		corps_commander = {
+			traits = { trickster }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+
+	VOV_sergey_khudyakov = {
+		name = SOV_sergey_khudyakov
+		portraits = {
+			army = {
+				small = "GFX_idea_sergei_khudyakov"
+			}
+		}
+
+		advisor = {
+			slot = high_command
+			idea_token = sergei_khudyakov
+			ledger = air
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	VOV_pavel_rychagov = {
+		name = SOV_pavel_rychagov
+		portraits = {
+			army = {
+				small = "GFX_idea_pavel_rychagov"
+			}
+		}
+
+		advisor = {
+			slot = air_chief
+			idea_token = pavel_rychagov
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+
+	VOV_gordey_levchenko = {
+		name = SOV_gordey_levchenko
+		portraits = {
+			navy = {
+				small = "GFX_idea_gordey_levchenko"
+			}
+			army = {
+				large = GFX_portrait_SOV_gordey_levchenko
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = gordey_levchenko
+			ledger = navy
+			traits = {
+				navy_capital_ship_2
+			}
+			ai_will_do = {
+				factor = 0.200
+			}
+		}
+
+		navy_leader = {
+			traits = { green_water_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 2
+			legacy_id = 406
+		}
+	}
+
+	VOV_pyotr_smirnov = {
+		name = SOV_pyotr_smirnov
+		portraits = {
+			army = {
+				small = "GFX_idea_pyotr_smirnov"
+			}
+		}
+
+		advisor = {
+			slot = navy_chief
+			idea_token = pyotr_smirnov
+			traits = {
+				navy_chief_naval_aviation_1
+			}
+			ai_will_do = {
+				factor = 0.200
+			}
+		}		
+	}
+
 	############################################
 	# advisors
 	############################################
