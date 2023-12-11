@@ -119,5 +119,8 @@ set_war_support = 0.75
 
 recruit_character = VOV_vojta_kvitek
 
+recruit_character = VOV_martin_sapkovic
+recruit_character = VOV_ondra_viktorjin
+
 add_ideas = limited_conscription
 add_ideas = low_economic_mobilisation

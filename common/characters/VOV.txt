@@ -25,4 +25,56 @@ characters={
 			}
 		}
 	}
+
+	############################################
+	# advisors
+	############################################
+
+	VOV_={
+		name=""
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = industrialization_leader
+			traits = { industrialization_leader }
+		}
+	}
+
+	VOV_martin_sapkovic={
+		name="Martin Sapkovič"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = pioneer_leader
+			traits = { pioneer_leader_mil }
+			available = {
+				has_completed_focus = VOV_pionyr
+			}
+		}
+	}
+
+	VOV_ondra_viktorjin={
+		name="Ondra Viktorjin"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = pioneer_leader
+			traits = { pioneer_leader_civ }
+			available = {
+				has_completed_focus = VOV_pionyr
+			}
+		}
+	}
 }

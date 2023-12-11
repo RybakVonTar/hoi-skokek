@@ -21,3 +21,7 @@
  VOV_fra_communism_desc:0 ""
  VOV_black_sea_domination_vov:0 "[VOV.GetName] Dominates Black Sea"
  VOV_black_sea_domination_vov_desc:0 ""
+
+ industrialization_leader:0 "Industrialization Leader"
+ pioneer_leader_mil:0 "Pioneer Leader"
+ pioneer_leader_civ:0 "Pioneer Leader"
