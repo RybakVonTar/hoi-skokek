@@ -121,6 +121,9 @@ recruit_character = VOV_vojta_kvitek
 
 recruit_character = VOV_martin_sapkovic
 recruit_character = VOV_ondra_viktorjin
+recruit_character = VOV_aleksandr_novikov
+recruit_character = VOV_volia_nikolaev
+recruit_character = VOV_kirill_solovev
 
 add_ideas = limited_conscription
 add_ideas = low_economic_mobilisation

@@ -30,8 +30,8 @@ characters={
 	# advisors
 	############################################
 
-	VOV_={
-		name=""
+	VOV_aleksandr_novikov={
+		name="Aleksandr Novikov"
 		portraits={
 			civilian={
 				#small = "gfx/leaders/VOV/spratek.dds"
@@ -75,6 +75,34 @@ characters={
 			available = {
 				has_completed_focus = VOV_pionyr
 			}
+		}
+	}
+
+	VOV_volia_nikolaev={
+		name="Volia Nikolaev"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = marxist
+			traits = { marxist }
+		}
+	}
+
+	VOV_kirill_solovev={
+		name="Kirill Solovev"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = military_minister
+			traits = { military_minister }
 		}
 	}
 }
