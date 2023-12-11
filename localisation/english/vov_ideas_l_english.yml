@@ -27,3 +27,6 @@
  pioneer_leader_civ:0 "Pioneer Leader"
  marxist:0 "Marxist"
  military_minister:0 "Minister of Military"
+
+ rostov_naval_manufacturer:0 "Black Sea Fleet Designer"
+ rostov_naval_dockyard:0 "Rostov Red Navy Dockyards"

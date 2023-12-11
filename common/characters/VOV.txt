@@ -37,9 +37,6 @@ characters={
 		advisor = {
 			slot = army_chief
 			idea_token = SOV_vasily_blyukher
-			allowed = {
-				original_tag = SOV
-			}
 			traits = {
 				army_chief_maneuver_2
 			}
@@ -71,6 +68,7 @@ characters={
 		advisor = {
 			slot = high_command
 			idea_token = VOV_leonid_govorov
+			cost = 100
 			traits = {
 				army_infantry_2
 			}
@@ -96,6 +94,7 @@ characters={
 		advisor = {
 			slot = high_command
 			idea_token = VOV_nikandr_chibisov
+			cost = 100
 			traits = {
 				army_regrouping_2
 			}
@@ -123,6 +122,7 @@ characters={
 			slot = high_command
 			idea_token = sergei_khudyakov
 			ledger = air
+			cost = 100
 			traits = {
 				air_close_air_support_2
 			}
@@ -144,6 +144,7 @@ characters={
 		advisor = {
 			slot = air_chief
 			idea_token = pavel_rychagov
+			cost = 100
 			traits = {
 				air_chief_all_weather_2
 			}
@@ -168,6 +169,7 @@ characters={
 			slot = high_command
 			idea_token = gordey_levchenko
 			ledger = navy
+			cost = 100
 			traits = {
 				navy_capital_ship_2
 			}
@@ -198,6 +200,7 @@ characters={
 		advisor = {
 			slot = navy_chief
 			idea_token = pyotr_smirnov
+			cost = 100
 			traits = {
 				navy_chief_naval_aviation_1
 			}
