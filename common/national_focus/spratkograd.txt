@@ -1348,7 +1348,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = VOV_criticize_stalin
-		cost = 5
+		cost = 10
 		available = {
 		}
 		bypass = {
