@@ -119,4 +119,5 @@ set_war_support = 0.7
 
 recruit_character = JRK_jirka
 recruit_character = JRK_josef_snejdarek
+recruit_character = JRK_admiral_sobek
 

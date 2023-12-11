@@ -52,6 +52,17 @@ characters={
 			planning_skill=2
 			logistics_skill=1
 		}
+		advisor={
+			slot = army_chief
+			idea_token = JRK_ludvik_krejci
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}
 
 	JRK_boleslaw_wieniawa_glugoszowski = {
@@ -107,9 +118,6 @@ characters={
 		advisor={
 			slot = air_chief
 			idea_token = CZE_karel_janousek
-			allowed = {
-				original_tag = CZE
-			}
 			traits = {
 				air_chief_safety_2
 			}
@@ -129,12 +137,9 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = CZE_ludvik_krejci
-			allowed = {
-				original_tag = CZE
-			}
+			idea_token = JRK_ludvik_krejci
 			traits = {
-				army_chief_defensive_2
+				army_chief_offensive_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -162,22 +167,38 @@ characters={
 		}
 	}
 
-	JRK_={
-		name=""
+	JRK_admiral_sobek={
+		name="Admiral Sobek"
 		portraits={
 			civilian={
-				large="gfx/leaders/JRK/.dds"
+				large="gfx/leaders/JAP/sobek.dds"
 			}
 		}
 		navy_leader = {
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			maneuvering_skill = 1
-			coordination_skill = 1
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 2
 			traits = {
-				
+				media_personality
+				politically_connected
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = JRK_admiral_sobek
+			cost = 100
+			traits = {
+				navy_chief_decisive_battle_3
+			}
+			ai_will_do = {
+				factor = 0.200
 			}
 		}
 	}
+
+	############################################
+	# advisors
+	############################################
 }
