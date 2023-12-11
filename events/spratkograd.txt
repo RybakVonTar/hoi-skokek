@@ -186,7 +186,7 @@ country_event = {
 					}
 				}
 
-				add = 10
+				add = 25
 			}
 			modifier = {
 				VOV = {
@@ -195,21 +195,21 @@ country_event = {
 					}
 				}
 
-				add = 10
+				add = 25
 			}
 			modifier = {
 				has_opinion = {
 					target = VOV
 					value > 49
 				}
-				add = 20
+				add = 25
 			}
 			modifier = {
 				has_opinion = {
 					target = VOV
 					value > 94
 				}
-				add = 40
+				add = 50
 			}
 			modifier = {
 				surrender_progress > 0.25
