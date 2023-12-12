@@ -736,3 +736,25 @@ country_event = {
 		}
 	}
 }
+
+# electing advisor
+country_event = {
+	id = jrk.17
+	title = jrk.17.t
+	desc = jrk.17.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = jrk.17.a
+		ai_chance = {
+			base = 65
+		}
+		
+		deactivate_advisor = main_advisor1
+		
+		activate_advisor = main_advisor1
+	}
+}

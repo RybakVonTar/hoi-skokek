@@ -11,6 +11,10 @@ leader_traits = {
 		}
 	}
 
+	#####################
+	# advisors
+	#####################
+
 	industrialization_leader = {
 		random = no
 
@@ -68,16 +72,32 @@ leader_traits = {
 		}
 	}
 
-	military_minister = {
+	monarchist_figure = {
 		random = no
 
-		recruitable_population_factor = 0.1
-		war_support_factor = 0.1
+		neutrality_drift = 0.1
+		stability_factor = 0.1
+		political_power_factor = -0.1
 		
 		ai_will_do = {
 			factor = 1
 		}
 	}
+
+	secret_police_leader = {
+		random = no
+
+		subversive_activites_upkeep = -0.2
+		operative_slot = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#####################
+	# manufacturers
+	#####################
 
 	rostov_naval_manufacturer = {
 		random = no

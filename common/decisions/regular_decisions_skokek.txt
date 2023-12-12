@@ -743,3 +743,29 @@ anti_anime = {
 		}
 	} 
 }
+
+advisor_choosing = {
+	choose_advisor = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+		}
+		
+		fire_only_once = no
+		days_re_enable = 60
+
+		visible = {	
+			is_debug = yes
+		}		
+
+		cost = 150
+
+		complete_effect = {	
+			country_event = { id = jrk.17 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	} 
+}

@@ -202,6 +202,21 @@ characters={
 	# advisors
 	############################################
 
+	JRK_antonin_sramek={
+		name="Antonín Šrámek"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = main_advisor1
+			traits = { monarchist_figure }
+			removal_cost = -1
+		}
+	}
+
 	JRK_={
 		name=""
 		portraits={
@@ -211,8 +226,50 @@ characters={
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = industrialization_leader
-			traits = { industrialization_leader }
+			idea_token = secret_police_leader
+			traits = { secret_police_leader }
+		}
+	}
+
+	JRK_={
+		name=""
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = captain_of_industry
+			traits = { captain_of_industry }
+		}
+	}
+
+	JRK_={
+		name=""
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = war_industrialist
+			traits = { war_industrialist }
+		}
+	}
+
+	JRK_={
+		name=""
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = backroom_windbag
+			traits = { backroom_windbag }
 		}
 	}
 }

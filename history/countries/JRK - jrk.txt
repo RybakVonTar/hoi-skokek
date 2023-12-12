@@ -121,3 +121,6 @@ recruit_character = JRK_jirka
 recruit_character = JRK_josef_snejdarek
 recruit_character = JRK_admiral_sobek
 
+recruit_character = JRK_antonin_sramek
+
+activate_advisor = main_advisor1

@@ -70,3 +70,15 @@ anti_anime = {
 	visible = {
 	}
 }
+
+advisor_choosing = {
+	icon = GFX_category_icon
+	priority = 4
+
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = JRK
+	}
+}
