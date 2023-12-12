@@ -139,17 +139,59 @@ characters={
 		}
 	}
 
-	SKO_={
-		name=""
+	SKO_gendo_ikari={
+		name="Gendo Ikari"
 		portraits={
 			civilian={
 				#small = "gfx/leaders/VOV/spratek.dds"
 			}
 		}
 		advisor = {
-			slot = theorist
-			idea_token = ancient_builder
-			traits = { ancient_builder }
+			slot = political_advisor
+			idea_token = evangelion_owner
+			traits = { evangelion_owner }
+		}
+	}
+
+	SKO_lelouch_lamperouge={
+		name="Lelouch Lamperouge"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = lelouch
+			traits = { lelouch }
+		}
+	}
+
+	SKO_lelouch_lamperouge={
+		name="Lelouch Lamperouge"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = lelouch
+			traits = { lelouch }
+		}
+	}
+
+	SKO_heinrich_lunge={
+		name="Heinrich Lunge"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = state_investigator
+			traits = { state_investigator }
 		}
 	}
 }
