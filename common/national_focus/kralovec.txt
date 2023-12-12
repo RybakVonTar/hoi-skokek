@@ -406,10 +406,22 @@ focus_tree = {
 		}
 		bypass = {
 			NOT = {
-				CZE = {
-					owns_state = 75
-					owns_state = 74
-					owns_state = 72
+				OR = {
+					CZE = {
+						owns_state = 75
+						owns_state = 74
+						owns_state = 72
+					}
+					GER = {
+						owns_state = 75
+						owns_state = 74
+						owns_state = 72
+					}
+					JRK = {
+						owns_state = 75
+						owns_state = 74
+						owns_state = 72
+					}
 				}
 			}
 		}
@@ -436,14 +448,16 @@ focus_tree = {
 		cost = 10
 		relative_position_id = JRK_poland_integration
 		available = {
-			72 = {
-				is_owned_by = GER
-			}
-			74 = {
-				is_owned_by = GER
-			}
-			75 = {
-				is_owned_by = GER
+			OR = {
+				72 = {
+					is_owned_by = GER
+				}
+				74 = {
+					is_owned_by = GER
+				}
+				75 = {
+					is_owned_by = GER
+				}
 			}
 		}
 		bypass = {
