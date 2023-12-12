@@ -11,6 +11,13 @@ country_event = {
 
 	option = {
 		name = skoccek.0.a
+
+		537 = {
+			transfer_state_to = SKO
+		}
+		555 = {
+			transfer_state_to = SKO
+		}
 	}
 }
 
@@ -83,6 +90,8 @@ country_event = {
 					add_to_faction = KOR
 				}
 			}
+
+			news_event = news_skokek.10
 		}
 	}
 }
@@ -273,6 +282,8 @@ country_event = {
 				white_peace = MAN
 			}
 			load_oob = SKO_quing_uprising
+
+			news_event = news_skokek.9
 		}
 	}
 

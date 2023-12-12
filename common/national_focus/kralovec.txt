@@ -296,7 +296,7 @@ focus_tree = {
 				type = annex_everything
 				target = POL
 			}
-			add_threat = 10
+			add_threat = 2
 			unlock_decision_category_tooltip = monarchist_uprising
 			add_ideas = JRK_war_with_poland
 			hidden_effect = {
@@ -482,7 +482,7 @@ focus_tree = {
 				type = annex_everything    
 				target = SEB
 			}
-			add_threat = 5
+			add_threat = 1
 		}
 	}
 
@@ -511,7 +511,7 @@ focus_tree = {
 				type = annex_everything    
 				target = HUN
 			}
-			add_threat = 5
+			add_threat = 1
 		}
 	}
 
@@ -552,16 +552,10 @@ focus_tree = {
 			custom_effect_tooltip = focus_velke_moravy
 			hidden_effect = {
 				load_focus_tree = velkamorava_focus
+				news_event = news_skokek.2
 			}
 		}
 	}
-
-
-
-
-
-
-
 
 	focus = {
 		id = JRK_kralovec_army

@@ -9,7 +9,7 @@ news_event = {
 	id = news_skokek.1
 	title = news_skokek.1.t
 	desc = news_skokek.1.d
-	#picture = GFX_news_event_001 
+	picture = GFX_news_event_001 
 	
 	major = yes
 	
@@ -30,6 +30,312 @@ news_event = {
 			is_neighbor_of = POL
 			NOT = {
 				tag = JRK
+			}
+		}
+	}
+}
+
+news_event = {
+	id = news_skokek.2
+	title = news_skokek.2.t
+	desc = news_skokek.2.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.2.a
+		trigger = {
+			NOT = {
+				tag = JRK
+			}
+		}
+	}
+}
+
+# aus hun king
+news_event = {
+	id = news_skokek.3
+	title = news_skokek.3.t
+	desc = news_skokek.3.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.3.a
+		trigger = {
+			NOT = {
+				tag = JRK
+				is_puppet_of = JRK
+				tag = CZE
+				tag = SEB
+				tag = HUN
+				tag = AUS
+				tag = ROM
+				tag = YUG
+			}
+		}
+	}
+	option = {
+		name = news_skokek.3.b
+		trigger = {
+			OR = {
+				is_puppet_of = JRK
+				tag = CZE
+				tag = SEB
+				tag = HUN
+				tag = AUS
+				tag = ROM
+				tag = YUG
+			}
+		}
+	}
+}
+
+# JRK annex AUS
+news_event = {
+	id = news_skokek.4
+	title = news_skokek.4.t
+	desc = news_skokek.4.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.4.a
+		trigger = {
+			NOT = {
+				tag = JRK
+				tag = GER
+			}
+		}
+	}
+}
+
+# JRK war ITA
+news_event = {
+	id = news_skokek.5
+	title = news_skokek.5.t
+	desc = news_skokek.5.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.5.a
+		trigger = {
+			NOT = {
+				tag = JRK
+				tag = ITA
+				is_in_faction_with = ITA
+			}
+		}
+	}
+}
+
+# JRK war GER
+news_event = {
+	id = news_skokek.6
+	title = news_skokek.6.t
+	desc = news_skokek.6.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.6.a
+		trigger = {
+			NOT = {
+				tag = JRK
+				tag = GER
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+
+# JRK war benelux
+news_event = {
+	id = news_skokek.7
+	title = news_skokek.7.t
+	desc = news_skokek.7.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.7.a
+		trigger = {
+			NOT = {
+				tag = JRK
+			}
+		}
+	}
+}
+
+# korea rise
+news_event = {
+	id = news_skokek.8
+	title = news_skokek.8.t
+	desc = news_skokek.8.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.8.a
+		trigger = {
+			NOT = {
+				tag = SKO
+				tag = KOR
+				tag = SEJ
+				is_in_faction_with = JAP
+			}
+		}
+	}
+
+	option = {
+		name = news_skokek.8.b
+		trigger = {
+			OR = {
+				tag = SKO
+				tag = SEJ
+			}
+		}
+	}
+}
+
+# MAN rise
+news_event = {
+	id = news_skokek.9
+	title = news_skokek.9.t
+	desc = news_skokek.9.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.9.a
+		trigger = {
+			NOT = {
+				tag = SKO
+				tag = MAN
+				tag = KOR
+				tag = SEJ
+				is_in_faction_with = JAP
+			}
+		}
+	}
+
+	option = {
+		name = news_skokek.9.b
+		trigger = {
+			OR = {
+				tag = SKO
+				tag = SEJ
+				tag = KOR
+			}
+		}
+	}
+}
+
+# JAP war SKO
+news_event = {
+	id = news_skokek.10
+	title = news_skokek.10.t
+	desc = news_skokek.10.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.10.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = SKO
+				tag = SEJ
+				is_in_faction_with = JAP
+			}
+		}
+	}
+
+	option = {
+		name = news_skokek.10.b
+		trigger = {
+			OR = {
+				tag = SEJ
+			}
+		}
+	}
+}
+
+# formed gau
+news_event = {
+	id = news_skokek.11
+	title = news_skokek.11.t
+	desc = news_skokek.11.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.11.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = SKO
+				tag = SEJ
+			}
+		}
+	}
+
+	option = {
+		name = news_skokek.11.b
+		trigger = {
+			OR = {
+				tag = SEJ
+				is_in_faction_with = SKO
+			}
+		}
+	}
+}
+
+# quing china terirory
+news_event = {
+	id = news_skokek.12
+	title = news_skokek.12.t
+	desc = news_skokek.12.d
+	picture = GFX_news_event_001 
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news_skokek.12.a
+		trigger = {
+			NOT = {
+				tag = MAN
 			}
 		}
 	}

@@ -680,7 +680,9 @@ country_event = {
 			country_event = jrk.1
 		}
 
-		
+		hidden_effect = {
+			news_event = news_skokek.4
+		}
 	}
 
 	# no

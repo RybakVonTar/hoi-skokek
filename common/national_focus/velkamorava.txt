@@ -197,6 +197,10 @@ focus_tree = {
 				add_core_of = JRK
 			}
 			add_country_leader_trait = austrohungarian_king
+
+			hidden_effect = {
+				news_event = news_skokek.3
+			}
 		}
 	}
 
@@ -242,15 +246,13 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			OR = {
-				NOT = {
-					GER = {
-						owns_state = 4
-					}
+			NOT = {
+				GER = {
+					owns_state = 4
 				}
-				AUS = {
-					exists = no
-				}
+			}
+			AUS = {
+				exists = no
 			}
 		}
 
@@ -355,13 +357,17 @@ focus_tree = {
 			if = {
 				limit = {
 					ITA = {
-						has_added_tension_amount > 30
+						has_added_tension_amount > 9
 					}
 				}
-				add_threat = -10
+				add_threat = -5
 			}
 			else = {
-				add_threat = 5
+				add_threat = 2
+			}
+
+			hidden_effect = {
+				news_event = news_skokek.5
 			}
 		}
 	}
@@ -400,13 +406,25 @@ focus_tree = {
 			if = {
 				limit = {
 					GER = {
-						has_added_tension_amount > 30
+						has_added_tension_amount > 29
 					}
 				}
 				add_threat = -10
 			}
+			else_if = {
+				limit = {
+					GER = {
+						has_added_tension_amount > 9
+					}
+				}
+				add_threat = -5
+			}
 			else = {
-				add_threat = 5
+				add_threat = 2
+			}
+
+			hidden_effect = {
+				news_event = news_skokek.6
 			}
 		}
 	}
@@ -463,19 +481,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			declare_war_on = {
+			create_wargoal = {
 				target = BEL
 				type = annex_everything
 			}
-			declare_war_on = {
+			create_wargoal = {
 				target = HOL
 				type = annex_everything
 			}
-			declare_war_on = {
+			create_wargoal = {
 				target = LUX
 				type = annex_everything
 			}
-			add_threat = 10
 		}
 	}
 
@@ -521,6 +538,10 @@ focus_tree = {
 				add_core_of = JRK
 			}
 			set_cosmetic_tag = SVM
+
+			hidden_effect = {
+				news_event = news_skokek.7
+			}
 		}
 	}
 

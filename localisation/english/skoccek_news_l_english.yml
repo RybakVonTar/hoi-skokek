@@ -3,3 +3,52 @@
  news_skokek.1.d:0 ""
  news_skokek.1.a:0 "Smutné"
  news_skokek.1.b:0 "We must prepare to defend"
+
+ news_skokek.2.t:0 "[JRK.GetName] was formed."
+ news_skokek.2.d:0 ""
+ news_skokek.2.a:0 "Smutné"
+
+ news_skokek.3.t:0 "[JRK.JRK_jirka.GetName] was crowned as Austro-Hungarian King"
+ news_skokek.3.d:0 ""
+ news_skokek.3.a:0 "Smutné"
+ news_skokek.3.b:0 "New King"
+
+ news_skokek.4.t:0 "[JRK.GetName] annexed [AUS.GetName]."
+ news_skokek.4.d:0 ""
+ news_skokek.4.a:0 "Smutné"
+
+ news_skokek.5.t:0 "[JRK.GetName] declared war on [ITA.GetName]."
+ news_skokek.5.d:0 ""
+ news_skokek.5.a:0 "Smutné"
+
+ news_skokek.6.t:0 "[JRK.GetName] declared war on [GER.GetName]."
+ news_skokek.6.d:0 ""
+ news_skokek.6.a:0 "Smutné"
+
+ news_skokek.7.t:0 "[JRK.GetName] was formed."
+ news_skokek.7.d:0 ""
+ news_skokek.7.a:0 "Smutné"
+
+ news_skokek.8.t:0 "[KOR.GetAdjective] Anime government rised against [JAP.GetName]."
+ news_skokek.8.d:0 ""
+ news_skokek.8.a:0 "Smutné"
+ news_skokek.8.b:0 "Long Live Anime"
+
+ news_skokek.9.t:0 "[MAN.GetName] rised against [JAP.GetAdjective] opression."
+ news_skokek.9.d:0 ""
+ news_skokek.9.a:0 "Smutné"
+ news_skokek.9.b:0 "Long Live Anime"
+
+ news_skokek.10.t:0 "[JAP.GetName] declared war on [SKO.GetName]"
+ news_skokek.10.d:0 ""
+ news_skokek.10.a:0 "Smutné"
+ news_skokek.10.b:0 "Long Live Anime"
+
+ news_skokek.11.t:0 "[SKO.GetName] was formed."
+ news_skokek.11.d:0 ""
+ news_skokek.11.a:0 "Smutné"
+ news_skokek.11.b:0 "Long Live Anime"
+
+ news_skokek.12.t:0 "[SKO.GetName] returned [MAN.GetAdjective] territory."
+ news_skokek.12.d:0 ""
+ news_skokek.12.a:0 "Smutné"

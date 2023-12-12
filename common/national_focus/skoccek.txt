@@ -645,14 +645,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			hidden_effect = {
-				537 = {
-					transfer_state_to = SKO
-				}
-				555 = {
-					transfer_state_to = SKO
-				}
-			}
 			country_event = { id = skoccek.0 days = 1 }
 		}
 	}
@@ -1120,6 +1112,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect = {
 				release_puppet = CHI
+				news_event = news_skokek.12
 			}
 			MAN = {
 				annex_country = {
@@ -1205,10 +1198,15 @@ focus_tree = {
 			every_state = {
 				limit = {
 					is_core_of = CHI
+					is_core_of = JAP
 				}
 				add_core_of = SKO
 			}
 			set_cosmetic_tag = GAU
+
+			hidden_effect = {
+				news_event = news_skokek.11
+			}
 		}
 	}
 
