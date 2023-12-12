@@ -95,6 +95,29 @@ leader_traits = {
 		}
 	}
 
+	skoccek_theorist = {
+		random = no
+
+		air_doctrine_cost_factor = -0.1
+		land_doctrine_cost_factor = -0.1
+		naval_doctrine_cost_factor = -0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ancient_builder = {
+		random = no
+
+		research_speed_factor = 0.1
+		production_speed_buildings_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	#####################
 	# manufacturers
 	#####################

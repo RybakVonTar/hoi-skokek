@@ -111,6 +111,34 @@ characters={
 	# advisors
 	############################################
 
+	SKO_shikamaru_nara={
+		name="Shikamaru Nara"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = skoccek_theorist
+			traits = { skoccek_theorist }
+		}
+	}
+
+	SKO_senku_ishigama={
+		name="Senku Ishigama"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ancient_builder
+			traits = { ancient_builder }
+		}
+	}
+
 	SKO_={
 		name=""
 		portraits={
@@ -119,9 +147,9 @@ characters={
 			}
 		}
 		advisor = {
-			slot = political_advisor
-			idea_token = industrialization_leader
-			traits = { industrialization_leader }
+			slot = theorist
+			idea_token = ancient_builder
+			traits = { ancient_builder }
 		}
 	}
 }
