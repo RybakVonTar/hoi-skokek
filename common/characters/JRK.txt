@@ -201,4 +201,18 @@ characters={
 	############################################
 	# advisors
 	############################################
+
+	JRK_={
+		name=""
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = industrialization_leader
+			traits = { industrialization_leader }
+		}
+	}
 }
