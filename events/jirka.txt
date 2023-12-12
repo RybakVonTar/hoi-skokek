@@ -41,7 +41,22 @@ country_event = {
 	option = {
 		name = jrk.2.a
 		ai_chance = {
-			factor = 70
+			base = 50
+
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 94
+				}
+				add = 25
+			}
 		}
 
 		JRK = {
@@ -62,7 +77,7 @@ country_event = {
 	option = {
 		name = jrk.2.b
 		ai_chance = {
-			factor = 30
+			base = 50
 		}
 
 		JRK = {
@@ -90,7 +105,22 @@ country_event = {
 	option = {
 		name = jrk.3.a
 		ai_chance = {
-			factor = 50
+			base = 50
+
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 94
+				}
+				add = 25
+			}
 		}
 		JRK = {
 			country_event = jrk.1
@@ -110,7 +140,7 @@ country_event = {
 	option = {
 		name = jrk.3.b
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 
 		JRK = {
@@ -141,7 +171,22 @@ country_event = {
 	option = {
 		name = jrk.4.a
 		ai_chance = {
-			factor = 20
+			base = 20
+
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 94
+				}
+				add = 25
+			}
 		}
 
 		JRK = {
@@ -162,7 +207,7 @@ country_event = {
 	option = {
 		name = jrk.4.b
 		ai_chance = {
-			factor = 80
+			base = 80
 		}
 
 		JRK = {
@@ -190,7 +235,7 @@ country_event = {
 	option = {
 		name = jrk.5.a
 		ai_chance = {
-			factor = 95
+			base = 95
 		}
 
 		hidden_effect = {
@@ -206,7 +251,7 @@ country_event = {
 	option = {
 		name = jrk.5.b
 		ai_chance = {
-			factor = 5
+			base = 5
 		}
 
 		JRK = {
@@ -228,7 +273,7 @@ country_event = {
 	option = {
 		name = jrk.6.a
 		ai_chance = {
-			factor = 65
+			base = 65
 		}
 
 		GER = {
@@ -247,7 +292,7 @@ country_event = {
 	option = {
 		name = jrk.6.a
 		ai_chance = {
-			factor = 35
+			base = 35
 		}
 
 		hidden_effect = {
@@ -372,7 +417,22 @@ country_event = {
 	option = {
 		name = jrk.10.a
 		ai_chance = {
-			factor = 75
+			base = 25
+
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 94
+				}
+				add = 25
+			}
 		}
 
 		JRK = {
@@ -390,7 +450,7 @@ country_event = {
 	option = {
 		name = jrk.10.b
 		ai_chance = {
-			factor = 25
+			base = 25
 		}
 
 		JRK = {
@@ -436,7 +496,21 @@ country_event = {
 	option = {
 		name = jrk.12.a
 		ai_chance = {
-			factor = 60
+			base = 60
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 94
+				}
+				add = 25
+			}
 		}
 
 		JRK = {
@@ -456,7 +530,7 @@ country_event = {
 	option = {
 		name = jrk.12.b
 		ai_chance = {
-			factor = 40
+			base = 40
 		}
 
 		JRK = {
@@ -478,7 +552,21 @@ country_event = {
 	option = {
 		name = jrk.13.a
 		ai_chance = {
-			factor = 60
+			base = 60
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 94
+				}
+				add = 25
+			}
 		}
 
 		JRK = {
@@ -495,7 +583,7 @@ country_event = {
 	option = {
 		name = jrk.13.b
 		ai_chance = {
-			factor = 40
+			base = 40
 		}
 
 		JRK = {
@@ -521,7 +609,21 @@ country_event = {
 	option = {
 		name = jrk.14.a
 		ai_chance = {
-			factor = 65
+			base = 65
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = JRK
+					value > 94
+				}
+				add = 25
+			}
 		}
 
 		JRK = {
@@ -538,7 +640,7 @@ country_event = {
 	option = {
 		name = jrk.14.b
 		ai_chance = {
-			factor = 35
+			base = 35
 		}
 
 		JRK = {
@@ -564,7 +666,7 @@ country_event = {
 	option = {
 		name = jrk.15.a
 		ai_chance = {
-			factor = 85
+			base = 85
 		}
 
 		JRK = {
@@ -585,7 +687,7 @@ country_event = {
 	option = {
 		name = jrk.15.b
 		ai_chance = {
-			factor = 15
+			base = 15
 		}
 
 		JRK = {
@@ -607,7 +709,7 @@ country_event = {
 	option = {
 		name = jrk.16.a
 		ai_chance = {
-			factor = 65
+			base = 65
 		}
 
 		JRK = {
@@ -624,7 +726,7 @@ country_event = {
 	option = {
 		name = jrk.16.b
 		ai_chance = {
-			factor = 35
+			base = 35
 		}
 
 		JRK = {
