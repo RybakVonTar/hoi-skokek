@@ -277,6 +277,10 @@ country_event = {
 		233 = {
 			add_claim_by = VOV
 		}
+
+		hidden_effect = {
+			set_country_flag = sko_sov_ne_akcept_gay
+		}
 	}
 }
 

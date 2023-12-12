@@ -217,8 +217,8 @@ characters={
 		}
 	}
 
-	JRK_={
-		name=""
+	JRK_jiri_hajek={
+		name="Jiří Hájek"
 		portraits={
 			civilian={
 				#small = "gfx/leaders/VOV/spratek.dds"
@@ -231,8 +231,8 @@ characters={
 		}
 	}
 
-	JRK_={
-		name=""
+	JRK_premysl_ptacek={
+		name="Přemysl Ptáček"
 		portraits={
 			civilian={
 				#small = "gfx/leaders/VOV/spratek.dds"
@@ -245,8 +245,8 @@ characters={
 		}
 	}
 
-	JRK_={
-		name=""
+	JRK_radek_kral={
+		name="Radek Král"
 		portraits={
 			civilian={
 				#small = "gfx/leaders/VOV/spratek.dds"
@@ -259,8 +259,8 @@ characters={
 		}
 	}
 
-	JRK_={
-		name=""
+	JRK_sebastian_kroupal={
+		name="Sebastian Křoupal"
 		portraits={
 			civilian={
 				#small = "gfx/leaders/VOV/spratek.dds"

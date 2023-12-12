@@ -58,3 +58,4 @@ recruit_character = SKO_shikamaru_nara
 recruit_character = SKO_senku_ishigama
 recruit_character = SKO_lelouch_lamperouge
 recruit_character = SKO_heinrich_lunge
+recruit_character = SKO_gendo_ikari

@@ -1996,6 +1996,9 @@ focus_tree = {
 		relative_position_id = VOV_demand_caucasus
 		cost = 10
 		available = {
+			NOT = {
+				has_country_flag = sko_sov_ne_akcept_gay
+			}
 		}
 		bypass = {
 		}

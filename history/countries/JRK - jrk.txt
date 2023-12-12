@@ -122,5 +122,9 @@ recruit_character = JRK_josef_snejdarek
 recruit_character = JRK_admiral_sobek
 
 recruit_character = JRK_antonin_sramek
+recruit_character = JRK_jiri_hajek
+recruit_character = JRK_premysl_ptacek
+recruit_character = JRK_radek_kral
+recruit_character = JRK_sebastian_kroupal
 
 activate_advisor = main_advisor1
