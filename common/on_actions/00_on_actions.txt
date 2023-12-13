@@ -121,6 +121,22 @@ on_actions = {
 		}
 	}
 
+	on_monthly_SPR = {
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+					date > 1936.1.30
+					NOT = {
+						has_country_flag = spr_bek_ma_elections_sobek
+					}
+				}
+				set_country_flag = spr_bek_ma_elections_sobek
+				country_event = lar_spain.1
+			}
+		}
+	}
+
 	on_monthly_JRK = {
 		effect = {
 			if = {
