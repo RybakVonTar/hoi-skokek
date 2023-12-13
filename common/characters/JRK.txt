@@ -54,11 +54,11 @@ characters={
 		}
 		advisor={
 			slot = army_chief
-			idea_token = JRK_ludvik_krejci
+			idea_token = JRK_josef_snejdarek
 			traits = {
-				army_chief_defensive_2
+				army_chief_defensive_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -213,7 +213,76 @@ characters={
 			slot = political_advisor
 			idea_token = main_advisor1
 			traits = { monarchist_figure }
-			removal_cost = -1
+			can_be_fired = no
+			available = {
+				NOT = {
+					JRK_antonin_sramek = {
+						is_hired_as_advisor = yes
+					}
+					JRK_tomas_zemanek = {
+						is_hired_as_advisor = yes
+					}
+					JRK_jan_kucera = {
+						is_hired_as_advisor = yes
+					}
+				}
+			}
+		}
+	}
+
+	JRK_tomas_zemanek={
+		name="Tomáš Zemánek"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = main_advisor2
+			traits = { war_propagandist }
+			can_be_fired = no
+			available = {
+				NOT = {
+					JRK_antonin_sramek = {
+						is_hired_as_advisor = yes
+					}
+					JRK_tomas_zemanek = {
+						is_hired_as_advisor = yes
+					}
+					JRK_jan_kucera = {
+						is_hired_as_advisor = yes
+					}
+				}
+			}
+		}
+	}
+
+	JRK_jan_kucera={
+		name="Jan Kučera"
+		portraits={
+			civilian={
+				#small = "gfx/leaders/VOV/spratek.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = main_advisor3
+			traits = { industry_captain }
+			can_be_fired = no
+			available = {
+				NOT = {
+					JRK_antonin_sramek = {
+						is_hired_as_advisor = yes
+					}
+					JRK_tomas_zemanek = {
+						is_hired_as_advisor = yes
+					}
+					JRK_jan_kucera = {
+						is_hired_as_advisor = yes
+					}
+				}
+			}
 		}
 	}
 

@@ -752,11 +752,83 @@ country_event = {
 	option = {
 		name = jrk.17.a
 		ai_chance = {
-			base = 65
+			base = 0
+		}
+
+		if = {
+			limit = {
+				JRK_jan_kucera = {
+					is_hired_as_advisor = yes
+				}
+			}
+			deactivate_advisor = main_advisor3
+		}
+		if = {
+			limit = {
+				JRK_tomas_zemanek = {
+					is_hired_as_advisor = yes
+				}
+			}
+			deactivate_advisor = main_advisor2
 		}
 		
-		deactivate_advisor = main_advisor1
-		
 		activate_advisor = main_advisor1
+	}
+
+	option = {
+		name = jrk.17.b
+		ai_chance = {
+			base = 0
+
+			modifier = {
+				has_war = yes
+				add = 100
+			}
+		}
+		
+		if = {
+			limit = {
+				JRK_antonin_sramek = {
+					is_hired_as_advisor = yes
+				}
+			}
+			deactivate_advisor = main_advisor1
+		}
+		if = {
+			limit = {
+				JRK_jan_kucera = {
+					is_hired_as_advisor = yes
+				}
+			}
+			deactivate_advisor = main_advisor3
+		}
+		
+		activate_advisor = main_advisor2
+	}
+
+	option = {
+		name = jrk.17.c
+		ai_chance = {
+			base = 1
+		}
+		
+		if = {
+			limit = {
+				JRK_antonin_sramek = {
+					is_hired_as_advisor = yes
+				}
+			}
+			deactivate_advisor = main_advisor1
+		}
+		if = {
+			limit = {
+				JRK_tomas_zemanek = {
+					is_hired_as_advisor = yes
+				}
+			}
+			deactivate_advisor = main_advisor2
+		}
+		
+		activate_advisor = main_advisor3
 	}
 }

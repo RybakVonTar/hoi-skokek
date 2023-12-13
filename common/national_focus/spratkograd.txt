@@ -1997,7 +1997,10 @@ focus_tree = {
 		cost = 10
 		available = {
 			NOT = {
-				has_country_flag = sko_sov_ne_akcept_gay
+				custom_trigger_tooltip = {
+					tooltip = sko_sov_ne_akcept
+					has_country_flag = sko_sov_ne_akcept_gay
+				}
 			}
 		}
 		bypass = {
