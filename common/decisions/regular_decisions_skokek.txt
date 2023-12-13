@@ -343,7 +343,7 @@ anime_revolution = {
 	#! idk co 
 }
 
-monarchist_uprising = {
+monarchist_uprising_pol = {
 	sabotage_mil = {
 		icon = GFX_decision_icon_default
 		

@@ -30,7 +30,7 @@ anime_revolution = {
 	}
 }
 
-monarchist_uprising = {
+monarchist_uprising_pol = {
 	icon = GFX_category_icon
 	priority = 4
 

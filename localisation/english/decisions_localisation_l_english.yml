@@ -13,7 +13,7 @@
  
  anime_revolution:0 "Anime Revolution Support"
 
- monarchist_uprising:0 "War with [POL.GetName]"
+ monarchist_uprising_pol:0 "War with [POL.GetName]"
  sabotage_mil:0 "Sabotage Military Factories"
  sabotage_civ:0 "Sabotage Civilian Factories"
  pol_stability:0 "Destabilize [POL.GetName]"
