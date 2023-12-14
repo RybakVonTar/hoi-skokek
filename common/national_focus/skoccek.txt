@@ -848,10 +848,6 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			set_technology = {
-				transport = 1
-				
-			}
 			if = {
 				limit = { 
 					has_dlc = "Man the Guns"
@@ -982,6 +978,12 @@ focus_tree = {
 		cost = 5
 		relative_position_id = SKO_maos_sphere
 		available = {
+			NOT = {
+				any_country = {
+					is_independent_china_or_warlord = yes
+					has_war_with = SKO
+				}
+			}
 		}
 		bypass = {
 		}
@@ -1103,8 +1105,11 @@ focus_tree = {
 		cost = 5
 		relative_position_id = SKO_clear_warlords
 		available = {
-			MAN = {
-				is_puppet_of = SKO
+			NOT = {
+				any_country = {
+					is_independent_china_or_warlord = yes
+					has_war_with = SKO
+				}
 			}
 		}
 		bypass = {
@@ -1151,45 +1156,16 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SKO_finnish_integration
-		icon = GFX_focus_generic_annex_country
+		id = SKO_great_anime_union
+		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
 			focus = SKO_annex_doctrine
 		}
 
 		x = 0
 		y = 1
-		cost = 10
-		relative_position_id = SKO_annex_doctrine
-		available = {
-			MAN = {
-				is_puppet_of = SKO
-			}
-		}
-		bypass = {
-			MAN = {
-				exists = no
-			}
-		}
-
-		completion_reward = {
-			annex_country = {
-				target = MAN
-			}
-		}
-	}
-
-	focus = {
-		id = SKO_great_anime_union
-		icon = GFX_focus_generic_adriatic_sea_focus
-		prerequisite = { 
-			focus = SKO_finnish_integration
-		}
-
-		x = 0
-		y = 1
 		cost = 15
-		relative_position_id = SKO_finnish_integration
+		relative_position_id = SKO_annex_doctrine
 		available = {
 		}
 		bypass = {
