@@ -104,11 +104,11 @@ set_convoys = 1500
 set_research_slots = 3
 
 set_popularities = { 
-	democratic = 100
+	anime_government = 100
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = anime_government
 	elections_allowed = yes
 	election_frequency = 1
 }

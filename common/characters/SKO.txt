@@ -8,7 +8,7 @@ characters={
 		}
 		country_leader={
 			desc="SKO_matej_desc"
-			ideology = anarchism
+			ideology = animak
 			traits={}
 			expire="1965.1.1.1"
 			id=-1

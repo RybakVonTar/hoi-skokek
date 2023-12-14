@@ -102,11 +102,11 @@ if = {
 set_research_slots = 1
 
 set_popularities = { 
-	neutrality = 100
+	anime_government = 100
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = anime_government
 	elections_allowed = no
 }
 

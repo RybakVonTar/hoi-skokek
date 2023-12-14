@@ -829,8 +829,12 @@ country_event = {
 	option = {
 		name = skoccek.25.a
 
+		ai_chance = {
+			base = 10
+		}
+
 		SKO = {
-			country_event = skoccek.25.1
+			country_event = skoccek.26
 		}
 
 		if = {
@@ -966,15 +970,19 @@ country_event = {
 	option = {
 		name = skoccek.25.b
 
+		ai_chance = {
+			base = 0
+		}
+
 		SKO = {
-			country_event = skoccek.25.2
+			country_event = skoccek.27
 		}
 	}
 }
 
 # accept school? YES
 country_event = {
-	id = skoccek.25.1
+	id = skoccek.26
 	title = skoccek.25.1.t
 	desc = skoccek.25.1.d
 	picture = GFX_report_event_001
@@ -989,7 +997,7 @@ country_event = {
 
 # accept school? NO
 country_event = {
-	id = skoccek.25.2
+	id = skoccek.27
 	title = skoccek.25.2.t
 	desc = skoccek.25.2.d
 	picture = GFX_report_event_001

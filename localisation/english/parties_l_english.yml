@@ -1,4 +1,6 @@
 ﻿l_english:
+ anime_government:0 "Anime"
+ anime_government_noun:0 "Anime Government"
  communism:0 "Communist"
  communism_noun:0 "Communism"
  democratic:0 "Democratic"
@@ -1002,13 +1004,14 @@
  TTS_neutrality_party:0 "Kings Party"
  transylvania_fascism_party_long:0 "Fascist"
  transylvania_fascism_party:0 "Fascist"
- SKO_neutrality_party:0 "Anime League"
- SEJ_communism_party:0 "Demokracie"
+
+ SKO_anime_government_party:0 "Anime League"
+ SEJ_anime_government_party:0 "Demokracie"
  JRK_neutrality_party:0 "Jirka Supporters"
  SEB_neutrality_party:0 "Koalice Kolistů"
  VOV_communism_party_long:0 "Spratkograd Communist Party"
  VOV_communism_party:0 "SCP"
- MAO_neutrality_party:0 "House of MAOL"
- MIR_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
- MIR_fascism_party:0 "NSDAP"
+ MAO_anime_government_party:0 "House of MAOL"
+ MIR_fascism_party_long:0 "Nationalsozialistische Argentinier Arbeiterpartei"
+ MIR_fascism_party:0 "NSAAP"
  
