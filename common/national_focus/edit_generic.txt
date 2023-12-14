@@ -19,7 +19,7 @@ focus_tree = {
 	id = generic_focus
 	
 	country = {
-		factor = 0
+		factor = 1
 	}
 	
 	default = yes
@@ -1543,7 +1543,7 @@ focus_tree = {
 	focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 19
+		x = 20
 		y = 0
 		cost = 10
 	
@@ -1558,12 +1558,12 @@ focus_tree = {
 
 	focus = {
 		id = communism_focus
-		icon = GFX_goal_generic_support_communism #icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = political_effort }
 		available = {
 			has_government = communism
 		}
-		x = -3
+		x = -4
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
@@ -1582,12 +1582,12 @@ focus_tree = {
 
 	focus = {
 		id = democracy_focus
-		icon = GFX_goal_generic_comm #icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_support_democracy #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = political_effort }
 		available = {
 			has_government = democratic
 		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
@@ -1606,12 +1606,36 @@ focus_tree = {
 
 	focus = {
 		id = fascism_focus
-		icon = GFX_goal_generic_comm #icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = political_effort }
 		available = {
 			has_government = fascism
 		}
-		x = 1
+		x = -2
+		y = 1
+		relative_position_id = political_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = neutrality_focus
+		icon = GFX_goal_generic_neutrality_focus #icon = GFX_goal_tripartite_pact
+		prerequisite = { focus = political_effort }
+		available = {
+			has_government = neutrality
+		}
+		x = 2
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
@@ -1635,7 +1659,7 @@ focus_tree = {
 		available = {
 			has_government = anime_government
 		}
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
