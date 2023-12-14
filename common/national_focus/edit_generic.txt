@@ -16,7 +16,7 @@
 }
 
 focus_tree = {
-	id = generic_focus
+	id = new_generic_focus
 	
 	country = {
 		factor = 1
@@ -26,11 +26,11 @@ focus_tree = {
 	reset_on_civilwar = no
 
 	initial_show_position = {
-		focus = industrial_effort
+		focus = new_industrial_effort
 	}
 
 	focus = {
-		id = royal_navy
+		id = new_royal_navy
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { 
 		} 
@@ -39,7 +39,7 @@ focus_tree = {
 		x = -2
 		y = 0
 		cost = 10
-		#relative_position_id = industrialization
+		#relative_position_id = new_industrialization
 		available = {
 			
 		}
@@ -52,17 +52,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = carrier
+		id = new_carrier
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = { 
-			focus = royal_navy
+			focus = new_royal_navy
 		} 
 		mutually_exclusive = {}
 
 		x = 2
 		y = 1
 		cost = 10
-		relative_position_id = royal_navy
+		relative_position_id = new_royal_navy
 		available = {
 		}
 		bypass = {
@@ -79,17 +79,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = submarines
+		id = new_submarines
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { 
-			focus = royal_navy
+			focus = new_royal_navy
 		} 
 		mutually_exclusive = {}
 
 		x = -2
 		y = 1
 		cost = 10
-		relative_position_id = royal_navy
+		relative_position_id = new_royal_navy
 		available = {
 		}
 		bypass = {
@@ -106,17 +106,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = torpedoes
+		id = new_torpedoes
 		icon = GFX_focus_generic_torpedo_production
 		prerequisite = { 
-			focus = submarines
+			focus = new_submarines
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = submarines
+		relative_position_id = new_submarines
 		available = {
 		}
 		bypass = {
@@ -146,17 +146,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = capital_ships
+		id = new_capital_ships
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { 
-			focus = royal_navy
+			focus = new_royal_navy
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = royal_navy
+		relative_position_id = new_royal_navy
 		available = {
 		}
 		bypass = {
@@ -174,17 +174,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = naval_guns
+		id = new_naval_guns
 		icon = GFX_goal_generic_navy_cruiser
 		prerequisite = { 
-			focus = capital_ships
+			focus = new_capital_ships
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = capital_ships
+		relative_position_id = new_capital_ships
 		available = {
 		}
 		bypass = {
@@ -216,19 +216,19 @@ focus_tree = {
 	}
 
 	focus = {
-		id = navy_training
+		id = new_navy_training
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { 
-			focus = torpedoes
-			focus = naval_guns
-			focus = carrier
+			focus = new_torpedoes
+			focus = new_naval_guns
+			focus = new_carrier
 		} 
 		mutually_exclusive = {}
 
 		x = -2
 		y = 2
 		cost = 10
-		relative_position_id = carrier
+		relative_position_id = new_carrier
 		available = {
 		}
 		bypass = {
@@ -244,17 +244,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = navy_training_II
+		id = new_navy_training_II
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { 
-			focus = navy_training
+			focus = new_navy_training
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = navy_training
+		relative_position_id = new_navy_training
 		available = {
 		}
 		bypass = {
@@ -270,7 +270,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = royal_airforce
+		id = new_royal_airforce
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { 
 		} 
@@ -279,7 +279,7 @@ focus_tree = {
 		x = 3
 		y = 0
 		cost = 10
-		#relative_position_id = industrialization
+		#relative_position_id = new_industrialization
 		available = {
 			
 		}
@@ -292,17 +292,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = heavy_aircraft
+		id = new_heavy_aircraft
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { 
-			focus = royal_airforce
+			focus = new_royal_airforce
 		} 
 		mutually_exclusive = {}
 
 		x = 1
 		y = 1
 		cost = 10
-		relative_position_id = royal_airforce
+		relative_position_id = new_royal_airforce
 		available = {
 		}
 		bypass = {
@@ -319,17 +319,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = bombers
+		id = new_bombers
 		icon = GFX_focus_generic_multi_role_aircraft
 		prerequisite = { 
-			focus = heavy_aircraft
+			focus = new_heavy_aircraft
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 2
 		cost = 10
-		relative_position_id = heavy_aircraft
+		relative_position_id = new_heavy_aircraft
 		available = {
 		}
 		bypass = {
@@ -359,17 +359,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = light_aircraft
+		id = new_light_aircraft
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { 
-			focus = royal_airforce
+			focus = new_royal_airforce
 		} 
 		mutually_exclusive = {}
 
 		x = -1
 		y = 1
 		cost = 10
-		relative_position_id = royal_airforce
+		relative_position_id = new_royal_airforce
 		available = {
 		}
 		bypass = {
@@ -405,17 +405,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cas
+		id = new_cas
 		icon = GFX_focus_generic_tank_air_support
 		prerequisite = { 
-			focus = light_aircraft
+			focus = new_light_aircraft
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 2
 		cost = 10
-		relative_position_id = light_aircraft
+		relative_position_id = new_light_aircraft
 		available = {
 		}
 		bypass = {
@@ -451,20 +451,20 @@ focus_tree = {
 	}
 
 	focus = {
-		id = air_training
+		id = new_air_training
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { 
-			focus = cas
+			focus = new_cas
 		} 
 		prerequisite = { 
-			focus = bombers
+			focus = new_bombers
 		} 
 		mutually_exclusive = {}
 
 		x = -1
 		y = 1
 		cost = 10
-		relative_position_id = bombers
+		relative_position_id = new_bombers
 		available = {
 		}
 		bypass = {
@@ -480,17 +480,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = air_training_II
+		id = new_air_training_II
 		icon = GFX_goal_generic_air_doctrine
 		prerequisite = { 
-			focus = air_training
+			focus = new_air_training
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = air_training
+		relative_position_id = new_air_training
 		available = {
 		}
 		bypass = {
@@ -506,17 +506,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = motors
+		id = new_motors
 		icon = GFX_goal_generic_air_production
 		prerequisite = { 
-			focus = royal_airforce
+			focus = new_royal_airforce
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 2
 		cost = 10
-		relative_position_id = royal_airforce
+		relative_position_id = new_royal_airforce
 		available = {
 		}
 		bypass = {
@@ -546,7 +546,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = royal_army
+		id = new_royal_army
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { 
 		} 
@@ -555,7 +555,7 @@ focus_tree = {
 		x = 8
 		y = 0
 		cost = 10
-		#relative_position_id = industrialization
+		#relative_position_id = new_industrialization
 		available = {
 			
 		}
@@ -568,17 +568,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = artillery_effort
+		id = new_artillery_effort
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { 
-			focus = royal_army
+			focus = new_royal_army
 		} 
 		mutually_exclusive = {}
 
 		x = -2
 		y = 1
 		cost = 10
-		relative_position_id = royal_army
+		relative_position_id = new_royal_army
 		available = {
 		}
 		bypass = {
@@ -595,17 +595,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = support_effort
+		id = new_support_effort
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { 
-			focus = royal_army
+			focus = new_royal_army
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = royal_army
+		relative_position_id = new_royal_army
 		available = {
 		}
 		bypass = {
@@ -622,17 +622,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = equipment_effort
+		id = new_equipment_effort
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { 
-			focus = royal_army
+			focus = new_royal_army
 		} 
 		mutually_exclusive = {}
 
 		x = -1
 		y = 2
 		cost = 10
-		relative_position_id = royal_army
+		relative_position_id = new_royal_army
 		available = {
 		}
 		bypass = {
@@ -649,17 +649,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = motorization_effort
+		id = new_motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { 
-			focus = royal_army
+			focus = new_royal_army
 		} 
 		mutually_exclusive = {}
 
 		x = 2
 		y = 1
 		cost = 10
-		relative_position_id = royal_army
+		relative_position_id = new_royal_army
 		available = {
 		}
 		bypass = {
@@ -676,17 +676,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = tank_effort
+		id = new_tank_effort
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { 
-			focus = royal_army
+			focus = new_royal_army
 		} 
 		mutually_exclusive = {}
 
 		x = 1
 		y = 2
 		cost = 10
-		relative_position_id = royal_army
+		relative_position_id = new_royal_army
 		available = {
 		}
 		bypass = {
@@ -703,18 +703,18 @@ focus_tree = {
 	}
 
 	focus = {
-		id = army_trainingI
+		id = new_army_trainingI
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { 
-			focus = artillery_effort
-			focus = equipment_effort
+			focus = new_artillery_effort
+			focus = new_equipment_effort
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 2
 		cost = 10
-		relative_position_id = artillery_effort
+		relative_position_id = new_artillery_effort
 		available = {
 		}
 		bypass = {
@@ -730,18 +730,18 @@ focus_tree = {
 	}
 
 	focus = {
-		id = army_trainingII
+		id = new_army_trainingII
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { 
-			focus = tank_effort
-			focus = motorization_effort
+			focus = new_tank_effort
+			focus = new_motorization_effort
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 2
 		cost = 10
-		relative_position_id = motorization_effort
+		relative_position_id = new_motorization_effort
 		available = {
 		}
 		bypass = {
@@ -757,7 +757,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = industrial_effort
+		id = new_industrial_effort
 		icon = GFX_goal_generic_production
 		x = 13
 		y = 0
@@ -800,12 +800,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort
+		id = new_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = { focus = new_industrial_effort }
 		x = -1
 		y = 1
-		relative_position_id = industrial_effort
+		relative_position_id = new_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -875,12 +875,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort
+		id = new_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = { focus = new_industrial_effort }
 		x = 1
 		y = 1
-		relative_position_id = industrial_effort
+		relative_position_id = new_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -949,12 +949,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort_2
+		id = new_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = construction_effort }
+		prerequisite = { focus = new_construction_effort }
 		x = 0
 		y = 1
-		relative_position_id = construction_effort
+		relative_position_id = new_construction_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -1023,12 +1023,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort_2
+		id = new_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort }
+		prerequisite = { focus = new_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = production_effort
+		relative_position_id = new_production_effort
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -1097,12 +1097,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = infrastructure_effort
+		id = new_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = construction_effort_2 }
+		prerequisite = { focus = new_construction_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = construction_effort_2
+		relative_position_id = new_construction_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1193,12 +1193,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort_3
+		id = new_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort_2 }
+		prerequisite = { focus = new_production_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = production_effort_2
+		relative_position_id = new_production_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -1267,12 +1267,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = infrastructure_effort_2
+		id = new_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = { focus = new_infrastructure_effort }
 		x = 0
 		y = 1
-		relative_position_id = infrastructure_effort
+		relative_position_id = new_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1363,12 +1363,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort_3
+		id = new_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = { focus = new_infrastructure_effort }
 		x = 2
 		y = 1
-		relative_position_id = infrastructure_effort
+		relative_position_id = new_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -1437,12 +1437,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nuclear_effort
+		id = new_nuclear_effort
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = infrastructure_effort_2 }
+		prerequisite = { focus = new_infrastructure_effort_2 }
 		x = -2
 		y = 1
-		relative_position_id = infrastructure_effort_2
+		relative_position_id = new_infrastructure_effort_2
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -1467,12 +1467,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = extra_tech_slot
+		id = new_extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = infrastructure_effort_2 }
+		prerequisite = { focus = new_infrastructure_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = infrastructure_effort_2
+		relative_position_id = new_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -1485,17 +1485,17 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = extra_tech_slot_2
+		id = new_extra_tech_slot_2
 		icon = GFX_focus_research
-		prerequisite = { focus = extra_tech_slot }
+		prerequisite = { focus = new_extra_tech_slot }
 		available = {
 			num_of_factories > 50
 		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
+		cancel_if_invalid = new_no
+		continue_if_invalid = new_yes
 		x = 0
 		y = 1
-		relative_position_id = extra_tech_slot
+		relative_position_id = new_extra_tech_slot
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -1508,12 +1508,12 @@ focus_tree = {
 	}	
 
 	focus = {
-		id = secret_weapons
+		id = new_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = infrastructure_effort_2 }
+		prerequisite = { focus = new_infrastructure_effort_2 }
 		x = 2
 		y = 1
-		relative_position_id = infrastructure_effort_2
+		relative_position_id = new_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -1541,7 +1541,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = political_effort
+		id = new_political_effort
 		icon = GFX_goal_generic_demand_territory
 		x = 20
 		y = 0
@@ -1557,15 +1557,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = communism_focus
+		id = new_communism_focus
 		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = political_effort }
+		prerequisite = { focus = new_political_effort }
 		available = {
 			has_government = communism
 		}
 		x = -4
 		y = 1
-		relative_position_id = political_effort
+		relative_position_id = new_political_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1581,15 +1581,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = democracy_focus
+		id = new_democracy_focus
 		icon = GFX_goal_support_democracy #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = political_effort }
+		prerequisite = { focus = new_political_effort }
 		available = {
 			has_government = democratic
 		}
 		x = 0
 		y = 1
-		relative_position_id = political_effort
+		relative_position_id = new_political_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1605,15 +1605,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = fascism_focus
+		id = new_fascism_focus
 		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = political_effort }
+		prerequisite = { focus = new_political_effort }
 		available = {
 			has_government = fascism
 		}
 		x = -2
 		y = 1
-		relative_position_id = political_effort
+		relative_position_id = new_political_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1629,15 +1629,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = neutrality_focus
+		id = new_neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = political_effort }
+		prerequisite = { focus = new_political_effort }
 		available = {
 			has_government = neutrality
 		}
 		x = 2
 		y = 1
-		relative_position_id = political_effort
+		relative_position_id = new_political_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1653,15 +1653,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = anime_focus
+		id = new_anime_focus
 		icon = GFX_goal_generic_comm #icon = GFX_goal_tripartite_pact
-		prerequisite = { focus = political_effort }
+		prerequisite = { focus = new_political_effort }
 		available = {
 			has_government = anime_government
 		}
 		x = 4
 		y = 1
-		relative_position_id = political_effort
+		relative_position_id = new_political_effort
 		cost = 10
 
 		available_if_capitulated = yes

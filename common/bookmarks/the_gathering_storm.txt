@@ -50,12 +50,11 @@ bookmarks = {
 			}
 		}
 		"SEB"={
-			history = "Ať žijí kolisté."
+			history = "I am gone, I am dead."
 			ideology = neutrality
 			ideas = {
 			}
 			focuses = {
-				SEB_tour_de_slovakia
 			}
 		}
 		"VOV"={

@@ -4170,9 +4170,9 @@
  VOV:0 "Spratkograd"
  VOV_DEF:0 "the Spratkograd"
 
- MAO_neutrality_subject:0 "Anime Protectorate of China"
- MAO_neutrality_subject_DEF:0 "the Anime Protectorate of China"
- MAO_neutrality_subject_ADJ:0 "Anime Chinese"
+ MAO:0 "Anime Protectorate of China"
+ MAO_DEF:0 "the Anime Protectorate of China"
+ MAO_ADJ:0 "Anime Chinese"
 
  MIR:0 "4. Reich"
  MIR_DEF:0 "4. Reich"

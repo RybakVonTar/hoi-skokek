@@ -22,10 +22,10 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		#modifier = {
-		#	add = 10
-		#	tag = SEJ
-		#}
+		modifier = {
+			add = 10
+			tag = SEJ
+		}
 	}
 	
 	default = no
@@ -33,20 +33,41 @@ focus_tree = {
 	continuous_focus_position = { x = 100 y = 1700 }
 
 	initial_show_position = {
-		x = 28
+		x = 15
 		y = 0
 	}
 
 	focus = {
-		id = SEJ_
+		id = SEJ_soplerone
 		icon = GFX_focus_generic_adriatic_sea_focus
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
 
-		x = 38
+		x = 4
 		y = 0
-		cost = 1
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SEJ_
+		icon = GFX_focus_generic_adriatic_sea_focus
+		prerequisite = { 
+			#focus = SEB_train_for_tour
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		#relative_position_id = SEB_train_for_tour
 		available = {
 		}
 		bypass = {
