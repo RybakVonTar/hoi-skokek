@@ -7,6 +7,12 @@ characters={
 				large="gfx/leaders/GUP/Portrait_CZE_Kafka.tga"
 			}
 		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
 		corps_commander = {
 			skill = 1
 			attack_skill = 1
@@ -28,6 +34,12 @@ characters={
 			civilian={
 				large="gfx/leaders/GUP/Portrait_ENG_Darjeeling.tga"
 			}
+		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander = {
 			skill = 3
@@ -115,6 +127,12 @@ characters={
 				large="gfx/leaders/GUP/Portrait_FIN_Mika.tga"
 			}
 		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
 		corps_commander = {
 			skill = 3
 			attack_skill = 2
@@ -200,6 +218,12 @@ characters={
 				large="gfx/leaders/GUP/Portrait_FRA_Marie.tga"
 			}
 		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
 		corps_commander = {
 			skill = 3
 			attack_skill = 1
@@ -221,6 +245,12 @@ characters={
 			civilian={
 				large="gfx/leaders/GUP/Portrait_GER_Maho.tga"
 			}
+		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander = {
 			skill = 3
@@ -266,6 +296,12 @@ characters={
 			civilian={
 				large="gfx/leaders/GUP/Portrait_ITA_Anchovy.tga"
 			}
+		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander = {
 			skill = 2
@@ -330,6 +366,12 @@ characters={
 			civilian={
 				large="gfx/leaders/GUP/Portrait_JAP_Nishi.tga"
 			}
+		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander = {
 			skill = 2
@@ -396,6 +438,12 @@ characters={
 				large="gfx/leaders/GUP/Portrait_RUS_Katyusha.tga"
 			}
 		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
 		corps_commander = {
 			skill = 3
 			attack_skill = 4
@@ -461,6 +509,12 @@ characters={
 			civilian={
 				large="gfx/leaders/GUP/Portrait_USA_Kay.tga"
 			}
+		}
+		country_leader={
+			ideology = animak
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
 		}
 		corps_commander = {
 			skill = 3

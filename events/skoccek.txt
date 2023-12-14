@@ -846,10 +846,19 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_pravda
+				name = SKO_pravda
+			}
 			add_ideas = SKO_pravda
 			recruit_character = GUP_katyusha
 			recruit_character = GUP_nonna
 			recruit_character = GUP_clara
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -861,9 +870,18 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_kuromorine
+				name = SKO_kuromorine
+			}
 			add_ideas = SKO_kuromorine
 			recruit_character = GUP_erika
 			recruit_character = GUP_maho
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -874,10 +892,19 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_sanders
+				name = SKO_sanders
+			}
 			add_ideas = SKO_sanders
 			recruit_character = GUP_kay
 			recruit_character = GUP_naomi
 			recruit_character = GUP_alisa
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -889,10 +916,19 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_st_gloriana
+				name = SKO_st_gloriana
+			}
 			add_ideas = SKO_st_gloriana
 			recruit_character = GUP_darjeeling
 			recruit_character = GUP_orange_pekoe
 			recruit_character = GUP_rosehip
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -903,10 +939,19 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_anzio
+				name = SKO_anzio
+			}
 			add_ideas = SKO_anzio
 			recruit_character = GUP_anchovy
 			recruit_character = GUP_pepperoni
 			recruit_character = GUP_carpaccio
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -917,10 +962,19 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_bc_freedom
+				name = SKO_bc_freedom
+			}
 			add_ideas = SKO_bc_freedom
 			recruit_character = GUP_marie
 			recruit_character = GUP_oshida
 			recruit_character = GUP_andou
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -931,10 +985,19 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_keizoku
+				name = SKO_keizoku
+			}
 			add_ideas = SKO_keizoku
 			recruit_character = GUP_mika
 			recruit_character = GUP_aki
 			recruit_character = GUP_mikko
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -946,10 +1009,18 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_chihatan
+				name = SKO_chihatan
+			}
 			add_ideas = SKO_chihatan
 			recruit_character = GUP_nishi
 			recruit_character = GUP_fukuda
 			recruit_character = GUP_hosomi
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 
 		if = {
@@ -961,8 +1032,17 @@ country_event = {
 					}
 				}
 			}
+			set_party_name = {
+				ideology = anime_government
+				long_name = SKO_gregor
+				name = SKO_gregor
+			}
 			add_ideas = SKO_gregor
 			recruit_character = GUP_kafka
+
+			hidden_effect = {
+				retire_ideology_leader = anime_government
+			}
 		}
 	}
 

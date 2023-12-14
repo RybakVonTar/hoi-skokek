@@ -289,30 +289,6 @@ ideas = {
 					hard_attack = 0.05
 				}
 			}
-		}
-
-		SKO_kuromorine = {
-			name = SKO_kuromorine
-
-			removal_cost = -1
-
-			allowed = {
-				always = yes
-			}
-
-			modifier = {
-				anime_government_drift = 0.01
-			}
-
-			equipment_bonus = {
-				heavy_tank_chassis = {
-					instant = yes
-					build_cost_ic = 0.2
-					armor_value = 0.15
-					soft_attack = 0.1
-					hard_attack = 0.05
-				}
-			}
 		}	
 
 		SKO_sanders = {
