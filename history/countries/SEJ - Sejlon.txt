@@ -116,7 +116,7 @@ set_politics = {
 set_stability = 0.5
 set_war_support = 0.3
 
-add_ideas = SEJ_waifu_dreamland
+add_ideas = SEJ_waifu_paradise
 
 recruit_character = SEJ_sejlon
 recruit_character = SEJ_rem

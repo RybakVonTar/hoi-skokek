@@ -114,6 +114,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			#!
 		}
 	}
 
@@ -135,6 +136,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			#!
 		}
 	}
 	
@@ -172,7 +174,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SEJ_xxx
+	    id = SEJ_war_spirit
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
 			focus = SEJ_totalitarian_regime
@@ -189,11 +191,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 
 	focus = {
-		id = SEJ_xx
+		id = SEJ_disband_parlament
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
 			focus = SEJ_totalitarian_regime
@@ -210,6 +213,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_stability = -0.05
+			set_politics = {
+				ruling_party = anime_government
+				elections_allowed = no
+			}
 		}
 	}
 
@@ -232,6 +240,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 
@@ -256,6 +265,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			#!
 		}
 	}
 
@@ -277,6 +287,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			#!
 		}
 	}
 }
