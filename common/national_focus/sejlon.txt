@@ -38,15 +38,97 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SEJ_soplerone
-		icon = GFX_focus_generic_adriatic_sea_focus
+		id = SEJ_democracy
+		icon = GFX_goal_support_democracy
 		prerequisite = { 
+		} 
+		mutually_exclusive = {
+			focus = SEJ_totalitarian_regime
+		}
+
+		x = 2
+		y = 0
+		cost = 10
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			every_country = {
+				limit = {
+					is_major = yes
+					has_government = democratic
+				}
+				add_opinion_modifier = {
+					target = SEJ
+					modifier = SEJ_democracy
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_join_anime_league
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_democracy
+			focus = SEJ_totalitarian_regime
 		} 
 		mutually_exclusive = {}
 
-		x = 4
-		y = 0
+		x = 2
+		y = 1
 		cost = 10
+		relative_position_id = SEJ_democracy
+		available = {
+			SKO = {
+				is_faction_leader = yes
+				has_completed_focus = SKO_end_of_skoccko-sobrrrk_war
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! event pro SKO
+		}
+	}
+
+	focus = {
+		id = SEJ_
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_democracy
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_democracy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SEJ_x
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_democracy
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_democracy
 		available = {
 		}
 		bypass = {
@@ -57,17 +139,138 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SEJ_
-		icon = GFX_focus_generic_adriatic_sea_focus
+		id = SEJ_totalitarian_regime
+		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
-			#focus = SEB_train_for_tour
+		} 
+		mutually_exclusive = {
+			focus = SEJ_democracy
+		}
+
+		x = 4
+		y = 0
+		cost = 10
+		relative_position_id = SEJ_democracy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_stability = -0.05
+			every_country = {
+				limit = {
+					is_major = yes
+					has_government = democratic
+				}
+				add_opinion_modifier = {
+					target = SEJ
+					modifier = SEJ_totalitarian_regime
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_xxx
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_totalitarian_regime
 		} 
 		mutually_exclusive = {}
 
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
-		#relative_position_id = SEB_train_for_tour
+		relative_position_id = SEJ_totalitarian_regime
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SEJ_xx
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_totalitarian_regime
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_totalitarian_regime
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+
+
+	focus = {
+		id = SEJ_foreign_affairs
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 10
+		y = 0
+		cost = 10
+		relative_position_id = SEJ_democracy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SEJ_expansionism
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_foreign_affairs
+		} 
+		prerequisite = { 
+			focus = SEJ_totalitarian_regime
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_foreign_affairs
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SEJ_interventionism
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_foreign_affairs
+		}
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_foreign_affairs
 		available = {
 		}
 		bypass = {

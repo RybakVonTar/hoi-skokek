@@ -1162,5 +1162,13 @@ opinion_modifiers = {
 	join_antianime = {
 		value = 35
 	}
+
+	SEJ_democracy = {
+		value = 25
+	}
+
+	SEJ_totalitarian_regime = {
+		value = -20
+	}
 	
 }
