@@ -54,6 +54,14 @@ focus_tree = {
 		bypass = {
 		}
 
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = yes
+				add = 100
+			}
+		}
+
 		completion_reward = {
 			add_political_power = 100
 			every_country = {
@@ -83,6 +91,7 @@ focus_tree = {
 		cost = 10
 		relative_position_id = SEJ_democracy
 		available = {
+			is_in_faction = no
 			SKO = {
 				is_faction_leader = yes
 				has_completed_focus = SKO_end_of_skoccko-sobrrrk_war
@@ -136,7 +145,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			#! idea
 		}
 	}
 	
@@ -156,6 +165,10 @@ focus_tree = {
 		available = {
 		}
 		bypass = {
+		}
+
+		ai_will_do = {
+			base = 0
 		}
 
 		completion_reward = {
@@ -287,7 +300,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#!
+			add_war_support = 0.05
+			set_rule = {
+				can_send_volunteers = yes
+			}
 		}
 	}
 }
