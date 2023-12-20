@@ -79,6 +79,10 @@ bookmarks = {
 			focuses = {
 			}
 		}
+
+		"---"={
+			history = "BEKOS "
+		}
 		# minors
 		"HUN"={
 			minor = yes

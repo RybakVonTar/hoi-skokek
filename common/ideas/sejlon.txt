@@ -23,8 +23,8 @@ ideas = {
 			}
 		}
 
-		SEJ_waifu_paradise_better = {
-			name = SEJ_waifu_paradise
+		SEJ_marine_army = {
+			name = SEJ_marine_army
 
 			removal_cost = -1
 
@@ -34,15 +34,12 @@ ideas = {
 				always = yes
 			}
 
-			modifier = {
-				political_power_cost = 0.1
-				stability_factor = 0.15
-			}
-
-			rule = {
-				can_generate_female_aces = yes
-				can_generate_female_country_leaders = yes
-				can_generate_female_unit_leaders = yes
+			modifier = {	
+				naval_invasion_capacity = 4
+				amphibious_invasion_defence = 0.05
+				naval_invasion_prep_speed = 0.15
+				unit_marine_design_cost_factor = -0.1
+				unit_infantry_design_cost_factor = 0.3
 			}
 		}
 	}
