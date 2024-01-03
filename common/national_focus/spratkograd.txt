@@ -2021,7 +2021,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VOV_anti-anime
+		id = VOV_anti_anime
 		icon = GFX_focus_generic_join_comintern
 		prerequisite = { 
 			focus = VOV_spread_communism
@@ -2053,6 +2053,16 @@ focus_tree = {
 				}
 				retire = yes
 			}
+
+			every_country = {
+				limit = {
+					has_government = anime_government
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = VOV_anti_anime
+				}
+			}
 		}
 	}
 
@@ -2060,14 +2070,14 @@ focus_tree = {
 		id = VOV_support_japan
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		prerequisite = { 
-			focus = VOV_anti-anime
+			focus = VOV_anti_anime
 		} 
 		mutually_exclusive = {
 		}
 
 		x = 1
 		y = 1
-		relative_position_id = VOV_anti-anime
+		relative_position_id = VOV_anti_anime
 		cost = 10
 		available = {
 			SKO = {
@@ -2103,14 +2113,14 @@ focus_tree = {
 		id = VOV_support_china
 		icon = GFX_focus_chi_cooperation_with_the_nationalists
 		prerequisite = { 
-			focus = VOV_anti-anime
+			focus = VOV_anti_anime
 		} 
 		mutually_exclusive = {
 		}
 
 		x = -1
 		y = 1
-		relative_position_id = VOV_anti-anime
+		relative_position_id = VOV_anti_anime
 		cost = 10
 		available = {
 			SKO = {

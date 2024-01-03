@@ -14,12 +14,14 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.2
 				stability_factor = 0.05
+				hidden_modifier = {
+					female_random_operative_chance = 1
+				}
 			}
 
 			rule = {
 				can_generate_female_aces = yes
 				can_generate_female_country_leaders = yes
-				can_generate_female_unit_leaders = yes
 			}
 		}
 
@@ -40,6 +42,23 @@ ideas = {
 				naval_invasion_prep_speed = 0.15
 				unit_marine_design_cost_factor = -0.1
 				unit_infantry_design_cost_factor = 0.3
+			}
+		}
+
+		SEJ_jap_embargo = {
+			name = SEJ_jap_embargo
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			targeted_modifier = {
+				tag = JAP
+				trade_opinion_factor = -100
 			}
 		}
 	}

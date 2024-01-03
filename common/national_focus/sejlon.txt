@@ -118,12 +118,21 @@ focus_tree = {
 		cost = 10
 		relative_position_id = SEJ_democracy
 		available = {
+			JAP = {
+				has_war_with = SKO
+			}
 		}
 		bypass = {
 		}
 
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				send_embargo = JAP
+			}
+			add_ideas = SEJ_jap_embargo
 		}
 	}
 
@@ -194,7 +203,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_totalitarian_regime
@@ -216,7 +225,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = -1
+		x = 2
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_totalitarian_regime
@@ -230,6 +239,85 @@ focus_tree = {
 			set_politics = {
 				ruling_party = anime_government
 				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_stay_with_sejlon
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_disband_parlament
+		} 
+		mutually_exclusive = {
+			focus = SEJ_invite_st_gloriana
+		}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_disband_parlament
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SEJ_invite_st_gloriana
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_disband_parlament
+		} 
+		mutually_exclusive = {
+			focus = SEJ_stay_with_sejlon
+		}
+
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_disband_parlament
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SKO_st_gloriana
+			recruit_character = GUP_darjeeling
+			recruit_character = GUP_orange_pekoe
+			recruit_character = GUP_rosehip
+
+			#! balance of powers common/bop/*
+		}
+	}
+
+	focus = {
+		id = SEJ_tankist_chunta
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_invite_st_gloriana
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_invite_st_gloriana
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			retire_country_leader = yes
+			set_party_name = {
+				ideology = anime_government
+				long_name = "St. Gloriana High Command"
+				name = "St. Gloriana High Command"
 			}
 		}
 	}
