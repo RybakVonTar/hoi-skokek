@@ -121,6 +121,27 @@ on_actions = {
 		}
 	}
 
+	on_weekly_SEJ = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = SEJ_raj_war_for_south
+					controls_state = 423
+					controls_state = 424
+					controls_state = 425
+				}
+				white_peace = ENG
+				white_peace = RAJ
+				SEJ = {
+					transfer_state = 423
+					transfer_state = 424
+					transfer_state = 425
+				}
+				clr_country_flag = SEJ_raj_war_for_south
+			}
+		}
+	}
+
 	on_monthly_SPR = {
 		effect = {
 			if = {
@@ -266,6 +287,24 @@ on_actions = {
 					}
 				}
 				country_event = jrk.17
+			}
+		}
+	}
+
+	on_release_as_free = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = RAJ
+					}
+					ROOT = {
+						tag = PAK
+					}
+				}
+				PAK = {
+					country_event = { id = sej.5 days = 1 }
+				}
 			}
 		}
 	}

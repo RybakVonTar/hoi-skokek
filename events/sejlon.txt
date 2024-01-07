@@ -1,0 +1,134 @@
+﻿add_namespace = sej
+
+# Said NO
+country_event = {
+	id = sej.0
+	title = sej.0.t
+	desc = sej.0.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.0.a
+	}
+}
+
+# Said YES
+country_event = {
+	id = sej.1
+	title = sej.1.t
+	desc = sej.1.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.1.a
+	}
+}
+
+# zmatek v raji RAJ
+country_event = {
+	id = sej.2
+	title = sej.2.t
+	desc = sej.2.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	trigger = {
+		tag = RAJ
+		has_global_flag = SEJ_second_war_RAH
+		surrender_progress > 0.25
+		has_war_with = SEJ
+	}
+
+	option = {
+		name = sej.2.a
+
+		release = PAK
+	}
+}
+
+# zmatek v raji ENG
+country_event = {
+	id = sej.3
+	title = sej.3.t
+	desc = sej.3.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	trigger = {
+		tag = ENG
+		has_global_flag = SEJ_second_war_RAH
+		RAJ = {
+			surrender_progress > 0.25
+			has_war_with = SEJ
+		}
+	}
+
+	# support RAJ
+	option = {
+		name = sej.3.a
+	}
+
+	# not support RAJ
+	option = {
+		name = sej.3.a
+		end_puppet = RAJ
+	}
+}
+
+# zmatek v raji SEJ
+country_event = {
+	id = sej.4
+	title = sej.4.t
+	desc = sej.4.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = { days = 1 }
+
+	trigger = {
+		tag = SEJ
+		has_global_flag = SEJ_second_war_RAH
+		RAJ = {
+			surrender_progress > 0.25
+			has_war_with = SEJ
+		}
+	}
+
+	option = {
+		name = sej.4.a
+
+		transfer_state = 427
+		transfer_state = 429
+	}
+}
+
+# war PAK on RAJ
+country_event = {
+	id = sej.5
+	title = sej.5.t
+	desc = sej.5.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.5.a
+
+		declare_war_on = {
+			target = RAJ
+		}
+
+		# oob
+	}
+}

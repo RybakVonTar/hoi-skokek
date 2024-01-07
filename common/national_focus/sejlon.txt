@@ -137,6 +137,37 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SEJ_embargo_JAP
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_democracy
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_democracy
+		available = {
+			JAP = {
+				has_war_with = SKO
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				send_embargo = JAP
+			}
+			add_ideas = SEJ_jap_embargo
+		}
+	}
+
+	focus = {
 		id = SEJ_x
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
@@ -154,7 +185,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea
+			add_stability = 0.05
 		}
 	}
 	
@@ -247,16 +278,16 @@ focus_tree = {
 		id = SEJ_stay_with_sejlon
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
-			focus = SEJ_disband_parlament
+			focus = SEJ_invite_st_gloriana
 		} 
 		mutually_exclusive = {
-			focus = SEJ_invite_st_gloriana
+			focus = SEJ_tankist_chunta
 		}
 
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
-		relative_position_id = SEJ_disband_parlament
+		relative_position_id = SEJ_invite_st_gloriana
 		available = {
 		}
 		bypass = {
@@ -273,16 +304,16 @@ focus_tree = {
 			focus = SEJ_disband_parlament
 		} 
 		mutually_exclusive = {
-			focus = SEJ_stay_with_sejlon
 		}
 
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_disband_parlament
 		available = {
 		}
 		bypass = {
+			has_idea = SKO_st_gloriana
 		}
 
 		completion_reward = {
@@ -301,9 +332,11 @@ focus_tree = {
 		prerequisite = { 
 			focus = SEJ_invite_st_gloriana
 		} 
-		mutually_exclusive = {}
+		mutually_exclusive = {
+			focus = SEJ_stay_with_sejlon
+		}
 
-		x = 0
+		x = 1
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_invite_st_gloriana
@@ -318,6 +351,199 @@ focus_tree = {
 				ideology = anime_government
 				long_name = "St. Gloriana High Command"
 				name = "St. Gloriana High Command"
+			}
+		}
+	}
+
+	################################
+	# War
+	################################
+
+	focus = {
+		id = SEJ_buy_indian_ocean_islands
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_embargo_JAP
+			focus = SEJ_war_spirit
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_embargo_JAP
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			# event pro ENG
+		}
+	}
+
+	focus = {
+		id = SEJ_south_for_support
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_embargo_JAP
+			focus = SEJ_war_spirit
+		} 
+		mutually_exclusive = {
+			focus = SEJ_war_with_raj
+		}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_embargo_JAP
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			# event pro RAJ
+		}
+	}
+
+	focus = {
+		id = SEJ_war_with_raj
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_war_spirit
+		} 
+		mutually_exclusive = {
+			focus = SEJ_south_for_support
+		}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_war_spirit
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			423 = {
+				add_claim_by = SEJ
+			}
+			424 = {
+				add_claim_by = SEJ
+			}
+			425 = {
+				add_claim_by = SEJ
+			}
+			declare_war_on = {
+				target = RAJ
+				type = take_claimed_state
+			}
+			hidden_effect = {
+				set_country_flag = SEJ_raj_war_for_south
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_integrate_south
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_south_for_support
+			focus = SEJ_war_with_raj
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_war_with_raj
+		available = {
+			owns_state = 423
+			owns_state = 424
+			owns_state = 425
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			423 = {
+				add_core_of = SEJ
+			}
+			424 = {
+				add_core_of = SEJ
+			}
+			425 = {
+				add_core_of = SEJ
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_demand_more_land
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_integrate_south
+		} 
+		prerequisite = { 
+			focus = SEJ_war_with_raj
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_integrate_south
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			429 = {
+				add_claim_by = SEJ
+				add_core_of = SEJ
+			}
+			426 = {
+				add_claim_by = SEJ
+				add_core_of = SEJ
+			}
+			436 = {
+				add_claim_by = SEJ
+				add_core_of = SEJ
+			}
+			479 = {
+				add_claim_by = SEJ
+				add_core_of = SEJ
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_second_war_raj
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_demand_more_land
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_demand_more_land
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = RAJ
+				type = puppet_wargoal_focus
+			}
+			hidden_effect = {
+				set_global_flag = SEJ_second_war_RAH
 			}
 		}
 	}
