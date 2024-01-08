@@ -149,9 +149,6 @@ focus_tree = {
 		cost = 10
 		relative_position_id = SEJ_democracy
 		available = {
-			JAP = {
-				has_war_with = SKO
-			}
 		}
 		bypass = {
 		}
@@ -481,7 +478,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SEJ_demand_more_land
+		id = SEJ_more_claims
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
 			focus = SEJ_integrate_south
@@ -524,14 +521,14 @@ focus_tree = {
 		id = SEJ_second_war_raj
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
-			focus = SEJ_demand_more_land
+			focus = SEJ_more_claims
 		} 
 		mutually_exclusive = {}
 
 		x = 0
 		y = 1
 		cost = 10
-		relative_position_id = SEJ_demand_more_land
+		relative_position_id = SEJ_more_claims
 		available = {
 		}
 		bypass = {

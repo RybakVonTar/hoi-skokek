@@ -1,18 +1,33 @@
-unique_id = custom_achievements_123456
+unique_id = skokek_achievements_9000
 
 tour_de_france = {
-    possible = {
-        difficulty > 1
-        has_start_date < 1936.01.02
-        has_any_custom_difficulty_setting = no
-        game_rules_allow_achievements = yes
+  possible = {
+    difficulty > 1
+    has_start_date < 1936.01.02
+    has_any_custom_difficulty_setting = no
+    is_ironman = yes
+    tag = SEB
+  }
+
+  happened = {
+		has_war_with = FRA
+		controlls = 16
+  } 
+}
+
+tea_time = {
+  possible = {
+    difficulty > 1
+    has_start_date < 1936.01.02
+    has_any_custom_difficulty_setting = no
+    is_ironman = yes
+  }
+
+  happened = {
+    has_country_leader = GUP_darjeeling
+    any_state = {
+      is_owned_by = ROOT
+      is_core_of = RAJ
     }
- 
-    happened = {
-        tag = SEB
-		SEB = {
-			has_war_with = FRA
-			controlls = 16
-		}
-    } 
+  } 
 }
