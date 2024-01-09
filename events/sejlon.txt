@@ -84,7 +84,7 @@ country_event = {
 
 	# not support RAJ
 	option = {
-		name = sej.3.a
+		name = sej.3.b
 
 		end_puppet = RAJ
 	}
@@ -147,5 +147,170 @@ country_event = {
 		}
 
 		# oob
+	}
+}
+
+# join SKO
+country_event = {
+	id = sej.6
+	title = sej.6.t
+	desc = sej.6.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.6.a
+
+		SKO = {
+			add_to_faction = SEJ
+		}
+
+		SEJ = {
+			country_event = sej.1
+		}
+	}
+
+	option = {
+		name = sej.6.b
+
+		SEJ = {
+			country_event = sej.0
+		}
+	}
+}
+
+# buy islands
+country_event = {
+	id = sej.7
+	title = sej.7.t
+	desc = sej.7.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.7.a
+
+		SEJ = {
+			transfer_state = 281
+			transfer_state = 733
+
+			country_event = sej.1
+		}
+
+		#! neco jako platba
+	}
+
+	option = {
+		name = sej.7.b
+
+		SEJ = {
+			country_event = sej.0
+		}
+	}
+}
+
+# indian south
+country_event = {
+	id = sej.8
+	title = sej.8.t
+	desc = sej.8.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.8.a
+
+		SEJ = {
+			transfer_state = 423
+			transfer_state = 424
+			transfer_state = 425
+
+			country_event = sej.1
+		}
+	}
+
+	option = {
+		name = sej.8.b
+
+		423 = {
+			add_claim_by = SEJ
+		}
+		424 = {
+			add_claim_by = SEJ
+		}
+		425 = {
+			add_claim_by = SEJ
+		}
+
+		SEJ = {
+			country_event = sej.0
+		}
+	}
+}
+
+# french india
+country_event = {
+	id = sej.9
+	title = sej.9.t
+	desc = sej.9.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.9.a
+
+		SEJ = {
+			transfer_state = 320
+
+			country_event = sej.1
+		}
+	}
+
+	option = {
+		name = sej.9.b
+
+		320 = {
+			add_claim_by = SEJ
+		}
+
+		SEJ = {
+			country_event = sej.0
+		}
+	}
+}
+
+# goa
+country_event = {
+	id = sej.10
+	title = sej.10.t
+	desc = sej.10.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = sej.10.a
+
+		SEJ = {
+			transfer_state = 321
+
+			country_event = sej.1
+		}
+	}
+
+	option = {
+		name = sej.10.b
+
+		321 = {
+			add_claim_by = SEJ
+		}
+
+		SEJ = {
+			country_event = sej.0
+		}
 	}
 }

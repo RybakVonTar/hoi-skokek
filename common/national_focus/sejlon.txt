@@ -101,7 +101,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! event pro SKO
+			SKO = {
+				country_event = { id = sej.6 days = 1 }
+			}
 		}
 	}
 
@@ -138,7 +140,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_embargo_JAP
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_trade
 		prerequisite = { 
 			focus = SEJ_democracy
 		} 
@@ -188,7 +190,7 @@ focus_tree = {
 	
 	focus = {
 		id = SEJ_totalitarian_regime
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_home_defense
 		prerequisite = { 
 		} 
 		mutually_exclusive = {
@@ -225,7 +227,7 @@ focus_tree = {
 
 	focus = {
 	    id = SEJ_war_spirit
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_SOV_mobilization_plan
 		prerequisite = { 
 			focus = SEJ_totalitarian_regime
 		} 
@@ -375,13 +377,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# event pro ENG
+			ENG = {
+				country_event = { id = sej.7 days = 1 }
+			}
 		}
 	}
 
 	focus = {
 		id = SEJ_south_for_support
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { 
 			focus = SEJ_embargo_JAP
 			focus = SEJ_war_spirit
@@ -400,13 +404,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# event pro RAJ
+			RAJ = {
+				country_event = { id = sej.8 days = 1 }
+			}
 		}
 	}
 
 	focus = {
 		id = SEJ_war_with_raj
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_attack_india
 		prerequisite = { 
 			focus = SEJ_war_spirit
 		} 
@@ -433,12 +439,42 @@ focus_tree = {
 			425 = {
 				add_claim_by = SEJ
 			}
+
 			declare_war_on = {
 				target = RAJ
 				type = take_claimed_state
 			}
+
 			hidden_effect = {
 				set_country_flag = SEJ_raj_war_for_south
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_demand_ports
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { 
+			focus = SEJ_south_for_support
+			focus = SEJ_war_with_raj
+		} 
+		mutually_exclusive = {}
+
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_war_with_raj
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			FRA = {
+				country_event = { id = sej.9 days = 1 }
+			}
+			POR = {
+				country_event = { id = sej.10 days = 1 }
 			}
 		}
 	}
@@ -452,7 +488,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = -2
+		x = -1
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_war_with_raj
@@ -479,7 +515,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_more_claims
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_position_armies
 		prerequisite = { 
 			focus = SEJ_integrate_south
 		} 
@@ -488,7 +524,7 @@ focus_tree = {
 		} 
 		mutually_exclusive = {}
 
-		x = 2
+		x = 1
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_integrate_south
@@ -519,7 +555,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_second_war_raj
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_attack_india
 		prerequisite = { 
 			focus = SEJ_more_claims
 		} 

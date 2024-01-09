@@ -1630,7 +1630,7 @@ focus_tree = {
 
 	focus = {
 		id = new_monarchist_focus
-		icon = GFX_goal_generic_neutrality_focus #icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_generic_home_defense #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = new_political_effort }
 		available = {
 			has_government = neutrality
