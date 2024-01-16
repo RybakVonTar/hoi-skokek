@@ -132,6 +132,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 
 	trigger = {
+		tag = PAK
 		has_global_flag = SEJ_second_war_RAH
 		PAK = {
 			exists = yes

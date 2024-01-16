@@ -321,7 +321,9 @@ focus_tree = {
 			recruit_character = GUP_orange_pekoe
 			recruit_character = GUP_rosehip
 
-			#! balance of powers common/bop/*
+			set_power_balance = {
+				id = sejlon_gloriana_balance
+			}
 		}
 	}
 
@@ -350,6 +352,11 @@ focus_tree = {
 				ideology = anime_government
 				long_name = "St. Gloriana High Command"
 				name = "St. Gloriana High Command"
+			}
+
+			add_power_balance_value = {
+				id = sejlon_gloriana_balance
+				value = -0.6
 			}
 		}
 	}
