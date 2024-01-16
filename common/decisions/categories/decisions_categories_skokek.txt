@@ -82,3 +82,12 @@ advisor_choosing = {
 		tag = JRK
 	}
 }
+
+sejlon_gloriana_balance_decisions = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+		tag = SEJ
+	}
+}

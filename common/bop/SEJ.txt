@@ -3,7 +3,7 @@ sejlon_gloriana_balance = {
 	initial_value = 0.25
 	left_side = gloriana_side
 	right_side = sejlon_side
-#	decision_category = GER_mefo_bills_category
+	decision_category = sejlon_gloriana_balance_decisions
 	range = {
 		id = sej_mid_range
 		min = -0.1
@@ -49,6 +49,20 @@ sejlon_gloriana_balance = {
 				training_time_army_factor = -0.1
 				command_power_gain = -0.2
 			}
+
+			on_activate = {
+                if = {
+                    limit = {
+						has_completed_focus = SEJ_stay_with_sejlon
+                    }
+                    retire_country_leader = yes
+					set_party_name = {
+						ideology = anime_government
+						long_name = "St. Gloriana High Command"
+						name = "St. Gloriana High Command"
+					}
+                }
+            }
 		}
 		range = {
 			id = sej_left_range_less

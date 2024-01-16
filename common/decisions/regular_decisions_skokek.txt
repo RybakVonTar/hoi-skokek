@@ -769,3 +769,66 @@ advisor_choosing = {
 		}
 	} 
 }
+
+sejlon_gloriana_balance_decisions = {
+	host_match = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+			power_balance_value = {
+				id = sejlon_gloriana_balance
+				value < 0.7
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 365
+
+		visible = {	
+			always = yes
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			add_power_balance_value = {
+				id = sejlon_gloriana_balance
+				value = -0.2
+			}
+			add_political_power = 50
+			army_experience = 25
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	} 
+
+	hold_tank_parade = {
+		icon = GFX_decision_icon_default
+		
+		available = {
+		}
+		
+		fire_only_once = no
+		days_re_enable = 15
+
+		visible = {	
+			always = yes
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			add_power_balance_value = {
+				id = sejlon_gloriana_balance
+				value = -0.05
+			}
+			add_war_support = 0.02
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	} 
+}
