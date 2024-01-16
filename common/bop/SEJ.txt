@@ -9,6 +9,9 @@ sejlon_gloriana_balance = {
 		min = -0.1
 		max = 0.1
 		modifier = {
+			political_power_factor = -0.25
+			political_power_cost = 0.2
+			stability_factor = -0.1
 		}
 	}
 	side = {
@@ -26,6 +29,9 @@ sejlon_gloriana_balance = {
 			min = 0.1
 			max = 0.7
 			modifier = {
+				political_power_gain = -0.15
+				political_power_cost = 0.1
+				stability_factor = -0.05
 			}
 		}
 	}
@@ -37,6 +43,11 @@ sejlon_gloriana_balance = {
 			min = -1
 			max = -0.7
 			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
 			}
 		}
 		range = {
@@ -44,6 +55,13 @@ sejlon_gloriana_balance = {
 			min = -0.7
 			max = -0.1
 			modifier = {
+				army_morale_factor = 0.02
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				training_time_army_factor = -0.05
+				political_power_factor = -0.1
+				political_power_cost = 0.1
+				command_power_gain = -0.1
 			}
 		}
 	}

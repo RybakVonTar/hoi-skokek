@@ -293,6 +293,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_power_balance_value = {
+				id = sejlon_gloriana_balance
+				value = 0.6
+			}
 		}
 	}
 
