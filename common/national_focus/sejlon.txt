@@ -226,7 +226,7 @@ focus_tree = {
 	}
 
 	focus = {
-	    id = SEJ_war_spirit
+	    id = SEJ_war_preparation
 		icon = GFX_focus_SOV_mobilization_plan
 		prerequisite = { 
 			focus = SEJ_totalitarian_regime
@@ -363,7 +363,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		prerequisite = { 
 			focus = SEJ_embargo_JAP
-			focus = SEJ_war_spirit
+			focus = SEJ_war_preparation
 		} 
 		mutually_exclusive = {}
 
@@ -388,7 +388,7 @@ focus_tree = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { 
 			focus = SEJ_embargo_JAP
-			focus = SEJ_war_spirit
+			focus = SEJ_war_preparation
 		} 
 		mutually_exclusive = {
 			focus = SEJ_war_with_raj
@@ -414,7 +414,7 @@ focus_tree = {
 		id = SEJ_war_with_raj
 		icon = GFX_focus_attack_india
 		prerequisite = { 
-			focus = SEJ_war_spirit
+			focus = SEJ_war_preparation
 		} 
 		mutually_exclusive = {
 			focus = SEJ_south_for_support
@@ -423,7 +423,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-		relative_position_id = SEJ_war_spirit
+		relative_position_id = SEJ_war_preparation
 		available = {
 		}
 		bypass = {
