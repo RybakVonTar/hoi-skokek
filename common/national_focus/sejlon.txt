@@ -33,7 +33,7 @@ focus_tree = {
 	continuous_focus_position = { x = 100 y = 1700 }
 
 	initial_show_position = {
-		x = 15
+		x = 0
 		y = 0
 	}
 
@@ -302,7 +302,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_invite_st_gloriana
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_st_gloriana
 		prerequisite = { 
 			focus = SEJ_disband_parlament
 		} 
@@ -333,7 +333,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_tankist_chunta
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_st_gloriana
 		prerequisite = { 
 			focus = SEJ_invite_st_gloriana
 		} 

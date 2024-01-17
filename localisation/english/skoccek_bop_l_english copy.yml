@@ -2,3 +2,8 @@
  gloriana_side:0 "St. Gloriana High Command"
  sejlon_side:0 "Sejlon"
  sejlon_gloriana_balance:0 "St. Gloriana - Sejlon Power Crisis"
+ sej_mid_range:0 "Political void"
+ sej_right_range:0 "High Sejlon influence"
+ sej_right_range_less:0 "Low Sejlon influence"
+ sej_left_range:0 "High High Command influence"
+ sej_left_range_less:0 "Low High Command influence"

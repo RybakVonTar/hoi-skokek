@@ -340,7 +340,8 @@ sensha_do_schools = {
 }
 
 anime_revolution = {
-	#! idk co 
+	#! startne BOP v zemi kde ma hodne influence anime a ma skolu
+	#! znamena ze musim ty BOP udelat
 }
 
 monarchist_uprising_pol = {
@@ -779,6 +780,7 @@ sejlon_gloriana_balance_decisions = {
 				id = sejlon_gloriana_balance
 				value < 0.7
 			}
+			command_power > 39.9
 		}
 		
 		fire_only_once = no
@@ -791,9 +793,10 @@ sejlon_gloriana_balance_decisions = {
 		cost = 0
 
 		complete_effect = {	
+			add_command_power = -40
 			add_power_balance_value = {
 				id = sejlon_gloriana_balance
-				value = -0.2
+				value = -0.20
 			}
 			add_political_power = 50
 			army_experience = 25
@@ -811,7 +814,7 @@ sejlon_gloriana_balance_decisions = {
 		}
 		
 		fire_only_once = no
-		days_re_enable = 15
+		days_re_enable = 30
 
 		visible = {	
 			always = yes
