@@ -7,10 +7,12 @@ sensha_do_schools = {
 		always = yes
 	}
 	visible = {
-		tag = SKO
-		has_completed_focus = SKO_reopen_tank_school
-		SKO = {
-			is_ai = no
+		OR = {
+			AND = {
+				tag = SKO
+				has_completed_focus = SKO_reopen_tank_school
+			}
+			is_debug = yes
 		}
 	}
 }
@@ -23,7 +25,10 @@ anime_revolution = {
 		always = yes
 	}
 	visible = {
-		tag = SKO
+		OR = {
+			tag = SKO
+			is_debug = yes
+		}
 	}
 }
 
@@ -86,5 +91,14 @@ sejlon_gloriana_balance_decisions = {
 	}
 	visible = {
 		tag = SEJ
+	}
+}
+
+pravda_balance_decision = {
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
 	}
 }

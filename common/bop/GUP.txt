@@ -1,0 +1,66 @@
+pravda_balance = {
+	initial_value = 1
+	left_side = pravda_side
+	right_side = government_side
+	decision_category = pravda_balance_decision
+	range = {
+		id = pravda_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = pravda_side
+		icon = GFX_idea_SKO_pravda
+		range = {
+			id = pravda_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = pravda_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = pravda_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
