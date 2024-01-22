@@ -340,8 +340,304 @@ sensha_do_schools = {
 }
 
 anime_revolution = {
-	#! startne BOP v zemi kde ma hodne influence anime a ma skolu
-	#! znamena ze musim ty BOP udelat
+	pravda_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_pravda
+				NOT = {
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	kuromorine_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_kuromorine
+				NOT = {
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	sanders_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_sanders
+				NOT = {
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	st_gloriana_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_st_gloriana
+				NOT = {
+					has_government = anime_government
+					has_any_power_balance = yes
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	anzio_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_anzio
+				NOT = {
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	bc_freedom_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_bc_freedom
+				NOT = {
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	keizoku_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_keizoku
+				NOT = {
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	chihatan_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_chihatan
+				NOT = {
+					tag = SKO
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	gregor_school = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			tag = SKO
+			any_country = {
+				has_idea = SKO_gregor
+				NOT = {
+					has_government = anime_government
+				}
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			#! bop
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
 }
 
 monarchist_uprising_pol = {
@@ -655,7 +951,7 @@ anti_anime = {
 				}
 			}
 			tag = VOV
-			has_completed_focus = VOV_anti-anime
+			has_completed_focus = VOV_anti_anime
 		}
 
 		cost = 0
@@ -820,7 +1116,7 @@ sejlon_gloriana_balance_decisions = {
 			always = yes
 		}		
 
-		cost = 0
+		cost = 100
 
 		complete_effect = {	
 			add_power_balance_value = {

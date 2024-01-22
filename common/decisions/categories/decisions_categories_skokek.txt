@@ -24,9 +24,6 @@ anime_revolution = {
 	}
 	visible = {
 		tag = SKO
-		SKO = {
-			is_ai = no
-		}
 	}
 }
 
