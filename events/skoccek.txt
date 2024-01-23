@@ -1089,3 +1089,23 @@ country_event = {
 		name = skoccek.25.2.a
 	}
 }
+
+# gup skola? accept as government
+country_event = {
+	id = skoccek.28
+	title = skoccek.28.t
+	desc = skoccek.28.d
+	picture = GFX_report_event_001
+
+	is_triggered_only = yes
+
+	# yes
+	option = {
+		name = skoccek.28.a
+	}
+
+	# no
+	option = {
+		name = skoccek.28.b
+	}
+}

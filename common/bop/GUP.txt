@@ -45,6 +45,10 @@ pravda_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_deactivate = {
+				#! event
+			}
 		}
 		range = {
 			id = pravda_max_range
@@ -60,8 +64,46 @@ pravda_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = pravda_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -130,8 +172,46 @@ kuromorine_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = kuromorine_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -200,8 +280,46 @@ sanders_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = sanders_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -270,8 +388,46 @@ st_gloriana_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = st_gloriana_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -340,8 +496,46 @@ anzio_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = anzio_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -410,8 +604,46 @@ bc_freedom_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = bc_freedom_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -480,8 +712,46 @@ keizoku_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = keizoku_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -550,8 +820,46 @@ chihatan_balance = {
 			}
 
 			on_activate = {
-				set_politics = {
-					ruling_party = anime_government
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
+						}
+					}
+					remove_power_balance = {
+						id = chihatan_balance
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
@@ -620,20 +928,43 @@ gregor_balance = {
 			}
 
 			on_activate = {
-				#! mysli mysli, pico vymysli to
 				if = {
 					limit = {
 						num_of_controlled_states > 3
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
 					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						keep_unit_leaders_trigger = {
-							has_trait = anime_trait
+						every_character = {
+							limit = {
+								has_trait = anime_trait
+								has_nationality = ROOT
+							}
+							set_nationality = FROM
+						}
+						every_character = {
+							limit = {
+								NOT = {
+									has_trait = anime_trait
+								}
+								has_nationality = ROOT
+							}
+							set_nationality = ROOT
 						}
 					}
+					remove_power_balance = {
+						id = gregor_balance
+					}
 				}
-				else = {
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = accept_school_as_leader
+						}
+					}
 					set_politics = {
 						ruling_party = anime_government
 					}
