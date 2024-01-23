@@ -66,7 +66,7 @@ pravda_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -174,7 +174,7 @@ kuromorine_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -282,7 +282,7 @@ sanders_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -390,7 +390,7 @@ st_gloriana_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -498,7 +498,7 @@ anzio_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -606,7 +606,7 @@ bc_freedom_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -714,7 +714,7 @@ keizoku_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -822,7 +822,7 @@ chihatan_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
@@ -930,7 +930,7 @@ gregor_balance = {
 			on_activate = {
 				if = {
 					limit = {
-						num_of_controlled_states > 3
+						num_of_controlled_states > 1
 						NOT = {
 							has_country_flag = accept_school_as_leader
 						}
