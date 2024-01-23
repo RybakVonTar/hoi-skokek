@@ -400,6 +400,414 @@ anime_revolution = {
 			factor = 1000
 		}
 	}
+
+	kuromorine_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_kuromorine
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_kuromorine
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_kuromorine
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = kuromorine_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	sanders_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_sanders
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_sanders
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_sanders
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = sanders_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	st_gloriana_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_st_gloriana
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_st_gloriana
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_st_gloriana
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = st_gloriana_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	anzio_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_anzio
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_anzio
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_anzio
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = anzio_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	bc_freedom_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_bc_freedom
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_bc_freedom
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_bc_freedom
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = bc_freedom_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	keizoku_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_keizoku
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_keizoku
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_keizoku
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = keizoku_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	chihatan_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_chihatan
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_chihatan
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_chihatan
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = chihatan_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	gregor_school_rev = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			any_country = {
+				anime_government > 0.24
+				has_idea = SKO_gregor
+			}
+		}
+		
+		fire_only_once = yes
+
+		visible = {	
+			OR = {
+				AND = {
+					tag = SKO
+					any_country = {
+						has_idea = SKO_gregor
+						NOT = {
+							has_government = anime_government
+						}
+					}
+				}
+				is_debug = yes
+			}
+		}		
+
+		cost = 0
+
+		complete_effect = {	
+			every_country = {
+				limit = {
+					has_idea = SKO_gregor
+					NOT = {
+						has_government = anime_government
+					}
+					anime_government > 0.24
+				}
+				set_power_balance = {
+					id = gregor_balance
+					set_value = 1
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
 }
 
 monarchist_uprising_pol = {

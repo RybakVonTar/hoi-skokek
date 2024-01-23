@@ -94,7 +94,7 @@ sejlon_gloriana_balance_decisions = {
 	}
 }
 
-pravda_balance_decision = {
+gup_balance_decision = {
 	allowed = {
 		always = yes
 	}

@@ -2,7 +2,7 @@ pravda_balance = {
 	initial_value = 1
 	left_side = pravda_side
 	right_side = government_side
-	decision_category = pravda_balance_decision
+	decision_category = gup_balance_decision
 	range = {
 		id = pravda_mid_range
 		min = 0
@@ -62,6 +62,581 @@ pravda_balance = {
 			on_activate = {
 				set_politics = {
 					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+kuromorine_balance = {
+	initial_value = 1
+	left_side = kuromorine_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = kuromorine_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = kuromorine_side
+		icon = GFX_idea_SKO_kuromorine
+		range = {
+			id = kuromorine_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = kuromorine_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = kuromorine_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+sanders_balance = {
+	initial_value = 1
+	left_side = sanders_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = sanders_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = sanders_side
+		icon = GFX_idea_SKO_sanders
+		range = {
+			id = sanders_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = sanders_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = sanders_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+st_gloriana_balance = {
+	initial_value = 1
+	left_side = st_gloriana_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = st_gloriana_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = st_gloriana_side
+		icon = GFX_idea_SKO_st_gloriana
+		range = {
+			id = st_gloriana_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = st_gloriana_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = st_gloriana_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+anzio_balance = {
+	initial_value = 1
+	left_side = anzio_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = anzio_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = anzio_side
+		icon = GFX_idea_SKO_anzio
+		range = {
+			id = anzio_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = anzio_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = anzio_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+bc_freedom_balance = {
+	initial_value = 1
+	left_side = bc_freedom_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = bc_freedom_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = bc_freedom_side
+		icon = GFX_idea_SKO_bc_freedom
+		range = {
+			id = bc_freedom_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = bc_freedom_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = bc_freedom_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+keizoku_balance = {
+	initial_value = 1
+	left_side = keizoku_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = keizoku_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = keizoku_side
+		icon = GFX_idea_SKO_keizoku
+		range = {
+			id = keizoku_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = keizoku_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = keizoku_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+chihatan_balance = {
+	initial_value = 1
+	left_side = chihatan_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = chihatan_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = chihatan_side
+		icon = GFX_idea_SKO_chihatan
+		range = {
+			id = chihatan_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = chihatan_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = chihatan_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				set_politics = {
+					ruling_party = anime_government
+				}
+            }
+        }
+	}
+}
+
+gregor_balance = {
+	initial_value = 1
+	left_side = gregor_side
+	right_side = government_side
+	decision_category = gup_balance_decision
+	range = {
+		id = gregor_mid_range
+		min = 0
+		max = 0.6
+		modifier = {
+		}
+		on_deactivate = {
+			add_stability = -0.1
+		}
+		on_activate = {
+			add_stability = -0.05
+		}
+	}
+	side = {
+		id = government_side
+		icon = GFX_idea_generic_agrarian_society
+		range = {
+			id = government_side_range
+			min = 0.6
+			max = 1
+			modifier = {
+			}
+		}
+	}
+	side = {
+		id = gregor_side
+		icon = GFX_idea_SKO_gregor
+		range = {
+			id = gregor_low_range
+			min = -0.5
+			max = 0
+			modifier = {
+				anime_government_drift = 0.02
+			}
+		}
+		range = {
+			id = gregor_high_range
+			min = -0.9
+			max = -0.5
+			modifier = {
+				anime_government_drift = 0.05
+			}
+		}
+		range = {
+			id = gregor_max_range
+			min = -1
+			max = -0.9
+			modifier = {
+				army_morale_factor = 0.05
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+				training_time_army_factor = -0.1
+				command_power_gain = -0.2
+				anime_government_drift = 0.1
+			}
+
+			on_activate = {
+				#! mysli mysli, pico vymysli to
+				if = {
+					limit = {
+						num_of_controlled_states > 3
+					}
+					start_civil_war = {
+						ideology = anime_government
+						size = 0.5
+						keep_unit_leaders_trigger = {
+							has_trait = anime_trait
+						}
+					}
+				}
+				else = {
+					set_politics = {
+						ruling_party = anime_government
+					}
 				}
             }
         }
