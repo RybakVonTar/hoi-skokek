@@ -1102,6 +1102,15 @@ country_event = {
 	# yes
 	option = {
 		name = skoccek.28.a
+
+		hidden_effect = {
+			set_country_flag = accept_school_as_leader
+		}
+
+		add_popularity = {
+			ideology = anime_government
+			popularity = 0.1
+		}
 	}
 
 	# no

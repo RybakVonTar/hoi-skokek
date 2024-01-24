@@ -2,7 +2,7 @@ pravda_balance = {
 	initial_value = 1
 	left_side = pravda_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = pravda_balance_decision
 	range = {
 		id = pravda_mid_range
 		min = 0
@@ -46,8 +46,8 @@ pravda_balance = {
 				anime_government_drift = 0.05
 			}
 
-			on_deactivate = {
-				#! event
+			on_activate = {
+				country_event = skoccek.28
 			}
 		}
 		range = {
@@ -71,25 +71,24 @@ pravda_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_pravda
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_pravda
 					}
 					remove_power_balance = {
 						id = pravda_balance
@@ -114,7 +113,7 @@ kuromorine_balance = {
 	initial_value = 1
 	left_side = kuromorine_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = kuromorine_balance_decision
 	range = {
 		id = kuromorine_mid_range
 		min = 0
@@ -157,6 +156,10 @@ kuromorine_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = kuromorine_max_range
@@ -179,25 +182,24 @@ kuromorine_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_kuromorine
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_kuromorine
 					}
 					remove_power_balance = {
 						id = kuromorine_balance
@@ -222,7 +224,7 @@ sanders_balance = {
 	initial_value = 1
 	left_side = sanders_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = sanders_balance_decision
 	range = {
 		id = sanders_mid_range
 		min = 0
@@ -265,6 +267,10 @@ sanders_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = sanders_max_range
@@ -287,25 +293,24 @@ sanders_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_sanders
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_sanders
 					}
 					remove_power_balance = {
 						id = sanders_balance
@@ -330,7 +335,7 @@ st_gloriana_balance = {
 	initial_value = 1
 	left_side = st_gloriana_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = st_gloriana_balance_decision
 	range = {
 		id = st_gloriana_mid_range
 		min = 0
@@ -373,6 +378,10 @@ st_gloriana_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = st_gloriana_max_range
@@ -395,25 +404,24 @@ st_gloriana_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_st_gloriana
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_st_gloriana
 					}
 					remove_power_balance = {
 						id = st_gloriana_balance
@@ -438,7 +446,7 @@ anzio_balance = {
 	initial_value = 1
 	left_side = anzio_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = anzio_balance_decision
 	range = {
 		id = anzio_mid_range
 		min = 0
@@ -481,6 +489,10 @@ anzio_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = anzio_max_range
@@ -503,25 +515,24 @@ anzio_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_anzio
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_anzio
 					}
 					remove_power_balance = {
 						id = anzio_balance
@@ -546,7 +557,7 @@ bc_freedom_balance = {
 	initial_value = 1
 	left_side = bc_freedom_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = bc_freedom_balance_decision
 	range = {
 		id = bc_freedom_mid_range
 		min = 0
@@ -589,6 +600,10 @@ bc_freedom_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = bc_freedom_max_range
@@ -611,25 +626,24 @@ bc_freedom_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_bc_freedom
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_bc_freedom
 					}
 					remove_power_balance = {
 						id = bc_freedom_balance
@@ -654,7 +668,7 @@ keizoku_balance = {
 	initial_value = 1
 	left_side = keizoku_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = keizoku_balance_decision
 	range = {
 		id = keizoku_mid_range
 		min = 0
@@ -697,6 +711,10 @@ keizoku_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = keizoku_max_range
@@ -719,25 +737,24 @@ keizoku_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_keizoku
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_keizoku
 					}
 					remove_power_balance = {
 						id = keizoku_balance
@@ -762,7 +779,7 @@ chihatan_balance = {
 	initial_value = 1
 	left_side = chihatan_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = chihatan_balance_decision
 	range = {
 		id = chihatan_mid_range
 		min = 0
@@ -805,6 +822,10 @@ chihatan_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = chihatan_max_range
@@ -827,25 +848,24 @@ chihatan_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_chihatan
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_chihatan
 					}
 					remove_power_balance = {
 						id = chihatan_balance
@@ -870,7 +890,7 @@ gregor_balance = {
 	initial_value = 1
 	left_side = gregor_side
 	right_side = government_side
-	decision_category = gup_balance_decision
+	decision_category = gregor_balance_decision
 	range = {
 		id = gregor_mid_range
 		min = 0
@@ -913,6 +933,10 @@ gregor_balance = {
 			modifier = {
 				anime_government_drift = 0.05
 			}
+
+			on_activate = {
+				country_event = skoccek.28
+			}
 		}
 		range = {
 			id = gregor_max_range
@@ -935,25 +959,24 @@ gregor_balance = {
 							has_country_flag = accept_school_as_leader
 						}
 					}
+					ROOT = {
+						remove_ideas = SKO_gregor
+					}
 					start_civil_war = {
 						ideology = anime_government
 						size = 0.5
-						every_character = {
-							limit = {
+						keep_unit_leaders_trigger = {
+							NOT = {
 								has_trait = anime_trait
-								has_nationality = ROOT
 							}
-							set_nationality = FROM
 						}
-						every_character = {
-							limit = {
-								NOT = {
-									has_trait = anime_trait
-								}
-								has_nationality = ROOT
-							}
-							set_nationality = ROOT
+					}
+					every_country = {
+						limit = {
+							original_tag = ROOT
+							has_government = anime_government
 						}
+						add_ideas = SKO_gregor
 					}
 					remove_power_balance = {
 						id = gregor_balance

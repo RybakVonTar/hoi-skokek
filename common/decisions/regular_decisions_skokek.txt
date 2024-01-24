@@ -391,7 +391,7 @@ anime_revolution = {
 				}
 				set_power_balance = {
 					id = pravda_balance
-					set_value = -1
+					set_value = 1
 				}
 			}
 		}
@@ -1314,6 +1314,63 @@ sejlon_gloriana_balance_decisions = {
 	#!
 }
 
-gup_balance_decision = {
+pravda_balance_decision = {
 	#!
+	bek = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			is_debug = yes
+		}
+		
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {	
+			is_debug = yes
+		}		
+
+		cost = 1
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = pravda_balance
+				value = 0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+	bek_bek = {
+
+		icon = GFX_decision_icon_default
+		
+		available = {
+			is_debug = yes
+		}
+		
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {	
+			is_debug = yes
+		}		
+
+		cost = 1
+
+		complete_effect = {
+			add_power_balance_value = {
+				id = pravda_balance
+				value = -0.05
+			}
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
 }
