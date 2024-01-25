@@ -61,5 +61,23 @@ ideas = {
 				trade_opinion_factor = -100
 			}
 		}
+
+		SEJ_great_fortifycation_plan = {
+			name = SEJ_great_fortifycation_plan_name
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.3
+				defence = 0.05
+			}
+		}
 	}
 }

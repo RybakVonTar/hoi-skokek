@@ -187,6 +187,12 @@ focus_tree = {
 			add_stability = 0.05
 		}
 	}
+
+	#############################################
+	#
+	# totalitarian regime
+	#
+	#############################################
 	
 	focus = {
 		id = SEJ_totalitarian_regime
@@ -589,6 +595,449 @@ focus_tree = {
 			hidden_effect = {
 				set_global_flag = SEJ_second_war_RAH
 			}
+		}
+	}
+
+
+	################################
+	# fortification
+	################################
+
+	focus = {
+		id = SEJ_great_fortifycation_plan
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = -15
+		y = 0
+		cost = 10
+		relative_position_id = SEJ_totalitarian_regime
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = SEJ_great_fortifycation_plan
+		}
+	}
+
+	focus = {
+		id = SEJ_fortify_ports
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_great_fortifycation_plan
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_great_fortifycation_plan
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 10201
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 10201
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 7260
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4219
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_fortification
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_fortify_ports
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_fortify_ports
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 10201
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 7344
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 7260
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_great_fort
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_fortification
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_fortification
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10201
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7344
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7260
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 10287
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 1213
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = 7344
+				}
+			}
+			#! edit idea
+		}
+	}
+
+	focus = {
+		id = SEJ_fortify_southern_india
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_fortify_ports
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_fortify_ports
+		available = {
+			owns_state = 424
+			owns_state = 425
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			425 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4395
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12295
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7411
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 10259
+				}
+			}
+			424 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 10296
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4365
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4321
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_india_aa
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_fortify_southern_india
+		} 
+		prerequisite = { 
+			focus = SEJ_aa_fortification_II
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_fortify_southern_india
+		available = {
+			OR = {
+				owns_state = 423
+				owns_state = 424
+				owns_state = 425
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					owns_state = 423
+				}
+				423 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 424
+				}
+				424 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 425
+				}
+				425 = {
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_outer_island_forts
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_fortify_ports
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_fortify_ports
+		available = {
+			OR = {
+				owns_state = 281
+				owns_state = 733
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = {
+					owns_state = 281
+				}
+				281 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 4967
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 733
+				}
+				733 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 12251
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_aa_fortification_I
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_great_fortifycation_plan
+		} 
+		mutually_exclusive = {}
+
+		x = 4
+		y = 1
+		cost = 5
+		relative_position_id = SEJ_great_fortifycation_plan
+		available = {
+			has_tech = interwar_antiair
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_aa_fortification_II
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_aa_fortification_I
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SEJ_aa_fortification_I
+		available = {
+			has_tech = antiair2
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_aa_fortification_III
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+			focus = SEJ_aa_fortification_II
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = SEJ_aa_fortification_II
+		available = {
+			has_tech = antiair5
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+		}
+	}
+
+	################################
+	# industry
+	################################
+
+	focus = {
+		id = SEJ_
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 8
+		y = 0
+		cost = 10
+		relative_position_id = SEJ_totalitarian_regime
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			
 		}
 	}
 }
