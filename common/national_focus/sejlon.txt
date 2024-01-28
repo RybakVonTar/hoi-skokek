@@ -289,7 +289,7 @@ focus_tree = {
 			focus = SEJ_tankist_chunta
 		}
 
-		x = -1
+		x = 1
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_invite_st_gloriana
@@ -347,7 +347,7 @@ focus_tree = {
 			focus = SEJ_stay_with_sejlon
 		}
 
-		x = 1
+		x = -1
 		y = 1
 		cost = 10
 		relative_position_id = SEJ_invite_st_gloriana
@@ -605,7 +605,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_great_fortifycation_plan
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_defence
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
@@ -626,7 +626,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_fortify_ports
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { 
 			focus = SEJ_great_fortifycation_plan
 		} 
@@ -669,7 +669,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_fortification
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { 
 			focus = SEJ_fortify_ports
 		} 
@@ -707,7 +707,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_great_fort
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_defence
 		prerequisite = { 
 			focus = SEJ_fortification
 		} 
@@ -761,7 +761,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_fortify_southern_india
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { 
 			focus = SEJ_fortify_ports
 		} 
@@ -823,7 +823,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_india_aa
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_generic_air_defense
 		prerequisite = { 
 			focus = SEJ_fortify_southern_india
 		} 
@@ -885,7 +885,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_outer_island_forts
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_goal_generic_construct_military
 		prerequisite = { 
 			focus = SEJ_fortify_ports
 		} 
@@ -934,7 +934,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_aa_fortification_I
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_generic_air_defense
 		prerequisite = { 
 			focus = SEJ_great_fortifycation_plan
 		} 
@@ -962,7 +962,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_aa_fortification_II
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_generic_air_defense
 		prerequisite = { 
 			focus = SEJ_aa_fortification_I
 		} 
@@ -990,7 +990,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_aa_fortification_III
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_generic_air_defense
 		prerequisite = { 
 			focus = SEJ_aa_fortification_II
 		} 
@@ -1021,8 +1021,8 @@ focus_tree = {
 	################################
 
 	focus = {
-		id = SEJ_
-		icon = GFX_goal_generic_fortify_city
+		id = SEJ_industrial_boom
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { 
 		} 
 		mutually_exclusive = {}
@@ -1037,7 +1037,374 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = industry
+			}
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.5
+				uses = 2
+				category = construction_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_electronics
+		icon = GFX_focus_generic_energy
+		prerequisite = { 
+			focus = SEJ_industrial_boom
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_industrial_boom
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_cultivate_land
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { 
+			focus = SEJ_industrial_boom
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_industrial_boom
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 3
+			}
+			#! farming idea
+		}
+	}
+
+	focus = {
+		id = SEJ_expand_iron_mines
+		icon = GFX_focus_generic_steel
+		prerequisite = { 
+			focus = SEJ_industrial_boom
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_industrial_boom
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_resource = {
+					type = steel
+					amount = 15
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_dig_deeper
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { 
+			focus = SEJ_expand_iron_mines
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_expand_iron_mines
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_resource = {
+					type = aluminium
+					amount = 4
+				}
+				add_resource = {
+					type = tungsten
+					amount = 2
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = SEJ_cultivate_land
+		} 
+		mutually_exclusive = {}
+
+		x = 4
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_cultivate_land
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_civilian_industry_II
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { 
+			focus = SEJ_civilian_industry
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_civilian_industry
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_naval_priority
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { 
+			focus = SEJ_cultivate_land
+		} 
+		mutually_exclusive = {
+			focus = SEJ_army_priority
+		}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_cultivate_land
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_ship_production
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { 
+			focus = SEJ_naval_priority
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_naval_priority
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			#! idea
+		}
+	}
+
+	focus = {
+		id = SEJ_army_priority
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { 
+			focus = SEJ_cultivate_land
+		} 
+		mutually_exclusive = {
+			focus = SEJ_naval_priority
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_cultivate_land
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_arms_production
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { 
+			focus = SEJ_army_priority
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_army_priority
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_military_factory_expansion
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { 
+			focus = SEJ_arms_production
+			focus = SEJ_ship_production
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_arms_production
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_dockyard_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { 
+			focus = SEJ_arms_production
+			focus = SEJ_ship_production
+		} 
+		mutually_exclusive = {
+		}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_arms_production
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			422 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+				}
+			}
 		}
 	}
 }

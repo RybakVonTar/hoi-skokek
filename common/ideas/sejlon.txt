@@ -79,5 +79,21 @@ ideas = {
 				defence = 0.05
 			}
 		}
+
+		SEJ_ship_production = {
+			name = SEJ_ship_production
+
+			removal_cost = -1
+
+			picture = MEX_politicised_army_2
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.2
+			}
+		}
 	}
 }
