@@ -167,20 +167,6 @@ characters={
 		}
 	}
 
-	SKO_lelouch_lamperouge={
-		name="Lelouch Lamperouge"
-		portraits={
-			civilian={
-				#small = "gfx/leaders/VOV/spratek.dds"
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = lelouch
-			traits = { lelouch }
-		}
-	}
-
 	SKO_heinrich_lunge={
 		name="Heinrich Lunge"
 		portraits={

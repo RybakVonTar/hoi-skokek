@@ -371,6 +371,63 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SEJ_st_gloriana_battalion
+		icon = GFX_focus_st_gloriana
+		prerequisite = { 
+			focus = SEJ_tankist_chunta
+			focus = SEJ_stay_with_sejlon
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_tankist_chunta
+		available = {
+			power_balance_value = {
+				id = sejlon_gloriana_balance
+				value < -0.5
+			}
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			division_template = {
+				name = "St. Gloriana tank Batalion"
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }
+					light_armor = { x = 0 y = 2 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+				}
+				support = {
+					light_tank_recon = { x = 0 y = 0 }
+					maintenance_company = { x = 0 y = 1 }
+				}
+			}
+
+			division_template = {
+				name = "St. Gloriana infantry Batalion"
+				regiments = {
+					heavy_armor = { x = 0 y = 0 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					light_tank_recon = { x = 0 y = 0 }
+				}
+			}
+		}
+	}
+
 	################################
 	# War
 	################################
@@ -755,7 +812,10 @@ focus_tree = {
 					province = 7344
 				}
 			}
-			#! edit idea
+			swap_ideas = {
+				remove_idea = SEJ_great_fortifycation_plan
+				add_idea = SEJ_great_fortifycation_plan_modified
+			}
 		}
 	}
 
@@ -1100,7 +1160,7 @@ focus_tree = {
 			422 = {
 				add_extra_state_shared_building_slots = 3
 			}
-			#! farming idea
+			add_ideas = SEJ_cultivated_land
 		}
 	}
 
@@ -1279,7 +1339,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#! idea
+			add_ideas = SEJ_ship_production
 		}
 	}
 
@@ -1934,7 +1994,6 @@ focus_tree = {
 		x = 36
 		y = 0
 		cost = 10
-		#relative_position_id = SEJ_industrialization
 		available = {
 			
 		}
