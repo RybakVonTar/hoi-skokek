@@ -1407,4 +1407,731 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = SEJ_royal_navy
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 26
+		y = 0
+		cost = 10
+		#relative_position_id = SEJ_industrialization
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+
+	focus = {
+		id = SEJ_carrier
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { 
+			focus = SEJ_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_submarines
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { 
+			focus = SEJ_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_torpedoes
+		icon = GFX_focus_generic_torpedo_production
+		prerequisite = { 
+			focus = SEJ_submarines
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_submarines
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cat_torpedoes
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = naval_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { 
+			focus = SEJ_royal_navy
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_navy
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = ca_tech
+				category = bb_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_naval_guns
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { 
+			focus = SEJ_capital_ships
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_capital_ships
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "Man the Guns"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 3
+					category = cat_ship_heavy_battery
+					category = cat_ship_medium_battery
+					category = cat_ship_light_battery
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = naval_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_navy_training
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { 
+			focus = SEJ_torpedoes
+			focus = SEJ_naval_guns
+			focus = SEJ_carrier
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_carrier
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_navy_training_II
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { 
+			focus = SEJ_navy_training
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_navy_training
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_royal_airforce
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 31
+		y = 0
+		cost = 10
+		#relative_position_id = SEJ_industrialization
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+
+	focus = {
+		id = SEJ_heavy_aircraft
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { 
+			focus = SEJ_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1.5
+				uses = 1
+				category = medium_air
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_bombers
+		icon = GFX_focus_generic_multi_role_aircraft
+		prerequisite = { 
+			focus = SEJ_heavy_aircraft
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_heavy_aircraft
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1.5
+					uses = 1
+					category = heavy_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = heavy_air
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_light_aircraft
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { 
+			focus = SEJ_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1
+				uses = 1
+				category = light_air
+			}
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = cat_air_guns
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = air_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_cas
+		icon = GFX_focus_generic_tank_air_support
+		prerequisite = { 
+			focus = SEJ_light_aircraft
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_light_aircraft
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.5
+					uses = 1
+					category = cat_air_bombs
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = light_air
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cas_bomber
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_air_training
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { 
+			focus = SEJ_cas
+		} 
+		prerequisite = { 
+			focus = SEJ_bombers
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_bombers
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_air_training_II
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { 
+			focus = SEJ_air_training
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_air_training
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_motors
+		icon = GFX_goal_generic_air_production
+		prerequisite = { 
+			focus = SEJ_royal_airforce
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_royal_airforce
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "By Blood Alone"
+				}
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 1
+					uses = 1
+					category = cat_air_engine
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = industrial_complex
+					bonus = 0.75
+					uses = 1
+					category = air_equipment
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_royal_army
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { 
+		} 
+		mutually_exclusive = {}
+
+		x = 36
+		y = 0
+		cost = 10
+		#relative_position_id = SEJ_industrialization
+		available = {
+			
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = SEJ_artillery_effort
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { 
+			focus = SEJ_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_support_effort
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { 
+			focus = SEJ_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.5
+				uses = 3
+				category = support_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { 
+			focus = SEJ_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = -1
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { 
+			focus = SEJ_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = SEJ_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_tank_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { 
+			focus = SEJ_royal_army
+		} 
+		mutually_exclusive = {}
+
+		x = 1
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_royal_army
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_complex
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_army_trainingI
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = SEJ_artillery_effort
+			focus = SEJ_equipment_effort
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_artillery_effort
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SEJ_army_trainingII
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { 
+			focus = SEJ_tank_effort
+			focus = SEJ_motorization_effort
+		} 
+		mutually_exclusive = {}
+
+		x = 0
+		y = 2
+		cost = 10
+		relative_position_id = SEJ_motorization_effort
+		available = {
+		}
+		bypass = {
+		}
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 3
+				category = land_doctrine
+			}
+		}
+	}
 }

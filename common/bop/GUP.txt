@@ -73,6 +73,10 @@ pravda_balance = {
 					}
 					ROOT = {
 						remove_ideas = SKO_pravda
+						add_popularity = {
+							ideology = anime_government
+							popularity = -1
+						}
 					}
 					start_civil_war = {
 						ideology = anime_government
