@@ -224,6 +224,59 @@ country_event = {
 	option = {
 		name = sej.8.a
 
+		ai_chance = {
+			base = 25
+			modifier = {
+				SEJ = {
+					has_army_manpower = {
+						size > 24999
+					}
+				}
+
+				add = 25
+			}
+			modifier = {
+				SEJ = {
+					has_army_manpower = {
+						size > 49999
+					}
+				}
+
+				add = 25
+			}
+			modifier = {
+				SEJ = {
+					has_army_manpower = {
+						size > 99999
+					}
+				}
+
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = RAJ
+					value > 49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = RAJ
+					value > 94
+				}
+				add = 50
+			}
+			modifier = {
+				surrender_progress > 0.25
+				add = 15
+			}
+			modifier = {
+				surrender_progress > 0.5
+				add = 15
+			}
+		}
+
 		SEJ = {
 			transfer_state = 423
 			transfer_state = 424
@@ -235,6 +288,25 @@ country_event = {
 
 	option = {
 		name = sej.8.b
+
+		ai_chance = {
+			base = 50
+
+			modifier = {
+				has_opinion = {
+					target = RAJ
+					value < -49
+				}
+				add = 25
+			}
+			modifier = {
+				has_opinion = {
+					target = RAJ
+					value < -99
+				}
+				add = 25
+			}
+		}
 
 		423 = {
 			add_claim_by = SEJ

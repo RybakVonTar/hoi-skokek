@@ -1628,6 +1628,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_threat = 1
 			FRA = {
 				add_timed_idea = {
 					idea = VOV_fra_communism
@@ -1951,6 +1952,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_threat = 1
 			every_country = {
 				limit = {
 					AND = {
@@ -1975,6 +1977,9 @@ focus_tree = {
 							}
 						}
 					}
+				}
+				VOV = {
+					add_threat = 1
 				}
 				add_ideas = VOV_black_sea_domination_else
 			}
@@ -2008,6 +2013,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_threat = 2
+
 			SOV = {
 				release_on_controlled = GEO
 				release_on_controlled = AZR
@@ -2106,6 +2113,7 @@ focus_tree = {
 				target = JAP
 				modifier = VOV_supporting_antianime_war
 			}
+			add_threat = 1
 		}
 	}
 
@@ -2155,6 +2163,7 @@ focus_tree = {
 				target = CHI
 				modifier = VOV_supporting_antianime_war
 			}
+			add_threat = 1
 		}
 	}
 
