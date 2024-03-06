@@ -283,7 +283,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_stay_with_sejlon
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_stay_with_sejlon
 		prerequisite = { 
 			focus = SEJ_invite_st_gloriana
 		} 

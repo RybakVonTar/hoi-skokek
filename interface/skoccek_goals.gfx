@@ -172,6 +172,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_universe_laws_2.dds"			
 	}
 
+	SpriteType = {
+		name = "GFX_focus_stay_with_sejlon"
+		texturefile = "gfx/interface/goals/focus_stay_sejlon.dds"			
+	}
+
 	# bek protoze to neworkuje
 	SpriteType = {
 		name = "bek"
