@@ -177,6 +177,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_stay_sejlon.dds"			
 	}
 
+	SpriteType = {
+		name = "GFX_focus_gloriana_batalion"
+		texturefile = "gfx/interface/goals/focus_gloriana_batalion.dds"			
+	}
+
 	# bek protoze to neworkuje
 	SpriteType = {
 		name = "bek"

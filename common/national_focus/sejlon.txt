@@ -257,7 +257,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_disband_parlament
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_strike_at_democracy2
 		prerequisite = { 
 			focus = SEJ_totalitarian_regime
 		} 
@@ -375,7 +375,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_st_gloriana_battalion
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_gloriana_batalion
 		prerequisite = { 
 			focus = SEJ_tankist_chunta
 			focus = SEJ_stay_with_sejlon
@@ -437,7 +437,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_buy_indian_ocean_islands
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { 
 			focus = SEJ_embargo_JAP
 			focus = SEJ_war_preparation
@@ -532,7 +532,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_demand_ports
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { 
 			focus = SEJ_south_for_support
 			focus = SEJ_war_with_raj
@@ -560,7 +560,7 @@ focus_tree = {
 
 	focus = {
 		id = SEJ_integrate_south
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { 
 			focus = SEJ_south_for_support
 			focus = SEJ_war_with_raj
