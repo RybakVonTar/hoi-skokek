@@ -13,6 +13,7 @@ state = {
 
 		owner = MIR
 		add_core_of = MIR
+		add_core_of = ARG
 		add_core_of = WLA
 
 		buildings = {
